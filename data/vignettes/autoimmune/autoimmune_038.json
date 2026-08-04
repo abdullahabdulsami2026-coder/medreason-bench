@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_038",
+  "specialty": "autoimmune",
+  "subspecialty": "ankylosing_spondylitis_axial_spa",
+  "stem": "A 28-year-old man presents to clinic with 6 months of progressive INFLAMMATORY back pain: insidious onset, morning stiffness lasting >1 hour, pain that improves with exercise and worsens with rest, and nighttime awakening in the second half of the night with discomfort. He has bilateral buttock pain alternating between sides. He has no peripheral arthritis, no skin or nail psoriasis, no inflammatory bowel symptoms, and no uveitis. Vital signs are normal. Examination shows reduced lumbar flexion (Schober test 3 cm), reduced chest expansion, and mild bilateral sacroiliac-joint tenderness on direct palpation. Labs: HLA-B27 POSITIVE; ESR 35 mm/h; CRP 18 mg/L; rheumatoid factor and anti-CCP negative. MRI of the sacroiliac joints demonstrates BILATERAL ACTIVE SACROILIITIS with bone-marrow edema on STIR sequences (consistent with axial spondyloarthritis per ASAS criteria). The Bath Ankylosing Spondylitis Disease Activity Index (BASDAI) is 4.5 (active disease). He has no IBD, no contraindication to NSAIDs, and is otherwise healthy.",
+  "question": "Which is the most appropriate first-line therapy?",
+  "options": {
+    "A": "Full-dose continuous NSAID therapy (e.g., naproxen 500 mg BID, indomethacin, or ibuprofen) for at least 2–4 weeks; if inadequate response, escalate to a TNF inhibitor (adalimumab, etanercept, certolizumab, golimumab, infliximab) or an IL-17 inhibitor (secukinumab, ixekizumab); add structured physical therapy and exercise (Class I)",
+    "B": "Methotrexate as first-line therapy for axial spondyloarthritis",
+    "C": "TNF inhibitor as first-line therapy without a prior NSAID trial",
+    "D": "TNF inhibitor — preferring a monoclonal-antibody class agent (infliximab, adalimumab, certolizumab, golimumab) over etanercept (a soluble TNF-receptor fusion protein that does NOT effectively treat inflammatory bowel disease and may worsen it); appropriate when ankylosing spondylitis coexists with active inflammatory bowel disease"
+  },
+  "correct": "A",
+  "rationale": "Per the 2019 ACR/SAA/SPARTAN AS Guideline (Ward MM et al.) and the 2022 ASAS-EULAR Recommendations (van der Heijde D et al.), full-dose continuous NSAID therapy for at least 2–4 weeks is first-line for active axial spondyloarthritis (Class I). NSAIDs reduce inflammation, may slow radiographic progression, and are well tolerated in the typical young-adult AS demographic. If response is inadequate (BASDAI remains >4 or persistent disease), escalation to a biologic (TNF inhibitor or IL-17 inhibitor; JAK inhibitor as alternative) is indicated. STRUCTURED EXERCISE AND PHYSICAL THERAPY are essential adjuncts (Class I) and improve function and pain. Methotrexate (option B) has limited efficacy for axial disease — it works for peripheral arthritis in PsA/AS-spectrum but not for the spinal/sacroiliac component. TNF inhibitor before NSAID trial (option C) skips the recommended initial NSAID step. The IBD-overlap regimen (option D) is the appropriate choice when AS coexists with active inflammatory bowel disease — but is not the right first-line for isolated AS without IBD.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "IBD_associated_AS_Crohns",
+      "demographics": {
+        "age": 32,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 32-year-old man with established Crohn disease (5-year history; currently on vedolizumab with intermittent flares) presents to clinic with 6 months of progressive inflammatory back pain (morning stiffness >1 hour, improves with exercise, awakens him in the second half of the night), bilateral alternating buttock pain, and reduced lumbar flexion. Examination shows reduced Schober (3 cm) and bilateral SI-joint tenderness. HLA-B27 positive; ESR 40, CRP 22; MRI SI joints: bilateral active sacroiliitis with bone-marrow edema. BASDAI 4.6. He has had recurrent NSAID-induced gastrointestinal flares of his Crohn disease, making continuous NSAID therapy unsuitable. Recent endoscopy shows mild active Crohn ileitis.",
+      "rationale_for_variant": "Mixed perturbation — IBD-associated axial spondyloarthritis with active Crohn disease that is exacerbated by NSAIDs. Per the 2019 ACR AS Guideline and ECCO 2022 IBD Extra-intestinal Manifestations Guideline, the management approach shifts: (1) NSAIDs are AVOIDED because they exacerbate IBD; (2) TNF inhibitor is selected as the biologic of choice — but NOT etanercept (a soluble TNF-receptor fusion protein with poor efficacy in IBD, and possible worsening of IBD); the appropriate choices are MONOCLONAL anti-TNF antibodies (infliximab, adalimumab, certolizumab, golimumab), all of which treat both AS and IBD; (3) vedolizumab can be considered for IBD with mild SpA but is less effective for axial disease; (4) methotrexate has limited axial efficacy. The correct answer therefore shifts from NSAID-first (option A) to monoclonal-anti-TNF specifically avoiding etanercept (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_woman_axial_SpA",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old woman presents to clinic with 6 months of progressive inflammatory back pain (morning stiffness >1 hour, improves with exercise, awakens her in the second half of the night). Bilateral alternating buttock pain. No peripheral arthritis, no IBD symptoms, no uveitis, no psoriasis. Reduced Schober (3 cm) and bilateral SI-joint tenderness. HLA-B27 positive; ESR 35; CRP 18; RF and anti-CCP negative. MRI SI joints: bilateral active sacroiliitis with bone-marrow edema. BASDAI 4.5. No IBD, no NSAID contraindication.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (active axial SpA without IBD) is unchanged. Axial SpA in older women (and women generally) is historically under-diagnosed because of the male-predominance stereotype, but the diagnostic and treatment frameworks are sex- and age-independent. NSAID first-line with biologic escalation if inadequate response.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Ward MM et al. 2019 Update of the American College of Rheumatology / Spondylitis Association of America / Spondyloarthritis Research and Treatment Network Recommendations for the Treatment of Ankylosing Spondylitis and Nonradiographic Axial Spondyloarthritis. Arthritis Rheumatol 2019;71:1599-1613.",
+    "van der Heijde D et al. 2022 ASAS-EULAR recommendations for the management of axial spondyloarthritis. Ann Rheum Dis 2023;82:19-34.",
+    "Sieper J, Poddubnyy D. Axial spondyloarthritis. Lancet 2017;390:73-84."
+  ],
+  "license": "CC-BY-4.0"
+}

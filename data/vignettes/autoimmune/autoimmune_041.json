@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_041",
+  "specialty": "autoimmune",
+  "subspecialty": "ibd_associated_arthritis",
+  "stem": "A 35-year-old woman with a 6-year history of Crohn disease (currently maintained on vedolizumab every 8 weeks for 18 months, with a recent endoscopy showing mild-to-moderate active ileal Crohn flare) presents to clinic with 4 weeks of new symmetric peripheral inflammatory arthritis: bilateral MCPs, wrists, knees, and ankles with morning stiffness lasting 90 minutes. She has no axial symptoms, no skin or nail psoriasis, no uveitis. Vital signs stable. Examination shows bilateral synovitis at the listed joints. Labs: HLA-B27 NEGATIVE; rheumatoid factor and anti-CCP NEGATIVE; ESR 45 mm/h, CRP 22 mg/L; ANA negative. Plain hand radiographs are unremarkable (no erosive changes). The clinical picture is IBD-ASSOCIATED PERIPHERAL ARTHRITIS (Type 1 — pauciarticular, parallels IBD activity) on a background of inadequately controlled Crohn disease on vedolizumab.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Optimize IBD-directed therapy first (escalate to higher-dose vedolizumab, OR switch to a biologic that treats both IBD AND the SpA component — infliximab, adalimumab, ustekinumab); AVOID etanercept (which does not effectively treat IBD and may worsen it); avoid chronic NSAIDs (worsen IBD); short corticosteroid course for arthritis flares; multidisciplinary GI + rheumatology co-management",
+    "B": "Methotrexate alone as first-line therapy",
+    "C": "NSAIDs as primary therapy for IBD-associated arthritis",
+    "D": "Specifically infliximab or adalimumab — both treat both inflammatory bowel disease AND axial spondyloarthritis effectively (vedolizumab is less effective for axial component); appropriate when ulcerative colitis or Crohn disease coexists with axial AS"
+  },
+  "correct": "A",
+  "rationale": "IBD-associated arthritis is divided into Type 1 (pauciarticular, large-joint, parallels IBD activity, self-limiting) and Type 2 (polyarticular, symmetric, small-joint, independent of IBD activity). This patient has Type 1 disease parallel to active Crohn — the central management principle is OPTIMIZE IBD-DIRECTED THERAPY because successful IBD control typically resolves the joint disease. Per the 2019 ACR AS Guideline and the ECCO 2022 IBD Extra-intestinal Manifestations Guideline: (1) escalate the existing biologic OR switch to a biologic that treats BOTH IBD AND SpA — anti-TNF monoclonal antibodies (infliximab, adalimumab) treat both; ustekinumab (anti-IL-12/23) treats both; vedolizumab (anti-α4β7-integrin) is gut-selective with weaker SpA efficacy; (2) AVOID etanercept (does not treat IBD, may worsen it); (3) AVOID chronic NSAIDs (worsen IBD); (4) short corticosteroid courses for flares are reasonable. Methotrexate alone (option B) has limited evidence in IBD-arthritis. NSAIDs as primary therapy (option C) are contraindicated. The infliximab/adalimumab-specific framework (option D) is the appropriate choice when the patient has AXIAL AS coexisting with IBD — but this patient has peripheral disease only.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 35,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "UC_with_axial_AS_overlap",
+      "demographics": {
+        "age": 30,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old man with a 4-year history of moderate-severe ulcerative colitis (currently on mesalamine + intermittent oral corticosteroids for flares) presents to clinic with 8 months of inflammatory back pain (morning stiffness >1 hour, improves with exercise) and reduced lumbar flexion. HLA-B27 positive; RF and anti-CCP negative; ESR 40, CRP 22. MRI SI joints: bilateral active sacroiliitis with bone-marrow edema. Recent endoscopy shows ongoing moderate UC activity. The clinical picture is ulcerative colitis WITH axial ankylosing spondylitis (axial SpA coexisting with IBD).",
+      "rationale_for_variant": "Mixed perturbation — UC + axial AS overlap. The treatment goal is a single biologic that effectively addresses BOTH the IBD and the axial SpA: (1) INFLIXIMAB and ADALIMUMAB are the preferred choices — both are FDA-approved for both UC AND ankylosing spondylitis with strong evidence in both; (2) ETANERCEPT is contraindicated (does not treat IBD); (3) VEDOLIZUMAB (gut-selective) is effective for UC but has much weaker activity in axial SpA, so it is NOT preferred when axial disease is significant. The correct answer therefore shifts from generic IBD-treatment optimization (option A) to specifically infliximab or adalimumab to treat both diseases (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "elderly_man_IBD_arthritis",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man with longstanding Crohn disease (12 years, on vedolizumab) presents to clinic with 4 weeks of new symmetric peripheral inflammatory arthritis (MCPs, wrists, knees, ankles) with morning stiffness 90 minutes. No axial symptoms. RF and anti-CCP negative. ESR 45, CRP 22. Recent endoscopy: mild-moderate active Crohn flare. The clinical picture is IBD-associated peripheral arthritis (Type 1) parallel to active Crohn disease.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (IBD-associated peripheral arthritis with active IBD on vedolizumab) is unchanged. Older patients require careful attention to infection risk on biologic therapy and to NSAID-related cardiovascular and renal risk, but the management framework (optimize IBD-directed therapy, avoid etanercept, avoid chronic NSAIDs) is sex- and age-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Ward MM et al. 2019 Update of the ACR/SAA/SPARTAN Recommendations for the Treatment of Ankylosing Spondylitis and Nonradiographic Axial Spondyloarthritis. Arthritis Rheumatol 2019;71:1599-1613.",
+    "Gordon H et al. ECCO Guidelines on Extraintestinal Manifestations in Inflammatory Bowel Disease. J Crohns Colitis 2024;18:1-37.",
+    "Peluso R et al. Enteropathic spondyloarthritis: from diagnosis to treatment. Clin Dev Immunol 2013;2013:631408."
+  ],
+  "license": "CC-BY-4.0"
+}

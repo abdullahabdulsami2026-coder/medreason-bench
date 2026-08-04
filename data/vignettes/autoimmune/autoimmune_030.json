@@ -1,0 +1,58 @@
+{
+  "id": "autoimmune_030",
+  "specialty": "autoimmune",
+  "subspecialty": "granulomatosis_polyangiitis",
+  "stem": "A 55-year-old man presents to clinic with 8 weeks of progressively worsening sinusitis (nasal congestion, purulent discharge, recurrent epistaxis, with development of nasal-septal perforation and a saddle-nose deformity), 2 weeks of hemoptysis with nodular and CAVITARY pulmonary lesions on CT chest, and recently noted laboratory abnormalities: NEW microscopic hematuria with red-cell casts on urinalysis, proteinuria 1 g/g, and a creatinine rise from baseline 1.0 to 2.4 mg/dL over the past 3 weeks. Vital signs stable. Labs: c-ANCA POSITIVE on indirect immunofluorescence; PR3-ANCA (proteinase-3) STRONGLY POSITIVE on ELISA. Nasal mucosa biopsy demonstrates GRANULOMATOUS INFLAMMATION with surrounding small-vessel necrotizing vasculitis. Renal biopsy demonstrates pauci-immune crescentic glomerulonephritis. The clinical picture is severe granulomatosis with polyangiitis (GPA, formerly Wegener) with ENT, pulmonary, and renal involvement (organ-threatening disease).",
+  "question": "Which is the most appropriate induction therapy for this severe GPA?",
+  "options": {
+    "A": "Rituximab (375 mg/m^2 IV weekly × 4 doses OR 1 g IV × 2 doses 2 weeks apart) PLUS high-dose corticosteroids (IV methylprednisolone pulse 1 g/d × 3 days, then oral prednisone 1 mg/kg/d with planned taper); cyclophosphamide is a non-inferior alternative per RAVE/RITUXVAS; plasma exchange is NOT routinely added per the PEXIVAS trial unless severe AKI requiring dialysis or diffuse alveolar hemorrhage; avacopan (oral C5a-receptor antagonist) per the ADVOCATE trial allows substantial steroid-sparing",
+    "B": "High-dose corticosteroids alone",
+    "C": "Methotrexate plus prednisone — appropriate for LIMITED (non-organ-threatening) GPA without renal or pulmonary involvement",
+    "D": "Plasma exchange alone with no concurrent immunosuppression"
+  },
+  "correct": "A",
+  "rationale": "Severe (organ-threatening) granulomatosis with polyangiitis with renal and pulmonary involvement requires intensive induction immunosuppression. The RAVE trial (Stone JH et al., NEJM 2010) and RITUXVAS (Jones RB et al., NEJM 2010) established RITUXIMAB as non-inferior to cyclophosphamide for induction in ANCA-associated vasculitis, with rituximab now generally preferred (better tolerated, fewer fertility-impairing effects, comparable efficacy, and superior in relapsing disease). Standard regimens are 375 mg/m² IV weekly × 4 OR 1 g IV × 2 doses 2 weeks apart. Concurrent high-dose corticosteroids (IV methylprednisolone pulse for 3 days followed by oral prednisone 1 mg/kg/d with structured taper) are essential. The PEXIVAS trial (Walsh M et al., NEJM 2020) demonstrated that plasma exchange does NOT reduce the composite of death or end-stage kidney disease in severe AAV; plasma exchange is now reserved for very severe AKI requiring dialysis at presentation OR diffuse alveolar hemorrhage. The ADVOCATE trial (Jayne DRW et al., NEJM 2021) demonstrated that the oral C5a-receptor antagonist AVACOPAN was non-inferior to a tapered prednisone regimen for sustained remission while substantially reducing cumulative corticosteroid exposure. Corticosteroids alone (option B) and methotrexate (option C — appropriate for limited disease) are inadequate for severe GPA. Plasma exchange alone (option D) is not standard.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 55,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "limited_GPA_no_organ_threat",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman presents to clinic with 8 weeks of chronic sinusitis with nasal-septal involvement (no perforation), recurrent epistaxis, and serous otitis media. There is NO hemoptysis, NO pulmonary involvement on CT chest (clean), NO microscopic hematuria, and renal function is at baseline. Labs: c-ANCA positive; PR3-ANCA positive at moderate titer. Nasal mucosa biopsy demonstrates granulomatous inflammation with small-vessel vasculitis. The clinical picture is LIMITED (non-organ-threatening) GPA — restricted to the upper-airway and mild constitutional features with no renal, pulmonary, or other major organ involvement.",
+      "rationale_for_variant": "Mixed perturbation — limited (non-organ-threatening) GPA. Per the 2021 ACR/Vasculitis Foundation ANCA Guideline (Chung SA et al.) and EULAR recommendations, induction for limited GPA can be METHOTREXATE (15–25 mg/wk) + corticosteroids — the NORAM trial demonstrated MTX non-inferior to cyclophosphamide for induction in non-organ-threatening AAV. Rituximab is reasonable for those with relapsing disease or contraindications to MTX. The intensive rituximab + high-dose-steroid regimen (option A) is appropriate for severe disease but is over-treatment for limited disease without renal or pulmonary involvement. The correct answer therefore shifts from severe-AAV induction (option A) to MTX + prednisone for limited disease (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "elderly_woman_GPA",
+      "demographics": {
+        "age": 72,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 72-year-old woman presents with 8 weeks of progressive sinusitis with nasal-septal perforation and saddle-nose deformity, hemoptysis with cavitary pulmonary lesions on CT, microscopic hematuria with red-cell casts, proteinuria, and creatinine rise from 1.0 to 2.4 mg/dL. c-ANCA / PR3-ANCA strongly positive. Nasal biopsy: granulomatous inflammation with small-vessel vasculitis. Renal biopsy: pauci-immune crescentic glomerulonephritis. The clinical picture is severe organ-threatening GPA.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (severe GPA with organ-threatening features) is unchanged. Older patients with severe AAV may have higher infection risk on intensive immunosuppression (rituximab + corticosteroids), and dose adjustment, antimicrobial prophylaxis, and vigilance for infectious complications are essential. The induction regimen framework is otherwise the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Stone JH et al. Rituximab versus Cyclophosphamide for ANCA-Associated Vasculitis (RAVE). NEJM 2010;363:221-232.",
+    "Jones RB et al. Rituximab versus Cyclophosphamide in ANCA-Associated Renal Vasculitis (RITUXVAS). NEJM 2010;363:211-220.",
+    "Walsh M et al. Plasma Exchange and Glucocorticoids in Severe ANCA-Associated Vasculitis (PEXIVAS). NEJM 2020;382:622-631.",
+    "Jayne DRW et al. Avacopan for the Treatment of ANCA-Associated Vasculitis (ADVOCATE). NEJM 2021;384:599-609.",
+    "Chung SA et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Antineutrophil Cytoplasmic Antibody-Associated Vasculitis. Arthritis Rheumatol 2021;73:1366-1383."
+  ],
+  "license": "CC-BY-4.0"
+}

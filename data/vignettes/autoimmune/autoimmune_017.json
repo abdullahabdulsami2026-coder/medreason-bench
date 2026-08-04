@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_017",
+  "specialty": "autoimmune",
+  "subspecialty": "felty_syndrome",
+  "stem": "A 70-year-old woman with seropositive nodular rheumatoid arthritis for 30 years (RF 240 IU/mL strongly positive, anti-CCP highly positive, multiple subcutaneous rheumatoid nodules on the elbows and Achilles tendons) presents with recurrent skin and soft-tissue infections (three episodes of cellulitis and one chronic non-healing leg ulcer over the past year). She has lost 6 kg over 6 months. Vital signs are stable. Exam shows splenomegaly palpable 4 cm below the left costal margin and the chronic leg ulcer. Labs: WBC 2.0 × 10^9/L with absolute neutrophil count 600/μL (severely neutropenic), hemoglobin 10.8 g/dL (mildly low), platelets 180 × 10^9/L (normal). Bone-marrow aspirate and biopsy demonstrate granulocytic hypoplasia with otherwise unremarkable lineages and NO evidence of lymphoma, leukemia, or myelodysplasia. Peripheral-blood flow cytometry rules out large-granular-lymphocyte leukemia (LGL). She has no other infections at present (HIV negative, hepatitis screening negative). The diagnosis is Felty syndrome (the triad of seropositive RA + chronic neutropenia + splenomegaly).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Methotrexate as first-line therapy (often improves the neutropenia of Felty syndrome) PLUS aggressive infection prevention and early treatment; G-CSF for active or recurrent severe infections; rituximab for refractory cases; splenectomy reserved for severe refractory infections in selected patients",
+    "B": "Long-term antibacterial prophylaxis alone with no immunomodulator",
+    "C": "Splenectomy as the first-line intervention",
+    "D": "High-dose corticosteroids alone (prednisone 60 mg/d)"
+  },
+  "correct": "A",
+  "rationale": "Felty syndrome (the classic triad of seropositive nodular RA + chronic neutropenia + splenomegaly) carries a high risk of bacterial and opportunistic infections. The 2022 EULAR RA Update and consensus expert reviews support METHOTREXATE as first-line therapy: MTX often improves both the RA disease activity and the neutropenia (paradoxical for a drug that can cause myelosuppression in other contexts) and is the standard first-line approach. Granulocyte colony-stimulating factor (G-CSF, e.g., filgrastim) is used for active or recurrent severe bacterial infections to acutely raise neutrophil counts. Rituximab and other DMARDs (cyclosporine, hydroxychloroquine) are alternatives for refractory disease. Splenectomy raises neutrophil counts but the response is partial and not durable in many patients; it is reserved for severe refractory infections after medical therapy has failed (and carries lifelong infection risk from encapsulated organisms — requires Strep pneumo, H. influenzae, meningococcus vaccinations). Aggressive infection prevention (vaccinations, prompt evaluation and antibiotics for fevers) is essential. Antibacterial prophylaxis alone (option B) does not address underlying neutropenia. Corticosteroids alone (option D) provide only a modest neutrophil response and risk further infection.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 70,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "felty_with_LGL_leukemia",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman with seropositive nodular rheumatoid arthritis for 25 years presents with chronic neutropenia (ANC 500/μL) and splenomegaly. Bone marrow shows granulocytic hypoplasia. Peripheral-blood flow cytometry, however, identifies a clonal expansion of CD8+ CD57+ TCR-αβ+ large granular lymphocytes (4.0 × 10^9/L circulating LGLs) consistent with T-cell large-granular-lymphocyte leukemia, which can present in association with seropositive RA in a clinical syndrome that overlaps with Felty syndrome (sometimes called 'pseudo-Felty' or 'LGL-associated Felty'). She has had two recent bacterial infections.",
+      "rationale_for_variant": "Mixed perturbation — clonal LGL leukemia overlapping with the seropositive-RA / neutropenia / splenomegaly phenotype. The first-line therapy framework remains similar (low-dose immunomodulator with neutrophil-modifying effect), but in T-LGL leukemia the treatments of choice are oral METHOTREXATE (first-line, response in approximately 50%), oral cyclophosphamide (alternative), or cyclosporine A — all approached as in classic Felty syndrome but with hematologic monitoring for the LGL clone. Splenectomy is less commonly used. The framework overlaps enough that methotrexate-led management remains the appropriate answer, with hematology co-management for monitoring of the LGL clone. The correct answer therefore stays the same (option A).",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "middle_aged_woman_seropositive_nodular_RA",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with seropositive nodular rheumatoid arthritis for 20 years presents with chronic neutropenia (ANC 700/μL), splenomegaly palpable 3 cm below the left costal margin, and a recent skin infection. Bone marrow shows granulocytic hypoplasia without lymphoma or leukemia. Peripheral-blood flow cytometry rules out LGL leukemia.",
+      "rationale_for_variant": "Age perturbation only — clinical context (classic Felty syndrome) is unchanged. Methotrexate first-line management is appropriate regardless of age within the adult range.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Smolen JS et al. EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs: 2022 update. Ann Rheum Dis 2023;82:3-18.",
+    "Balint GP, Balint PV. Felty's syndrome. Best Pract Res Clin Rheumatol 2004;18:631-645.",
+    "Lamy T, Loughran TP. How I treat LGL leukemia. Blood 2011;117:2764-2774."
+  ],
+  "license": "CC-BY-4.0"
+}

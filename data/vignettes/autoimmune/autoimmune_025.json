@@ -1,0 +1,57 @@
+{
+  "id": "autoimmune_025",
+  "specialty": "autoimmune",
+  "subspecialty": "diffuse_systemic_sclerosis_early",
+  "stem": "A 38-year-old woman presents to clinic with 6 months of progressive symptoms: Raynaud phenomenon (triphasic color change in cold exposure), skin tightening that began at the fingers (sclerodactyly with puffy hands) and has progressed proximally to involve the forearms, upper chest, anterior abdomen, and face (modified Rodnan skin score 18). She has mild dyspnea on stairs but no resting symptoms. Vital signs: BP 124/76 mmHg, HR 84, SpO2 96% on room air. Labs: ANA 1:1280 nucleolar pattern; ANTI-TOPOISOMERASE I (anti-Scl-70) STRONGLY POSITIVE; anti-centromere negative; anti-RNA polymerase III negative. Nailfold capillaroscopy demonstrates dilated capillaries with avascular areas (active scleroderma pattern). PFTs: FVC 88% predicted, DLCO 75% predicted (mild early decline from baseline 90%). HRCT chest shows minimal bilateral basilar ground-glass opacities and traction bronchiectasis without honeycombing — consistent with early non-specific interstitial pneumonia (NSIP) pattern of SSc-ILD. Echo: estimated PASP 28 mmHg (no PAH evidence). Renal function and BP are normal.",
+  "question": "Which is the most appropriate management for early diffuse cutaneous systemic sclerosis with progressive skin involvement and early ILD?",
+  "options": {
+    "A": "Mycophenolate mofetil 2–3 g/d as first-line for SSc-ILD (per the SLS-II / Scleroderma Lung Study II); AVOID corticosteroids >15 mg/d (HIGH-DOSE CORTICOSTEROIDS ARE A KEY TRIGGER for scleroderma renal crisis); regular surveillance for ILD progression with PFTs every 3–6 months and HRCT yearly; periodic PAH screening with echo and DLCO trend; topical management for Raynaud (calcium channel blocker if needed)",
+    "B": "High-dose corticosteroids (prednisone 60 mg/d) for skin tightening",
+    "C": "Watchful waiting with reassessment in 6 months",
+    "D": "Limited-cutaneous SSc management focus on PAH screening with anti-centromere positivity; calcium channel blockers for Raynaud; less aggressive immunosuppression"
+  },
+  "correct": "A",
+  "rationale": "Early diffuse cutaneous systemic sclerosis (skin involvement proximal to elbows/knees + truncal involvement, anti-topoisomerase I positive) with early ILD is a high-risk phenotype with significant morbidity from skin, lung, and renal disease. The SCLERODERMA LUNG STUDY II (SLS-II; Tashkin DP et al., Lancet Respir Med 2016) demonstrated that mycophenolate mofetil (2–3 g/d) was non-inferior to oral cyclophosphamide for SSc-ILD with a more favorable side-effect profile, establishing MMF as first-line therapy. Tocilizumab and nintedanib are additional ILD-progression-modifying options (focuSSced, SENSCIS trials). HIGH-DOSE CORTICOSTEROIDS (prednisone >15 mg/d) are a KNOWN TRIGGER for scleroderma renal crisis (Steen VD et al.) and are contraindicated in early diffuse SSc; option B is therefore harmful. Watchful waiting (option C) misses the window for ILD treatment. The limited-cutaneous SSc management (option D) is the appropriate framework for the anti-centromere-positive phenotype but does not apply to this anti-Scl-70-positive diffuse-SSc patient with active progressive skin involvement and early ILD.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 38,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "limited_cutaneous_SSc_anti_centromere",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman presents to clinic with 12 years of LIMITED CUTANEOUS systemic sclerosis (skin involvement restricted to the fingers, hands, distal forearms, and face — no proximal-arm or truncal involvement; mRSS 4) with longstanding Raynaud, sclerodactyly, telangiectasias, and esophageal dysmotility (CREST features). ANA 1:640 centromere pattern; ANTI-CENTROMERE STRONGLY POSITIVE; anti-Scl-70 NEGATIVE. PFTs: FVC 90% predicted, DLCO 80% predicted; HRCT shows no significant interstitial lung disease. She has been managed with calcium channel blockers (amlodipine) for Raynaud. Today's echocardiogram and DLCO trend prompt evaluation for pulmonary arterial hypertension as part of routine annual surveillance (the leading cause of mortality in long-standing limited-cutaneous SSc / CREST).",
+      "rationale_for_variant": "Mixed perturbation — different SSc subtype (limited cutaneous, anti-centromere positive, CREST phenotype) with substantially different management priorities. Limited-cutaneous SSc has a slower skin progression, lower ILD risk, and a HIGHER PAH risk over decades. Per the 2017 EULAR SSc Recommendations and the 2022 ESC/ERS PH Guidelines, annual screening for PAH (echo + DLCO trend; right-heart catheterization if indicated) is the management priority. Aggressive MMF-based immunosuppression for skin or ILD is not warranted in the absence of those phenotypes. Calcium channel blockers and supportive measures are continued for Raynaud. The correct answer therefore shifts from MMF-based SSc-ILD management (option A) to limited-cutaneous management with PAH-screening focus (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_woman_diffuse_SSc",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman presents to clinic with 6 months of progressive Raynaud and skin tightening that began at the fingers and has progressed proximally to the forearms, upper chest, abdomen, and face (mRSS 18). Vital signs are stable. Anti-Scl-70 strongly positive; anti-centromere negative; anti-RNA polymerase III negative. Nailfold capillaroscopy active scleroderma pattern. PFTs: FVC 88%, DLCO 75% (early decline). HRCT: minimal basilar ground-glass and early NSIP. Echo: estimated PASP 28 mmHg. Renal function and BP normal.",
+      "rationale_for_variant": "Age perturbation only — clinical content (early diffuse SSc with progressive skin and early ILD, anti-Scl-70 positive) is unchanged. MMF-based first-line management with corticosteroid avoidance applies regardless of age, although tolerance and dose adjustment for renal function (eGFR-related MMF adjustments) may be needed in older patients.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Tashkin DP et al. Mycophenolate mofetil versus oral cyclophosphamide in scleroderma-related interstitial lung disease (Scleroderma Lung Study II). Lancet Respir Med 2016;4:708-719.",
+    "Kowal-Bielecka O et al. Update of EULAR recommendations for the treatment of systemic sclerosis. Ann Rheum Dis 2017;76:1327-1339.",
+    "Khanna D et al. Tocilizumab in systemic sclerosis: a randomised, double-blind, placebo-controlled, phase 3 trial (focuSSced). Lancet Respir Med 2020;8:963-974.",
+    "Distler O et al. Nintedanib for Systemic Sclerosis-Associated Interstitial Lung Disease (SENSCIS). NEJM 2019;380:2518-2528."
+  ],
+  "license": "CC-BY-4.0"
+}

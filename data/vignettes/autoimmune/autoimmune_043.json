@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_043",
+  "specialty": "autoimmune",
+  "subspecialty": "dermatomyositis_with_cancer_screening",
+  "stem": "A 55-year-old woman presents to clinic with 8 weeks of progressive proximal muscle weakness — difficulty climbing stairs, rising from a low chair, and reaching overhead — accompanied by classic cutaneous features: a violaceous HELIOTROPE rash on the upper eyelids with periorbital edema, GOTTRON PAPULES (raised erythematous-violaceous papules) over the metacarpophalangeal and proximal interphalangeal joints, and dry, cracked, hyperkeratotic 'mechanic's hands' on the lateral aspects of the digits. Vital signs stable. Examination shows symmetric proximal muscle weakness (4/5 in shoulder abduction and hip flexion). Labs: creatine kinase 8,500 IU/L (markedly elevated; normal <200); aldolase elevated; ANA 1:640 speckled; ANTI-Mi-2 POSITIVE; anti-Jo-1, anti-MDA5, anti-TIF1γ, anti-NXP2, anti-SAE pending. EMG demonstrates an irritable myopathic pattern (fibrillation potentials, positive sharp waves, polyphasic motor units). Muscle biopsy demonstrates PERIFASCICULAR ATROPHY with perivascular and perimysial inflammation (the classic pathologic signature of dermatomyositis). She has no prior history of malignancy and is up to date on age-appropriate cancer screening (mammogram 18 months ago normal, colonoscopy 5 years ago normal).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "High-dose corticosteroids (prednisone 1 mg/kg/d up to 60 mg/d, with IV methylprednisolone pulse 1 g/d × 3 days for severe weakness or dysphagia) PLUS a STEROID-SPARING immunosuppressant initiated EARLY (methotrexate, azathioprine, or mycophenolate mofetil) to facilitate steroid taper and reduce relapse risk; IVIG for refractory disease or severe weakness; Class I CANCER SCREENING in DM patients age >40 (CT chest/abdomen/pelvis, mammography, colonoscopy, gynecologic examination, PSA in men, esophagogastroduodenoscopy if symptoms); skin protection and topical management",
+    "B": "High-dose corticosteroids alone without a steroid-sparing immunosuppressant",
+    "C": "Methotrexate or azathioprine alone WITHOUT cancer workup",
+    "D": "Rituximab as first-line therapy"
+  },
+  "correct": "A",
+  "rationale": "Dermatomyositis carries a markedly elevated MALIGNANCY RISK, particularly in patients aged ≥40 (relative risk approximately 4–6× the general population, peak in the first 1–3 years after DM diagnosis). The 1992 NEJM Sigurgeirsson population-based study and subsequent large cohorts established this association; the 2021 ACR Idiopathic Inflammatory Myopathies Guideline gives Class I recommendations for comprehensive cancer screening at DM diagnosis in patients aged >40. Standard initial cancer workup includes: CT chest/abdomen/pelvis, age-appropriate mammography, gynecologic examination including transvaginal ultrasound or pelvic exam, colonoscopy, esophagogastroduodenoscopy if symptoms or mechanical-hands phenotype, PSA in men, and skin examination. Treatment for the myositis is high-dose corticosteroids PLUS an early steroid-sparing immunosuppressant (methotrexate, azathioprine, or mycophenolate mofetil) — initiated early because corticosteroid monotherapy has high relapse rates on taper. IVIG is added for refractory disease or severe weakness; rituximab is reserved for refractory cases. Corticosteroids alone (option B) lead to high relapse on taper. Immunosuppression without cancer workup (option C) misses a critical mortality risk. Rituximab as first-line (option D) is not standard.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 55,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "anti_TIF1_gamma_high_cancer_risk",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman presents with classic dermatomyositis: 8 weeks of progressive proximal muscle weakness, heliotrope rash, Gottron papules. CK 7,200; aldolase elevated. Myositis-specific antibody panel returns: ANTI-TIF1γ STRONGLY POSITIVE (anti-Mi-2, anti-Jo-1, anti-MDA5, and other myositis-associated antibodies negative). Muscle biopsy: perifascicular atrophy. Anti-TIF1γ confers a particularly HIGH CANCER RISK in older adults (~50–80% in adults age >40, with peak risk in the first 3 years after DM diagnosis).",
+      "rationale_for_variant": "Mixed perturbation — anti-TIF1γ-positive dermatomyositis. Anti-TIF1γ is a myositis-specific autoantibody that confers a markedly elevated cancer risk (50–80% in adults >40), with a particular association with adenocarcinomas (breast, ovarian, lung, colorectal). The framework of high-dose corticosteroids + steroid-sparing immunosuppressant remains the same, but cancer surveillance is INTENSIFIED: comprehensive workup at diagnosis with REPEAT screening at 1 year and 3 years (the period of highest risk). Some centers add tumor-marker panels and PET-CT in selected anti-TIF1γ-positive patients. The treatment answer (option A) is unchanged in framework, but the surveillance intensity is higher.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "elderly_man_DM",
+      "demographics": {
+        "age": 68,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old man presents with 8 weeks of progressive proximal muscle weakness, heliotrope rash, Gottron papules over the MCPs and PIPs, and mechanic's hands. CK 8,500; aldolase elevated. ANA 1:640 speckled; anti-Mi-2 positive. EMG: irritable myopathy. Muscle biopsy: perifascicular atrophy with perivascular inflammation. No prior cancer history; up to date on age-appropriate screening.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (classic DM with cancer-risk-warranting age) is unchanged. Cancer screening and combined corticosteroid + steroid-sparing therapy apply identically; older male patients have additional age-appropriate screening (PSA) and may benefit from particular attention to lung-cancer screening if smoking history.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Sigurgeirsson B, Lindelöf B, Edhag O, Allander E. Risk of cancer in patients with dermatomyositis or polymyositis. NEJM 1992;326:363-367.",
+    "Lundberg IE et al. 2017 European League Against Rheumatism / American College of Rheumatology classification criteria for adult and juvenile idiopathic inflammatory myopathies. Arthritis Rheumatol 2017;69:2271-2282.",
+    "Aggarwal R et al. 2021 American College of Rheumatology Guideline for the Treatment of Idiopathic Inflammatory Myopathies (in press)."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_020",
+  "specialty": "cardiology",
+  "subspecialty": "afib_with_wpw_pre_excitation",
+  "stem": "A 28-year-old man with a baseline ECG showing a short PR interval and delta waves consistent with Wolff-Parkinson-White syndrome presents to the emergency department with the sudden onset of palpitations 1 hour ago. He is alert, conversational, and complaining of chest discomfort. Vital signs: BP 122/78 mmHg, HR ~240 bpm, RR 22, SpO2 96% on room air. ECG shows an irregularly irregular wide-complex tachycardia with bizarre, varying QRS morphology and rates intermittently up to 280 bpm — a pattern consistent with pre-excited atrial fibrillation conducting down the accessory pathway. He has no prior history of heart failure or structural heart disease.",
+  "question": "Which is the most appropriate acute therapy?",
+  "options": {
+    "A": "IV adenosine 6 mg, escalating to 12 mg if needed",
+    "B": "IV diltiazem (non-dihydropyridine calcium-channel blocker)",
+    "C": "IV procainamide 10 mg/kg infused at 20 mg/min",
+    "D": "Synchronized direct-current cardioversion at 100 J"
+  },
+  "correct": "C",
+  "rationale": "In atrial fibrillation conducting down an accessory pathway (pre-excited AFib), AV-NODAL BLOCKING AGENTS are CONTRAINDICATED — adenosine, beta-blockers, non-dihydropyridine calcium-channel blockers, and digoxin all preferentially block the AV node and can paradoxically accelerate conduction down the accessory pathway, precipitating ventricular fibrillation and sudden cardiac death. The 2015 ACC/AHA SVT Guideline (Class I) and the 2023 AFib Guideline both recommend IV procainamide (or ibutilide) for hemodynamically stable pre-excited AFib because these agents slow accessory-pathway conduction. Synchronized DC cardioversion is reserved for hemodynamically unstable patients (Class I in either case if instability develops). This patient is currently stable, so pharmacologic conversion with procainamide is the appropriate first-line therapy, with cardioversion as a bedside backup if instability develops.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 28,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "young_man_30",
+      "demographics": {
+        "age": 30,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old man with a baseline ECG showing a short PR interval and delta waves consistent with Wolff-Parkinson-White syndrome presents to the emergency department with the sudden onset of palpitations 1 hour ago. He is alert, conversational, and complaining of chest discomfort. Vital signs: BP 122/78 mmHg, HR ~240 bpm, RR 22, SpO2 96% on room air. ECG shows an irregularly irregular wide-complex tachycardia with bizarre, varying QRS morphology and rates intermittently up to 280 bpm — a pattern consistent with pre-excited atrial fibrillation conducting down the accessory pathway.",
+      "rationale_for_variant": "Age perturbation only — clinical content unchanged. The pharmacologic strategy for pre-excited AFib in a stable patient is independent of patient age; AV-nodal blockers remain contraindicated and procainamide remains first-line.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "hemodynamically_unstable",
+      "demographics": {
+        "age": 28,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 28-year-old man with a baseline ECG showing pre-excitation (Wolff-Parkinson-White) presents to the emergency department with the sudden onset of palpitations 30 minutes ago. He is now diaphoretic, confused, and barely arousable. Vital signs: BP 72/40 mmHg, HR ~250 bpm, RR 28, SpO2 88% on non-rebreather. ECG shows an irregularly irregular wide-complex tachycardia with bizarre, varying QRS morphology and rates intermittently up to 290 bpm consistent with pre-excited atrial fibrillation. Cool, mottled extremities; weak peripheral pulses.",
+      "rationale_for_variant": "Mixed perturbation — develops hemodynamic instability (hypotension, altered mental status, hypoperfusion). Per ACC/AHA SVT and AFib Guidelines, immediate synchronized DC cardioversion is the Class I recommendation for any tachyarrhythmia with hemodynamic compromise, including pre-excited AFib. Pharmacologic strategies are reserved for stable patients. Tests whether the model correctly escalates to immediate cardioversion when instability develops, rather than delaying for IV procainamide.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Page RL et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574.",
+    "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
+    "Brugada J et al. 2019 ESC Guidelines for the management of patients with supraventricular tachycardia. Eur Heart J 2020;41:655-720."
+  ],
+  "license": "CC-BY-4.0"
+}

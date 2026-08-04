@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_047",
+  "specialty": "autoimmune",
+  "subspecialty": "sarcoidosis_pulmonary_ocular",
+  "stem": "A 42-year-old African American woman presents to clinic with 6 months of progressive exertional dyspnea, dry cough, and 8-week history of bilateral redness and photophobia (recently diagnosed by ophthalmology as bilateral chronic anterior uveitis on slit-lamp examination). Vital signs: BP 138/82 mmHg, HR 80 bpm, SpO2 95% on room air. Lung exam shows bilateral fine inspiratory crackles. CT chest demonstrates BILATERAL HILAR LYMPHADENOPATHY with scattered upper-lobe nodular ground-glass opacities and early reticular changes (Stage II pulmonary sarcoidosis radiographically). PFTs: FVC 75% predicted (mild restriction), DLCO 65% predicted (reduced). Bronchoscopy with transbronchial biopsy demonstrates NON-CASEATING GRANULOMAS without organisms on stains and cultures. Labs: serum angiotensin-converting enzyme elevated; calcium 11.5 mg/dL (HYPERCALCEMIA — characteristic of granulomatous 1-α-hydroxylase activity); 1,25-dihydroxyvitamin D level elevated; QuantiFERON-TB GOLD NEGATIVE (excluding active tuberculosis as a granulomatous mimic). The clinical picture is multisystem sarcoidosis with pulmonary and ocular involvement, plus calcium dysregulation. There is no cardiac involvement on the cardiac MRI obtained for surveillance (normal LVEF, no late gadolinium enhancement, no edema; no AV block on baseline ECG; ambulatory ECG monitor unrevealing).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Oral corticosteroids (prednisone 20–40 mg/d for symptomatic Stage II pulmonary disease) PLUS ophthalmology co-management (topical corticosteroids and cycloplegics for anterior uveitis with systemic corticosteroids when intraocular inflammation requires); methotrexate or azathioprine as steroid-sparing agents per the 2021 ERS/WASOG Sarcoidosis Treatment Guidelines; infliximab for refractory disease; treat hypercalcemia with hydration and consider vitamin D restriction; avoid sun exposure",
+    "B": "Empiric anti-tuberculosis therapy (rifampin, isoniazid, pyrazinamide, ethambutol) for presumed tuberculosis",
+    "C": "Methotrexate as first-line monotherapy without a corticosteroid trial",
+    "D": "High-dose corticosteroids (prednisone 1 mg/kg/d, with IV methylprednisolone pulse for severe disease) PLUS early methotrexate or mycophenolate mofetil PLUS infliximab; advanced cardiac imaging (cardiac MRI, FDG-PET) to monitor; electrophysiology referral for ICD implantation given conduction-system involvement; appropriate for CARDIAC SARCOIDOSIS with AV block, ventricular arrhythmias, or significant LV dysfunction"
+  },
+  "correct": "A",
+  "rationale": "Sarcoidosis is a multisystem granulomatous disease with predilection for the lungs (>90% involvement), lymph nodes, eyes, skin, and (less commonly) heart, central nervous system, and kidneys. Per the 2020 ATS/ERS/WASOG Sarcoidosis Diagnostic Statement (Crouser ED et al.) and the 2021 ERS/WASOG Sarcoidosis Treatment Guidelines (Drent M et al.): (1) corticosteroids (prednisone 20–40 mg/d) are first-line for symptomatic Stage II/III pulmonary disease, with planned slow taper over 12–24 months; (2) ophthalmology co-management for ocular involvement (topical corticosteroids and cycloplegics for anterior uveitis, with systemic corticosteroids when intraocular inflammation requires); (3) METHOTREXATE OR AZATHIOPRINE as steroid-sparing agents added when long-term corticosteroid exposure is unacceptable or relapse occurs; (4) infliximab (anti-TNF) for refractory disease; (5) treat hypercalcemia with hydration, vitamin D restriction, and sun avoidance (all sarcoidosis patients are at risk because granulomas activate vitamin D); (6) regular surveillance for cardiac involvement (the most lethal complication). Anti-TB therapy (option B) is inappropriate when active TB is excluded by IGRA and culture. Methotrexate alone (option C) is reasonable as steroid-sparing but not as INITIAL therapy without a corticosteroid trial. The cardiac-sarcoidosis intensified regimen (option D) is the appropriate management when cardiac involvement is documented — but this patient has no cardiac involvement.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 42,
+    "sex": "female",
+    "race": "Black or African American",
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "cardiac_sarcoidosis_with_AV_block",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": "Black or African American",
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old African American woman with multisystem sarcoidosis (pulmonary + lymph-node involvement) presents to the emergency department with new-onset syncope. ECG demonstrates COMPLETE THIRD-DEGREE ATRIOVENTRICULAR BLOCK with a wide-complex escape rhythm at 30 bpm. Hemodynamically stable. Cardiac MRI demonstrates patchy late gadolinium enhancement involving the basal interventricular septum (sub-epicardial and mid-myocardial pattern, characteristic of cardiac sarcoid) and a focally reduced LVEF of 42% (mild systolic dysfunction). FDG-PET shows focal FDG uptake corresponding to the LGE territory consistent with active inflammation. There is no evidence of active infection or alternative cardiomyopathy. The clinical picture is CARDIAC SARCOIDOSIS with high-grade AV block and active inflammation — a high-mortality phenotype.",
+      "rationale_for_variant": "Mixed perturbation — cardiac sarcoidosis with AV block and active inflammation, an emergent and high-mortality phenotype. The treatment paradigm intensifies substantially: (1) HIGH-DOSE CORTICOSTEROIDS (prednisone 1 mg/kg/d, sometimes preceded by IV methylprednisolone pulse for severe disease); (2) early addition of a steroid-sparing immunosuppressant (methotrexate, mycophenolate mofetil, or azathioprine — usually MTX); (3) consideration of infliximab for refractory active disease; (4) electrophysiology referral for IMPLANTABLE CARDIOVERTER-DEFIBRILLATOR (ICD) implantation given high-risk for sudden cardiac death from ventricular arrhythmias and conduction disease — Class I in advanced cardiac sarcoidosis with documented sustained VT or significant LV dysfunction; (5) advanced imaging surveillance with serial cardiac MRI and FDG-PET to monitor inflammation; (6) heart failure GDMT for systolic dysfunction. The correct answer therefore shifts from standard pulmonary-sarcoidosis management (option A) to the cardiac-sarcoidosis intensified regimen (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_woman_sarcoidosis",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman presents with 6 months of progressive exertional dyspnea, dry cough, and bilateral chronic anterior uveitis. CT chest: bilateral hilar lymphadenopathy with scattered upper-lobe nodular ground-glass and early reticulation. PFTs: FVC 78%, DLCO 65%. Bronchoscopy with transbronchial biopsy: non-caseating granulomas. ACE elevated; calcium 11.0 (mildly elevated). QuantiFERON-TB negative. Cardiac MRI normal; no AV block on ECG; ambulatory monitor unrevealing.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (multisystem pulmonary + ocular sarcoidosis without cardiac involvement) is unchanged. Sarcoidosis can present at any adult age, with peak incidence in the 30s–40s but increasing recognition in older adults. The corticosteroid-led management with steroid-sparing agents is age-independent, with attention to fall risk and bone-loss prophylaxis on long-term corticosteroids in older patients.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Crouser ED et al. Diagnosis and Detection of Sarcoidosis: An Official American Thoracic Society Clinical Practice Guideline. Am J Respir Crit Care Med 2020;201:e26-e51.",
+    "Drent M et al. Practical eminence- and evidence-based use of pirfenidone in sarcoidosis. Eur Respir J 2021 (sarcoidosis-treatment review).",
+    "Birnie DH et al. HRS expert consensus statement on the diagnosis and management of arrhythmias associated with cardiac sarcoidosis. Heart Rhythm 2014;11:1305-1323."
+  ],
+  "license": "CC-BY-4.0"
+}

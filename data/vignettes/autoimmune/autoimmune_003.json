@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_003",
+  "specialty": "autoimmune",
+  "subspecialty": "antiphospholipid_syndrome_pregnancy",
+  "stem": "A 30-year-old woman presents to clinic for preconception cardiac and reproductive counseling. Her history includes three first-trimester miscarriages (at 8, 10, and 9 weeks of gestation, none with identifiable embryologic abnormalities) and one provoked deep-vein thrombosis 2 years ago in the setting of long-haul travel, treated with 6 months of anticoagulation. Subsequent comprehensive thrombophilia and antiphospholipid workup demonstrated: lupus anticoagulant POSITIVE on two occasions ≥12 weeks apart; anti-cardiolipin IgG HIGH titer (>40 GPL units) on two occasions ≥12 weeks apart; anti-β2-glycoprotein-I IgG positive on two occasions ≥12 weeks apart. She meets the revised Sapporo / Sydney criteria for primary antiphospholipid syndrome with both vascular thrombosis and pregnancy-morbidity criteria. She is currently NOT on anticoagulation. She wishes to conceive in the next 6 months.",
+  "question": "Which is the most appropriate preconception / early-pregnancy anticoagulation strategy?",
+  "options": {
+    "A": "Low-dose aspirin (81 mg orally daily) PLUS prophylactic LMWH (enoxaparin 40 mg subcutaneously daily) starting preconception or at the positive pregnancy test, continued through pregnancy and 6 weeks postpartum; consider hydroxychloroquine adjunctively per recent meta-analyses",
+    "B": "Warfarin titrated to a target INR of 2.0–3.0 throughout pregnancy",
+    "C": "Low-dose aspirin (81 mg daily) alone",
+    "D": "High-dose corticosteroids + IV immunoglobulin + plasma exchange + therapeutic anticoagulation per the CAPS Registry recommendations for catastrophic antiphospholipid syndrome"
+  },
+  "correct": "A",
+  "rationale": "Primary antiphospholipid syndrome with prior thrombosis AND prior pregnancy losses requires combined anticoagulation in pregnancy. The 2019 EULAR APS Recommendations and the 2020 ACR Reproductive Health Guideline (Sammaritano LR et al.) recommend low-dose aspirin (81 mg/d) PLUS prophylactic-dose LMWH (e.g., enoxaparin 40 mg SC daily) initiated preconception or at the positive pregnancy test, continued through pregnancy and for 6 weeks postpartum (the postpartum period is the highest-risk window for thrombosis). Adjunctive hydroxychloroquine is suggested by accumulating meta-analyses for additional risk reduction in APS pregnancy. Warfarin (option B) is TERATOGENIC during gestational weeks 6–12 (warfarin embryopathy: nasal hypoplasia, stippled epiphyses) and must be avoided in early pregnancy in APS even when the patient is on chronic warfarin for prior thrombosis (transition to LMWH preconception). Aspirin alone (option C) is insufficient when both vascular thrombosis and pregnancy morbidity criteria are met. The CAPS bundle (option D) is reserved for catastrophic APS — multi-organ thrombosis with histopathologic confirmation — not for routine pregnancy planning.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 30,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_38_first_pregnancy",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old nulliparous woman presents to clinic for preconception counseling. Her history includes three first-trimester miscarriages and one provoked deep-vein thrombosis 2 years ago. Subsequent workup demonstrated triple-positive antiphospholipid antibodies (lupus anticoagulant + anti-cardiolipin IgG high titer + anti-β2GPI IgG, all on two occasions ≥12 weeks apart) meeting the Sapporo/Sydney criteria for primary antiphospholipid syndrome. She is currently not on anticoagulation. She wishes to conceive in the next 6 months.",
+      "rationale_for_variant": "Age perturbation only — clinical context (primary APS with prior thrombosis and pregnancy morbidity) is unchanged. Advanced maternal age increases baseline obstetric risk but does not alter the APS-specific anticoagulation strategy; low-dose aspirin plus prophylactic LMWH remains the recommendation, with maternal-fetal-medicine co-management for high-risk pregnancy.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "catastrophic_APS_with_active_thrombosis",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old woman with known triple-positive antiphospholipid syndrome (and a recent history of subtherapeutic warfarin) presents to the emergency department with the simultaneous onset over 5 days of an acute ischemic stroke (right hemiparesis), bilateral lower-extremity DVTs, acute kidney injury (creatinine 3.5 mg/dL up from 1.0 baseline), bilateral pulmonary infiltrates with hypoxemia (SpO2 86%), thrombocytopenia (platelets 45,000/μL), and laboratory evidence of disseminated intravascular coagulation. Renal biopsy (performed at admission) demonstrates thrombotic microangiopathy with intraluminal thrombi in small vessels. She meets International Consensus criteria for catastrophic antiphospholipid syndrome (CAPS): ≥3 organs involved within 1 week, histopathologic confirmation of small-vessel occlusion, and confirmed APS antibodies.",
+      "rationale_for_variant": "Mixed perturbation — Catastrophic Antiphospholipid Syndrome (CAPS), an extremely rare and life-threatening (mortality ~30–50% in the modern era) presentation with rapid multi-organ thrombosis. Per the CAPS Registry guidance and the 2019 EULAR APS recommendations, the standard 'triple therapy' is therapeutic anticoagulation + high-dose corticosteroids + IV immunoglobulin and/or plasma exchange. Rituximab and eculizumab are considered in refractory cases. ICU-level supportive care is essential. The correct answer therefore shifts from preconception aspirin + prophylactic LMWH (option A) to the CAPS-specific bundle (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Tektonidou MG et al. EULAR recommendations for the management of antiphospholipid syndrome in adults. Ann Rheum Dis 2019;78:1296-1304.",
+    "Sammaritano LR et al. 2020 American College of Rheumatology Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases. Arthritis Rheumatol 2020;72:529-556.",
+    "Cervera R et al. The Catastrophic Antiphospholipid Syndrome (CAPS) Registry of the European Forum on Antiphospholipid Antibodies. Autoimmun Rev 2014;13:699-707."
+  ],
+  "license": "CC-BY-4.0"
+}

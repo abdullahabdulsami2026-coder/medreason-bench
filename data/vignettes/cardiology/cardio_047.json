@@ -1,0 +1,56 @@
+{
+  "id": "cardio_047",
+  "specialty": "cardiology",
+  "subspecialty": "ai_flagged_subclinical_lv_dysfunction",
+  "stem": "A 58-year-old asymptomatic man with a history of well-controlled hypertension (BP 128/78 mmHg today, on lisinopril) and hyperlipidemia (LDL 110 mg/dL on atorvastatin) presents to his primary-care clinic for an annual physical. As part of a quality-improvement program, his clinic has implemented an FDA-cleared AI-enabled 12-lead ECG model that flags risk of subclinical left-ventricular dysfunction (LVEF <40%). His resting 12-lead ECG today is read by the electrophysiologist as 'sinus rhythm at 72 bpm, no ST or T abnormalities, no chamber-enlargement criteria,' but the AI model flags a HIGH probability of subclinical LV systolic dysfunction (model output above the high-confidence threshold validated in the Mayo Clinic external-validation cohort). He has no exertional symptoms, no syncope, no orthopnea, no edema. Cardiac auscultation is normal; the lung exam is clear. His PCP is uncertain whether the AI flag warrants action.",
+  "question": "Which is the most appropriate next step?",
+  "options": {
+    "A": "Confirmatory transthoracic echocardiogram to assess LVEF and structural disease; if LVEF <40% is confirmed, initiate Stage B HF management with an ACE inhibitor / ARB plus a beta-blocker per the 2022 AHA/ACC/HFSA HF Guideline",
+    "B": "Ignore the AI flag pending further model validation in his demographic subgroup",
+    "C": "Order coronary angiography to evaluate for an ischemic etiology",
+    "D": "Confirmatory TTE plus shared decision-making with explicit discussion of the AI model's false-positive rate; if findings are borderline, repeat assessment in 3–6 months before committing to disease-modifying therapy"
+  },
+  "correct": "A",
+  "rationale": "The AI-enabled ECG model for subclinical LV dysfunction (Attia ZI et al., Nat Med 2019) was developed and externally validated against contemporaneous TTE-measured LVEF; high-confidence positives perform with positive predictive value sufficient to warrant confirmatory imaging in patients with cardiovascular risk factors. The 2022 AHA/ACC/HFSA HF Guideline introduces a Stage B framework — patients with structural heart disease (including reduced LVEF) but no symptoms — for whom guideline-directed medical therapy (ACE inhibitor or ARB, plus a beta-blocker) is recommended (Class I) to slow progression to symptomatic HFrEF. The appropriate sequence is therefore: confirmatory TTE → if LVEF confirmed <40%, initiate Stage B GDMT. Ignoring a validated screening flag (option B) misses an opportunity for early intervention. Coronary angiography (option C) is not first-line in an asymptomatic patient without anginal features; it would follow workup of newly identified LV dysfunction if ischemia is suspected. Adding a deliberative pathway with shared decision-making (option D) is the appropriate refinement when pretest probability is low — but this patient has cardiovascular risk factors that elevate pretest probability and a high-confidence model output, so straightforward TTE-confirmation-and-action is the correct first step.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 58,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_man_AI_flag_known_HTN",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old asymptomatic man with a history of long-standing well-controlled hypertension (BP 128/78 mmHg, on lisinopril and amlodipine) and hyperlipidemia (on atorvastatin) presents to his primary-care clinic for annual evaluation. The clinic uses an FDA-cleared AI-enabled 12-lead ECG model that flags risk of subclinical LV systolic dysfunction. His resting ECG is interpreted as normal sinus rhythm without obvious abnormalities, but the AI model flags a high probability of subclinical LV systolic dysfunction. He has no symptoms, no syncope, no edema, no exertional limitation.",
+      "rationale_for_variant": "Age perturbation only — clinical context (cardiovascular risk factors with high-confidence AI flag) is unchanged. The confirmatory-TTE-then-Stage-B-GDMT pathway applies identically.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "AI_flag_low_pretest_probability",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old asymptomatic woman with no cardiovascular risk factors (no hypertension, no diabetes mellitus, no dyslipidemia, no smoking history, no family history of premature cardiomyopathy or sudden cardiac death) presents to her primary-care clinic for an annual physical. The clinic uses an FDA-cleared AI-enabled 12-lead ECG model. Her resting ECG is interpreted as normal, but the AI model flags a HIGH-confidence probability of subclinical LV systolic dysfunction. She has no symptoms, no exercise intolerance, and runs 5 km three times per week without difficulty.",
+      "rationale_for_variant": "Mixed perturbation — same AI flag in a low-pretest-probability population (young, healthy, no risk factors, asymptomatic). Even validated screening tools have a meaningful false-positive rate, and Bayesian reasoning means the positive predictive value is lower in low-prevalence populations. The 2022 AHA/ACC/HFSA HF Guideline encourages judicious use of advanced testing in low-risk populations. The appropriate approach is confirmatory TTE PLUS explicit shared decision-making about the AI model's false-positive rate, with deferred intervention if findings are borderline (e.g., LVEF 50–55% rather than clearly <40%). Tests whether the model recognizes that the threshold for committing to disease-modifying therapy must be informed by pretest probability.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Attia ZI et al. Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram. Nat Med 2019;25:70-74.",
+    "Yao X et al. Artificial intelligence-enabled electrocardiograms for identification of patients with low ejection fraction: a pragmatic, randomized clinical trial. Nat Med 2021;27:815-819.",
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure (Stage B section). Circulation 2022;145:e895-e1032."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_018",
+  "specialty": "cardiology",
+  "subspecialty": "undifferentiated_dyspnea",
+  "stem": "A 65-year-old woman with hypertension, hyperlipidemia, and a 30-pack-year smoking history (quit 5 years ago) presents to clinic with 2 months of progressive exertional dyspnea, now limiting her to one flight of stairs. She also reports mild ankle swelling at the end of the day. Vital signs: BP 138/84 mmHg, HR 92 bpm, RR 18, SpO2 95% on room air. Exam shows mild bibasilar crackles, trace pitting ankle edema, and a normal cardiac auscultation without murmurs, gallops, or rubs. Echocardiogram, BNP, chest X-ray, pulmonary function tests, and coronary evaluation have been ordered but no results are available at the time of this visit.",
+  "question": "Based on the information available, which is the most likely cardiac diagnosis?",
+  "options": {
+    "A": "Heart failure with reduced ejection fraction",
+    "B": "Heart failure with preserved ejection fraction",
+    "C": "Severe valvular heart disease (e.g., aortic stenosis or mitral regurgitation)",
+    "D": "Group 1 pulmonary arterial hypertension"
+  },
+  "correct": null,
+  "rationale": "All four options are plausible cardiac causes of progressive exertional dyspnea with mild lower-extremity edema and bibasilar crackles in an older adult with cardiovascular risk factors, but the available information is insufficient to distinguish them. HFrEF is diagnosed by echocardiographic LVEF <40% with HF symptoms; HFpEF requires preserved LVEF (≥50%) plus structural/functional changes plus elevated NP or invasive hemodynamic confirmation; severe valvular disease is identified on echocardiography (and is unlikely without a murmur on exam, though sub-clinical valvular disease is possible); Group 1 PAH requires right-heart catheterization. The 2022 AHA/ACC/HFSA HF Guideline and the 2021 AHA/ACC Chest Pain / Dyspnea Evaluation framework both recommend echocardiogram + NT-proBNP as the initial cardiac workup, plus chest X-ray, ECG, and pulmonary function testing to evaluate non-cardiac causes (especially COPD given the smoking history). Right-heart catheterization is reserved for cases where pulmonary hypertension is suspected after non-invasive workup. Picking any specific diagnosis without these data is premature; the correct response is to recognize that more information is required.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 65,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_male_82",
+      "demographics": {
+        "age": 82,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 82-year-old man with hypertension, hyperlipidemia, and a 30-pack-year smoking history (quit 5 years ago) presents to clinic with 2 months of progressive exertional dyspnea, now limiting him to one flight of stairs. He also reports mild ankle swelling at the end of the day. Vital signs: BP 138/84 mmHg, HR 92 bpm, RR 18, SpO2 95% on room air. Exam shows mild bibasilar crackles, trace pitting ankle edema, and a normal cardiac auscultation without murmurs, gallops, or rubs. Echocardiogram, BNP, chest X-ray, pulmonary function tests, and coronary evaluation have been ordered but no results are available at the time of this visit.",
+      "rationale_for_variant": "Age and sex perturbation only — older age increases the pretest probability of every option in the differential (HFpEF, valvular disease, pulmonary hypertension all rise with age) but does not by itself disambiguate which one is correct. The information remains insufficient; the correct response is still to recognize the limits of the available data.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "BNP_750_added",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman with hypertension, hyperlipidemia, and a 30-pack-year smoking history (quit 5 years ago) presents to clinic with 2 months of progressive exertional dyspnea, now limiting her to one flight of stairs. She also reports mild ankle swelling at the end of the day. Vital signs: BP 138/84 mmHg, HR 92 bpm, RR 18, SpO2 95% on room air. Exam shows mild bibasilar crackles, trace pitting ankle edema, and a normal cardiac auscultation without murmurs, gallops, or rubs. A point-of-care BNP returns at 750 pg/mL. Echocardiogram, chest X-ray, pulmonary function tests, and coronary evaluation have been ordered but no results are available at the time of this visit.",
+      "rationale_for_variant": "Mixed perturbation — adds an elevated BNP to the same insufficient information set. BNP elevation is sensitive but not specific for HF: it can also be elevated in atrial fibrillation, chronic kidney disease, acute pulmonary embolism, ARDS, sepsis, advanced age, and right-heart strain from any cause. An elevated BNP alone is consistent with all four of the listed cardiac causes (and with several non-cardiac causes), and does not distinguish HFrEF from HFpEF without LVEF data. The correct response remains 'insufficient information' — the echocardiogram + chest X-ray + PFTs are needed before committing to a diagnosis.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032.",
+    "Gulati M et al. 2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain. Circulation 2021;144:e368-e454.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Approach to the Patient With Dyspnea."
+  ],
+  "license": "CC-BY-4.0"
+}

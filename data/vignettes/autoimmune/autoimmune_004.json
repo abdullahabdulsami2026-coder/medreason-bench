@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_004",
+  "specialty": "autoimmune",
+  "subspecialty": "cutaneous_lupus",
+  "stem": "A 45-year-old woman presents to dermatology with a 6-month history of an annular and papulosquamous photosensitive rash distributed in sun-exposed areas of the V of the neck, the upper chest, and the dorsa of the forearms. The face is largely spared. The lesions are non-scarring with mild post-inflammatory hyperpigmentation. She has no scalp involvement, no oral ulcers, no joint pain, and no constitutional symptoms. She has not started any new medications in the past year. Skin biopsy from the upper chest shows interface dermatitis with vacuolar changes and a perivascular lymphocytic infiltrate consistent with subacute cutaneous lupus erythematosus (SCLE). Labs: ANA 1:160 with a speckled pattern; anti-Ro/SSA STRONGLY POSITIVE; anti-La/SSB positive; anti-dsDNA negative; complements normal; CBC, creatinine, and liver enzymes normal. She has no clinical or laboratory evidence of systemic lupus.",
+  "question": "Which is the most appropriate first-line treatment?",
+  "options": {
+    "A": "Strict photoprotection (broad-spectrum SPF 50 sunscreen, sun-protective clothing); topical corticosteroids OR topical calcineurin inhibitors (tacrolimus 0.1% ointment) for active lesions; oral hydroxychloroquine 5 mg/kg/d as foundational systemic therapy",
+    "B": "Oral cyclophosphamide induction",
+    "C": "High-dose oral prednisone 60 mg daily for 6 weeks",
+    "D": "Discontinue any suspected drug trigger as the primary intervention; provide supportive photoprotection and topical therapy; oral hydroxychloroquine if persistent"
+  },
+  "correct": "A",
+  "rationale": "Subacute cutaneous lupus erythematosus (SCLE) is managed with strict photoprotection, topical immunomodulators (corticosteroids or calcineurin inhibitors), and oral hydroxychloroquine as foundational systemic therapy per the 2017 European Consensus on the Treatment of Cutaneous Lupus (Kuhn A et al.). Oral antimalarials (HCQ first-line; quinacrine or chloroquine as alternatives) reduce both active lesions and recurrence; UV avoidance is essential because ~70% of SCLE patients are photosensitive. Cyclophosphamide (option B) is reserved for severe systemic disease, not isolated cutaneous involvement. High-dose prednisone (option C) is overkill for non-systemic SCLE and exposes the patient to significant systemic side effects. Drug withdrawal (option D) is the appropriate primary intervention for DRUG-INDUCED SCLE (a distinct entity) — there is no offending drug in this patient's history.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 45,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "drug_induced_SCLE_HCTZ",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman who has been taking hydrochlorothiazide 25 mg daily for hypertension for the past 8 months presents to dermatology with a 6-month history of an annular and papulosquamous photosensitive rash on the V of the neck, the upper chest, and the dorsa of the forearms. The face is largely spared. Skin biopsy shows interface dermatitis with vacuolar changes consistent with subacute cutaneous lupus erythematosus. Labs: ANA 1:320; anti-Ro/SSA strongly positive; anti-dsDNA negative; complements normal; no systemic symptoms. The clinical timing (rash onset after hydrochlorothiazide initiation) and pattern strongly suggest drug-induced SCLE.",
+      "rationale_for_variant": "Mixed perturbation — drug-induced subacute cutaneous lupus erythematosus, most commonly triggered by thiazide diuretics (hydrochlorothiazide is the leading offender), proton-pump inhibitors, terbinafine, calcium-channel blockers, statins, and anti-TNF agents. Drug-induced SCLE is anti-Ro/SSA positive in approximately 70–80% of cases and clinically and histologically indistinguishable from idiopathic SCLE — the differentiator is temporal association with the offending drug. The PRIMARY intervention is to DISCONTINUE THE DRUG; lesions typically resolve over weeks to months after withdrawal (anti-Ro/SSA may persist longer than the rash). Photoprotection, topical therapy, and short-term hydroxychloroquine are reasonable adjuncts for active lesions. The correct answer therefore shifts from the standard SCLE regimen (option A) to drug withdrawal as the primary intervention (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_man_SCLE",
+      "demographics": {
+        "age": 60,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old man presents to dermatology with a 6-month history of an annular and papulosquamous photosensitive rash on the V of the neck, the upper chest, and the dorsa of the forearms. The face is largely spared. He has no scalp involvement, no oral ulcers, no joint pain, and no constitutional symptoms. He has not started any new medications in the past year. Skin biopsy shows interface dermatitis with vacuolar changes consistent with subacute cutaneous lupus erythematosus. Labs: ANA 1:160; anti-Ro/SSA strongly positive; anti-La/SSB positive; anti-dsDNA negative; complements normal.",
+      "rationale_for_variant": "Sex perturbation only — clinical content (idiopathic SCLE without drug trigger and without systemic features) is unchanged. SCLE is approximately 4× more common in women than men, but the diagnostic criteria and treatment framework are sex-independent. The first-line regimen of photoprotection plus topical therapy plus oral hydroxychloroquine is unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Kuhn A et al. S2k guideline for treatment of cutaneous lupus erythematosus — guided by the European Dermatology Forum (EDF) in cooperation with the European Academy of Dermatology and Venereology (EADV). J Eur Acad Dermatol Venereol 2017;31:389-404.",
+    "Lowe GC, Henderson CL, Grau RH, Hansen CB, Sontheimer RD. A systematic review of drug-induced subacute cutaneous lupus erythematosus. Br J Dermatol 2011;164:465-472.",
+    "Walling HW, Sontheimer RD. Cutaneous lupus erythematosus: issues in diagnosis and treatment. Am J Clin Dermatol 2009;10:365-381."
+  ],
+  "license": "CC-BY-4.0"
+}

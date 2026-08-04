@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_013",
+  "specialty": "autoimmune",
+  "subspecialty": "ra_initial_treatment",
+  "stem": "A 50-year-old woman has been recently diagnosed with rheumatoid arthritis per the 2010 ACR/EULAR criteria (bilateral symmetric small-joint synovitis, anti-CCP 250 U/mL positive, RF 80 IU/mL positive, ESR 60, CRP 28, symptom duration 12 weeks). DAS28 today is 4.5 (moderate disease activity). She has no significant comorbidities, normal renal and liver function (eGFR 95 mL/min/1.73 m^2), no infectious risks (negative TB screening, negative hepatitis B and C, negative HIV), no current pregnancy or pregnancy plans, and no prior DMARD exposure.",
+  "question": "Which is the most appropriate first-line disease-modifying therapy?",
+  "options": {
+    "A": "Methotrexate 7.5–15 mg orally weekly (titrated to 25 mg over 4–8 weeks) with folic acid 1 mg daily; bridge with low-dose oral prednisone (5–10 mg/d) for symptom control with planned taper as MTX takes effect; reassess DAS28 at 3 months per treat-to-target principle",
+    "B": "TNF inhibitor (e.g., adalimumab) as first-line monotherapy",
+    "C": "Sulfasalazine plus hydroxychloroquine combination (or certolizumab pegol if a biologic is needed) — pregnancy-compatible regimen, avoiding methotrexate",
+    "D": "Reduced-dose conventional DMARD adjusted for renal function (e.g., leflunomide or sulfasalazine instead of methotrexate at eGFR <50) plus hydroxychloroquine"
+  },
+  "correct": "A",
+  "rationale": "The 2022 EULAR Update for the Management of RA (Smolen JS et al.) and the 2021 ACR Guideline for the Treatment of RA recommend methotrexate as the anchor first-line disease-modifying antirheumatic drug (DMARD) for newly diagnosed RA in patients without contraindications. Methotrexate is initiated at 7.5–15 mg orally weekly and titrated to 25 mg/wk over 4–8 weeks, with folic acid 1 mg/d to reduce side effects. A short-term low-dose corticosteroid bridge (prednisone 5–10 mg/d) provides symptom relief while MTX takes effect; the bridge is tapered off within 3 months whenever feasible. Treat-to-target principles guide reassessment every 3 months with DAS28 (or other validated activity score), with escalation to a biologic or JAK inhibitor if the target (remission or low disease activity) is not reached. TNF inhibitors as first-line monotherapy (option B) are NOT recommended in DMARD-naïve RA per current guidelines (cost, infection risk, and equivalent or superior outcomes when MTX is anchored). Pregnancy-compatible DMARDs (option C) and renally adjusted DMARDs (option D) are appropriate in their respective contexts but not for this patient with no pregnancy plans and normal renal function.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 50,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "pregnancy_planning_with_RA",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old woman has been recently diagnosed with rheumatoid arthritis per the 2010 ACR/EULAR criteria. DAS28 4.5 (moderate disease activity). She has no significant comorbidities, normal renal and liver function, negative TB and hepatitis screening. She is actively planning pregnancy in the next 3–6 months and is asking about the safest initial DMARD regimen.",
+      "rationale_for_variant": "Mixed perturbation — pregnancy planning. Methotrexate is TERATOGENIC and abortifacient (folate antagonist with documented embryopathy and pregnancy loss) and is contraindicated in pregnancy and during pregnancy planning; per the 2020 ACR Reproductive Health Guideline, methotrexate must be discontinued ≥3 months preconception. Pregnancy-compatible DMARDs include sulfasalazine, hydroxychloroquine, and azathioprine. For biologic indications, certolizumab pegol is preferred because it is a Fab fragment that does not cross the placenta (no FcRn-mediated transport, unlike intact IgG biologics). The correct answer therefore shifts from MTX (option A) to a pregnancy-compatible DMARD regimen (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "elderly_woman_with_renal_impairment",
+      "demographics": {
+        "age": 75,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old woman has been recently diagnosed with rheumatoid arthritis per the 2010 ACR/EULAR criteria. DAS28 4.5 (moderate disease activity). She has stage 3b chronic kidney disease (baseline creatinine 1.7 mg/dL, eGFR 35 mL/min/1.73 m^2). Liver function is normal; she has no infectious risks. She has no current pregnancy plans.",
+      "rationale_for_variant": "Mixed perturbation — significant renal impairment (eGFR 35). Methotrexate is renally cleared and accumulates with reduced eGFR, increasing the risk of myelosuppression, mucositis, and hepatotoxicity; the 2022 EULAR RA Update and renal-dosing references recommend methotrexate dose reduction for eGFR 30–50 (typical maximum 10 mg/wk with close monitoring) and avoidance for eGFR <30. Alternative conventional synthetic DMARDs better suited to renal impairment include leflunomide (hepatically metabolized) and sulfasalazine (also requires monitoring); hydroxychloroquine is renally excreted but acceptable at standard doses with monitoring. The correct answer therefore shifts to a renally adjusted DMARD regimen (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Smolen JS et al. EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs: 2022 update. Ann Rheum Dis 2023;82:3-18.",
+    "Fraenkel L et al. 2021 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis. Arthritis Rheumatol 2021;73:1108-1123.",
+    "Sammaritano LR et al. 2020 American College of Rheumatology Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases. Arthritis Rheumatol 2020;72:529-556."
+  ],
+  "license": "CC-BY-4.0"
+}

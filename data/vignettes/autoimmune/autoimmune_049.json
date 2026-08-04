@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_049",
+  "specialty": "autoimmune",
+  "subspecialty": "mixed_connective_tissue_disease",
+  "stem": "A 35-year-old woman presents to clinic with 2 years of overlapping connective-tissue features that do not fit cleanly into any single defined disease: severe Raynaud phenomenon (triphasic color change), PUFFY HANDS with sclerodactyly-like changes (but without proximal skin tightening), bilateral symmetric polyarthritis of the small joints of the hands (synovitis on examination), esophageal dysmotility on barium swallow, and dyspnea on exertion. Vital signs stable. Labs: ANA 1:1280 SPECKLED pattern; ANTI-U1-RNP RIBONUCLEOPROTEIN HIGH-TITER POSITIVE; anti-dsDNA negative; anti-Sm negative; anti-Ro, anti-La negative; anti-Scl-70 negative; anti-centromere negative; anti-Jo-1 negative; complements normal. CK normal (no overt myositis). HRCT chest demonstrates mild bilateral basilar non-specific interstitial pneumonia. PFTs: FVC 80% predicted, DLCO 70% predicted (mild reduction). Echo: estimated PASP 35 mmHg (mild — surveillance level, not yet PAH-defining). The clinical picture meets the Alarcón-Segovia and Sharp criteria for MIXED CONNECTIVE TISSUE DISEASE — Sharp syndrome — with mild ILD.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Hydroxychloroquine for mild manifestations (skin, joints, mucocutaneous); corticosteroids (low-to-moderate dose) for active organ involvement when present; mycophenolate mofetil for ILD progression (if PFTs decline or HRCT progresses); azathioprine as steroid-sparing alternative; tailored to the predominant overlap features (lupus-like, scleroderma-like, polymyositis-like); ANNUAL PULMONARY HYPERTENSION SCREENING with echocardiogram and DLCO trend (5-year cumulative incidence of PAH in MCTD is approximately 10–25%, the leading cause of mortality)",
+    "B": "Treat as systemic lupus erythematosus with the SLE-specific regimen only",
+    "C": "Treat as systemic sclerosis with the scleroderma-specific regimen only",
+    "D": "Upfront combination PAH-specific therapy (e.g., ambrisentan + tadalafil per AMBITION) PLUS background immunosuppression; refer to a pulmonary-hypertension specialty center; appropriate for MCTD complicated by Group 1 PAH (the leading cause of mortality in MCTD)"
+  },
+  "correct": "A",
+  "rationale": "Mixed connective tissue disease (MCTD; Sharp syndrome) is a distinct overlap syndrome characterized by features of SLE, systemic sclerosis, and polymyositis with HIGH-TITER ANTI-U1-RNP autoantibodies. Per the Alarcón-Segovia and Sharp criteria and contemporary expert practice (Cappelli S et al.; Tanaka Y et al.), management is tailored to the predominant overlap features: (1) HYDROXYCHLOROQUINE is foundational for mild lupus-like manifestations (skin, joints, mucocutaneous, fatigue); (2) corticosteroids (low-to-moderate dose) for active organ involvement; (3) mycophenolate mofetil for progressive ILD (per the SSc-ILD evidence base, extrapolated to MCTD); (4) azathioprine or methotrexate as steroid-sparing alternatives; (5) tailored organ-specific therapy for the dominant component (e.g., calcium-channel blockers for Raynaud; PPIs for esophageal disease). PULMONARY HYPERTENSION is the leading cause of mortality in MCTD (5-year cumulative incidence approximately 10–25%) — annual PAH screening with echocardiogram and DLCO trend is essential, with right-heart catheterization if screening is suggestive. Treating as SLE only (option B) misses the scleroderma-spectrum features (Raynaud, sclerodactyly, ILD, GI dysmotility). Treating as SSc only (option C) misses the lupus-spectrum features (arthritis). The PAH-specific combination regimen (option D) is the appropriate management when severe Group 1 PAH is established — this patient has only mild echo-suggested PH that warrants surveillance, not yet PAH-specific therapy.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 35,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "MCTD_with_severe_PAH",
+      "demographics": {
+        "age": 45,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old woman with established MCTD (8-year history; high-titer anti-U1-RNP positive) presents with progressive exertional dyspnea (NYHA III) and one episode of exertional syncope. Vital signs: BP 108/68, HR 92, SpO2 92% on room air. Cardiac exam: loud P2, left parasternal heave. Echocardiogram: dilated, hypokinetic right ventricle; estimated pulmonary-artery systolic pressure 65 mmHg; LVEF 60% normal. HRCT: minimal ILD. PFTs: FVC 78%, DLCO 35% (severely reduced — DLCO disproportionate to FVC, consistent with vascular component). RIGHT-HEART CATHETERIZATION confirms PRECAPILLARY pulmonary hypertension: mean pulmonary-artery pressure 42 mmHg, pulmonary capillary wedge pressure 9 mmHg, pulmonary vascular resistance 8 Wood units. There is no left heart disease, no significant ILD, and no chronic thromboembolic disease. The diagnosis is MCTD-associated Group 1 PAH.",
+      "rationale_for_variant": "Mixed perturbation — MCTD complicated by severe Group 1 PAH (the leading cause of mortality in MCTD). The management priority shifts from background immunosuppression to PAH-DIRECTED therapy: (1) UPFRONT COMBINATION PAH-SPECIFIC THERAPY (ambrisentan + tadalafil per AMBITION trial in selected patients; sequential add-on otherwise); (2) consideration of parenteral prostacyclin (epoprostenol or treprostinil) if high-risk on REVEAL Lite or REVEAL 2.0 risk score; (3) referral to a pulmonary-hypertension specialty center for risk stratification and ongoing management; (4) background immunosuppression for the underlying MCTD continues but is NOT the dominant treatment for the PAH component (the evidence for immunosuppression in CTD-PAH is limited compared with the strong PAH-specific therapy evidence). The correct answer therefore shifts from MCTD-tailored management (option A) to upfront combination PAH-specific therapy (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_man_MCTD",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man presents to clinic with 2 years of severe Raynaud, puffy hands with sclerodactyly-like changes, polyarthritis of the small joints, esophageal dysmotility, and exertional dyspnea. ANA 1:1280 speckled; anti-U1-RNP high-titer positive; anti-dsDNA negative; anti-Sm negative; anti-Scl-70 negative. HRCT: mild bilateral basilar NSIP. PFTs: FVC 80%, DLCO 70%. Echo: PASP 38 (mild). MCTD with mild ILD.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (mild MCTD with mild ILD) is unchanged. Male MCTD is less common but tends to have more severe ILD and PAH course in some longitudinal cohorts; vigilance for both complications is warranted, but the management framework (HCQ-based + tailored organ therapy + PAH surveillance) is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Alarcón-Segovia D, Cardiel MH. Comparison between 3 diagnostic criteria for mixed connective tissue disease. Study of 593 patients. J Rheumatol 1989;16:328-334.",
+    "Cappelli S et al. To be or not to be, ten years after: evidence for mixed connective tissue disease as a distinct entity. Semin Arthritis Rheum 2012;41:589-598.",
+    "Humbert M et al. 2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension. Eur Heart J 2022;43:3618-3731."
+  ],
+  "license": "CC-BY-4.0"
+}

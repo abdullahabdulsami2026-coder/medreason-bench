@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_034",
+  "specialty": "autoimmune",
+  "subspecialty": "behcet_syndrome",
+  "stem": "A 28-year-old man of Turkish descent presents to ophthalmology with 1 week of progressive painful blurred vision in the right eye. He has a 4-year history of recurrent painful aphthous oral ulcers (>3 episodes per year) and recurrent painful genital ulcers (4 episodes in the past 2 years), erythema nodosum-like skin lesions on the lower extremities, and a positive pathergy test. Slit-lamp examination today demonstrates bilateral POSTERIOR UVEITIS with retinal vasculitis, vitritis, and macular edema, more severe in the right eye. Visual acuity is 20/200 OD and 20/40 OS. He meets the International Study Group criteria for Behçet syndrome (recurrent oral ulcers + 2 of: genital ulcers, eye lesions, skin lesions, positive pathergy). The current presentation is VISION-THREATENING posterior uveitis.",
+  "question": "Which is the most appropriate management for vision-threatening posterior uveitis in Behçet syndrome?",
+  "options": {
+    "A": "High-dose systemic corticosteroids (IV methylprednisolone pulse for vision-threatening disease, then oral prednisone 1 mg/kg/d) PLUS a TNF inhibitor (infliximab or adalimumab) — Class I per the 2018 EULAR Behçet recommendations for vision-threatening posterior uveitis; azathioprine, mycophenolate mofetil, and cyclosporine are alternatives; interferon-alpha for refractory disease; immediate ophthalmology consultation",
+    "B": "Topical corticosteroids alone",
+    "C": "Colchicine alone (which is appropriate for mucocutaneous-only Behçet without ocular or organ involvement)",
+    "D": "High-dose corticosteroids PLUS azathioprine or cyclophosphamide for organ-threatening vascular involvement; consider plasma exchange for severe; anticoagulation in active vascular Behçet is controversial (risk of pulmonary aneurysm rupture vs thrombosis benefit) and is generally added cautiously alongside immunosuppression — appropriate for major-vessel thrombosis (Budd-Chiari syndrome, pulmonary artery aneurysms with thrombus, arterial thrombosis)"
+  },
+  "correct": "A",
+  "rationale": "Behçet syndrome is a variable-vessel vasculitis with mucocutaneous, ocular, vascular, neurologic, and gastrointestinal manifestations; ocular involvement (uveitis, retinal vasculitis) carries the highest risk of permanent blindness if untreated. Per the 2018 EULAR Recommendations for the Management of Behçet Syndrome (Hatemi G et al.), VISION-THREATENING posterior uveitis (or panuveitis) requires intensive systemic immunosuppression: (1) high-dose systemic corticosteroids (IV methylprednisolone pulse for severe vision-threatening disease, then oral prednisone) AND (2) a TNF inhibitor (infliximab or adalimumab) as Class I therapy; azathioprine, cyclosporine, or mycophenolate mofetil are alternative immunosuppressants; interferon-alpha is a reasonable option for refractory disease. Topical corticosteroids alone (option B) are inadequate for posterior involvement and inflammation behind the iris/ciliary body. Colchicine alone (option C) is appropriate for mucocutaneous-predominant disease without organ involvement. The vascular regimen (option D) is the appropriate management for major-vessel Behçet involvement (Budd-Chiari, pulmonary aneurysms with thrombus, arterial thrombosis) — a different treatment paradigm.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "male",
+    "race": null,
+    "ethnicity": "Turkish"
+  },
+  "variants": [
+    {
+      "variant_id": "major_vessel_thrombosis_Behcet",
+      "demographics": {
+        "age": 32,
+        "sex": "male",
+        "race": null,
+        "ethnicity": "Turkish"
+      },
+      "stem_override": "A 32-year-old man with established Behçet syndrome (mucocutaneous and prior ocular manifestations) presents to the emergency department with sudden-onset hemoptysis, dyspnea, and right-sided pleuritic chest pain. CT pulmonary angiography demonstrates BILATERAL PULMONARY ARTERY ANEURYSMS with mural thrombus and surrounding hemorrhage — a hallmark of vascular Behçet disease. Cardiac echocardiogram shows no intracardiac thrombus; vascular ultrasound shows a left popliteal venous thrombosis. Vital signs: BP 118/72, HR 102, RR 22, SpO2 92% on room air. Hemoglobin 10.8 g/dL.",
+      "rationale_for_variant": "Mixed perturbation — vascular Behçet syndrome with major-vessel involvement (pulmonary artery aneurysms with thrombus, peripheral DVT). Vascular Behçet has a fundamentally different management paradigm from ocular Behçet: (1) the dominant pathophysiology is INFLAMMATION-DRIVEN VASCULAR DAMAGE rather than thrombosis-driven, so the cornerstone is INTENSIVE IMMUNOSUPPRESSION (high-dose corticosteroids + cyclophosphamide or azathioprine; biologic agents in refractory disease); (2) ANTICOAGULATION IS CONTROVERSIAL — pulmonary artery aneurysms can rupture catastrophically, and the bleeding risk often outweighs the thrombosis-prevention benefit, so anticoagulation is added cautiously and only after immunosuppression has begun to control inflammation. The correct answer therefore shifts from ocular-Behçet management (option A) to vascular-Behçet management (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_woman_Behcet",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman presents to ophthalmology with 1 week of progressive painful blurred vision in the right eye. She has a 6-year history of recurrent oral ulcers, genital ulcers, erythema nodosum-like skin lesions, and a positive pathergy test. Slit-lamp examination demonstrates bilateral posterior uveitis with retinal vasculitis, vitritis, and macular edema. She meets ISG criteria for Behçet. Vision-threatening ocular disease.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (vision-threatening posterior uveitis in Behçet) is unchanged. Behçet syndrome has a slight male predominance and a younger age distribution, with peak onset in the 20s–40s; older female patients are less common but well-described. The intensive immunosuppression for vision-threatening uveitis is sex- and age-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Hatemi G et al. 2018 update of the EULAR recommendations for the management of Behçet's syndrome. Ann Rheum Dis 2018;77:808-818.",
+    "Yazici H, Hatemi G, Seyahi E. Behçet syndrome. Nat Rev Rheumatol 2018;14:107-119.",
+    "Saadoun D et al. Vascular complications of Behçet's disease: review of the literature. Curr Rheumatol Rep 2010;12:368-376."
+  ],
+  "license": "CC-BY-4.0"
+}

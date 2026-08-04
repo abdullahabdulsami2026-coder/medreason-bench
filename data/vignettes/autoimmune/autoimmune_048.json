@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_048",
+  "specialty": "autoimmune",
+  "subspecialty": "igg4_related_disease",
+  "stem": "A 55-year-old man presents to clinic with 6 months of progressive painless jaundice (total bilirubin 8.5 mg/dL, direct 6.2; alkaline phosphatase 480 U/L), an unintentional 8 kg weight loss, and intermittent epigastric discomfort. CT abdomen demonstrates DIFFUSE PANCREATIC ENLARGEMENT with a 'sausage' appearance and a featureless pancreatic-duct contour (pancreatic-duct narrowing without significant dilation), a 3-cm retroperitoneal mass encasing the renal arteries (consistent with retroperitoneal fibrosis), and bilateral mildly enlarged submandibular glands. Magnetic resonance cholangiopancreatography (MRCP) shows multiple intra- and extrahepatic biliary strictures (sclerosing cholangitis pattern with relative sparing of the gallbladder). Labs: SERUM IgG4 750 mg/dL (>2× upper reference limit; normal <140); total IgG mildly elevated; ANA negative; CA 19-9 mildly elevated (often elevated in both pancreatic adenocarcinoma and IgG4-related disease); CEA normal. CT-guided biopsy of the retroperitoneal mass demonstrates dense LYMPHOPLASMACYTIC INFILTRATE with STORIFORM (cartwheel-like) FIBROSIS, OBLITERATIVE PHLEBITIS, and ABUNDANT IgG4-POSITIVE PLASMA CELLS (>50/HPF; IgG4/IgG plasma-cell ratio >40%). The clinical picture is MULTISYSTEM IgG4-RELATED DISEASE (autoimmune pancreatitis Type 1 + IgG4-related sclerosing cholangitis + retroperitoneal fibrosis + IgG4-related sialadenitis).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Oral corticosteroids (prednisone 40 mg/d induction for 4 weeks, then planned slow taper over 3–6 months) per the international consensus guidance; rituximab for refractory or relapsing disease; long-term low-dose maintenance corticosteroids OR a steroid-sparing immunosuppressant (azathioprine, mycophenolate mofetil) often required to prevent relapse",
+    "B": "Surgical resection (pancreaticoduodenectomy) of the pancreatic enlargement for presumed pancreatic adenocarcinoma without confirmatory biopsy",
+    "C": "Empiric broad-spectrum antibiotic therapy",
+    "D": "Continued watchful waiting with no immunosuppression"
+  },
+  "correct": "A",
+  "rationale": "IgG4-related disease (IgG4-RD) is a multisystem fibroinflammatory condition characterized by tumefactive lesions in any organ, dense IgG4-positive plasma-cell infiltrate, storiform fibrosis, obliterative phlebitis, and elevated serum IgG4 in the majority. The protean clinical presentations include autoimmune pancreatitis (Type 1, distinct from idiopathic Type 2), IgG4-related sclerosing cholangitis, retroperitoneal fibrosis, sialadenitis (Mikulicz disease), dacryoadenitis, periaortitis, and others. IgG4-RD often masquerades as MALIGNANCY (pancreatic adenocarcinoma is the classic diagnostic mimic) and CONFIRMATORY TISSUE BIOPSY is essential before definitive treatment to avoid unnecessary major surgery. Per the 2015 International Consensus Guidance Statement on the Management of IgG4-RD (Khosroshahi A et al.) and Stone JH et al. (NEJM), the standard induction is ORAL CORTICOSTEROIDS — prednisone 40 mg/d for 4 weeks, then planned slow taper over 3–6 months. Response is usually rapid and dramatic. Long-term low-dose maintenance corticosteroids OR a steroid-sparing immunosuppressant (azathioprine, mycophenolate mofetil) are often required because relapse is common (~30–50% within 1 year). RITUXIMAB is highly effective for refractory or relapsing disease. Surgical resection (option B) without biopsy confirmation risks unnecessary pancreaticoduodenectomy in a steroid-responsive condition. Antibiotics (option C) are inappropriate (no infection). Watchful waiting (option D) allows ongoing fibrotic damage.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "isolated_organ_disease_orbital_pseudotumor",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man presents to ophthalmology with 4 months of bilateral periorbital swelling, mild proptosis, and diplopia on lateral gaze. MRI of the orbits demonstrates bilateral lacrimal-gland enlargement and bilateral inferior-rectus muscle thickening WITHOUT optic-nerve compression — a pattern compatible with IgG4-RELATED orbital inflammatory disease (formerly 'orbital pseudotumor'). Labs: serum IgG4 280 mg/dL (mildly elevated). Lacrimal-gland biopsy: lymphoplasmacytic infiltrate with storiform fibrosis and abundant IgG4-positive plasma cells (IgG4/IgG ratio >40%). There is NO evidence of pancreatic, biliary, retroperitoneal, salivary, or other organ involvement on a comprehensive whole-body workup. The clinical picture is ISOLATED ORBITAL IgG4-RD.",
+      "rationale_for_variant": "Demographic / disease-extent perturbation — isolated organ involvement (orbital IgG4-RD) without multisystem disease. The 2015 International Consensus Guidance Statement and subsequent expert practice support the same OVERALL CORTICOSTEROID-LED FRAMEWORK with possible modifications: lower starting prednisone dose may be reasonable in some isolated-organ presentations, and TOPICAL or LOCAL therapy (e.g., subconjunctival corticosteroid injection) can supplement systemic therapy in orbital disease. Rituximab remains the choice for refractory/relapsing disease. The framework is fundamentally similar (option A).",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "elderly_woman_IgG4_RD",
+      "demographics": {
+        "age": 68,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old woman presents with 6 months of progressive painless jaundice, weight loss, intermittent epigastric pain, retroperitoneal mass on CT, autoimmune pancreatitis with sausage-shaped pancreas, IgG4-related sclerosing cholangitis on MRCP, and bilateral submandibular-gland enlargement. Serum IgG4 elevated. Biopsy: lymphoplasmacytic infiltrate with storiform fibrosis, obliterative phlebitis, IgG4-positive plasma cells (IgG4/IgG ratio >40%). Multisystem IgG4-RD.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (multisystem IgG4-RD) is unchanged. IgG4-RD is more common in middle-aged and older men but well-described in women. The corticosteroid-led management framework is sex- and age-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Khosroshahi A et al. International consensus guidance statement on the management and treatment of IgG4-related disease. Arthritis Rheumatol 2015;67:1688-1699.",
+    "Stone JH, Zen Y, Deshpande V. IgG4-related disease. NEJM 2012;366:539-551.",
+    "Wallace ZS et al. The 2019 ACR/EULAR Classification Criteria for IgG4-Related Disease. Arthritis Rheumatol 2020;72:7-19."
+  ],
+  "license": "CC-BY-4.0"
+}

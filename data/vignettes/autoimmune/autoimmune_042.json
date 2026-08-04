@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_042",
+  "specialty": "autoimmune",
+  "subspecialty": "isolated_enthesopathy",
+  "stem": "A 38-year-old man (recreational distance runner; 25–30 miles per week) presents to clinic with 6 weeks of bilateral heel pain that is worse with the first few steps in the morning and after periods of rest, and improves slightly with walking. Examination shows tenderness at the Achilles-tendon insertion bilaterally and tenderness at the medial calcaneal tubercle (the plantar-fascia origin) bilaterally. He has NO inflammatory back pain, NO peripheral synovitis, NO skin or nail psoriasis, NO inflammatory bowel symptoms, NO uveitis, and NO recent gastrointestinal or genitourinary infections. Vital signs stable. Labs: rheumatoid factor and anti-CCP negative; ESR 12 mm/h, CRP 4 mg/L (within normal limits); HLA-B27 NEGATIVE. He has tried RICE protocol and a 2-week course of ibuprofen with limited improvement.",
+  "question": "Which is the most likely etiology and most appropriate management?",
+  "options": {
+    "A": "Mechanical Achilles tendinopathy + plantar fasciitis (the most common etiology for this presentation in absence of SpA red flags); RICE protocol, ECCENTRIC LOADING exercises (Alfredson protocol), physical therapy, NSAIDs for short course; nighttime splint for plantar fasciitis; consider corticosteroid injection for plantar fascia (NOT Achilles — risk of tendon rupture); reserve HLA-B27 testing and SI-joint imaging for if other SpA features develop",
+    "B": "Empiric methotrexate for presumed undiagnosed AS or PsA without other SpA features",
+    "C": "Empiric NSAID monotherapy and watchful waiting only without specific physical therapy or biomechanical assessment",
+    "D": "Comprehensive SpA workup with HLA-B27 testing, MRI of sacroiliac joints, slit-lamp examination for uveitis, and rheumatology referral; appropriate when bilateral enthesitis is accompanied by uveitis or other red flags (skin/nail psoriasis, inflammatory bowel symptoms, inflammatory back pain) suggesting an inflammatory etiology"
+  },
+  "correct": "A",
+  "rationale": "Bilateral heel pain in a runner with classic mechanical features (worst with first steps in the morning and after rest, improves with activity, post-load stiffness) and ABSENCE of SpA red flags (no inflammatory back pain, no peripheral synovitis, no psoriasis, no IBD symptoms, no uveitis, no antecedent infection, normal acute-phase reactants, HLA-B27 negative) is overwhelmingly likely to be MECHANICAL Achilles tendinopathy and plantar fasciitis — by far the most common cause of this presentation. Per the 2019 ACR AS Guideline and physical-therapy / sports-medicine consensus: (1) eccentric loading exercises (Alfredson protocol) are the cornerstone of Achilles tendinopathy rehabilitation; (2) plantar-fascia stretching, nighttime splints, supportive footwear / orthotics, and weight loss (if applicable) for plantar fasciitis; (3) NSAIDs for short courses to reduce inflammation; (4) corticosteroid injection for plantar fascia is reasonable but is AVOIDED for Achilles (tendon-rupture risk); (5) only escalate to SpA workup if other SpA features develop. Empiric methotrexate (option B) is over-treatment without an inflammatory diagnosis. NSAID monotherapy without rehabilitation (option C) addresses pain but not the biomechanical cause. The full SpA workup (option D) is appropriate when bilateral enthesitis is accompanied by uveitis or other red flags — but this patient has none.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 38,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "bilateral_enthesitis_with_uveitis",
+      "demographics": {
+        "age": 35,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old man presents to clinic with 6 weeks of bilateral heel pain (worse with first steps in the morning, partially improves with activity), tenderness at the Achilles insertion and plantar-fascia origin bilaterally, AND a recent diagnosis of bilateral acute anterior uveitis on slit-lamp examination by ophthalmology 2 weeks ago (currently on topical corticosteroids and cycloplegics). He has NO inflammatory back pain or peripheral synovitis at present. ESR 25, CRP 12 (mildly elevated). HLA-B27 status not yet checked. The combination of bilateral enthesitis WITH uveitis raises strong suspicion for an SpA-spectrum disease.",
+      "rationale_for_variant": "Mixed perturbation — bilateral enthesitis WITH acute anterior uveitis raises concern for spondyloarthritis-spectrum disease (axial SpA, PsA, IBD-associated SpA, ReA). Acute anterior uveitis is the most common extra-articular manifestation of HLA-B27 disease (lifetime risk approximately 30–40% in B27-positive AS patients) and bilateral enthesitis is part of the SpA spectrum. The appropriate next step is comprehensive SpA workup: HLA-B27 testing, MRI of the sacroiliac joints (to look for active sacroiliitis even in the absence of clinical inflammatory back pain), CRP / ESR repeat, and rheumatology referral — followed by directed therapy if SpA is confirmed. The correct answer therefore shifts from mechanical management (option A) to SpA-workup (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_woman_enthesitis",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old recreational walker presents to clinic with 6 weeks of bilateral heel pain worse with first steps in the morning and after rest. Examination shows Achilles-insertion tenderness and plantar-fascia-origin tenderness bilaterally. No inflammatory back pain, no peripheral synovitis, no psoriasis, no IBD symptoms, no uveitis. ESR 12, CRP 4 (normal); HLA-B27 negative. RICE and ibuprofen for 2 weeks with limited improvement.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (mechanical bilateral enthesopathy without SpA red flags) is unchanged. Mechanical tendinopathy and plantar fasciitis are most common at this age and are managed with the same biomechanical / rehabilitation approach.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Ward MM et al. 2019 Update of the ACR/SAA/SPARTAN Recommendations for the Treatment of Ankylosing Spondylitis and Nonradiographic Axial Spondyloarthritis. Arthritis Rheumatol 2019;71:1599-1613.",
+    "Maffulli N, Longo UG, Loppini M, Spiezia F, Denaro V. Tendinopathy of tendo Achillis. J Bone Joint Surg Br 2010.",
+    "Goff JD, Crawford R. Diagnosis and treatment of plantar fasciitis. Am Fam Physician 2011;84:676-682."
+  ],
+  "license": "CC-BY-4.0"
+}

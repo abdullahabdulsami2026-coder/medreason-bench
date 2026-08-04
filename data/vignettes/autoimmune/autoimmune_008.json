@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_008",
+  "specialty": "autoimmune",
+  "subspecialty": "hydroxychloroquine_monitoring",
+  "stem": "A 50-year-old woman with systemic lupus erythematosus has been on hydroxychloroquine 400 mg/d (5 mg/kg actual body weight, weight 80 kg) for 6 years. Disease has been stable on hydroxychloroquine alone. Her most recent ophthalmologic screening 1 year ago (5 years on HCQ) was completely normal: SD-OCT and 10-2 visual field testing without abnormalities; fundus exam normal. She has no visual symptoms, no renal disease, and no concomitant tamoxifen. Her primary-care physician asks about ongoing screening for HCQ retinopathy and dose adjustments.",
+  "question": "Which is the most appropriate ongoing screening strategy?",
+  "options": {
+    "A": "Annual ophthalmologic exam with SD-OCT and 10-2 visual field testing starting at 5 years on HCQ (sooner if dose >5 mg/kg/d, age >60, renal/liver disease, or prior retinal disease); maintain dose ≤5 mg/kg actual body weight per the 2016 American Academy of Ophthalmology Recommendations",
+    "B": "Discontinue hydroxychloroquine at 5 years regardless of indication or response",
+    "C": "Annual fundoscopy alone with no SD-OCT or formal visual-field testing",
+    "D": "Annual ophthalmologic exam with SD-OCT and WIDE-FIELD visual-field testing (e.g., 24-2 or 30-2 instead of 10-2) given the more peripheral retinopathy distribution in patients of Asian descent"
+  },
+  "correct": "A",
+  "rationale": "The 2016 American Academy of Ophthalmology Recommendations on Screening for Chloroquine and Hydroxychloroquine Retinopathy (Marmor MF et al.) provide the standard framework: (1) baseline ophthalmologic examination at HCQ initiation to document any pre-existing retinal disease that would complicate future screening; (2) annual screening starting at 5 years on HCQ, OR sooner (and possibly on a different schedule) for higher-risk patients (HCQ dose >5 mg/kg actual body weight, total cumulative dose >1000 g, age >60, concomitant renal disease, concomitant liver disease, concomitant tamoxifen, or pre-existing retinal/macular disease); (3) the screening modalities are SD-OCT and automated visual-field testing (10-2 in patients of European descent; wide-field 24-2 or 30-2 in patients of Asian descent because retinopathy preferentially affects the perifoveal region in Europeans but more peripheral retina in Asians); (4) maintain HCQ dose ≤5 mg/kg actual body weight (NOT ideal body weight) for the lowest retinopathy risk. Discontinuing at 5 years (option B) loses a foundational SLE drug for no benefit. Fundoscopy alone (option C) is inadequate — early retinopathy is detectable on SD-OCT and visual fields well before fundoscopic changes appear. Wide-field visual-field testing (option D) is the right choice for patients of Asian descent — but the parent patient is not specified as Asian, and the 10-2 visual field is the appropriate default.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 50,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "asian_woman_HCQ",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": "Asian",
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman of Asian descent with systemic lupus erythematosus has been on hydroxychloroquine 400 mg/d (5 mg/kg, weight 80 kg) for 6 years with stable disease. Her most recent screening 1 year ago (5 years on HCQ) was reported as normal on SD-OCT, but the 10-2 visual field test that was performed may have missed pericentral changes typical of Asian retinopathy. She has no visual symptoms.",
+      "rationale_for_variant": "Mixed perturbation — race-specific modification to the screening protocol. The 2016 AAO Recommendations specifically note that hydroxychloroquine retinopathy in patients of Asian descent often presents in the PERICENTRAL or extramacular retina rather than the perifoveal region, and that the standard 10-2 visual field (which images only the central 10°) can miss this distribution. The recommendation for patients of Asian descent is to use a wider-field visual-field test (24-2 or 30-2) in addition to or instead of the 10-2. SD-OCT can also be wider-field if the device permits. The correct answer therefore shifts from the standard screening regimen (option A) to the wider-field alternative (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_man_RA_on_HCQ",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with rheumatoid arthritis has been on hydroxychloroquine 400 mg/d (5 mg/kg, weight 80 kg) as part of triple-DMARD therapy for 6 years with stable disease. His most recent ophthalmologic screening 1 year ago was normal on SD-OCT and 10-2 visual field. He has no visual symptoms, no renal disease, and is not on tamoxifen.",
+      "rationale_for_variant": "Sex / age and indication perturbation only — the AAO retinopathy-screening framework is the same for SLE and RA patients on HCQ, and the screening starts at 5 years for the same reasons. Age >60 is one of the higher-risk features that may warrant slightly closer surveillance, but the annual SD-OCT + 10-2 visual field framework remains the standard.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Marmor MF, Kellner U, Lai TYY, Melles RB, Mieler WF; American Academy of Ophthalmology. Recommendations on Screening for Chloroquine and Hydroxychloroquine Retinopathy (2016 Revision). Ophthalmology 2016;123:1386-1394.",
+    "Melles RB, Marmor MF. The risk of toxic retinopathy in patients on long-term hydroxychloroquine therapy. JAMA Ophthalmol 2014;132:1453-1460.",
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29."
+  ],
+  "license": "CC-BY-4.0"
+}

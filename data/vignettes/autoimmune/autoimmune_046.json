@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_046",
+  "specialty": "autoimmune",
+  "subspecialty": "inclusion_body_myositis",
+  "stem": "A 70-year-old man presents to clinic with 18 months of slowly progressive muscle weakness preferentially affecting the FINGER FLEXORS (difficulty opening jars and turning keys, with weak pinch grip on examination) and the QUADRICEPS muscles (difficulty climbing stairs and rising from a low chair, with frequent falls in the past 6 months). The weakness is distinctly ASYMMETRIC and DISTAL — features atypical for the more common inflammatory myopathies. There are no skin rashes (no heliotrope, no Gottron papules, no mechanic's hands). Vital signs stable. Examination shows asymmetric quadriceps atrophy and weakness (3/5 right, 4/5 left) and disproportionate weakness of the long finger flexors. Mild dysphagia is present on swallowing evaluation. Labs: creatine kinase MILDLY elevated 800 IU/L (notably less than in dermatomyositis or IMNM); ANA negative; myositis-specific antibodies negative; ANTI-cN-1A (cytosolic 5'-nucleotidase 1A) antibody POSITIVE (a relatively specific marker for sporadic IBM). EMG: irritable myopathy with mixed neurogenic features. Muscle biopsy demonstrates RIMMED VACUOLES, endomysial mononuclear inflammation invading non-necrotic fibers, COX-NEGATIVE fibers, and CONGOPHILIC INCLUSIONS (β-amyloid). He was previously misdiagnosed with polymyositis at an outside facility 1 year ago and treated with high-dose corticosteroids (prednisone 60 mg/d × 8 weeks) without any response in strength or CK. The clinical picture is sporadic INCLUSION BODY MYOSITIS (s-IBM).",
+  "question": "Which is the most likely diagnosis and most appropriate management?",
+  "options": {
+    "A": "Sporadic inclusion body myositis (s-IBM) — a chronic, slowly progressive idiopathic inflammatory myopathy that is REFRACTORY to corticosteroids and most conventional immunosuppressants; supportive care: physical therapy, occupational therapy, swallowing evaluation and aspiration precautions (dysphagia is common late and a major morbidity), assistive devices (canes, walkers, fall-prevention strategies); investigational therapy through clinical trials (e.g., rapamycin / sirolimus, ulvenacort); emphasis on functional adaptation and quality-of-life",
+    "B": "Polymyositis — high-dose corticosteroids plus a steroid-sparing immunosuppressant (responsive to immunosuppression)",
+    "C": "Immune-mediated necrotizing myopathy (IMNM) associated with anti-HMGCR or anti-SRP antibodies — high-dose corticosteroids + IVIG or rituximab",
+    "D": "Hereditary inclusion body myopathy (h-IBM) due to GNE-gene mutation — distal myopathy with rimmed vacuoles in a younger patient with a positive family history; genetic counseling for the patient and at-risk relatives; supportive care; NO immunosuppression because the underlying pathology is genetic, not autoimmune"
+  },
+  "correct": "A",
+  "rationale": "Sporadic inclusion body myositis (s-IBM) is the most common idiopathic inflammatory myopathy in patients aged >50, with a male predominance (~3:1). The pathognomonic clinical signature is the slow progression of weakness preferentially affecting the FINGER FLEXORS and the QUADRICEPS (an unusual pattern that distinguishes IBM from polymyositis, dermatomyositis, and IMNM), with relative sparing of more proximal muscles early in the disease. The histopathologic signature on muscle biopsy is RIMMED VACUOLES + ENDOMYSIAL INFLAMMATION INVADING NON-NECROTIC FIBERS + COX-NEGATIVE FIBERS + congophilic β-amyloid inclusions. CK is typically only mildly elevated (rarely >2,000 IU/L). Anti-cN-1A antibodies are seen in ~30–60% of s-IBM patients. Per the 2021 ACR Inflammatory Myopathies Guideline and Greenberg SA et al. (Lancet Neurol 2019), s-IBM is REFRACTORY to corticosteroids, methotrexate, azathioprine, mycophenolate, IVIG, and rituximab — multiple controlled trials have shown no benefit. Management is therefore SUPPORTIVE: physical therapy, occupational therapy, swallowing evaluation with aspiration precautions (dysphagia is common late and a major cause of morbidity and mortality), assistive devices, fall prevention, and clinical-trial enrollment for investigational therapies (sirolimus / rapamycin, arimoclomol, ulvenacort have all been studied). Polymyositis (option B) responds to corticosteroids; IBM does not (this patient already failed an 8-week prednisone course). IMNM (option C) presents with profound proximal weakness, very high CK, and necrotizing pathology — different from IBM. Hereditary IBM (option D) is the appropriate label when a GNE mutation is documented in a younger patient — see variant.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 70,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "hereditary_IBM_GNE_mutation",
+      "demographics": {
+        "age": 32,
+        "sex": "male",
+        "race": null,
+        "ethnicity": "Persian Jewish"
+      },
+      "stem_override": "A 32-year-old man of Persian-Jewish ancestry (a population with elevated GNE-myopathy carrier rate) presents to clinic with 6 years of slowly progressive distal weakness — difficulty walking on heels (early ankle dorsiflexor weakness sparing the quadriceps) — with relative sparing of the quadriceps muscles initially (an atypical pattern compared with sporadic IBM). His older brother developed the same pattern of weakness in his late 20s and was eventually diagnosed with hereditary inclusion-body myopathy. CK is mildly elevated 600 IU/L. Anti-cN-1A negative; myositis-specific antibodies negative. Muscle biopsy: RIMMED VACUOLES, congophilic inclusions, MINIMAL inflammation. Genetic testing returns: pathogenic biallelic mutations in the GNE gene (the founder mutation in Persian-Jewish hereditary inclusion-body myopathy / GNE myopathy / Nonaka myopathy / hIBM2).",
+      "rationale_for_variant": "Mixed perturbation — hereditary inclusion-body myopathy (h-IBM) due to GNE-gene mutation. h-IBM is a genetic muscular dystrophy that has overlapping HISTOPATHOLOGY (rimmed vacuoles) with sporadic IBM but a fundamentally different disease mechanism, demographic (younger onset, often 20s–40s), and inheritance pattern (autosomal recessive, with a high carrier rate in Persian-Jewish populations). The clinical features differ: GNE myopathy preferentially affects the DISTAL ankle dorsiflexors EARLY with QUADRICEPS SPARING (the opposite of sporadic IBM). Treatment is supportive — there is NO ROLE for immunosuppression because the underlying pathology is genetic, not autoimmune. Genetic counseling is essential for the patient and at-risk relatives. Investigational treatments (sialic acid supplementation, ManNAc) are under study. The correct answer therefore shifts from sporadic IBM (option A) to hereditary IBM with GNE mutation (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "elderly_woman_IBM",
+      "demographics": {
+        "age": 75,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old woman presents to clinic with 18 months of slowly progressive weakness preferentially affecting the finger flexors (weak pinch grip) and the quadriceps muscles (difficulty climbing stairs, frequent falls). The weakness is asymmetric. No skin rashes. CK mildly elevated 750. ANA negative; myositis-specific antibodies negative; anti-cN-1A positive. EMG: irritable myopathy with mixed neurogenic features. Muscle biopsy: rimmed vacuoles, endomysial inflammation, COX-negative fibers, congophilic inclusions. Previously misdiagnosed and treated with prednisone without response.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (sporadic inclusion body myositis with classic clinical, serologic, and pathologic features) is unchanged. Sporadic IBM is more common in men but well-described in women, and the supportive-care framework with rejection of futile immunosuppression applies regardless of sex.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Greenberg SA. Inclusion body myositis: clinical features and pathogenesis. Nat Rev Rheumatol 2019;15:257-272.",
+    "Aggarwal R et al. 2021 American College of Rheumatology Guideline for the Treatment of Idiopathic Inflammatory Myopathies (in press).",
+    "Argov Z, Mitrani-Rosenbaum S. The hereditary inclusion body myopathy (HIBM) syndromes. Curr Mol Med 2007;7:483-486."
+  ],
+  "license": "CC-BY-4.0"
+}

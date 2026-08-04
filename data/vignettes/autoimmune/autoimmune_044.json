@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_044",
+  "specialty": "autoimmune",
+  "subspecialty": "immune_mediated_necrotizing_myopathy",
+  "stem": "A 50-year-old woman presents to clinic with 6 months of progressive proximal muscle weakness affecting hip flexion and shoulder abduction, with difficulty rising from a chair and lifting objects overhead. There is NO heliotrope rash, NO Gottron papules, NO mechanic's hands, and NO Raynaud phenomenon. She has been on atorvastatin 40 mg daily for 12 months for primary prevention of cardiovascular disease. Vital signs stable. Examination shows symmetric proximal weakness (4/5 in shoulder abduction and hip flexion). Labs: creatine kinase 12,000 IU/L (markedly elevated); aldolase elevated; ANA negative; anti-Mi-2, anti-Jo-1, and anti-MDA5 negative; ANTI-3-HYDROXY-3-METHYLGLUTARYL-COA REDUCTASE (anti-HMGCR) ANTIBODY STRONGLY POSITIVE. Comprehensive cancer workup is unrevealing. EMG: irritable myopathy. Muscle biopsy: NECROTIC AND REGENERATING MUSCLE FIBERS with paucity of inflammatory cells (a 'pauci-immune necrotizing myopathy' pattern). The clinical picture is IMMUNE-MEDIATED NECROTIZING MYOPATHY (IMNM) associated with anti-HMGCR antibodies in the setting of statin exposure.",
+  "question": "Which is the most likely diagnosis and most appropriate management?",
+  "options": {
+    "A": "Immune-mediated necrotizing myopathy (IMNM) associated with anti-HMGCR antibodies; DISCONTINUE the statin PERMANENTLY (the autoimmune phenotype often does NOT resolve with statin discontinuation alone, in contrast to the more common reversible statin-induced myalgia/myopathy); high-dose corticosteroids + immunosuppressant (methotrexate, azathioprine, or mycophenolate mofetil); IVIG often added EARLY (may be the most effective add-on per recent retrospective and prospective evidence); rituximab for refractory disease",
+    "B": "Statin-induced reversible myalgia/myopathy that fully resolves with statin discontinuation alone (no immunosuppression needed)",
+    "C": "Polymyositis — corticosteroids alone as first-line without immunosuppressant",
+    "D": "Inclusion body myositis — refractory to immunosuppression; supportive care only"
+  },
+  "correct": "A",
+  "rationale": "Immune-mediated necrotizing myopathy (IMNM) is a distinct subtype of inflammatory myopathy characterized by SUBACUTE-TO-CHRONIC severe proximal weakness, very high CK (often >5,000 to 10,000+ IU/L), pauci-immune necrotizing pathology on muscle biopsy, and association with specific autoantibodies — anti-HMGCR (often statin-triggered, ~70% of statin-associated IMNM) and anti-SRP. The KEY clinical insight (Mammen AL et al., Arthritis Rheumatol 2011): statin-associated anti-HMGCR-positive IMNM is an AUTOIMMUNE phenotype that DOES NOT typically resolve with statin discontinuation alone, in contrast to the much more common reversible statin-induced myalgia/myopathy that improves rapidly after stopping the drug. Per the 2021 ACR Inflammatory Myopathies Guideline and consensus expert practice: (1) discontinue the statin PERMANENTLY; (2) initiate high-dose corticosteroids (prednisone 1 mg/kg/d) PLUS a steroid-sparing immunosuppressant (methotrexate, azathioprine, or mycophenolate mofetil); (3) IVIG is often added early — recent evidence suggests IVIG may be the single most effective intervention for IMNM, with rapid CK and strength improvement; (4) rituximab is used for refractory disease. Statin-induced reversible myopathy (option B) is excluded by the autoimmune serologic profile and the necrotizing biopsy. Polymyositis (option C) is now recognized as relatively rare and has lymphocytic inflammation on biopsy (different from IMNM). Inclusion body myositis (option D) presents with distal weakness and rimmed vacuoles on biopsy.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 50,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "anti_SRP_IMNM",
+      "demographics": {
+        "age": 45,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old woman presents with 4 months of rapidly progressive severe proximal muscle weakness (3/5 in shoulder abduction and hip flexion at presentation, declining over weeks). She is NOT on a statin and has no prior statin exposure. CK 18,000 IU/L (markedly elevated); ANTI-SIGNAL RECOGNITION PARTICLE (anti-SRP) ANTIBODY STRONGLY POSITIVE; anti-HMGCR negative; anti-Jo-1, anti-Mi-2, anti-MDA5 negative. Cancer workup unrevealing. Muscle biopsy: necrotic and regenerating fibers with minimal inflammation (pauci-immune necrotizing myopathy).",
+      "rationale_for_variant": "Mixed perturbation — anti-SRP-positive IMNM. Anti-SRP IMNM is the more aggressive subtype: more severe weakness at presentation, more rapid progression, higher CK levels (often >10,000), more frequent dysphagia and respiratory involvement, higher resistance to corticosteroid monotherapy, and more frequent need for early intensification with IVIG or rituximab. The framework remains the same (high-dose corticosteroids + steroid-sparing immunosuppression + IVIG + consider rituximab earlier), but the urgency and intensity of treatment escalation are higher. Anti-SRP IMNM is NOT statin-triggered. The correct answer (option A) is unchanged in framework, but treatment intensification is more aggressive.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "middle_aged_man_IMNM",
+      "demographics": {
+        "age": 55,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old man on atorvastatin 80 mg daily (initiated 18 months ago after a non-ST-elevation MI for secondary prevention) presents with 6 months of progressive proximal muscle weakness. CK 14,000 IU/L; anti-HMGCR strongly positive; anti-SRP, anti-Jo-1, anti-Mi-2, anti-MDA5 negative. Muscle biopsy: pauci-immune necrotizing myopathy.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (statin-associated anti-HMGCR IMNM) is unchanged. Note that for patients on statins for SECONDARY prevention (post-MI), discontinuation creates a cardiovascular-risk trade-off — the anti-HMGCR IMNM mandates statin discontinuation, but the patient should be transitioned to alternative LDL-lowering therapy (ezetimibe, PCSK9 inhibitor, or bempedoic acid) to maintain CV protection. The IMNM management framework is otherwise the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Mammen AL et al. Autoantibodies against 3-hydroxy-3-methylglutaryl-coenzyme A reductase in patients with statin-associated autoimmune myopathy. Arthritis Rheum 2011;63:713-721.",
+    "Allenbach Y et al. Necrosis in anti-SRP+ and anti-HMGCR+ myopathies: Role of autoantibodies and complement. Neurology 2018;90:e507-e517.",
+    "Aggarwal R et al. 2021 American College of Rheumatology Guideline for the Treatment of Idiopathic Inflammatory Myopathies (in press)."
+  ],
+  "license": "CC-BY-4.0"
+}

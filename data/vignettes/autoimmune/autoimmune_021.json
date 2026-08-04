@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_021",
+  "specialty": "autoimmune",
+  "subspecialty": "sjogren_syndrome_diagnosis",
+  "stem": "A 52-year-old woman presents to clinic with 2 years of progressive dry mouth (xerostomia) and dry eyes (keratoconjunctivitis sicca). She reports recurrent episodes of bilateral parotid gland swelling (3 episodes in the past year), generalized fatigue, and intermittent polyarthralgia of the small joints of the hands without joint swelling. Schirmer test is ≤5 mm in 5 minutes BILATERALLY. Unstimulated whole salivary flow is <0.1 mL/min. Labs: ANA 1:320 with a speckled pattern; anti-Ro/SSA antibody STRONGLY POSITIVE; anti-La/SSB POSITIVE; rheumatoid factor 60 IU/mL (positive); ESR 38 mm/h; CRP normal. Hepatitis C antibody and HIV are NEGATIVE. Minor salivary gland (labial) biopsy demonstrates focal lymphocytic sialadenitis with a focus score of 2 (≥1 focus of ≥50 mononuclear cells per 4 mm^2 of glandular tissue). She has no prior connective tissue disease, no recent medications associated with sicca, and joint examination shows NO synovitis (no boggy swelling, no warmth).",
+  "question": "Which is the most likely diagnosis?",
+  "options": {
+    "A": "Primary Sjögren syndrome per the 2016 ACR/EULAR Classification Criteria",
+    "B": "Secondary Sjögren syndrome in the context of undiagnosed rheumatoid arthritis",
+    "C": "Drug-induced sicca syndrome",
+    "D": "Age-related sicca (lacrimal- and salivary-gland atrophy of aging)"
+  },
+  "correct": "A",
+  "rationale": "The 2016 ACR/EULAR Classification Criteria for primary Sjögren syndrome are met by accumulating ≥4 points across five weighted items, applied to patients with sicca features and after exclusion of mimickers (HCV, HIV, sarcoidosis, amyloidosis, IgG4-related disease, graft-versus-host disease, and prior head/neck radiation). This patient scores: focus score ≥1 on labial gland biopsy (3 pts) + anti-Ro/SSA positive (3 pts) + Schirmer ≤5 mm/5 min (1 pt) + unstimulated whole salivary flow ≤0.1 mL/min (1 pt) = 8 points (well above the threshold). Secondary Sjögren (option B) requires established connective-tissue disease (RA, SLE, scleroderma) — this patient has no synovitis on exam and does not meet 2010 ACR/EULAR RA criteria (RF positivity alone is insufficient; RF can be positive in primary Sjögren in 50–70%). Drug-induced sicca (option C) is excluded by the absence of an offending agent (anticholinergics, antidepressants, antihistamines, certain antihypertensives) and by the positive serology and biopsy. Age-related sicca (option D) does not produce the autoantibody profile, parotid swelling, or the focus-score histology.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 52,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_with_RA_secondary_SS",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman with established seropositive erosive rheumatoid arthritis (anti-CCP and RF strongly positive, on long-standing methotrexate; bilateral hand erosions on imaging; documented synovitis at multiple visits) presents to clinic with 2 years of progressive dry mouth and dry eyes. She reports recurrent parotid swelling and generalized fatigue. Schirmer test is ≤5 mm in 5 minutes bilaterally; unstimulated salivary flow <0.1 mL/min. Anti-Ro/SSA positive; anti-La/SSB positive. Minor salivary gland biopsy demonstrates focal lymphocytic sialadenitis with a focus score of 2. HCV and HIV negative.",
+      "rationale_for_variant": "Mixed perturbation — established rheumatoid arthritis with confirmed synovitis and erosive disease, on a background of new sicca features and confirmatory serology and biopsy. Per the 2016 ACR/EULAR Classification Criteria, primary Sjögren syndrome is restricted to patients without an established connective-tissue disease that explains the sicca; in patients with prior CTD, the appropriate label is SECONDARY Sjögren syndrome (or 'Sjögren syndrome associated with' the underlying CTD per current EULAR terminology). The diagnostic and management framework substantially overlaps but the classification differs. The correct answer therefore shifts to secondary Sjögren (option B).",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    },
+    {
+      "variant_id": "middle_aged_man_primary_SS",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man presents to clinic with 2 years of progressive dry mouth and dry eyes, recurrent bilateral parotid gland swelling, fatigue, and polyarthralgia of the hands without exam-confirmed synovitis. Schirmer test ≤5 mm in 5 minutes bilaterally; unstimulated whole salivary flow <0.1 mL/min. ANA 1:320 speckled; anti-Ro/SSA strongly positive; anti-La/SSB positive; RF 60 IU/mL positive; ESR 38 mm/h. HCV and HIV negative. Minor salivary gland biopsy: focus score 2.",
+      "rationale_for_variant": "Sex perturbation only — clinical content (criteria-meeting features for primary Sjögren) is unchanged. Primary Sjögren has a 9:1 female-to-male predominance, but male disease is well-described and tends to present with more severe extra-glandular features (lymphoma, vasculitis); the diagnostic framework is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Shiboski CH et al. 2016 American College of Rheumatology / European League Against Rheumatism Classification Criteria for Primary Sjögren Syndrome. Arthritis Rheumatol 2017;69:35-45.",
+    "Ramos-Casals M et al. EULAR recommendations for the management of Sjögren's syndrome with topical and systemic therapies. Ann Rheum Dis 2020;79:3-18.",
+    "Brito-Zerón P et al. Sjögren syndrome. Nat Rev Dis Primers 2016;2:16047."
+  ],
+  "license": "CC-BY-4.0"
+}

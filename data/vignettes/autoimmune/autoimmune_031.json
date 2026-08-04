@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_031",
+  "specialty": "autoimmune",
+  "subspecialty": "microscopic_polyangiitis_rpgn",
+  "stem": "A 65-year-old woman presents to the emergency department with 6 weeks of fatigue, anorexia, weight loss of 4 kg, and 2 weeks of progressive painful paresthesias and weakness in a pattern of mononeuritis multiplex (left foot drop, right wrist drop). Over the past 2 weeks her serum creatinine has risen from a baseline of 1.0 to 4.5 mg/dL with new microscopic hematuria, dysmorphic red cells, red-cell casts on urinalysis, and proteinuria 2 g/24h. There is NO hemoptysis, NO frank dyspnea, and oxygen saturation is 96% on room air; chest CT is unremarkable. Labs: p-ANCA POSITIVE on indirect immunofluorescence; MPO-ANCA (myeloperoxidase) STRONGLY POSITIVE on ELISA; PR3-ANCA negative. Renal biopsy demonstrates pauci-immune crescentic glomerulonephritis with crescents in >50% of glomeruli (rapidly progressive glomerulonephritis). The clinical picture is severe microscopic polyangiitis (MPA) with rapidly progressive glomerulonephritis and mononeuritis multiplex; there is no diffuse alveolar hemorrhage.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "IV methylprednisolone pulse (1 g/d × 3 days) + oral high-dose corticosteroids (prednisone 1 mg/kg/d with structured taper) PLUS rituximab OR cyclophosphamide for induction; per the PEXIVAS trial, plasma exchange is NOT routinely added in the absence of dialysis-requiring AKI or diffuse alveolar hemorrhage; avacopan (per ADVOCATE) as steroid-sparing maintenance; aggressive supportive care; nephrology co-management with consideration of renal-replacement therapy as needed",
+    "B": "High-dose corticosteroids alone",
+    "C": "Watchful waiting with reassessment of renal function in 2 weeks",
+    "D": "Plasma exchange + high-dose corticosteroids + rituximab — emphasizing plasma exchange given diffuse alveolar hemorrhage requiring oxygen support, a strong PEXIVAS-recognized indication beyond severe AKI alone"
+  },
+  "correct": "A",
+  "rationale": "Severe microscopic polyangiitis with rapidly progressive glomerulonephritis and active mononeuritis multiplex requires intensive induction immunosuppression. Per the 2021 ACR/Vasculitis Foundation ANCA Guideline (Chung SA et al.), induction is high-dose IV methylprednisolone pulse followed by oral prednisone 1 mg/kg/d with structured taper, PLUS rituximab (preferred in many adult AAV patients) OR cyclophosphamide. The PEXIVAS trial (Walsh M et al., NEJM 2020) reframed plasma-exchange use in severe AAV: plasma exchange did NOT reduce the composite primary outcome of death or end-stage kidney disease, and is therefore no longer a routine addition. Plasma exchange remains REASONABLE for very severe AKI requiring dialysis at presentation (creatinine often >5.7 mg/dL or dialysis-dependent) and for diffuse alveolar hemorrhage requiring oxygen support — but this patient's creatinine is 4.5 mg/dL (below the typical PEXIVAS threshold) and there is no DAH. The ADVOCATE trial (Jayne DRW et al., NEJM 2021) demonstrated avacopan non-inferior to a tapered prednisone regimen with substantial reduction in cumulative steroid exposure. Corticosteroids alone (option B) and watchful waiting (option C) allow ongoing nephron loss. The DAH-emphasized plex regimen (option D) is the appropriate management when DAH is present — but is not the case here.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 65,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "MPA_with_diffuse_alveolar_hemorrhage",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman with the same MPA presentation (microscopic hematuria + RBC casts + creatinine rise from 1.0 to 4.5 mg/dL, MPO-ANCA strongly positive, biopsy-proven pauci-immune crescentic glomerulonephritis) develops a NEW symptom: hemoptysis with diffuse bilateral ground-glass and consolidative opacities on CT chest. SpO2 is 88% on 6 L nasal cannula; she is hypoxic and progressively dyspneic. Bronchoalveolar lavage demonstrates progressively bloody returns consistent with DIFFUSE ALVEOLAR HEMORRHAGE. Hemoglobin has dropped from 10.5 to 7.8 g/dL. She requires admission to ICU and is being prepared for non-invasive ventilation.",
+      "rationale_for_variant": "Mixed perturbation — addition of diffuse alveolar hemorrhage (DAH) requiring oxygen support, which is one of the strongest indications for plasma exchange in severe ANCA-associated vasculitis. Per the 2021 ACR/Vasculitis Foundation ANCA Guideline and post-PEXIVAS subgroup analyses, plasma exchange remains reasonable for DAH (the original MEPEX-era indication) and for severe dialysis-requiring AKI. Treatment is intensive: plasma exchange + IV methylprednisolone pulse + rituximab (or cyclophosphamide), with ICU-level supportive care including non-invasive ventilation or intubation as needed, transfusion support, and vigilance for infection. The correct answer therefore shifts from non-DAH severe AAV induction (option A) to plasma exchange-inclusive induction (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "elderly_man_MPA",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man presents with 6 weeks of fatigue, weight loss, mononeuritis multiplex, and a creatinine rise from 1.1 to 4.2 mg/dL with microscopic hematuria, RBC casts, and proteinuria 2 g/24h. No hemoptysis. Chest CT clear. p-ANCA positive; MPO-ANCA strongly positive. Renal biopsy: pauci-immune crescentic glomerulonephritis with >50% crescents. Severe MPA with rapidly progressive glomerulonephritis without DAH.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (severe MPA with RPGN, no DAH) is unchanged. Older patients with severe AAV require careful attention to infection risk on intensive immunosuppression but the induction-regimen framework (high-dose corticosteroids + rituximab or cyclophosphamide) and the PEXIVAS-informed approach to plasma exchange are sex- and age-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Chung SA et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Antineutrophil Cytoplasmic Antibody-Associated Vasculitis. Arthritis Rheumatol 2021;73:1366-1383.",
+    "Walsh M et al. Plasma Exchange and Glucocorticoids in Severe ANCA-Associated Vasculitis (PEXIVAS). NEJM 2020;382:622-631.",
+    "Jayne DRW et al. Avacopan for the Treatment of ANCA-Associated Vasculitis (ADVOCATE). NEJM 2021;384:599-609."
+  ],
+  "license": "CC-BY-4.0"
+}

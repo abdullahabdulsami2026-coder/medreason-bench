@@ -1,0 +1,56 @@
+{
+  "id": "cardio_033",
+  "specialty": "cardiology",
+  "subspecialty": "infective_endocarditis",
+  "stem": "A 45-year-old man with a 3-year history of intravenous heroin use presents to the emergency department with 2 weeks of subjective fevers, chills, and night sweats. Vital signs: T 38.9°C, BP 118/72 mmHg, HR 102 bpm, RR 18, SpO2 95% on room air. Cardiac auscultation reveals a soft pansystolic murmur at the lower-left sternal border that increases with inspiration (Carvallo sign), consistent with new tricuspid regurgitation. Skin exam reveals nontender, hemorrhagic macules on the palms (Janeway lesions). Three sets of blood cultures drawn from separate sites are growing Staphylococcus aureus (sensitivities pending). Bedside transthoracic echocardiogram shows a 12 mm mobile vegetation on the tricuspid valve with mild functional tricuspid regurgitation; the left-sided valves are normal. There are no focal neurologic deficits, no respiratory failure, and no evidence of systemic embolization. He has no prior valve surgery and no prosthetic material in place.",
+  "question": "Which is the most appropriate initial management?",
+  "options": {
+    "A": "Discharge with a 4-week course of oral amoxicillin/clavulanate and outpatient follow-up",
+    "B": "Initiate IV antibiotics directed at Staphylococcus aureus (e.g., nafcillin or cefazolin if MSSA, vancomycin if MRSA), obtain transesophageal echocardiogram for vegetation/abscess characterization, and monitor closely for evolving surgical indications",
+    "C": "Empiric IV vancomycin alone with no further imaging; reassess clinical response in 1 week",
+    "D": "Initiate IV antibiotics AND obtain immediate cardiac-surgery consultation for early valve intervention given a Class I surgical indication"
+  },
+  "correct": "B",
+  "rationale": "This patient meets the Modified Duke Criteria for definite infective endocarditis (one major criterion: typical micro-organism — Staph aureus from two or more separate blood cultures; plus another major criterion: echocardiographic evidence of vegetation; plus minor criteria including IV drug use and fever). Per the 2015 AHA Infective Endocarditis Guideline, initial management is prompt initiation of pathogen-targeted IV antibiotics (β-lactam such as nafcillin or cefazolin for MSSA; vancomycin for MRSA; coverage adjusted by sensitivities), transesophageal echocardiogram to characterize vegetation size, valve dysfunction, and rule out perivalvular abscess, and monitoring for evolving surgical indications. Class I indications for early surgical intervention include: heart failure from valve dysfunction, persistent bacteremia after >5–7 days of appropriate antibiotics, large vegetations (>10 mm) with embolic events, persistent fever despite appropriate antibiotics with negative cultures, recurrent emboli, or perivalvular abscess. This patient currently has none of these, so initial medical management with close monitoring is appropriate. Oral antibiotics (option A) are inadequate for IE. Vancomycin alone without TEE (option C) misses critical anatomic information. Immediate surgical consultation (option D) is appropriate when a Class I indication is already present — not yet here for this right-sided IE without valve dysfunction.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 45,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_native_valve_streptococcal",
+      "demographics": {
+        "age": 72,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 72-year-old woman with degenerative aortic-valve sclerosis presents to the emergency department with 3 weeks of low-grade fevers, malaise, and weight loss following a dental cleaning 6 weeks ago. Vital signs: T 38.4°C, BP 132/76 mmHg, HR 88 bpm. Cardiac auscultation reveals a known systolic ejection murmur at the right upper sternal border with no new findings. Skin exam shows splinter hemorrhages and tender erythematous nodules on the finger pads (Osler nodes). Three sets of blood cultures from separate sites are growing viridans-group Streptococcus (penicillin-susceptible). Transthoracic echocardiogram shows an 8 mm vegetation on the aortic valve with no abscess and no significant valve dysfunction. There are no neurologic, respiratory, or embolic complications.",
+      "rationale_for_variant": "Age, sex, and clinical-context perturbation (different organism: viridans strep instead of S. aureus). The principle of management — pathogen-targeted IV antibiotics (e.g., IV ceftriaxone or penicillin G for penicillin-susceptible viridans strep), TEE for full anatomic characterization, and monitoring for evolving surgical indications — remains the same. The specific antibiotic regimen differs but the framework does not. Tests whether the model holds the management framework constant across different organisms.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "prosthetic_valve_endocarditis_with_dysfunction",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with a bioprosthetic aortic valve replacement performed 2 years ago presents to the emergency department with 1 week of fevers, dyspnea, and worsening lower-extremity edema. Vital signs: T 38.7°C, BP 102/68 mmHg, HR 108 bpm, RR 24, SpO2 92% on room air. Cardiac auscultation reveals a new decrescendo diastolic murmur at the left lower sternal border (new prosthetic-valve regurgitation). Lung exam shows diffuse rales bilaterally. Three sets of blood cultures from separate sites are growing Staphylococcus aureus. Transesophageal echocardiogram shows a 14 mm vegetation on the prosthetic aortic valve with a perivalvular abscess and severe new prosthetic-valve regurgitation. He has clinical heart failure (Killip class II–III).",
+      "rationale_for_variant": "Mixed perturbation — adds (1) prosthetic-valve location, (2) perivalvular abscess, and (3) heart failure from new prosthetic regurgitation. Per the 2015 AHA IE Guideline, EACH of these is a Class I indication for early surgical intervention: prosthetic-valve endocarditis with valve dysfunction (Class I), perivalvular complications (abscess, fistula — Class I), and heart failure from valve regurgitation/obstruction (Class I). The correct answer therefore shifts from initial medical management with monitoring (option B) to immediate IV antibiotics PLUS urgent surgical consultation for early valve intervention (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Baddour LM et al. Infective Endocarditis in Adults: Diagnosis, Antimicrobial Therapy, and Management of Complications. AHA Scientific Statement. Circulation 2015;132:1435-1486.",
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Habib G et al. 2015 ESC Guidelines for the management of infective endocarditis. Eur Heart J 2015;36:3075-3128."
+  ],
+  "license": "CC-BY-4.0"
+}

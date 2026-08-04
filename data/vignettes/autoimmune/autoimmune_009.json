@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_009",
+  "specialty": "autoimmune",
+  "subspecialty": "sle_pregnancy_preconception",
+  "stem": "A 28-year-old woman with systemic lupus erythematosus diagnosed 4 years ago presents to clinic for preconception counseling. Her current SLE manifestations are mild to moderate skin and joint disease, and she has been clinically and serologically stable on hydroxychloroquine 400 mg/d, prednisone 5 mg/d, and methotrexate 15 mg/wk for the past 18 months (SLEDAI-2K consistently <4). She has no history of lupus nephritis, no antiphospholipid antibodies, no prior pregnancies. She is anti-Ro/SSA negative. Vital signs and labs are normal: BP 118/72, no proteinuria, normal complements, anti-dsDNA negative. She wishes to conceive in the next 6 months and is asking about medication adjustments.",
+  "question": "Which is the most appropriate medication adjustment plan?",
+  "options": {
+    "A": "Continue all current medications including methotrexate; conceive when ready",
+    "B": "Stop methotrexate ≥3 months preconception; continue hydroxychloroquine (Class I in pregnancy); continue low-dose prednisone if needed; substitute azathioprine for steroid-sparing if disease activity recurs; ensure ≥6 months of remission on the pregnancy-compatible regimen before attempting conception",
+    "C": "Defer pregnancy planning entirely; provide effective contraception until disease has been quiescent for ≥6 months on stable pregnancy-compatible medications (currently active disease or unstable medications would warrant deferral)",
+    "D": "Switch to cyclophosphamide for tighter disease control before pregnancy"
+  },
+  "correct": "B",
+  "rationale": "Per the 2020 ACR Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases (Sammaritano LR et al.) and the 2023 EULAR SLE update, optimal SLE pregnancy planning requires: (1) sustained disease remission for at least 6 months on pregnancy-compatible medications before conception (mandatory — pregnancy during active SLE has high risk of flare, lupus nephritis, preeclampsia, fetal loss); (2) hydroxychloroquine continued throughout pregnancy (Class I — improves outcomes, reduces flare, and reduces neonatal lupus / congenital heart block in anti-Ro/SSA-positive women); (3) low-dose corticosteroids continued if needed; (4) METHOTREXATE STOPPED ≥3 MONTHS PRECONCEPTION (highly teratogenic and abortifacient — folate antagonist with documented embryopathy and fetal loss); (5) MYCOPHENOLATE STOPPED ≥6 weeks preconception (also teratogenic with FDA REMS); (6) azathioprine, cyclosporine, tacrolimus, calcium-channel blockers, and certolizumab are pregnancy-compatible alternatives. Continuing methotrexate (option A) risks teratogenicity. Universal pregnancy deferral (option C) is appropriate when disease is currently active — but this patient is in remission and the correct framing is to switch off methotrexate and observe ≥6 months on the pregnancy-compatible regimen before conception. Cyclophosphamide (option D) is also teratogenic and is not used for non-renal SLE control.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "active_LN_planning_pregnancy_too_soon",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old woman with systemic lupus erythematosus and active Class III lupus nephritis (currently 2 months into induction therapy with mycophenolate mofetil 2 g/d + high-dose corticosteroids; current proteinuria 2 g/24h, creatinine 1.4 mg/dL, anti-dsDNA elevated, complements low) presents to clinic asking when she can attempt pregnancy. She wishes to conceive 'as soon as possible.'",
+      "rationale_for_variant": "Mixed perturbation — active lupus nephritis on TERATOGENIC mycophenolate mofetil with disease NOT in remission. Per the 2020 ACR Reproductive Health Guideline and 2023 EULAR SLE update, the appropriate approach is to: (1) DEFER pregnancy until ≥6 months of sustained remission on pregnancy-compatible medications (e.g., transition from MMF to azathioprine after disease control is achieved); (2) provide effective contraception (long-acting reversible contraception is preferred for women on teratogens) during the deferral period; (3) coordinate with maternal-fetal medicine for high-risk pregnancy planning. Counseling against immediate pregnancy is paramount — pregnancy on mycophenolate carries documented teratogenic risk. The correct answer therefore shifts to pregnancy deferral with effective contraception (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "older_first_time_mother_age_38",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old nulliparous woman with systemic lupus erythematosus diagnosed 8 years ago, currently in clinical and serologic remission for 18 months on hydroxychloroquine 400 mg/d + prednisone 5 mg/d + methotrexate 15 mg/wk for skin and joint disease, presents for preconception counseling. She wishes to conceive in the next 6 months. She has no history of lupus nephritis, no antiphospholipid antibodies, no prior pregnancies, and is anti-Ro/SSA negative. Vital signs and labs are stable.",
+      "rationale_for_variant": "Age perturbation only — clinical content (controlled SLE on a regimen that includes methotrexate, planning pregnancy in 6 months) is unchanged. Advanced maternal age (≥35) increases baseline obstetric risk (preeclampsia, gestational diabetes, fetal aneuploidy) but does not alter the SLE-specific medication-adjustment plan. The same plan applies: stop MTX ≥3 months preconception, continue HCQ + low-dose prednisone, substitute azathioprine if needed, ≥6 months of remission required.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Sammaritano LR et al. 2020 American College of Rheumatology Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases. Arthritis Rheumatol 2020;72:529-556.",
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29.",
+    "Buyon JP et al. Predictors of Pregnancy Outcome in a Prospective, Multiethnic Cohort of Lupus Patients (PROMISSE Study). Ann Intern Med 2015;163:153-163."
+  ],
+  "license": "CC-BY-4.0"
+}

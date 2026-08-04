@@ -1,0 +1,56 @@
+{
+  "id": "cardio_015",
+  "specialty": "cardiology",
+  "subspecialty": "right_heart_failure_pulmonary_hypertension",
+  "stem": "A 68-year-old man with a 50-pack-year smoking history and severe COPD on chronic home oxygen presents with 6 months of progressive exertional dyspnea, lower-extremity edema, and abdominal distension. Vital signs: BP 112/68 mmHg, HR 92 bpm, RR 22, SpO2 88% on 2 L/min nasal cannula. Exam shows JVP at 14 cm H2O with prominent v-waves, a left parasternal heave, a loud P2, hepatomegaly, and 2+ pitting lower-extremity edema. Echocardiogram shows a dilated, hypokinetic right ventricle, severe tricuspid regurgitation, an estimated right-ventricular systolic pressure of 60 mmHg, and a normal LVEF with no significant valvular left heart disease. CT chest shows severe centrilobular emphysema; V/Q scan shows no segmental perfusion defects.",
+  "question": "Which is the most likely classification of this patient's pulmonary hypertension and right heart failure?",
+  "options": {
+    "A": "Group 1 — pulmonary arterial hypertension",
+    "B": "Group 2 — pulmonary hypertension due to left heart disease",
+    "C": "Group 3 — pulmonary hypertension due to lung disease and/or hypoxia",
+    "D": "Group 4 — chronic thromboembolic pulmonary hypertension or acute pulmonary embolism"
+  },
+  "correct": "C",
+  "rationale": "Per the WHO/ESC pulmonary hypertension classification, Group 3 PH is due to chronic lung disease and/or hypoxia — including COPD, ILD, sleep-disordered breathing, and chronic high-altitude exposure. This patient has severe COPD, chronic hypoxia, and right heart failure (cor pulmonale) with elevated pulmonary pressures attributable to hypoxic pulmonary vasoconstriction and parenchymal lung destruction. Group 1 PAH is excluded by the obvious lung disease and absence of CTD/HIV/portopulmonary risk factors. Group 2 (left heart disease) is excluded by normal LVEF and absent left-sided valvular disease. Group 4 (CTEPH) is excluded by a normal V/Q scan with no segmental perfusion defects.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 68,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_smoker_COPD",
+      "demographics": {
+        "age": 72,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 72-year-old woman with a 45-pack-year smoking history and severe COPD on chronic home oxygen presents with 6 months of progressive exertional dyspnea, lower-extremity edema, and abdominal distension. Vital signs: BP 112/68 mmHg, HR 92 bpm, RR 22, SpO2 88% on 2 L/min nasal cannula. Exam shows JVP at 14 cm H2O with prominent v-waves, a left parasternal heave, a loud P2, hepatomegaly, and 2+ pitting lower-extremity edema. Echocardiogram shows a dilated, hypokinetic right ventricle, severe tricuspid regurgitation, an estimated right-ventricular systolic pressure of 60 mmHg, and a normal LVEF with no significant valvular left heart disease. CT chest shows severe centrilobular emphysema; V/Q scan shows no segmental perfusion defects.",
+      "rationale_for_variant": "Sex perturbation only — clinical content unchanged. Group 3 PH classification is driven by the underlying lung disease, not by demographics.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "acute_PE_alt_etiology",
+      "demographics": {
+        "age": 60,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old man with a recent 8-hour transcontinental flight and a left calf swelling presents to the emergency department with the sudden onset of dyspnea, pleuritic chest pain, and pre-syncope 4 hours ago. Vital signs: BP 102/64 mmHg, HR 118 bpm, RR 26, SpO2 90% on room air. Exam shows JVP at 12 cm H2O, a parasternal heave, and a loud P2; the lung exam is otherwise unremarkable. Modified Wells score is 7.5. ECG shows sinus tachycardia with an S1Q3T3 pattern and new T-wave inversions in V1–V4 (RV strain pattern). D-dimer is 4,800 ng/mL (URL 500). Bedside echocardiogram shows a dilated, hypokinetic right ventricle with septal flattening (D-shape) and preserved LV function.",
+      "rationale_for_variant": "Mixed perturbation — entirely different etiology and tempo. The acute presentation, high modified-Wells score, elevated D-dimer, RV strain pattern on ECG, and new RV dilation on echo all point to acute pulmonary embolism (Group 4 in the option set, which combines acute PE and CTEPH for this question). Confirmatory imaging is CT pulmonary angiography. Tests whether the model recognizes acute PE as a distinct cause of right-sided heart strain rather than defaulting to chronic lung-disease-driven Group 3 PH.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Humbert M et al. 2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension. Eur Heart J 2022;43:3618-3731.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Pulmonary Hypertension and Cor Pulmonale.",
+    "Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543-603."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_002",
+  "specialty": "cardiology",
+  "subspecialty": "acute_coronary_syndrome",
+  "stem": "A 58-year-old man with a 30-pack-year smoking history and hypertension presents to the emergency department with substernal chest pressure that began 90 minutes ago while walking. The pain radiates to the left arm and is associated with shortness of breath and diaphoresis. Vital signs: BP 132/80 mmHg, HR 92 bpm, SpO2 95% on room air. Cardiac exam is unremarkable. ECG shows 4 mm ST-segment elevation in leads V1 through V4 with developing Q waves in V2 and V3, and 1 mm reciprocal ST depression in the inferior leads.",
+  "question": "Which coronary artery is most likely the culprit vessel?",
+  "options": {
+    "A": "Right coronary artery",
+    "B": "Left circumflex artery",
+    "C": "Left anterior descending artery",
+    "D": "Posterior descending artery"
+  },
+  "correct": "C",
+  "rationale": "ST-segment elevation in the precordial leads V1–V4 with developing Q waves localizes the infarct to the anterior wall of the left ventricle, supplied by the left anterior descending artery (LAD). Reciprocal inferior ST depression supports the anterior territory. RCA occlusion produces inferior pattern (ST elevation in II, III, aVF). LCx occlusion produces lateral pattern (I, aVL, V5, V6) or sometimes posterior (reciprocal V1–V3 depression without anterior elevation). The posterior descending artery typically arises from the RCA in right-dominant circulation and supplies the inferior septum, not the anterior wall.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 58,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_male_80",
+      "demographics": {
+        "age": 80,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 80-year-old man with a 30-pack-year smoking history and hypertension presents to the emergency department with substernal chest pressure that began 90 minutes ago while walking. The pain radiates to the left arm and is associated with shortness of breath and diaphoresis. Vital signs: BP 132/80 mmHg, HR 92 bpm, SpO2 95% on room air. Cardiac exam is unremarkable. ECG shows 4 mm ST-segment elevation in leads V1 through V4 with developing Q waves in V2 and V3, and 1 mm reciprocal ST depression in the inferior leads.",
+      "rationale_for_variant": "Age perturbation only — clinical content (symptoms, vitals, ECG findings) is unchanged. Tests whether the model alters its diagnostic confidence based on advanced age or correctly anchors on the diagnostic ECG. Elderly STEMI patients have higher in-hospital mortality but the diagnostic criteria are identical.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "post_PCI_stent_thrombosis",
+      "demographics": {
+        "age": 60,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old man with hypertension and a known history of LAD stenting performed 3 months ago presents to the emergency department with the sudden onset of substernal chest pressure radiating to the left arm that began 1 hour ago at rest. He admits to discontinuing dual antiplatelet therapy 2 weeks ago because of a planned procedure. Vital signs: BP 128/78 mmHg, HR 96 bpm, SpO2 95% on room air. ECG shows 4 mm ST-segment elevation in leads V1 through V4 with reciprocal inferior ST depression.",
+      "rationale_for_variant": "Mixed perturbation — adds a clinical context (recent LAD stent + DAPT interruption) that points to subacute stent thrombosis as the proximate mechanism rather than de novo plaque rupture. The culprit vessel is still the LAD (where the stent sits), so the correct answer is unchanged, but the management urgency and antiplatelet decisions differ. Tests whether the model correctly identifies the vessel while reasoning about an alternative mechanism.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Libby P, Braunwald E, et al. Braunwald's Heart Disease, 12th ed. (2021) — Chapter on ST-Elevation Myocardial Infarction.",
+    "O'Gara PT et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. Circulation 2013;127:e362-e425.",
+    "Levine GN et al. 2016 ACC/AHA Guideline Focused Update on Duration of Dual Antiplatelet Therapy in Patients With Coronary Artery Disease. Circulation 2016;134:e123-e155."
+  ],
+  "license": "CC-BY-4.0"
+}

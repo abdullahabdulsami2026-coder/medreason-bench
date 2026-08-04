@@ -1,0 +1,57 @@
+{
+  "id": "cardio_021",
+  "specialty": "cardiology",
+  "subspecialty": "afib_anticoagulation",
+  "stem": "A 72-year-old woman with newly diagnosed nonvalvular atrial fibrillation is seen in clinic for stroke-prevention management. Her medical history includes hypertension, type 2 diabetes mellitus, and a transient ischemic attack 3 years ago. She is independently mobile and has no history of major bleeding, gastrointestinal bleeding, or intracranial hemorrhage. Echocardiogram shows a structurally normal mitral valve, no rheumatic disease, and no prosthetic valves. Vital signs: BP 134/82 mmHg, HR 78 bpm. Labs: hemoglobin 13.2 g/dL, platelets 240,000/μL, creatinine 0.9 mg/dL (eGFR 70 mL/min/1.73 m^2). Her CHA2DS2-VASc score is 5; HAS-BLED score is 2.",
+  "question": "Which is the most appropriate stroke-prevention strategy?",
+  "options": {
+    "A": "Aspirin 81 mg orally daily as monotherapy",
+    "B": "Warfarin titrated to a target INR of 2.0–3.0",
+    "C": "A direct oral anticoagulant (e.g., apixaban 5 mg orally twice daily)",
+    "D": "No anticoagulation; proceed with rate control alone given her age and prior TIA"
+  },
+  "correct": "C",
+  "rationale": "Per the 2023 ACC/AHA AFib Guideline, patients with nonvalvular atrial fibrillation and a CHA2DS2-VASc score ≥2 in women (≥1 in men, excluding sex) are recommended oral anticoagulation for stroke prevention. Direct oral anticoagulants (apixaban, dabigatran, edoxaban, rivaroxaban) are PREFERRED over warfarin in nonvalvular AFib because of equivalent or superior efficacy, lower intracranial hemorrhage rates, fewer drug-food interactions, and no need for INR monitoring. Aspirin monotherapy is NOT recommended for stroke prevention in AFib (inferior to oral anticoagulation per AVERROES and ACTIVE-A). Withholding anticoagulation in a patient with CHA2DS2-VASc 5 and prior TIA is inappropriate — the annual stroke risk is high and the benefit of OAC clearly outweighs the bleeding risk.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 72,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_82",
+      "demographics": {
+        "age": 82,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 82-year-old woman with newly diagnosed nonvalvular atrial fibrillation is seen in clinic for stroke-prevention management. Her medical history includes hypertension, type 2 diabetes mellitus, and a transient ischemic attack 3 years ago. She is independently mobile and has no history of major bleeding. Echocardiogram shows a structurally normal mitral valve and no prosthetic valves. Vital signs: BP 134/82 mmHg, HR 78 bpm. Labs: hemoglobin 12.8 g/dL, creatinine 1.1 mg/dL (eGFR 55 mL/min/1.73 m^2). Her CHA2DS2-VASc score is 6; HAS-BLED score is 2.",
+      "rationale_for_variant": "Age perturbation — clinical content essentially unchanged. Older patients with AFib are systematically under-anticoagulated despite higher absolute stroke benefit; the 2023 AFib Guideline emphasizes that age alone (even >80) is not a contraindication to OAC. DOACs remain preferred. Apixaban specifically has favorable bleeding profile in elderly per ARISTOTLE. The recommendation is unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "mechanical_mitral_valve",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman with prior mechanical mitral valve replacement (bileaflet St. Jude prosthesis, 6 years ago) for rheumatic mitral stenosis is seen in clinic with newly diagnosed atrial fibrillation. She has hypertension, type 2 diabetes mellitus, and a TIA 2 years ago. Vital signs: BP 132/80 mmHg, HR 76 bpm. Labs: hemoglobin 13.0 g/dL, creatinine 1.0 mg/dL. Her CHA2DS2-VASc score is 5.",
+      "rationale_for_variant": "Mixed perturbation — adds a mechanical mitral valve, which fundamentally changes the anticoagulation strategy. Direct oral anticoagulants are CONTRAINDICATED in patients with mechanical heart valves: the RE-ALIGN trial (NEJM 2013) was stopped early because dabigatran caused excess thromboembolic and bleeding events compared with warfarin in mechanical-valve patients. The 2023 AFib Guideline and 2020 ACC/AHA Valvular Heart Disease Guideline recommend warfarin (target INR 2.5–3.5 for mechanical mitral) in this population. The correct answer therefore shifts from a DOAC to warfarin.",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    }
+  ],
+  "sources": [
+    "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
+    "Eikelboom JW et al. RE-ALIGN: Dabigatran versus warfarin in patients with mechanical heart valves. NEJM 2013;369:1206-1214.",
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Granger CB et al. ARISTOTLE: Apixaban versus warfarin in patients with atrial fibrillation. NEJM 2011;365:981-992."
+  ],
+  "license": "CC-BY-4.0"
+}

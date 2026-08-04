@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use MedReason-Bench in your research, please cite it as below."
+title: "MedReason-Bench: Clinical LLM Reasoning Evaluation in Cardiology and Autoimmune Disease"
+abstract: >-
+  A reproducible, open-source benchmark for evaluating large language models on
+  clinical reasoning tasks in cardiology and autoimmune disease, with explicit
+  metrics for accuracy, calibration, hallucination, and demographic fairness.
+type: software
+authors:
+  - given-names: Abdullah
+    family-names: Abdul Sami
+    affiliation: Northwestern University
+    # orcid: "https://orcid.org/0009-0006-8569-4532"  # confirmed in resume; uncomment when verified
+  - given-names: Hansraj
+    family-names: Hitesh
+    affiliation: Indiana Wesleyan University
+repository-code: "https://github.com/abdullahabdulsami2026-coder/medreason-bench"
+url: "https://github.com/abdullahabdulsami2026-coder/medreason-bench"
+license: MIT
+keywords:
+  - clinical-nlp
+  - llm-evaluation
+  - benchmark
+  - cardiology
+  - autoimmune-disease
+  - rheumatology
+  - fairness
+  - calibration
+  - hallucination
+version: 0.0.1
+date-released: "2026-04-25"
+preferred-citation:
+  type: article
+  title: "MedReason-Bench: Clinical LLM Reasoning Evaluation in Cardiology and Autoimmune Disease"
+  authors:
+    - given-names: Abdullah
+      family-names: Abdul Sami
+      affiliation: Northwestern University
+    - given-names: Hansraj
+      family-names: Hitesh
+      affiliation: Indiana Wesleyan University
+  year: 2026
+  # journal / venue / arXiv id to be filled when the preprint is posted

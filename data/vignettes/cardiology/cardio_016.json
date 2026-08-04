@@ -1,0 +1,56 @@
+{
+  "id": "cardio_016",
+  "specialty": "cardiology",
+  "subspecialty": "pericardial_tamponade",
+  "stem": "A 55-year-old woman with rheumatoid arthritis on chronic prednisone presents with 24 hours of progressively worsening dyspnea, chest tightness, and lightheadedness. Vital signs: BP 86/58 mmHg, HR 122 bpm, RR 24, SpO2 95% on room air. Exam reveals JVP elevated to the angle of the jaw with a prominent x-descent, muffled heart sounds, and clear lung fields. Pulsus paradoxus is measured at 18 mmHg. Bedside transthoracic echocardiogram shows a large circumferential pericardial effusion with right-atrial systolic collapse, right-ventricular early-diastolic collapse, and a plethoric inferior vena cava without inspiratory collapse. ECG shows electrical alternans with low voltage.",
+  "question": "What is the most appropriate immediate management?",
+  "options": {
+    "A": "IV crystalloid bolus and observation; defer drainage pending repeat imaging in 6 hours",
+    "B": "Urgent percutaneous pericardiocentesis under echocardiographic guidance",
+    "C": "Surgical pericardial window for definitive drainage",
+    "D": "Initiate intravenous beta-blockade to control the tachycardia"
+  },
+  "correct": "B",
+  "rationale": "This patient has cardiac tamponade with full Beck's triad (hypotension, JVD, muffled heart sounds), a marked pulsus paradoxus (>10 mmHg drop in SBP with inspiration), and confirmatory echo findings (chamber collapse, IVC plethora). The 2015 ESC Pericardial Diseases Guideline recommends urgent pericardiocentesis (Class I) as the first-line intervention for hemodynamically significant pericardial effusion regardless of etiology — preferably echocardiogram-guided at the bedside. Cautious volume expansion can serve as a temporizing measure but is not definitive (option A is insufficient). A surgical pericardial window (option C) is reserved for patients with recurrent malignant or post-surgical effusions, loculated effusions inaccessible to needle drainage, or when concomitant pericardial biopsy is required. Beta-blockade (option D) is harmful in tamponade because the compensatory tachycardia is required to maintain cardiac output.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 55,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_post_MI",
+      "demographics": {
+        "age": 78,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old woman who underwent primary PCI to the LAD for an anterior STEMI 4 days ago develops the sudden onset of dyspnea, chest tightness, and lightheadedness. Vital signs: BP 84/56 mmHg, HR 124 bpm, RR 24, SpO2 95% on room air. Exam reveals JVP elevated to the angle of the jaw, muffled heart sounds, clear lung fields, and a pulsus paradoxus of 20 mmHg. Bedside transthoracic echocardiogram shows a large circumferential pericardial effusion with right-atrial systolic collapse and right-ventricular early-diastolic collapse, raising concern for sub-acute free-wall rupture with contained hemopericardium.",
+      "rationale_for_variant": "Mixed-presentation perturbation — adds the classic post-MI mechanical-complication context (sub-acute free-wall rupture, day 3–5). Even when the underlying mechanism is rupture rather than primary effusion, urgent percutaneous pericardiocentesis remains the appropriate immediate temporizing maneuver to relieve tamponade physiology, while cardiac surgery is mobilized for definitive repair. The first-step answer is unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "malignancy_recurrent_pericardial_window",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with metastatic non-small-cell lung cancer presents to the emergency department with his third symptomatic pericardial effusion in 3 months. He has undergone two prior echo-guided pericardiocenteses (1 month ago and 2 weeks ago). He now presents with recurrent dyspnea, JVD, hypotension (BP 88/58 mmHg), HR 122 bpm, pulsus paradoxus 16 mmHg, and a large recurrent pericardial effusion with chamber collapse on echocardiogram. He is otherwise hemodynamically stabilizable for the operating room.",
+      "rationale_for_variant": "Mixed perturbation — recurrent malignant pericardial effusion despite two prior pericardiocenteses. Per the 2015 ESC Pericardial Diseases Guideline, recurrent malignant or symptomatic effusions warrant a definitive drainage procedure rather than repeated needle drainage. Surgical (or percutaneous balloon) pericardial window allows ongoing drainage and pericardial biopsy and reduces recurrence. The correct answer shifts from repeat pericardiocentesis to a surgical pericardial window.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Pericardial Disease.",
+    "Imazio M, Adler Y. Management of pericardial effusion. Eur Heart J 2013;34:1186-1197."
+  ],
+  "license": "CC-BY-4.0"
+}

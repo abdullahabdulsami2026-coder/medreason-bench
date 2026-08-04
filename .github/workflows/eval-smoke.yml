@@ -1,0 +1,11 @@
+# Tiny eval on PRs. Implemented in Phase 4 once the pipeline + Anthropic runner exist.
+name: eval-smoke
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Phase-0 placeholder. Real smoke-eval lands in Phase 4."

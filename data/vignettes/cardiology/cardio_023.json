@@ -1,0 +1,56 @@
+{
+  "id": "cardio_023",
+  "specialty": "cardiology",
+  "subspecialty": "avnrt_supraventricular_tachycardia",
+  "stem": "A 35-year-old woman with no significant past medical history presents to the emergency department with the sudden onset of palpitations and lightheadedness 30 minutes ago after climbing a flight of stairs. She has had two similar self-limited episodes over the past year. She is alert, conversational, and has no chest pain or dyspnea. Vital signs: BP 116/72 mmHg, HR 188 bpm, RR 18, SpO2 97% on room air. Cardiac auscultation reveals a rapid, regular rhythm. Lung exam is clear. ECG shows a regular narrow-complex tachycardia at 188 bpm with no clearly visible P waves (suggesting a P wave buried in or immediately after the QRS, classic for typical AV-nodal reentrant tachycardia). The baseline ECG between episodes is normal with no pre-excitation and no structural heart disease on prior echocardiogram.",
+  "question": "Which is the most appropriate first-line acute treatment in this hemodynamically stable patient?",
+  "options": {
+    "A": "Vagal maneuvers (e.g., modified Valsalva, carotid sinus massage), followed by IV adenosine 6 mg with rapid saline flush, escalating to 12 mg if needed",
+    "B": "IV beta-blocker (metoprolol 5 mg) for long-term suppression",
+    "C": "Catheter ablation of the AV-nodal slow pathway",
+    "D": "IV amiodarone 150 mg loading dose"
+  },
+  "correct": "A",
+  "rationale": "For a hemodynamically stable, regular narrow-complex supraventricular tachycardia consistent with typical AVNRT, the 2015 ACC/AHA/HRS SVT Guideline (Class I) recommends initial vagal maneuvers (modified Valsalva is most effective per the REVERT trial). If vagal maneuvers fail, IV adenosine (6 mg, then 12 mg) is the next step (Class I) — adenosine transiently blocks the AV node and terminates AV-node-dependent reentrant tachycardias such as AVNRT and orthodromic AVRT. Beta-blockers (option B) are reserved for chronic suppression rather than acute termination. Catheter ablation (option C) is the long-term definitive therapy for symptomatic recurrent AVNRT (Class I) but is not a first-line acute intervention in the ED. Amiodarone (option D) is overkill for a stable AVNRT and risks unnecessary toxicity.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 35,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "middle_aged_woman",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with no significant past medical history presents to the emergency department with the sudden onset of palpitations and lightheadedness 30 minutes ago. She has had two similar self-limited episodes over the past year. She is alert, conversational, and has no chest pain or dyspnea. Vital signs: BP 116/72 mmHg, HR 188 bpm, RR 18, SpO2 97% on room air. Cardiac auscultation reveals a rapid, regular rhythm. Lung exam is clear. ECG shows a regular narrow-complex tachycardia at 188 bpm with no clearly visible P waves. The baseline ECG between episodes is normal with no pre-excitation.",
+      "rationale_for_variant": "Age perturbation only — clinical content is unchanged. Acute management of stable AVNRT is independent of patient age within the adult range.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "recurrent_AVNRT_chronic_management",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old woman with documented typical AV-nodal reentrant tachycardia is seen in clinic for follow-up. Over the past 18 months she has had eight discrete episodes of palpitations associated with lightheadedness, including three that required emergency-department visits with adenosine termination. She has tried metoprolol 50 mg twice daily for 6 months without satisfactory reduction in episode frequency, and she finds the side effects (fatigue, exercise intolerance) limiting. Baseline ECG is normal with no pre-excitation and no structural heart disease on echocardiogram. She is asking about a definitive treatment.",
+      "rationale_for_variant": "Mixed perturbation — the clinical context shifts from acute presentation to chronic management of recurrent symptomatic AVNRT despite first-line beta-blockade. Per the 2015 ACC/AHA/HRS SVT Guideline (Class I), catheter ablation of the slow pathway is recommended as a definitive therapy for symptomatic recurrent AVNRT, with high success rates (>95%) and a low risk of AV block (<1% in experienced centers). The correct answer therefore shifts from acute (vagal maneuvers + adenosine) to definitive (catheter ablation). Tests whether the model correctly distinguishes acute termination from long-term management.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Page RL et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574.",
+    "Brugada J et al. 2019 ESC Guidelines for the management of patients with supraventricular tachycardia. Eur Heart J 2020;41:655-720.",
+    "Appelboam A et al. REVERT: Postural modification to the standard Valsalva manoeuvre for emergency treatment of supraventricular tachycardias. Lancet 2015;386:1747-1753."
+  ],
+  "license": "CC-BY-4.0"
+}

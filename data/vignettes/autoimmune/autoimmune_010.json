@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_010",
+  "specialty": "autoimmune",
+  "subspecialty": "sle_serologic_monitoring",
+  "stem": "A 35-year-old woman with systemic lupus erythematosus has been in clinical remission on hydroxychloroquine 400 mg/d and low-dose prednisone 5 mg/d for the past 12 months (SLEDAI-2K consistently 0–2). She has no history of lupus nephritis. Routine serologic monitoring at her current visit shows anti-dsDNA antibody 340 IU/mL (rising from 80 over the past 4 months), C3 62 mg/dL (declining from 95 over the same period), and C4 8 mg/dL (declining from 18). She is CLINICALLY asymptomatic — no fatigue, no rash, no arthritis. Today's urinalysis is bland (no proteinuria, no casts, no hematuria); CBC, creatinine, and liver enzymes are normal. There has been no change in her medications or lifestyle.",
+  "question": "Which is the most appropriate next step?",
+  "options": {
+    "A": "Increase clinical surveillance: schedule a return visit in 4–6 weeks; perform repeat urinalysis with microscopy looking for proteinuria/casts; repeat anti-dsDNA and complements to confirm trend; maintain current immunosuppression for now",
+    "B": "Increase immunosuppression empirically (e.g., add methotrexate or initiate belimumab) based on the serologic shift, regardless of the absence of clinical symptoms",
+    "C": "Reassure the patient that the serologic shift is benign noise; resume routine annual follow-up",
+    "D": "Discontinue hydroxychloroquine to determine whether it is contributing to the immunologic profile"
+  },
+  "correct": "A",
+  "rationale": "Serologic activity (rising anti-dsDNA + declining complements) often precedes clinical flare by weeks to months in SLE; this is well established in the SELENA-SLEDAI and BILAG longitudinal cohorts. The 2023 EULAR SLE Recommendations support increased clinical and laboratory surveillance when serologic activation occurs in an otherwise clinically quiescent patient: closer follow-up (4–6 weeks instead of routine 3–6 months), repeat urinalysis with microscopy (lupus nephritis is the classic 'silent' organ-threatening manifestation that may be detected only by sentinel proteinuria or casts), and repeat serologies to confirm the trend. Empiric escalation of immunosuppression (option B) before clinical correlation is generally not recommended in patients without a history of lupus nephritis, because the predictive value of serologic shift for clinical flare is imperfect (~50–70%) and not all serologic activations progress to clinical disease. Reassuring as benign noise (option C) understates the meaningful predictive signal. Discontinuing HCQ (option D) is incorrect — HCQ is foundational SLE therapy and never withdrawn in this context.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 35,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "lupus_nephritis_history_serologic_active",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old woman with systemic lupus erythematosus and a history of biopsy-proven Class IV lupus nephritis 4 years ago (induction with mycophenolate, complete renal response, currently on maintenance MMF 1 g BID + hydroxychloroquine + low-dose prednisone) has been in clinical and renal remission for the past 18 months. Routine serologic monitoring at her current visit shows anti-dsDNA antibody 340 IU/mL (rising from 80 over the past 4 months), C3 62 mg/dL (declining from 95), and C4 8 mg/dL (declining from 18). She is CLINICALLY asymptomatic. Today's urinalysis is bland; renal function is at baseline.",
+      "rationale_for_variant": "Mixed perturbation — patient with HISTORY of lupus nephritis, where the consequences of a renal flare are much more severe (prior kidney damage, higher recurrence risk, longer time to treat once clinically apparent). In patients with a prior LN history, serologic activation carries a substantially higher positive predictive value for renal recurrence; the 2024 ACR LN Guideline supports a lower threshold for empiric therapy adjustment (e.g., increasing maintenance MMF dose, adding belimumab, or pulse steroids) before clinical/biopsy evidence of recurrence. The correct answer therefore shifts from watchful surveillance (option A) to preemptive immunosuppression intensification (option B).",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    },
+    {
+      "variant_id": "middle_aged_woman_serologic_activation",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with systemic lupus erythematosus has been in clinical remission on hydroxychloroquine and low-dose prednisone for 12 months. She has no history of lupus nephritis. Routine serologic monitoring shows anti-dsDNA antibody 340 IU/mL (rising from 80 over 4 months), C3 62 mg/dL (declining from 95), and C4 8 mg/dL (declining from 18). She is clinically asymptomatic. Urinalysis is bland; CBC, creatinine, and liver enzymes are normal.",
+      "rationale_for_variant": "Age perturbation only — clinical content (serologic activation in a clinically quiescent SLE patient without prior lupus nephritis) is unchanged. The recommendation for increased clinical and laboratory surveillance with watchful waiting is independent of patient age in this scenario.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Petri M et al. Combined oral contraceptives in women with systemic lupus erythematosus and Selena SLEDAI flare definitions. NEJM 2005;353:2550-2558.",
+    "Bertsias GK et al. Joint EULAR/ERA-EDTA recommendations for the management of adult and paediatric lupus nephritis. Ann Rheum Dis 2012;71:1771-1782.",
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29."
+  ],
+  "license": "CC-BY-4.0"
+}

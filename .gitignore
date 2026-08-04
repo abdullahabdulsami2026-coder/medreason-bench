@@ -1,0 +1,100 @@
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+/lib/
+/lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# venvs
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.uv-cache/
+.uv/
+poetry.lock
+
+# pytest / mypy / coverage / ruff
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# ── Node / frontend ───────────────────────────────────────────────
+node_modules/
+.npm/
+.pnpm-debug.log*
+.yarn/
+yarn-error.log*
+*.tsbuildinfo
+frontend/dist/
+frontend/.vite/
+frontend/.vercel/
+
+# ── Notebooks ─────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Editor / OS ───────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# ── Secrets / env ─────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ── Eval artifacts (raw runs are checked in; intermediate caches are not) ──
+.cache/
+*.tmp
+*.log
+
+# ── Paper build artifacts ─────────────────────────────────────────
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.toc
+paper/*.pdf
+
+# ── Private evidence (local only) ─────────────────────────────────
+private_evidence/
+
+# ── HF / model caches ─────────────────────────────────────────────
+.cache/huggingface/
+~/.cache/huggingface/

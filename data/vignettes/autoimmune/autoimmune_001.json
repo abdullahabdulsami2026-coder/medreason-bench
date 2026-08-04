@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_001",
+  "specialty": "autoimmune",
+  "subspecialty": "sle_diagnosis",
+  "stem": "A 28-year-old woman presents to clinic with 6 months of progressive symptoms: a malar rash sparing the nasolabial folds that worsens after sun exposure, recurrent painless oral ulcers, and bilateral symmetric polyarthritis of the metacarpophalangeal and proximal interphalangeal joints with morning stiffness. She has not been on any new medications. Labs: ANA 1:640 with a homogeneous pattern; anti-double-stranded DNA antibody 320 IU/mL (positive); C3 62 mg/dL (low; normal 90–180); C4 9 mg/dL (low; normal 16–48); spot urine protein/creatinine ratio 0.6 g/g (mildly elevated); CBC, creatinine, and liver enzymes normal. Anti-histone antibodies are negative; anti-Smith is positive at low titer. There is no prior personal or family history of psoriasis, no Gottron papules, no heliotrope rash, no sicca symptoms, and no recent infection.",
+  "question": "Which is the most likely diagnosis?",
+  "options": {
+    "A": "Systemic lupus erythematosus per the 2019 EULAR/ACR Classification Criteria",
+    "B": "Dermatomyositis",
+    "C": "Drug-induced lupus erythematosus",
+    "D": "Primary Sjögren syndrome"
+  },
+  "correct": "A",
+  "rationale": "The 2019 EULAR/ACR Classification Criteria for SLE require an ANA titer ≥1:80 as an entry criterion (met at 1:640), plus an additive weighted score of ≥10 across clinical and immunology domains. This patient meets the entry criterion and accumulates well above 10 points: mucocutaneous (oral ulcers + acute cutaneous lupus / malar rash), musculoskeletal (joint involvement), renal (mild proteinuria), and immunology (low complement plus anti-dsDNA, plus anti-Smith). Dermatomyositis (option B) is excluded by the absence of Gottron papules, heliotrope rash, or proximal muscle weakness. Drug-induced lupus (option C) is excluded by the absence of an offending drug (procainamide, hydralazine, isoniazid, methimazole, minocycline, anti-TNF) and the negative anti-histone with positive anti-dsDNA / anti-Smith pattern (DIL is typically anti-histone positive and anti-dsDNA / anti-Smith negative). Primary Sjögren syndrome (option D) is excluded by the absence of sicca symptoms.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_postmenopausal_55",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old postmenopausal woman presents to clinic with 6 months of malar rash sparing the nasolabial folds that worsens after sun exposure, recurrent painless oral ulcers, and bilateral symmetric polyarthritis of the MCP and PIP joints with morning stiffness. She has not been on any new medications. Labs: ANA 1:640 homogeneous; anti-dsDNA 320 IU/mL; C3 62 mg/dL (low); C4 9 mg/dL (low); urine protein/creatinine 0.6 g/g; CBC, creatinine, and liver enzymes normal. Anti-histone negative; anti-Smith positive at low titer.",
+      "rationale_for_variant": "Age perturbation only — clinical content (classic SLE features with confirmatory immunology) is unchanged. Late-onset SLE (age >50) is more often confused with drug-induced lupus and tends to have lower rates of malar rash and renal disease in epidemiologic studies, but the 2019 EULAR/ACR criteria are demographic-independent. The diagnosis remains SLE.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "drug_induced_lupus_procainamide",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with paroxysmal atrial fibrillation that has been managed with procainamide for the past 9 months presents with 4 weeks of arthralgias, myalgias, low-grade fevers, and a photosensitive rash on the upper chest and arms. He has no prior history of autoimmune disease. Labs: ANA 1:1280 with a homogeneous pattern; anti-histone antibodies STRONGLY POSITIVE; anti-dsDNA NEGATIVE; anti-Smith NEGATIVE; C3 and C4 normal; urinalysis bland (no proteinuria, no casts).",
+      "rationale_for_variant": "Mixed perturbation — classic drug-induced lupus erythematosus from procainamide (one of the highest-risk drugs along with hydralazine, isoniazid, methimazole, minocycline, and anti-TNF agents). The serologic signature is distinctive: high-titer ANA + STRONGLY positive anti-histone + NEGATIVE anti-dsDNA + NEGATIVE anti-Smith + normal complements. Renal and CNS involvement are uncommon in DIL. The correct management is to withdraw the offending drug, after which symptoms typically resolve over weeks to months (anti-histone may persist longer than symptoms). The diagnosis therefore shifts from idiopathic SLE to drug-induced lupus.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Aringer M et al. 2019 European League Against Rheumatism / American College of Rheumatology Classification Criteria for Systemic Lupus Erythematosus. Arthritis Rheumatol 2019;71:1400-1412.",
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29.",
+    "Vaglio A et al. Drug-induced lupus: traditional and new concepts. Autoimmun Rev 2018;17:912-918."
+  ],
+  "license": "CC-BY-4.0"
+}

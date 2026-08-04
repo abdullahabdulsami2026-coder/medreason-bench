@@ -1,0 +1,56 @@
+{
+  "id": "cardio_043",
+  "specialty": "cardiology",
+  "subspecialty": "cardiac_amyloidosis",
+  "stem": "A 75-year-old man with a history of bilateral carpal-tunnel release surgeries (7 and 4 years ago) and lumbar spinal stenosis presents with 8 months of progressive exertional dyspnea, fatigue, and lower-extremity edema. He has not tolerated lisinopril or metoprolol initiation attempts because of marked hypotension and orthostatic symptoms. Vital signs: BP 102/64 mmHg, orthostatic to 88/56 mmHg on standing, HR 72 bpm. Echocardiogram shows an LVEF of 55%, marked LV wall thickening (interventricular septum 16 mm, posterior wall 16 mm), a 'granular sparkling' myocardial appearance, restrictive filling pattern, and an apical-sparing pattern on longitudinal strain (preserved apical strain with reduced basal and mid-LV strain). ECG shows low-voltage QRS in the limb leads despite the markedly thickened LV (voltage-mass mismatch). Technetium-99m pyrophosphate scintigraphy demonstrates Grade 3 myocardial uptake with a heart-to-contralateral-lung ratio of 1.8 at 1 hour. Serum and urine immunofixation are negative; serum free light chains are normal. The diagnosis is transthyretin cardiac amyloidosis (ATTR-CM).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Tafamidis 80 mg orally daily (TTR stabilizer)",
+    "B": "Standard heart-failure GDMT (ACE inhibitor + beta-blocker + MRA) titrated to maximum tolerated doses",
+    "C": "Watchful waiting with serial echocardiograms every 6 months",
+    "D": "Plasma-cell-directed chemotherapy with bortezomib + dexamethasone + cyclophosphamide (CyBorD)"
+  },
+  "correct": "A",
+  "rationale": "Confirmed transthyretin cardiac amyloidosis (ATTR-CM) — established by Grade 2–3 myocardial uptake on technetium-99m pyrophosphate scintigraphy with a negative monoclonal-protein workup (immunofixation negative + normal free light chains, ruling out AL amyloidosis) — is treated with the TTR stabilizer tafamidis 80 mg daily. The ATTR-ACT trial (Maurer MS et al., NEJM 2018) demonstrated reduced all-cause mortality and cardiovascular hospitalization with tafamidis. Standard HF GDMT (option B) is often poorly tolerated in cardiac amyloidosis because of autonomic dysfunction, restrictive physiology, and hypotension — ACE inhibitors and high-dose beta-blockers can precipitate dramatic hypotension; digoxin is contraindicated because it binds amyloid fibrils with risk of toxicity. Watchful waiting (option C) is inappropriate for confirmed amyloidosis with a disease-modifying therapy available. Plasma-cell-directed chemotherapy (option D) is the treatment for AL amyloidosis (immunoglobulin light-chain), not ATTR — the immunofixation/FLC workup confirmed ATTR rather than AL.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 75,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_TTR_amyloid",
+      "demographics": {
+        "age": 80,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 80-year-old woman with bilateral carpal-tunnel release surgeries and lumbar spinal stenosis presents with 8 months of progressive exertional dyspnea, fatigue, and lower-extremity edema. Vital signs: BP 102/64 mmHg with orthostatic drop to 88/56 mmHg, HR 72 bpm. Echocardiogram shows an LVEF of 55% with marked LV wall thickening (interventricular septum 16 mm), 'granular sparkling' myocardium, restrictive filling, and an apical-sparing strain pattern. ECG shows low-voltage limb leads despite LVH on echo (voltage-mass mismatch). Technetium-99m pyrophosphate scintigraphy demonstrates Grade 3 myocardial uptake. Serum and urine immunofixation are negative; serum free light chains are normal. The diagnosis is wild-type ATTR cardiac amyloidosis.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (confirmed wild-type ATTR-CM with classic features) is unchanged. Tafamidis is the same first-line therapy regardless of patient sex; benefit was consistent across subgroups in ATTR-ACT.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "AL_amyloid_positive_immunofixation",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man presents with 6 months of progressive exertional dyspnea, fatigue, lower-extremity edema, periorbital purpura, and easy bruising. Vital signs: BP 102/64 mmHg with orthostatic drop, HR 72 bpm. Echocardiogram shows an LVEF of 50%, marked LV wall thickening (interventricular septum 16 mm), restrictive filling, and an apical-sparing strain pattern. ECG shows low-voltage limb leads despite LVH on echo. Serum immunofixation is POSITIVE for a monoclonal IgG-lambda protein and serum free light chains show an abnormal kappa/lambda ratio (lambda excess). 24-hour urine has Bence-Jones protein. Bone marrow biopsy shows 12% clonal plasma cells. Endomyocardial biopsy with Congo-red staining demonstrates apple-green birefringence and immunohistochemistry confirms lambda light-chain (AL) amyloid.",
+      "rationale_for_variant": "Mixed perturbation — confirmed AL (immunoglobulin light-chain) cardiac amyloidosis rather than ATTR. AL amyloidosis is a plasma-cell dyscrasia and is treated with PLASMA-CELL-DIRECTED CHEMOTHERAPY (e.g., bortezomib + dexamethasone + cyclophosphamide [CyBorD], or daratumumab-CyBorD per ANDROMEDA), with rapid initiation given the high mortality of AL with cardiac involvement (median survival weeks to months without treatment). Tafamidis is a TTR-specific stabilizer and has NO role in AL amyloidosis. The correct answer therefore shifts to plasma-cell-directed chemotherapy (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Maurer MS et al. ATTR-ACT: Tafamidis Treatment for Patients with Transthyretin Amyloid Cardiomyopathy. NEJM 2018;379:1007-1016.",
+    "Kittleson MM et al. 2023 ACC Expert Consensus Decision Pathway on Cardiac Amyloidosis. JACC 2023;81:1076-1126.",
+    "Kastritis E et al. ANDROMEDA: Daratumumab-Based Therapy for Patients with Newly Diagnosed AL Amyloidosis. NEJM 2021;385:46-58."
+  ],
+  "license": "CC-BY-4.0"
+}

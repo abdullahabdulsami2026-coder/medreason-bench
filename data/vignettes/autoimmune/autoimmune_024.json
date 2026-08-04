@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_024",
+  "specialty": "autoimmune",
+  "subspecialty": "sjogren_extraglandular_treatment",
+  "stem": "A 45-year-old woman with primary Sjögren syndrome (3-year history; anti-Ro/SSA positive, focus score 2 on labial biopsy) presents to clinic with disabling FATIGUE limiting her usual activities, polyarthralgia of the small joints of the hands without exam-confirmed synovitis, and recurrent photosensitive cutaneous lesions on the V of the neck and upper chest. ESSDAI (EULAR Sjögren Syndrome Disease Activity Index) is 5 (low-to-moderate activity, with predominant articular and cutaneous domains). She has stable mild sicca on artificial tears and saliva substitutes. She has not previously taken systemic disease-modifying therapy. She has no significant comorbidities and no contraindications to hydroxychloroquine.",
+  "question": "Which is the most appropriate first-line systemic therapy?",
+  "options": {
+    "A": "Hydroxychloroquine 200–400 mg/d (5 mg/kg actual body weight) for fatigue, articular, and cutaneous manifestations; topical / mechanical sicca management (artificial tears, saliva substitutes); pilocarpine or cevimeline for severe oral sicca; lifestyle measures (humidification, avoiding sicca-aggravating drugs)",
+    "B": "Rituximab as first-line systemic therapy",
+    "C": "Hydroxychloroquine + methotrexate combination therapy as initial management for refractory or inadequate-response patients (or other DMARD per the predominant ESSDAI domain — biologic if appropriate)",
+    "D": "High-dose oral prednisone (40–60 mg/d) as initial monotherapy"
+  },
+  "correct": "A",
+  "rationale": "Per the 2020 EULAR Recommendations for the Management of Sjögren Syndrome with Topical and Systemic Therapies (Ramos-Casals M et al.), the management of mild-to-moderate primary Sjögren syndrome (ESSDAI low-to-moderate) is anchored on hydroxychloroquine for systemic features (fatigue, articular, cutaneous manifestations) and symptomatic sicca management with topical/mechanical agents and oral muscarinic agonists (pilocarpine or cevimeline) for severe oral or ocular sicca. Although high-quality randomized evidence for HCQ in primary Sjögren is limited, expert consensus and observational data support its use as foundational systemic therapy. Rituximab (option B) is reserved for refractory disease with severe extra-glandular features (cryoglobulinemic vasculitis, neuropathy, glomerulonephritis, refractory parotid swelling) per Class I evidence in those domains. High-dose prednisone (option D) is overkill for low-to-moderate ESSDAI without organ-threatening features and exposes the patient to substantial side effects. Combination DMARDs (option C) are appropriate as the next step for HCQ-refractory or breakthrough articular disease, not as initial therapy.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 45,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "refractory_to_HCQ_severe_arthralgia",
+      "demographics": {
+        "age": 48,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 48-year-old woman with primary Sjögren syndrome has been on hydroxychloroquine 400 mg/d for 12 months with persistent disabling polyarthralgia and tender, mildly swollen MCP and PIP joints (now with EXAM-CONFIRMED synovitis at 4 of 10 small joints), persistent fatigue, and ongoing photosensitive cutaneous lesions despite HCQ adherence (verified by serum HCQ level in the therapeutic range). ESSDAI today is 8 (rising; persistent articular, cutaneous, and constitutional domains). She has no contraindications to methotrexate.",
+      "rationale_for_variant": "Mixed perturbation — HCQ-refractory primary Sjögren with persistent and now-progressive articular and constitutional disease. Per the 2020 EULAR Sjögren management recommendations, the appropriate next step in HCQ-refractory disease with predominant articular involvement is the addition of a conventional synthetic DMARD (methotrexate is most commonly used; leflunomide or azathioprine are alternatives). Biologic therapy (rituximab) becomes appropriate for refractory disease with severe extra-glandular features. The correct answer therefore shifts from initial HCQ monotherapy (option A) to combination DMARD therapy guided by the predominant ESSDAI domains (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "middle_aged_man_SS",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with primary Sjögren syndrome (anti-Ro/SSA positive, focus score 2) presents to clinic with disabling fatigue, polyarthralgia of the small joints without exam-confirmed synovitis, and recurrent photosensitive cutaneous lesions on the upper chest. ESSDAI 5. Stable mild sicca on artificial tears. He has not previously taken systemic disease-modifying therapy and has no contraindications to hydroxychloroquine.",
+      "rationale_for_variant": "Sex perturbation only — clinical content (low-to-moderate ESSDAI primary Sjögren without organ-threatening features) is unchanged. The HCQ-anchored regimen with symptomatic sicca management is appropriate first-line therapy regardless of patient sex.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Ramos-Casals M et al. EULAR recommendations for the management of Sjögren's syndrome with topical and systemic therapies. Ann Rheum Dis 2020;79:3-18.",
+    "Seror R et al. EULAR Sjögren Syndrome Disease Activity Index (ESSDAI): a user guide. RMD Open 2015;1:e000022.",
+    "Vivino FB et al. New treatment guidelines for Sjögren disease. Rheum Dis Clin North Am 2016;42:531-551."
+  ],
+  "license": "CC-BY-4.0"
+}

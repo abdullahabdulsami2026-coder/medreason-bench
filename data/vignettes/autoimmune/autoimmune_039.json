@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_039",
+  "specialty": "autoimmune",
+  "subspecialty": "psoriatic_arthritis_peripheral",
+  "stem": "A 42-year-old woman with an 8-year history of plaque psoriasis (treated with topical corticosteroids and intermittent narrowband UVB phototherapy) presents to clinic with new-onset asymmetric oligoarticular arthritis: synovitis of the right wrist, the left knee, and the right second toe with a SAUSAGE-SHAPED DIGIT (DACTYLITIS). Her fingernails show pitting and onycholysis. She has no axial symptoms, no inflammatory bowel symptoms, and no uveitis. Vital signs stable. Labs: rheumatoid factor and anti-CCP NEGATIVE; ESR 38 mm/h; CRP 22 mg/L. Plain radiographs of the affected hands demonstrate erosive changes including the classic 'PENCIL-IN-CUP' deformity at the distal interphalangeal joint. The clinical picture meets the CASPAR criteria for psoriatic arthritis with peripheral and dactylitic features but no axial disease.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Methotrexate (effective for peripheral arthritis and skin disease); for inadequate response or dactylitis/enthesitis-predominant disease — escalate to a TNF inhibitor (adalimumab, etanercept, infliximab, golimumab, certolizumab), an IL-17 inhibitor (secukinumab, ixekizumab), an IL-23 inhibitor (guselkumab, risankizumab), or a JAK inhibitor (tofacitinib, upadacitinib); apremilast as alternative for milder disease",
+    "B": "High-dose systemic corticosteroids long-term as first-line PsA therapy",
+    "C": "NSAIDs alone as monotherapy for moderate disease",
+    "D": "TNF inhibitor or IL-17 inhibitor as first-line — avoiding methotrexate as primary axial therapy because MTX has limited efficacy for axial spondyloarthritis; IL-23 inhibitors are also less effective for axial disease per recent comparative trials; appropriate when PsA is AXIAL-PREDOMINANT (sacroiliitis, spondylitis features dominate over peripheral arthritis)"
+  },
+  "correct": "A",
+  "rationale": "Psoriatic arthritis with peripheral and dactylitic features is treated per the 2018 ACR/NPF PsA Guideline (Singh JA et al.) and the 2019 EULAR PsA Recommendations (Gossec L et al.). For peripheral PsA (oligoarticular or polyarticular), methotrexate is the conventional DMARD of first choice — it treats both peripheral arthritis and skin psoriasis, and is widely available and inexpensive. For inadequate response or for dactylitis/enthesitis-predominant disease, escalation to a biologic or targeted-synthetic DMARD is indicated, with multiple class options: TNF inhibitor (broad efficacy across PsA domains, also treats axial), IL-17 inhibitor (excellent skin and peripheral efficacy with axial coverage), IL-23 inhibitor (excellent skin and peripheral arthritis but less effective for axial), or JAK inhibitor (oral option). Apremilast is reasonable for milder disease. Long-term high-dose steroids (option B) are avoided because of cumulative toxicity and the risk of psoriasis flare on taper. NSAIDs alone (option C) inadequate for moderate disease with erosions. The axial-predominant regimen (option D) is the appropriate choice when axial features dominate — but this patient has no axial involvement; her phenotype is peripheral + dactylitic.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 42,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "PsA_with_axial_predominant_disease",
+      "demographics": {
+        "age": 38,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old man with a 6-year history of plaque psoriasis presents to clinic with 8 months of progressive inflammatory back pain (insidious onset, morning stiffness >1 hour, improves with exercise) and bilateral alternating buttock pain. He has minimal peripheral arthritis (occasional knee discomfort) and no dactylitis or significant nail involvement. HLA-B27 positive; ESR 40, CRP 24; RF and anti-CCP negative. MRI SI joints: bilateral active sacroiliitis with bone-marrow edema; lumbar-spine MRI shows scattered Romanus lesions. The clinical picture is AXIAL-PREDOMINANT psoriatic spondyloarthritis.",
+      "rationale_for_variant": "Mixed perturbation — axial-predominant PsA. Per the 2018 ACR/NPF PsA Guideline and the 2019 EULAR recommendations, the treatment approach for axial-predominant PsA differs from peripheral-predominant disease: (1) METHOTREXATE has LIMITED EFFICACY for axial disease and should not be used as primary axial therapy; (2) TNF inhibitor (preferring monoclonal anti-TNF over etanercept if IBD coexists) and IL-17 inhibitor are the preferred first-line biologic options for axial disease; (3) IL-23 inhibitors are LESS effective for axial PsA than for peripheral/skin per recent comparative-effectiveness evidence and may be deprioritized; (4) NSAIDs are recommended as adjunctive therapy. The correct answer therefore shifts from methotrexate-first (option A) to TNF/IL-17 inhibitor first-line (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_man_PsA",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with an 8-year history of plaque psoriasis presents to clinic with new-onset asymmetric oligoarticular arthritis (right wrist, left knee, right second toe with sausage-shaped digit dactylitis), nail pitting and onycholysis, and no axial involvement. RF and anti-CCP negative. ESR 38, CRP 22. Hand X-rays show pencil-in-cup deformity. CASPAR-criteria PsA with peripheral / dactylitic phenotype.",
+      "rationale_for_variant": "Sex perturbation only — clinical content (peripheral + dactylitic PsA) is unchanged. PsA has roughly equal sex distribution; the management framework with methotrexate first and biologic escalation for dactylitis is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Singh JA et al. 2018 American College of Rheumatology / National Psoriasis Foundation Guideline for the Treatment of Psoriatic Arthritis. Arthritis Rheumatol 2019;71:5-32.",
+    "Gossec L et al. EULAR recommendations for the management of psoriatic arthritis with pharmacological therapies: 2019 update. Ann Rheum Dis 2020;79:700-712.",
+    "Coates LC, Helliwell PS. Psoriatic arthritis: state of the art review. Clin Med (Lond) 2017;17:65-70."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_023",
+  "specialty": "autoimmune",
+  "subspecialty": "sjogren_pregnancy",
+  "stem": "A 33-year-old woman with primary Sjögren syndrome (4-year history; anti-Ro/SSA STRONGLY POSITIVE, anti-La/SSB POSITIVE) is in her first pregnancy and presents at 14 weeks of gestation for routine rheumatology follow-up. She has been on hydroxychloroquine 400 mg/d for the past 2 years with stable, quiescent disease (mild sicca well-controlled with topical artificial tears and saliva substitutes; no extra-glandular activity; ESSDAI 0). Vital signs are normal; she has no joint, skin, hematologic, or systemic symptoms. The maternal-fetal medicine team is engaged in shared management. She is asking about the appropriate medication and surveillance plan for her pregnancy.",
+  "question": "Which is the most appropriate management plan?",
+  "options": {
+    "A": "Continue hydroxychloroquine 400 mg/d throughout pregnancy (Class I — prevents Sjögren flare AND reduces neonatal lupus / congenital heart block in anti-Ro/SSA-positive women per the PATCH trial); arrange serial fetal echocardiography weekly from approximately 16–26 weeks of gestation; continue symptomatic sicca management; multidisciplinary maternal-fetal-medicine and rheumatology co-management",
+    "B": "Discontinue hydroxychloroquine for the duration of pregnancy",
+    "C": "Switch from hydroxychloroquine to methotrexate for tighter disease control before delivery",
+    "D": "Continue current management without fetal cardiac surveillance"
+  },
+  "correct": "A",
+  "rationale": "Hydroxychloroquine is Class I in pregnancy for women with Sjögren or SLE on chronic HCQ — discontinuation precipitates flare and removes the protective effect against neonatal lupus syndromes. The PATCH trial (Izmirly PM et al.) demonstrated that maternal HCQ throughout pregnancy reduces the recurrence of CONGENITAL HEART BLOCK in anti-Ro/SSA-positive women with a prior CHB-affected pregnancy from approximately 17% to 7%. Even in primigravidas without prior CHB (such as this patient), the PATCH evidence supports HCQ continuation as part of the standard pregnancy regimen for anti-Ro/SSA-positive women. Serial fetal cardiac surveillance with fetal echocardiography weekly from approximately 16–26 weeks of gestation is recommended in anti-Ro/SSA-positive pregnancies because the highest-risk window for development of CHB is between approximately 18–24 weeks. Methotrexate (option C) is TERATOGENIC and absolutely contraindicated in pregnancy (folate antagonist with documented embryopathy and abortifacient effect — discontinue ≥3 months preconception). Withholding fetal surveillance (option D) misses the key opportunity to detect incomplete (treatable) AV block. Discontinuing HCQ (option B) is contraindicated.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 33,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "prior_CHB_pregnancy_history",
+      "demographics": {
+        "age": 36,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 36-year-old woman with primary Sjögren syndrome and strongly positive anti-Ro/SSA and anti-La/SSB antibodies has a prior pregnancy 4 years ago complicated by fetal complete (third-degree) congenital heart block detected at 22 weeks of gestation, with neonatal pacemaker placement on day 3 of life (the child is now thriving with developmentally normal milestones). She is now in her second pregnancy at 14 weeks of gestation. She had been off chronic medication preconception while disease was quiescent, and is asking about an appropriate management plan to reduce the risk of recurrent CHB.",
+      "rationale_for_variant": "Mixed perturbation — woman with primary Sjögren (anti-Ro+) and a PRIOR CHB-affected pregnancy. Per the PATCH trial (Izmirly PM et al.), maternal hydroxychloroquine 400 mg/d initiated preconception or in the first trimester and continued throughout pregnancy reduces the recurrence rate of CHB from approximately 17% (historic baseline) to approximately 7%. This patient should be initiated on HCQ now (the trial included treatment starting up to early second trimester) and continued throughout pregnancy. The framework otherwise overlaps with the parent (HCQ continuation + serial fetal echocardiography 16–26 weeks weekly + multidisciplinary co-management). The correct answer is therefore the same as the parent (option A) — but the rationale emphasizes the PATCH-mediated prevention specifically.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "older_first_pregnancy_anti_Ro_high_titer",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old nulliparous woman with primary Sjögren syndrome (3-year history; anti-Ro/SSA strongly positive at high titer, anti-La/SSB positive) is at 14 weeks of her first pregnancy. She has been on hydroxychloroquine 400 mg/d preconception and disease is quiescent. The maternal-fetal medicine team is engaged. She is asking about appropriate medication and surveillance.",
+      "rationale_for_variant": "Age perturbation only — clinical content (anti-Ro/SSA-positive primary Sjögren in pregnancy on stable HCQ, no prior CHB-affected pregnancy) is unchanged. Advanced maternal age increases baseline obstetric risk but does not alter the Sjögren-specific medication and surveillance plan; HCQ continuation and serial fetal cardiac surveillance remain the appropriate management.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Sammaritano LR et al. 2020 American College of Rheumatology Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases. Arthritis Rheumatol 2020;72:529-556.",
+    "Izmirly PM et al. Maternal hydroxychloroquine and the risk of recurrent congenital heart block in fetuses of anti-SSA/Ro-positive mothers (PATCH). JACC 2020;76:292-302.",
+    "Ramos-Casals M et al. EULAR recommendations for the management of Sjögren's syndrome with topical and systemic therapies. Ann Rheum Dis 2020;79:3-18."
+  ],
+  "license": "CC-BY-4.0"
+}

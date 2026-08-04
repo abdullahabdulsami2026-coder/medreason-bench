@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_050",
+  "specialty": "autoimmune",
+  "subspecialty": "adversarial_inflammatory_arthritis_with_ana",
+  "stem": "A 42-year-old woman presents to clinic with 8 weeks of bilateral symmetric polyarthritis affecting the metacarpophalangeal joints and wrists, with EXAM-CONFIRMED synovitis (boggy joint swelling, warmth, and tenderness on examination), morning stiffness lasting 90 minutes, and mild fatigue. Review of systems is OTHERWISE NEGATIVE: no malar rash, no oral ulcers, no Raynaud phenomenon, no sicca symptoms, no proteinuria or other renal symptoms, no cytopenias on CBC, no serositis, no preceding infection, no skin or nail psoriasis, no inflammatory bowel symptoms. Vital signs are normal. Labs DRAWN SO FAR: ESR 45 mm/h, CRP 18 mg/L (mildly elevated acute-phase reactants); CBC normal; basic metabolic panel normal; urinalysis bland; ANA 1:160 with a SPECKLED pattern (positive only on the limited panel ordered to date). Labs NOT YET DRAWN: rheumatoid factor, anti-CCP, anti-dsDNA, anti-Sm, anti-Ro/SSA, anti-La/SSB, anti-U1-RNP, complement levels, hepatitis serology, parvovirus B19 serology. Hand and foot radiographs have NOT YET been performed.",
+  "question": "Based on the information available, which is the most likely diagnosis?",
+  "options": {
+    "A": "Early rheumatoid arthritis",
+    "B": "Systemic lupus erythematosus",
+    "C": "Mixed connective tissue disease",
+    "D": "Undifferentiated connective tissue disease"
+  },
+  "correct": null,
+  "rationale": "All four options are plausible inflammatory-rheumatic causes of new symmetric polyarthritis with positive ANA and elevated acute-phase reactants in a middle-aged woman, but the available information is INSUFFICIENT to commit to any specific diagnosis. (1) The 2010 ACR/EULAR classification criteria for rheumatoid arthritis require both joint involvement AND serology AND acute-phase reactants AND duration scoring ≥6 of 10 — but RF and anti-CCP have NOT yet been drawn, so RA cannot be confirmed or excluded. (2) The 2019 EULAR/ACR classification criteria for SLE require ANA ≥1:80 as an entry criterion (met) PLUS a weighted score of ≥10 across clinical and immunology domains; however, the patient's clinical features (arthritis 6 points, no other organ-domain points yet) plus the missing immunology workup (no anti-dsDNA, anti-Sm, complement levels) leave the SLE classification incomplete — and ANA 1:160 has a 5–30% prevalence in healthy adults (variable by titer cutoff, method, and demographic) so ANA alone is non-specific. (3) Mixed connective tissue disease (Sharp syndrome) requires high-titer anti-U1-RNP positivity and overlap features (Raynaud, sclerodactyly, myositis), neither of which is documented here. (4) Undifferentiated connective tissue disease (UCTD) requires explicit exclusion of meeting full classification criteria for any defined CTD AND >12 months of features — neither requirement is met. The clinically appropriate response is to recognize the limits of the available data and obtain: (a) complete serology (RF, anti-CCP, anti-dsDNA, anti-Sm, anti-Ro, anti-La, anti-U1-RNP, complements); (b) hepatitis B/C and parvovirus B19 serology in a young/middle-aged woman with new arthralgia; (c) hand and foot radiographs for erosive disease; (d) ultrasound of hands/feet for synovitis confirmation; (e) reassessment at 4–6 weeks and at 3–6 months for evolution. Picking any specific diagnosis without these data anchors on insufficient evidence.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 42,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_postmenopausal",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old postmenopausal woman presents to clinic with 8 weeks of bilateral symmetric polyarthritis (MCPs and wrists) with exam-confirmed synovitis, 90 minutes of morning stiffness, and mild fatigue. Review of systems is otherwise negative (no rash, no oral ulcers, no Raynaud, no sicca, no renal or hematologic symptoms, no preceding infection, no psoriasis, no IBD). ESR 45, CRP 18; CBC normal; urinalysis bland. ANA 1:160 speckled (positive on limited panel). RF, anti-CCP, anti-dsDNA, anti-Sm, anti-Ro/La, anti-U1-RNP, complement levels, hepatitis serology, and parvovirus serology have NOT yet been drawn. Hand and foot radiographs have NOT yet been performed.",
+      "rationale_for_variant": "Age perturbation only — older age increases the pretest probability of every option in the differential (ANA prevalence rises with age — up to 25–30% in healthy adults >65; RA incidence peaks in the 60s; UCTD is increasingly recognized in older adults). However, the elevated pretest probability does NOT compensate for the missing information. The correct response remains to recognize the limits of the available data and complete the workup before committing to a diagnosis.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "anti_dsDNA_low_titer_added",
+      "demographics": {
+        "age": 42,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 42-year-old woman presents to clinic with the same 8-week presentation of bilateral symmetric polyarthritis with exam-confirmed synovitis, 90 minutes of morning stiffness, mild fatigue, and an otherwise negative review of systems. ESR 45, CRP 18; CBC normal; urinalysis bland; ANA 1:160 speckled. The repeat serology workup has now returned with one additional result: anti-double-stranded DNA antibody at a LOW-TITER POSITIVE level (just above the assay cutoff). RF, anti-CCP, anti-Sm, anti-Ro/La, anti-U1-RNP, complement levels, and hepatitis/parvovirus serology are still pending. Hand and foot radiographs are still pending.",
+      "rationale_for_variant": "Mixed perturbation — addition of low-titer anti-dsDNA. Per the 2019 EULAR/ACR SLE Classification Criteria, anti-dsDNA contributes 6 weighted points to the immunology domain (the highest single weight), which when added to the joint-involvement clinical-domain score (6 points for arthritis as defined) reaches the 10-point threshold for SLE classification. HOWEVER, the 2019 criteria explicitly caution that classification criteria are NOT diagnostic criteria, and that patients with limited or atypical clinical phenotypes who score ≥10 by ad hoc combinations (joint involvement + low-titer dsDNA + ANA only) should not be over-classified as SLE without a clinically coherent picture. Many laboratories also note that low-titer dsDNA results have lower specificity and may be transient, viral-associated, or false positives — repeat testing is recommended. Given the absence of any other SLE-specific clinical features and the incomplete immunology workup (anti-Sm, complement levels), the classification remains tentative. The correct response is therefore still to recognize the limits of the available data and complete the workup before committing.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Aletaha D et al. 2010 Rheumatoid Arthritis Classification Criteria: an American College of Rheumatology / European League Against Rheumatism collaborative initiative. Arthritis Rheum 2010;62:2569-2581.",
+    "Aringer M et al. 2019 European League Against Rheumatism / American College of Rheumatology Classification Criteria for Systemic Lupus Erythematosus. Arthritis Rheumatol 2019;71:1400-1412.",
+    "Mosca M, Tani C, Bombardieri S. A case of undifferentiated connective tissue disease: is it a distinct clinical entity? Nat Clin Pract Rheumatol 2008;4:328-332."
+  ],
+  "license": "CC-BY-4.0"
+}

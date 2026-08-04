@@ -1,0 +1,56 @@
+{
+  "id": "cardio_031",
+  "specialty": "cardiology",
+  "subspecialty": "acute_mitral_regurgitation",
+  "stem": "A 60-year-old woman with longstanding myxomatous mitral valve prolapse presents to the emergency department with the acute onset of severe dyspnea and pink frothy sputum that began 90 minutes ago while she was running on a treadmill. She has no history of coronary artery disease, no prior infarction, and no recent infectious symptoms. Vital signs: BP 102/68 mmHg, HR 118 bpm, RR 32, SpO2 84% on non-rebreather. Cardiac auscultation reveals a hyperdynamic precordium and a new harsh holosystolic murmur loudest at the apex with radiation to the axilla; the cardiac rhythm is regular. Lung exam shows diffuse rales bilaterally. Chest X-ray shows florid pulmonary edema with a normal cardiac silhouette. Serial troponins are negative. ECG shows sinus tachycardia without ST-segment changes or evidence of prior infarction. Bedside transthoracic echocardiogram shows a flail posterior mitral leaflet with severe mitral regurgitation, a hyperdynamic non-dilated left ventricle (LVEF 70%), and no LV regional wall-motion abnormality. Coronary angiography performed within 4 hours demonstrates no obstructive coronary disease, excluding ischemic papillary-muscle rupture as the etiology. The clinical and imaging picture is consistent with acute chordal rupture in the setting of myxomatous mitral valve prolapse.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Continued medical optimization with intravenous diuresis, vasodilators, and guideline-directed medical therapy with reassessment in 48 hours",
+    "B": "Emergent surgical mitral-valve repair (preferred when feasible) or replacement",
+    "C": "Elective referral for surgical mitral repair at an experienced mitral center within 4–6 weeks",
+    "D": "Transcatheter aortic-valve replacement (TAVR)"
+  },
+  "correct": "B",
+  "rationale": "Acute severe mitral regurgitation from chordal rupture in a non-dilated, hyperdynamic LV is poorly tolerated — the LV cannot acutely accommodate the increase in preload, LA pressure rises rapidly, and pulmonary edema and cardiogenic shock can ensue. The 2020 ACC/AHA Valvular Heart Disease Guideline (Class I) recommends emergent surgical mitral intervention for symptomatic acute severe MR. Mitral REPAIR is preferred over replacement (Class I in chronic primary MR; the same anatomic principle applies acutely) because myxomatous etiologies with isolated leaflet prolapse / chordal rupture are highly amenable to repair, repair preserves native annular and subvalvular function, and operative mortality and long-term survival are superior to replacement at experienced centers. Continued medical management (option A) is inadequate when active pulmonary edema and tachycardia are present. Elective referral (option C) is appropriate for chronic compensated MR meeting surgical criteria — not for acute decompensation. TAVR (option D) is the wrong valve entirely.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 60,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_70",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with longstanding myxomatous mitral valve prolapse presents to the emergency department with the acute onset of severe dyspnea and pink frothy sputum that began 90 minutes ago while she was walking briskly. She has no history of coronary artery disease, no prior infarction, and no infectious symptoms. Vital signs: BP 102/68 mmHg, HR 118 bpm, RR 32, SpO2 84% on non-rebreather. Cardiac auscultation reveals a hyperdynamic precordium and a new harsh holosystolic murmur loudest at the apex with radiation to the axilla. Lung exam shows diffuse rales bilaterally. Chest X-ray shows florid pulmonary edema with a normal cardiac silhouette. Serial troponins are negative. ECG shows sinus tachycardia without ST-segment changes. Echocardiogram shows a flail posterior mitral leaflet with severe MR and a hyperdynamic non-dilated LV. Coronary angiography performed within 4 hours shows no obstructive disease.",
+      "rationale_for_variant": "Age perturbation only — clinical context (acute chordal rupture from myxomatous MVP, no CAD, hemodynamic decompensation) is unchanged. The Class I indication for emergent surgical mitral repair is identical in older women.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "chronic_severe_primary_MR_asymptomatic_LVESD_42mm",
+      "demographics": {
+        "age": 55,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old man with a known posterior mitral leaflet prolapse and chronic severe primary mitral regurgitation (followed annually for 6 years) presents for routine follow-up. He is currently asymptomatic with no exertional limitation (NYHA I). He runs 4 miles three times per week without difficulty. Vital signs: BP 124/76 mmHg, HR 68 bpm. Cardiac auscultation reveals a holosystolic apical murmur radiating to the axilla. Lung exam is clear. Today's echocardiogram shows severe primary MR with regurgitant volume 65 mL/beat, an LV end-systolic dimension of 42 mm (up from 38 mm one year ago), an LVEF of 60%, and no pulmonary hypertension. He is in sinus rhythm. He is being seen at a center with surgical mitral-repair volume >100 cases per year and a published primary repair rate exceeding 95%.",
+      "rationale_for_variant": "Mixed perturbation — chronic compensated primary MR meeting criteria for early elective surgery in an asymptomatic patient. Per the 2020 ACC/AHA Valvular Guideline (Class IIa), surgical mitral repair is reasonable in asymptomatic chronic severe primary MR with LVEF >60% and LVESD ≥40 mm when performed at an experienced primary-mitral-repair center with high success and low mortality. The correct answer shifts from emergent surgery (option B) to elective referral to an experienced mitral center (option C). Tests whether the model distinguishes acute decompensated from chronic compensated MR meeting early elective surgical criteria.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Mitral Regurgitation.",
+    "Suri RM et al. Association between early surgical intervention vs watchful waiting and outcomes for mitral regurgitation due to flail mitral valve leaflets. JAMA 2013;310:609-616."
+  ],
+  "license": "CC-BY-4.0"
+}

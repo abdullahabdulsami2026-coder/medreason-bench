@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_036",
+  "specialty": "autoimmune",
+  "subspecialty": "cryoglobulinemic_vasculitis_hcv",
+  "stem": "A 55-year-old woman with chronic untreated hepatitis C virus infection (genotype 1; HCV RNA 3 × 10^6 IU/mL; transaminases mildly elevated; FibroScan 8 kPa indicating moderate fibrosis) presents to clinic with 3 weeks of palpable purpura on the bilateral lower extremities, peripheral neuropathy with stocking-glove distribution (decreased pinprick and vibration sense distal to mid-shin), and laboratory features of glomerulonephritis (urine protein/creatinine ratio 2.0 g/g, microscopic hematuria, dysmorphic red cells, occasional red-cell casts, creatinine 1.4 mg/dL up from baseline 0.9). Vital signs stable. Labs: cryoglobulins POSITIVE (Type II — monoclonal IgM-kappa with polyclonal IgG); rheumatoid factor 320 IU/mL (markedly elevated); C3 mildly low; C4 5 mg/dL (markedly low). Skin biopsy of a purpuric lesion shows leukocytoclastic vasculitis with cryoglobulin deposits. The clinical picture is HCV-associated mixed cryoglobulinemic vasculitis with cutaneous, neurologic, and renal involvement.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "HCV direct-acting antiviral therapy (sofosbuvir/velpatasvir or another pangenotypic regimen per AASLD/IDSA guidance) — sustained virologic response often induces clinical remission of cryoglobulinemic vasculitis — PLUS rituximab + corticosteroids for the severe vasculitic features (renal, neurologic); plasma exchange for severe organ-threatening disease",
+    "B": "Rituximab + corticosteroids alone (without HCV antiviral therapy)",
+    "C": "HCV direct-acting antiviral therapy alone, with no immunosuppression",
+    "D": "Rituximab + corticosteroids + workup for occult lymphoproliferative disorder (bone-marrow biopsy, flow cytometry, lymph-node imaging) — appropriate for non-HCV (essential mixed) cryoglobulinemia, where clonal lymphoproliferation is the most common etiology"
+  },
+  "correct": "A",
+  "rationale": "Hepatitis C virus is the cause of approximately 80–90% of mixed cryoglobulinemic vasculitis cases. The pathogenesis involves chronic HCV-driven antigen-antibody immune-complex formation; treating the HCV with direct-acting antivirals (achieving sustained virologic response, SVR) is therefore both an etiologic and disease-modifying intervention, and SVR alone induces complete cryoglobulinemic remission in approximately 50–80% of patients. However, in patients with SEVERE vasculitic features (organ-threatening neurologic, renal, or cardiovascular disease), pangenotypic DAA therapy alone may not produce rapid enough remission, and concurrent IMMUNOSUPPRESSION with rituximab + corticosteroids is recommended; plasma exchange is added for severe organ-threatening disease. Per AASLD/IDSA HCV Guidance and Saadoun D et al. consensus, the combined approach is standard. Rituximab without HCV treatment (option B) is incomplete because it does not address the underlying viral driver. HCV antiviral alone (option C) is insufficient for severe vasculitis with active end-organ damage. The non-HCV / occult-lymphoproliferative workup (option D) is the appropriate framework for ESSENTIAL MIXED CRYOGLOBULINEMIA without HCV — this patient has documented active HCV.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "essential_mixed_cryo_HCV_negative",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman presents with 3 weeks of palpable purpura, peripheral neuropathy, and glomerulonephritis (proteinuria 2 g/g, microscopic hematuria with RBC casts, creatinine 1.6 mg/dL up from 1.0). Cryoglobulins POSITIVE (Type II — monoclonal IgM-kappa with polyclonal IgG); RF strongly positive; C4 markedly low. Hepatitis C antibody and HCV RNA NEGATIVE; hepatitis B negative; HIV negative. The skin biopsy demonstrates leukocytoclastic vasculitis with cryoglobulin deposits. Without an HCV (or other infectious / autoimmune) driver, the diagnosis is ESSENTIAL MIXED CRYOGLOBULINEMIA — and the most likely etiology is occult B-cell lymphoproliferative disorder.",
+      "rationale_for_variant": "Mixed perturbation — essential mixed cryoglobulinemia (HCV-negative). Type II cryoglobulinemia is now recognized to be an indolent B-cell lymphoproliferative process in most cases (the monoclonal IgM-kappa is produced by a clonal B-cell population, even when overt lymphoma is not initially apparent). Per consensus expert practice, evaluation includes bone-marrow biopsy with flow cytometry, peripheral-blood flow cytometry for clonal B-cell populations, lymph-node imaging, and serum protein electrophoresis with immunofixation. Treatment is rituximab (which depletes the clonal B cells producing the cryoglobulin) + corticosteroids for the vasculitic features, with chemotherapy (e.g., R-CHOP, R-CVP) added if a discrete lymphoma is identified. The correct answer therefore shifts from HCV-directed therapy + immunosuppression (option A) to immunosuppression + lymphoproliferative workup (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "elderly_man_HCV_cryo",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man with chronic untreated hepatitis C virus infection (genotype 1; HCV RNA 4 × 10^6 IU/mL; transaminitis; moderate fibrosis on FibroScan) presents with 3 weeks of palpable purpura, peripheral neuropathy, and glomerulonephritis. Cryoglobulins positive Type II; RF strongly positive; C4 markedly low. Skin biopsy: leukocytoclastic vasculitis with cryoglobulin deposits. The clinical picture is HCV-associated mixed cryoglobulinemic vasculitis with multi-organ involvement.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (HCV-associated cryoglobulinemic vasculitis with severe vasculitic features) is unchanged. Older patients tolerate DAA therapy well (no dose adjustment in most regimens for age), and the combined HCV-treatment + rituximab-plus-corticosteroid regimen applies regardless of age, with attention to drug-drug interactions and infection risk on rituximab.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "AASLD-IDSA HCV Guidance Panel. HCV Guidance: Recommendations for Testing, Managing, and Treating Hepatitis C. Available at hcvguidelines.org (continuously updated).",
+    "Saadoun D et al. Hepatitis C virus-associated mixed cryoglobulinemia: a crossroad between autoimmunity and lymphoproliferation. Rheumatology (Oxford) 2007;46:1234-1242.",
+    "Cacoub P et al. Cryoglobulinemia vasculitis. Am J Med 2015;128:950-955."
+  ],
+  "license": "CC-BY-4.0"
+}

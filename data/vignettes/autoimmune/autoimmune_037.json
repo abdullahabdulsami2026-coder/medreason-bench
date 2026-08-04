@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_037",
+  "specialty": "autoimmune",
+  "subspecialty": "cutaneous_small_vessel_vasculitis",
+  "stem": "A 40-year-old woman presents to clinic with 2 weeks of palpable purpura on the bilateral lower extremities (distal-predominant, sparing the trunk and upper extremities) without ulceration. She reports mild leg fatigue but NO systemic symptoms: no fever, no abdominal pain, no joint pain (apart from mild localized tenderness in the affected skin), no neurologic symptoms, no hemoptysis, and no preceding infection. Three weeks prior to symptom onset, she completed a 7-day course of TRIMETHOPRIM-SULFAMETHOXAZOLE for an uncomplicated urinary tract infection. Vital signs are normal. Labs: complete blood count and basic metabolic panel are normal; urinalysis is bland (no microscopic hematuria, no proteinuria, no casts); creatinine 0.8 mg/dL (baseline). Punch biopsy of a purpuric lesion demonstrates LEUKOCYTOCLASTIC VASCULITIS with a mixed perivascular infiltrate; direct immunofluorescence shows NO IgA-dominant deposits and NO granulomatous inflammation.",
+  "question": "Which is the most likely etiology and most appropriate management?",
+  "options": {
+    "A": "Drug-induced cutaneous small-vessel vasculitis (most common cause in adults, particularly with antibiotic, NSAID, anticonvulsant, or anti-TNF drug exposure within 1–2 weeks of onset); DISCONTINUE the suspected offending drug; supportive care (rest, leg elevation, antihistamines, NSAIDs for joint pain or inflammation); colchicine if persistent; rule out occult systemic disease with hepatitis serology, complement levels, ANCA, cryoglobulins, and urinalysis surveillance; reassess in 2–4 weeks",
+    "B": "ANCA-associated vasculitis induction with rituximab plus corticosteroids",
+    "C": "IgA vasculitis-directed corticosteroid therapy for renal protection",
+    "D": "Discontinue the suspected drug AND broaden the workup with ANCA, IgA testing, hepatitis screening, complement levels, AND order renal biopsy if persistent; initiate corticosteroids for renal protection — appropriate when cutaneous vasculitis develops new renal involvement (microhematuria, proteinuria, or rising creatinine)"
+  },
+  "correct": "A",
+  "rationale": "Cutaneous small-vessel vasculitis (also called hypersensitivity vasculitis or leukocytoclastic vasculitis) is the most common form of vasculitis in adults; the leading identified cause is DRUG REACTION, with antibiotics (particularly trimethoprim-sulfamethoxazole, beta-lactams, and minocycline), NSAIDs, anticonvulsants, and anti-TNF agents as the most-cited offenders. The temporal association (drug introduction 1–4 weeks before symptom onset) supports a drug-induced etiology. Per the 2021 ACR/Vasculitis Foundation Cutaneous Vasculitis Guideline, the appropriate management is: (1) DISCONTINUE the suspected offending agent; (2) supportive care (rest, leg elevation, antihistamines for pruritus, NSAIDs for joint pain or inflammation); (3) colchicine for persistent or recurrent disease; (4) workup to exclude systemic involvement (hepatitis B/C, HIV, ANA, ANCA, cryoglobulins, complement, urinalysis with serial surveillance); (5) reassess clinically and with repeat urinalysis in 2–4 weeks because new renal involvement can emerge after initial cutaneous-only presentation. ANCA-AAV induction (option B) is over-treatment for limited cutaneous disease without ANCA positivity. IgA vasculitis-directed corticosteroids (option C) are inappropriate when DIF is negative for IgA-dominant deposits. The expanded workup with renal biopsy + corticosteroids (option D) is the appropriate management when new renal involvement is documented — but this patient's urinalysis is bland and renal function is normal.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 40,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "cutaneous_with_new_renal_involvement",
+      "demographics": {
+        "age": 42,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 42-year-old woman with palpable purpura on the bilateral lower extremities (3 weeks after starting trimethoprim-sulfamethoxazole for a urinary tract infection) returns for follow-up after initial cutaneous-only presentation. The drug has been discontinued. Vital signs are stable. Today she has new microscopic hematuria with dysmorphic red cells, urine protein/creatinine ratio 1.2 g/g, and a creatinine that has risen from baseline 0.8 to 1.3 mg/dL — features of new RENAL INVOLVEMENT not present at the initial visit. The cutaneous purpura has not resolved after drug withdrawal. Punch biopsy of a fresh purpuric lesion is repeated and again shows leukocytoclastic vasculitis without IgA-dominant deposits.",
+      "rationale_for_variant": "Mixed perturbation — initial cutaneous-only presentation has now evolved with new renal involvement (microhematuria, proteinuria, rising creatinine), even after the suspected offending drug has been discontinued. This raises the differential for systemic small-vessel vasculitis (ANCA-associated vasculitis with renal-limited presentation, IgA vasculitis with renal predominance, cryoglobulinemic vasculitis, hepatitis-associated vasculitis). Per the 2021 ACR Cutaneous Vasculitis Guideline and consensus expert practice, the appropriate next steps are: (1) expanded serologic workup (ANCA with PR3 and MPO ELISAs, IgA testing, hepatitis B/C, HIV, cryoglobulins, complement); (2) renal biopsy if proteinuria persists >1 g/day, hematuria persists, or creatinine continues to rise — to characterize the histology (pauci-immune crescentic GN suggests AAV; IgA-dominant suggests IgA vasculitis); (3) initiation of systemic corticosteroids for renal protection; (4) directed immunosuppression based on the underlying diagnosis. The correct answer therefore shifts to the broadened workup with corticosteroids and renal biopsy (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "elderly_man_drug_induced",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man presents with 2 weeks of palpable purpura on the bilateral lower extremities, no systemic symptoms. He completed a 10-day course of cefuroxime 3 weeks prior for community-acquired pneumonia. Vital signs normal. Labs: CBC and BMP normal; urinalysis bland; creatinine baseline. Punch biopsy: leukocytoclastic vasculitis without IgA-dominant deposits or granulomatous inflammation.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (drug-induced cutaneous SVV without systemic involvement) is unchanged. Drug-induced cutaneous vasculitis can occur at any adult age and in either sex; the management framework (discontinue drug + supportive care + occult-systemic workup + reassessment) is sex- and age-independent. Older patients with multiple medications may have multiple potential triggers and benefit from careful temporal correlation with each drug exposure.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Sunderkötter CH et al. Nomenclature of Cutaneous Vasculitis: Dermatologic Addendum to the 2012 Revised International Chapel Hill Consensus Conference Nomenclature of Vasculitides. Arthritis Rheumatol 2018;70:171-184.",
+    "Carlson JA. The histological assessment of cutaneous vasculitis. Histopathology 2010;56:3-23.",
+    "Chung SA et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Polyarteritis Nodosa and IgA Vasculitis. Arthritis Rheumatol 2021;73:1384-1393."
+  ],
+  "license": "CC-BY-4.0"
+}

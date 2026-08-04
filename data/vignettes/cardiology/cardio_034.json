@@ -1,0 +1,56 @@
+{
+  "id": "cardio_034",
+  "specialty": "cardiology",
+  "subspecialty": "prosthetic_valve_thrombosis",
+  "stem": "A 58-year-old woman with a mechanical bileaflet mitral valve replacement performed 5 years ago for rheumatic mitral disease presents to the emergency department with 2 days of progressive dyspnea, orthopnea, and lightheadedness. Vital signs: BP 84/56 mmHg, HR 124 bpm, RR 30, SpO2 84% on non-rebreather. Cardiac auscultation reveals a soft, muffled mechanical valve click and a new low-pitched diastolic rumble at the apex. Lung exam shows diffuse rales bilaterally. Chest X-ray shows florid pulmonary edema. Her INR today is 1.5 (subtherapeutic; goal 2.5–3.5 for mechanical mitral). Transesophageal echocardiogram shows a 14 mm hypoechoic mobile mass on the LA aspect of the prosthesis with severely restricted leaflet motion (one leaflet fixed in the closed position), markedly elevated transmitral gradient, and severe pulmonary edema physiology. She is in NYHA class IV with cardiogenic shock physiology (cool extremities, lactate 3.8 mmol/L, urine output 10 mL/h).",
+  "question": "Which is the most appropriate management for this hemodynamically unstable patient with a large obstructive left-sided prosthetic-valve thrombosis?",
+  "options": {
+    "A": "Increase the warfarin dose and bridge with intravenous heparin; repeat transesophageal echo in 1 week",
+    "B": "Emergent surgical thrombectomy or mechanical valve replacement",
+    "C": "Low-dose intravenous fibrinolytic infusion (e.g., tissue plasminogen activator) over 25 hours",
+    "D": "Switch the patient from warfarin to apixaban and admit for observation"
+  },
+  "correct": "B",
+  "rationale": "Left-sided prosthetic-valve thrombosis with a LARGE (≥10 mm) obstructive thrombus AND hemodynamic compromise (NYHA III–IV, cardiogenic shock) is a Class I indication for emergent surgical thrombectomy or valve replacement per the 2020 ACC/AHA Valvular Heart Disease Guideline. The classic 2020-guideline algorithm stratifies management by thrombus size (≥10 mm vs <10 mm), obstructive vs non-obstructive physiology, and NYHA class: large obstructive + NYHA III–IV → surgery; small non-obstructive + NYHA I → optimize anticoagulation; intermediate scenarios → low-dose fibrinolysis is reasonable when surgical risk is prohibitive. Increasing warfarin alone (option A) does not lyse an established thrombus and leaves the patient in shock. Low-dose fibrinolysis (option C) is reasonable for small non-obstructive thrombus or when surgical risk is prohibitive — but in a hemodynamically unstable patient with a 14 mm obstructive thrombus, the surgical option is preferred. DOACs (option D) are CONTRAINDICATED in patients with mechanical heart valves (RE-ALIGN trial showed dabigatran caused excess thrombotic and bleeding events compared with warfarin).",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 58,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_72",
+      "demographics": {
+        "age": 72,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 72-year-old woman with a mechanical bileaflet mitral valve replacement performed 8 years ago presents to the emergency department with 2 days of progressive dyspnea, orthopnea, and lightheadedness. Vital signs: BP 84/56 mmHg, HR 124 bpm, RR 30, SpO2 84% on non-rebreather. Cardiac auscultation reveals a soft, muffled mechanical valve click and a new low-pitched diastolic rumble at the apex. Lung exam shows diffuse rales bilaterally. Chest X-ray shows florid pulmonary edema. Her INR today is 1.5 (subtherapeutic). Transesophageal echocardiogram shows a 14 mm hypoechoic mobile mass on the LA aspect of the prosthesis with severely restricted leaflet motion, markedly elevated transmitral gradient, and severe pulmonary edema. She is in NYHA class IV with cardiogenic shock.",
+      "rationale_for_variant": "Age perturbation only — clinical context (large obstructive left-sided prosthetic-valve thrombosis with hemodynamic compromise) is unchanged. Despite higher operative mortality in older patients, the alternative (low-dose fibrinolysis or anticoagulation alone) carries even higher short-term mortality with this thrombus burden and shock physiology. Surgical intervention remains the Class I recommendation.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "small_non_obstructive_thrombus_NYHA_I",
+      "demographics": {
+        "age": 58,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 58-year-old woman with a mechanical bileaflet mitral valve replacement performed 5 years ago is incidentally found to have a thrombus on a routine surveillance transesophageal echocardiogram performed for atypical chest discomfort. She is currently asymptomatic (NYHA I), denies dyspnea or orthopnea, and is hemodynamically stable. Vital signs: BP 132/78 mmHg, HR 72 bpm, SpO2 97% on room air. Cardiac auscultation reveals normal mechanical valve clicks. Lung exam is clear. Her INR today is 1.8 (subtherapeutic; goal 2.5–3.5). Transesophageal echocardiogram shows a 5 mm hypoechoic mass on the LA aspect of the prosthesis with NORMAL leaflet excursion, no transmitral gradient elevation, and no pulmonary hypertension.",
+      "rationale_for_variant": "Mixed perturbation — small (<10 mm), NON-obstructive thrombus in a NYHA I patient. Per the 2020 ACC/AHA Valvular Guideline, this scenario favors medical management with intensified anticoagulation (intravenous unfractionated heparin transition with eventual return to therapeutic warfarin) and serial echocardiographic surveillance, with low-dose fibrinolysis as a reasonable alternative if the thrombus does not regress. Surgery is reserved for failure of medical therapy or development of obstruction/embolic events. Among the listed options, low-dose fibrinolysis (option C) is the most appropriate alternative to surgery for this patient profile. Tests whether the model recognizes the size + NYHA-class stratification that drives management.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Eikelboom JW et al. RE-ALIGN: Dabigatran versus warfarin in patients with mechanical heart valves. NEJM 2013;369:1206-1214.",
+    "Roudaut R et al. Thrombosis of prosthetic heart valves: diagnosis and therapeutic considerations. Heart 2007;93:137-142."
+  ],
+  "license": "CC-BY-4.0"
+}

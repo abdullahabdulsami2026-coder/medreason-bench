@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_019",
+  "specialty": "autoimmune",
+  "subspecialty": "ra_cardiovascular_risk",
+  "stem": "A 55-year-old woman with seropositive rheumatoid arthritis (anti-CCP and RF strongly positive) for 15 years on methotrexate has well-controlled disease (DAS28 2.2, CRP normal). She has no other traditional cardiovascular risk factors: BP 128/78 mmHg, LDL-cholesterol 110 mg/dL, HDL-cholesterol 55 mg/dL, no diabetes mellitus (HbA1c 5.4%), and is a never-smoker. She has no family history of premature cardiovascular disease. She is asking about cardiovascular preventive care given that she has read RA increases CV risk.",
+  "question": "Which is the most appropriate cardiovascular risk-assessment approach?",
+  "options": {
+    "A": "Use the standard pooled-cohort ASCVD risk calculator with no rheumatoid-arthritis modifier",
+    "B": "Use a modified 10-year ASCVD risk calculation with the EULAR-recommended RA modifier (multiplier of approximately 1.5×); the 2017 EULAR Recommendations for CV risk management in inflammatory joint diseases recognize RA as a CV risk enhancer; aggressive RA disease control reduces CV risk; consider statin therapy if the modified risk meets threshold; lifestyle counseling",
+    "C": "No statin therapy is needed unless LDL-cholesterol is markedly elevated; RA disease activity does not affect cardiovascular risk",
+    "D": "Initiate aspirin 81 mg orally daily for primary prevention given the rheumatoid-arthritis diagnosis"
+  },
+  "correct": "B",
+  "rationale": "Rheumatoid arthritis carries an increased cardiovascular risk approximately 1.5–2× that of age- and sex-matched general-population controls, comparable to the increased risk associated with type 2 diabetes mellitus. The 2017 EULAR Recommendations for Cardiovascular Risk Management in Patients with Rheumatoid Arthritis and Other Forms of Inflammatory Joint Disorders (Agca R et al.) endorse using a CV risk-prediction model adapted with a 1.5× multiplier for RA (alternatively, models such as QRISK3 incorporate RA directly), or applying RA as a CV risk enhancer in the 2018 ACC/AHA Cholesterol Guideline framework. Aggressive RA disease control with DMARDs reduces CV risk (independent of traditional risk-factor management) — disease activity is itself an inflammatory contributor to atherosclerosis. Statin therapy is considered when the modified risk meets threshold (typically ≥7.5% 10-year ASCVD risk). The standard pooled-cohort calculator without modification (option A) underestimates risk in RA. The denial that disease activity affects CV risk (option C) contradicts published epidemiologic data. Aspirin for primary prevention (option D) is generally not supported in RA absent established ASCVD or specific high-risk features (the 2019 ACC/AHA Primary Prevention Guideline downgraded routine aspirin primary prevention).",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "seronegative_RA_lower_CV_modifier",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old woman with SERONEGATIVE rheumatoid arthritis (RF and anti-CCP both negative; clinical RA diagnosis based on persistent symmetric small-joint synovitis) for 15 years on methotrexate has well-controlled disease (DAS28 2.2, CRP normal). She has no other traditional CV risk factors: BP 128/78 mmHg, LDL 110 mg/dL, HDL 55, no diabetes (HbA1c 5.4%), never-smoker. She is asking about cardiovascular preventive care.",
+      "rationale_for_variant": "Mixed perturbation — seronegative RA. Some longitudinal cohorts (Solomon DH et al., observational data) suggest the CV risk increase is somewhat smaller in seronegative RA than in seropositive RA, although both groups have elevated risk versus the general population. The 2017 EULAR Recommendations support using the same 1.5× multiplier as a pragmatic approach across RA subgroups, with possible refinement based on disease activity, treatment response, and traditional CV risk factor burden. The framework (modified risk calculation with RA multiplier + aggressive disease control + lifestyle + statin if threshold met) is therefore unchanged, although the calculated risk and statin threshold may be marginally different.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "older_man_with_RA",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with seropositive rheumatoid arthritis (anti-CCP and RF strongly positive) for 18 years on methotrexate has well-controlled disease (DAS28 2.2). He has no other traditional CV risk factors: BP 128/78, LDL 110, HDL 50, no diabetes, never-smoker. He is asking about cardiovascular preventive care.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (seropositive RA with controlled disease, no traditional risk factors) is unchanged. The same modified-risk-assessment approach with RA as a CV risk enhancer applies; baseline ASCVD risk rises with age, so the threshold for statin initiation may be reached earlier in older patients with the same RA modifier.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Agca R et al. EULAR recommendations for cardiovascular disease risk management in patients with rheumatoid arthritis and other forms of inflammatory joint disorders: 2015/2016 update. Ann Rheum Dis 2017;76:17-28.",
+    "Crowson CS et al. Rheumatoid arthritis and cardiovascular disease. Am Heart J 2013;166:622-628.",
+    "Arnett DK et al. 2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease. Circulation 2019;140:e596-e646."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_029",
+  "specialty": "cardiology",
+  "subspecialty": "aortic_stenosis",
+  "stem": "A 78-year-old man with hypertension, hyperlipidemia, and a 30-pack-year remote smoking history presents with 4 months of progressive exertional dyspnea, two episodes of exertional syncope, and chest pressure with walking up one flight of stairs (the classic angina–syncope–dyspnea triad). Vital signs: BP 124/78 mmHg, HR 72 bpm, SpO2 96% on room air. Cardiac auscultation reveals a harsh, late-peaking systolic ejection murmur loudest at the right upper sternal border, radiating to the carotids, with a delayed and diminished carotid upstroke (pulsus parvus et tardus) and a soft S2. Lung exam is clear. Transthoracic echocardiogram shows an aortic-valve area of 0.7 cm^2, a mean transvalvular gradient of 48 mmHg, peak aortic velocity of 4.5 m/s, a normal LVEF of 55%, mild concentric LV hypertrophy, and no other significant valvular disease. He is independently mobile and has no major frailty markers.",
+  "question": "Which is the most appropriate next step in management?",
+  "options": {
+    "A": "Continued medical management of hypertension and hyperlipidemia with repeat echocardiography in 6 months",
+    "B": "Aortic valve replacement (TAVR or surgical AVR per heart-team risk assessment)",
+    "C": "Percutaneous balloon aortic valvuloplasty as definitive therapy",
+    "D": "Dobutamine stress echocardiography to clarify the severity of stenosis"
+  },
+  "correct": "B",
+  "rationale": "This patient meets all the criteria for severe symptomatic aortic stenosis: the classic angina/syncope/dyspnea triad PLUS echocardiographic severity (AVA <1.0 cm^2, mean gradient ≥40 mmHg, peak velocity ≥4.0 m/s) with normal flow (LVEF 55%). The 2020 ACC/AHA Valvular Heart Disease Guideline gives a Class I recommendation for aortic-valve replacement in symptomatic severe AS. The choice between TAVR and surgical AVR is made by a multidisciplinary heart team and depends on age, surgical risk (STS-PROM), anatomy, and patient preference; PARTNER 3 and Evolut Low-Risk demonstrated TAVR non-inferiority (and in some endpoints superiority) versus SAVR in low-risk patients. Medical management alone (option A) does not change the natural history of severe symptomatic AS — once symptoms develop, untreated mortality approaches 50% at 2 years. Balloon aortic valvuloplasty (option C) is palliative in adults and provides only short-term relief; it is not definitive. Dobutamine stress echo (option D) is reserved for low-flow / low-gradient AS with reduced LVEF — not applicable when the patient already has classic high-gradient severe AS with normal LVEF.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 78,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_82_high_surgical_risk",
+      "demographics": {
+        "age": 82,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 82-year-old woman with hypertension, hyperlipidemia, mild frailty (gait speed 0.7 m/s), and an STS-PROM mortality risk of 6.5% presents with 4 months of progressive exertional dyspnea, two episodes of exertional syncope, and chest pressure with mild exertion. Cardiac auscultation reveals a harsh, late-peaking systolic ejection murmur at the right upper sternal border radiating to the carotids with a delayed and diminished carotid upstroke. Transthoracic echocardiogram shows aortic-valve area 0.7 cm^2, mean transvalvular gradient 48 mmHg, peak velocity 4.5 m/s, normal LVEF 55%, and no other significant valvular disease.",
+      "rationale_for_variant": "Age and sex perturbation with elevated surgical risk. The Class I indication for AVR in symptomatic severe AS is unchanged; the heart-team decision shifts from surgical to transcatheter approach (TAVR was approved for high- and intermediate-risk patients before the low-risk indication). The general answer — aortic valve replacement (TAVR or SAVR per heart-team) — remains the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "low_flow_low_gradient_AS_with_LVEF_30",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man with prior anterior myocardial infarction and ischemic cardiomyopathy presents with worsening dyspnea over 6 months. Cardiac auscultation reveals a soft systolic murmur at the right upper sternal border with a normally timed carotid upstroke. Transthoracic echocardiogram shows aortic-valve area 0.8 cm^2, mean transvalvular gradient 22 mmHg, peak velocity 3.2 m/s, an LVEF of 30%, severely reduced stroke volume index of 28 mL/m^2, and global LV hypokinesis — a low-flow / low-gradient pattern. The clinical question is whether this represents true severe AS (with a flow-dependent low gradient masking severity) or pseudo-severe AS (an only mildly stenotic valve that appears narrowed because of low cardiac output).",
+      "rationale_for_variant": "Mixed perturbation — adds a low-flow / low-gradient AS pattern with reduced LVEF. The 2020 ACC/AHA Valvular Guideline (Class IIa) recommends low-dose dobutamine stress echocardiography to differentiate true severe AS (gradient and velocity rise on dobutamine while AVA remains <1.0 cm^2) from pseudo-severe AS (AVA increases as flow rises). The decision to proceed to AVR depends on the DSE result; committing to AVR without confirming true severe AS risks operating on a non-stenotic valve with reduced LV function. Tests whether the model recognizes the distinct LFLG pattern and the role of DSE.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Mack MJ et al. PARTNER 3: Transcatheter Aortic-Valve Replacement with a Balloon-Expandable Valve in Low-Risk Patients. NEJM 2019;380:1695-1705.",
+    "Popma JJ et al. Evolut Low Risk Trial: Transcatheter Aortic-Valve Replacement with a Self-Expanding Valve in Low-Risk Patients. NEJM 2019;380:1706-1715."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_007",
+  "specialty": "autoimmune",
+  "subspecialty": "neuropsychiatric_lupus",
+  "stem": "A 28-year-old woman with a 2-year history of systemic lupus erythematosus on hydroxychloroquine and low-dose prednisone presents to the emergency department with new-onset generalized tonic-clonic seizures (witnessed by her partner) followed by frank psychosis (paranoid delusions, auditory hallucinations) over the past 72 hours. There is no fever, no neck stiffness, no focal infection. Vital signs: T 37.0°C, BP 138/82 mmHg, HR 96 bpm. Brain MRI shows multifocal subcortical white-matter hyperintensities without acute infarction. Lumbar puncture is unremarkable: CSF cell count 3, protein 38 mg/dL, glucose 65 mg/dL, gram stain and cultures negative. Toxicology and metabolic workup are negative. Labs: lupus anticoagulant POSITIVE; anti-cardiolipin and anti-β2GPI IgG positive; anti-dsDNA elevated; complements low. Anti-ribosomal-P antibodies positive. The clinical picture is consistent with neuropsychiatric SLE (NP-SLE) with a combined inflammatory and antiphospholipid-mediated thrombotic component; infectious encephalitis, metabolic encephalopathy, and primary psychiatric disease have been excluded.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Therapeutic anticoagulation (warfarin, target INR 2.0–3.0) for the antiphospholipid-mediated component PLUS high-dose corticosteroids (pulse IV methylprednisolone 1 g daily for 3 days, then oral) for the inflammatory NP-SLE component PLUS consider IV cyclophosphamide for severe diffuse NP-SLE PLUS symptomatic antiepileptic and antipsychotic agents",
+    "B": "Antipsychotics and antiepileptics alone — the symptomatic component is what matters; treating the underlying SLE will not change outcomes",
+    "C": "Plasma exchange as first-line therapy",
+    "D": "Comprehensive rule-out of mimickers (repeat infectious workup including viral PCR panel, paraneoplastic antibody panel, broader metabolic and drug-effect evaluation, and dementia evaluation) BEFORE initiating immunosuppression; coordinate with neurology and infectious disease"
+  },
+  "correct": "A",
+  "rationale": "Neuropsychiatric SLE (NP-SLE) is a diagnosis of exclusion that requires careful workup to rule out infection, metabolic derangement, drug effects, and primary psychiatric disease. Once those are excluded (as in this patient), per the 2010 EULAR NPSLE Recommendations and the 2023 EULAR SLE update, treatment is directed by the predominant mechanism: (1) when there is evidence of antiphospholipid-mediated thrombotic / vasculopathic mechanism (positive lupus anticoagulant, anti-cardiolipin, anti-β2GPI; ischemic events; livedo reticularis), THERAPEUTIC ANTICOAGULATION is indicated; (2) when there is evidence of inflammatory mechanism (positive anti-ribosomal-P, positive cerebral vasculitis on imaging, response to immunosuppression in prior episodes), HIGH-DOSE CORTICOSTEROIDS plus IV cyclophosphamide are indicated for severe diffuse NP-SLE; (3) symptomatic management with antiepileptics and antipsychotics is concurrent. This patient has both signatures, so the combination approach is correct. Symptomatic management alone (option B) does not address the underlying cause. Plasma exchange (option C) is reserved for refractory or rapidly progressive disease. The mimicker rule-out (option D) was already performed; further delay risks ongoing brain injury.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 28,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_dementia_differential",
+      "demographics": {
+        "age": 78,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old woman with a 25-year history of systemic lupus erythematosus, baseline cognitive impairment (MoCA 21/30 at last visit 6 months ago), and chronic atrial fibrillation on apixaban presents to the emergency department with 1 week of progressive confusion, fluctuating attention, and one episode of unwitnessed possible seizure activity. Vital signs: T 38.2°C, BP 142/86, HR 102. She has had no recent infections per family report but lives in a long-term-care facility. Brain MRI shows chronic small-vessel ischemic disease and modest atrophy without acute infarction. Lumbar puncture is unrevealing on initial gram stain. Labs: anti-dsDNA mildly elevated (similar to her baseline); complements normal. The differential is broad: NP-SLE, infectious encephalitis (HSV, CMV), metabolic encephalopathy, drug effect, paraneoplastic syndrome, occult delirium from acute infection, and progression of underlying dementia.",
+      "rationale_for_variant": "Mixed perturbation — elderly patient with multiple competing diagnoses for the acute neuropsychiatric presentation. The pretest probability that the syndrome is driven by NP-SLE alone is much lower than in a 28-year-old with active SLE serology and clear inflammatory/thrombotic markers. Per the 2010 EULAR NPSLE Recommendations and consensus expert practice, in older patients with significant baseline cognitive disease and broad differential, comprehensive exclusion of mimickers (viral PCR panel, paraneoplastic antibodies, repeat metabolic/toxicology, infectious workup including occult sources, EEG, neurology consultation) should precede the initiation of immunosuppression — empiric high-dose steroids and cyclophosphamide in an undifferentiated encephalopathy can mask infection or worsen non-inflammatory etiologies. The correct answer therefore shifts to comprehensive mimicker workup (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_man_NPSLE",
+      "demographics": {
+        "age": 45,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old man with a 4-year history of systemic lupus erythematosus on hydroxychloroquine and low-dose prednisone presents with new-onset generalized tonic-clonic seizures and acute psychosis. There is no fever or focal infection. Vital signs are stable. Brain MRI shows multifocal white-matter hyperintensities without acute infarction. CSF studies are normal. Toxicology and metabolic workup are negative. Lupus anticoagulant POSITIVE; anti-cardiolipin and anti-β2GPI IgG positive; anti-dsDNA elevated; complements low; anti-ribosomal-P antibodies positive. Infectious encephalitis, metabolic, and primary psychiatric causes have been excluded.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (NP-SLE with combined inflammatory and antiphospholipid components in a young patient with active SLE) is unchanged. Male SLE is rarer but often more severe; the management framework for NP-SLE is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Bertsias GK et al. EULAR recommendations for the management of systemic lupus erythematosus with neuropsychiatric manifestations. Ann Rheum Dis 2010;69:2074-2082.",
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29.",
+    "ACR Ad Hoc Committee on Neuropsychiatric Lupus Nomenclature. The American College of Rheumatology nomenclature and case definitions for neuropsychiatric lupus syndromes. Arthritis Rheum 1999;42:599-608."
+  ],
+  "license": "CC-BY-4.0"
+}

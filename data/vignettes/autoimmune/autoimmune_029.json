@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_029",
+  "specialty": "autoimmune",
+  "subspecialty": "takayasu_arteritis",
+  "stem": "A 28-year-old woman of Asian descent presents to clinic with 6 months of constitutional symptoms (fatigue, low-grade intermittent fevers, weight loss of 6 kg), bilateral arm claudication after activities such as washing dishes, and intermittent dizziness. Vital signs: BP 138/82 mmHg in the right arm vs 102/68 mmHg in the left arm (significant inter-arm differential), HR 78 bpm. Auscultation reveals a high-pitched bruit over the right carotid artery and the left supraclavicular fossa (subclavian); peripheral pulses are diminished bilaterally in the upper extremities. Labs: ESR 70 mm/h, CRP 45 mg/L, normocytic anemia. CT angiography of the chest, abdomen, and pelvis demonstrates concentric arterial wall thickening with luminal stenosis of the brachiocephalic artery, the proximal left subclavian artery, and the abdominal aorta with collateral circulation — consistent with Takayasu arteritis (Numano type V). She is not pregnant.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "High-dose corticosteroids (prednisone 1 mg/kg/d) for induction PLUS a steroid-sparing immunosuppressant (methotrexate, azathioprine, or mycophenolate mofetil); tocilizumab as alternative or for refractory disease; antiplatelet therapy (low-dose aspirin) is reasonable; revascularization (endovascular or open surgical) reserved for critical lesions when disease activity is controlled",
+    "B": "High-dose corticosteroids alone with no steroid-sparing immunosuppressant",
+    "C": "Endovascular or surgical revascularization as first-line therapy with no immunosuppression",
+    "D": "High-dose corticosteroids PLUS azathioprine — pregnancy-compatible regimen avoiding teratogenic alternatives (methotrexate, mycophenolate, cyclophosphamide); imaging surveillance with MRA preferred over CT angiography in pregnancy to avoid fetal radiation; multidisciplinary maternal-fetal-medicine and rheumatology co-management"
+  },
+  "correct": "A",
+  "rationale": "Takayasu arteritis is a granulomatous large-vessel vasculitis with predilection for the aorta and its main branches, predominantly affecting young women (particularly of Asian descent — geographic distribution highest in Japan, Korea, India, and Mexico). Per the 2018 EULAR Large-Vessel Vasculitis Recommendations (Hellmich B et al.) and the 2021 ACR/Vasculitis Foundation Takayasu Guideline (Maz M et al.), management of active Takayasu arteritis is high-dose corticosteroids (prednisone 1 mg/kg/d, max ~60 mg/d) for induction PLUS a steroid-sparing immunosuppressant (methotrexate is most commonly used; azathioprine and mycophenolate mofetil are alternatives) to maintain remission and minimize cumulative steroid toxicity. Tocilizumab is an established alternative or refractory-disease option (TENDU and TAKT trials). Antiplatelet therapy is reasonable to reduce thrombotic-event risk in stenotic territories. Revascularization (PTA/stent or open surgical bypass) is reserved for critical lesions causing organ ischemia or limb claudication, and is performed when disease activity is well-controlled to reduce restenosis risk. Corticosteroids alone (option B) carry high relapse risk. Revascularization first (option C) without immunosuppression has poor outcomes (high restenosis). The pregnancy-compatible regimen (option D) is appropriate during pregnancy but not for this non-pregnant patient.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "female",
+    "race": "Asian",
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "pregnancy_active_Takayasu",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": "Asian",
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old woman of Asian descent who is 16 weeks pregnant (G2P1) presents to clinic with worsening constitutional symptoms, arm claudication, and a rising ESR/CRP consistent with active Takayasu arteritis flare. She had been managed with low-dose prednisone preconception and disease was quiescent on her last visit 4 months ago. CT angiography from before pregnancy showed bilateral subclavian and abdominal-aorta stenoses; today's MRA confirms progression of arterial wall thickening. The maternal-fetal medicine team is engaged in shared management.",
+      "rationale_for_variant": "Mixed perturbation — active Takayasu in a pregnant patient. Methotrexate, mycophenolate mofetil, and cyclophosphamide are all TERATOGENIC and absolutely contraindicated in pregnancy. The pregnancy-compatible immunosuppressive regimen for active Takayasu is high-dose corticosteroids PLUS azathioprine (the established pregnancy-compatible steroid-sparing agent in vasculitis), with tacrolimus and certolizumab pegol as additional pregnancy-compatible options. Imaging surveillance shifts from CT angiography (radiation exposure) to MRA, which lacks ionizing radiation. Multidisciplinary co-management with maternal-fetal medicine is essential. The correct answer therefore shifts to the pregnancy-compatible azathioprine-based regimen (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_man_Takayasu",
+      "demographics": {
+        "age": 45,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old man presents to clinic with 6 months of constitutional symptoms, bilateral arm claudication, and intermittent dizziness. Vital signs: BP 138/82 right arm vs 102/68 left arm; high-pitched bruits over the carotid and subclavian arteries; diminished upper-extremity pulses bilaterally. ESR 70, CRP 45, normocytic anemia. CT angiography shows arterial wall thickening with luminal stenosis of the brachiocephalic, left subclavian, and abdominal aorta — consistent with Takayasu arteritis.",
+      "rationale_for_variant": "Sex perturbation only — clinical content (active Takayasu arteritis) is unchanged. Male Takayasu is rarer (female-to-male ratio approximately 8–9:1) but well-described and can present at older ages. The induction (high-dose corticosteroids + steroid-sparing immunosuppression) and surveillance framework is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Hellmich B et al. 2018 Update of the EULAR recommendations for the management of large vessel vasculitis. Ann Rheum Dis 2020;79:19-30.",
+    "Maz M et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis. Arthritis Rheumatol 2021;73:1349-1365.",
+    "Sammaritano LR et al. 2020 American College of Rheumatology Guideline for the Management of Reproductive Health in Rheumatic and Musculoskeletal Diseases. Arthritis Rheumatol 2020;72:529-556."
+  ],
+  "license": "CC-BY-4.0"
+}

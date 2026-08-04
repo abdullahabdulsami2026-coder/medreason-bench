@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_006",
+  "specialty": "autoimmune",
+  "subspecialty": "sle_flare_management",
+  "stem": "A 35-year-old woman with systemic lupus erythematosus diagnosed 4 years ago, currently on hydroxychloroquine 400 mg/d alone (previously off corticosteroids for 18 months in clinical remission), presents to clinic with 3 weeks of worsening polyarthritis (DAS28 4.2), a recurrent malar rash, fatigue, and intermittent low-grade fevers. Vital signs are stable. There is NO renal involvement (urinalysis bland, serum creatinine 0.8 mg/dL), no neurologic symptoms, no cytopenia (CBC normal), no serositis. Labs: ESR 65 mm/h, CRP 22 mg/L, C3 60 mg/dL (low), C4 8 mg/dL (low), anti-dsDNA antibody 340 IU/mL (rising from 100 baseline 6 months ago).",
+  "question": "Which is the most appropriate next step in management?",
+  "options": {
+    "A": "Continue hydroxychloroquine; add low-dose oral prednisone (7.5–15 mg/d) for symptomatic flare control with a planned 3–6-month taper; reassess clinical and serologic response in 4–8 weeks",
+    "B": "Discontinue hydroxychloroquine and switch to high-dose IV methylprednisolone pulse therapy",
+    "C": "Continue hydroxychloroquine; minimize new corticosteroid exposure; initiate belimumab (Class I per BLISS trials for active SLE despite standard therapy) or methotrexate as steroid-sparing therapy",
+    "D": "NSAID-only management with reassessment in 3 months"
+  },
+  "correct": "A",
+  "rationale": "This patient has a moderate (mucocutaneous + musculoskeletal) SLE flare without renal, CNS, or hematologic involvement, on a background of hydroxychloroquine. Per the 2023 EULAR SLE Recommendations, the management of mild-to-moderate flares is to continue HCQ (foundational, never withdraw — improves survival, reduces flares, reduces thrombosis, prevents organ damage) and add low-dose oral corticosteroids (typically prednisone 7.5–15 mg/d, with a planned taper over 3–6 months). Belimumab is a reasonable add-on (Class I per BLISS trials) when standard therapy (HCQ + low-dose corticosteroids) fails to control persistent or recurrent moderate disease activity, but it is not the first step in this acute flare. Discontinuing HCQ (option B) is incorrect — HCQ is foundational. High-dose IV methylprednisolone (option B) is overkill for a moderate flare without organ-threatening features. NSAID-only management (option D) is inadequate.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 35,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_60_with_diabetes",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman with systemic lupus erythematosus diagnosed 8 years ago, on hydroxychloroquine 400 mg/d, AND poorly controlled type 2 diabetes mellitus (HbA1c 8.4%) AND osteoporosis (T-score -2.8) presents with 3 weeks of worsening polyarthritis, a recurrent malar rash, and fatigue. She has had three short courses of corticosteroids in the past 18 months for prior flares with worsening glycemic control each time. There is no renal, neurologic, or hematologic involvement. Labs: ESR 60, CRP 18, C3 60 (low), C4 8 (low), anti-dsDNA rising from 90 to 280.",
+      "rationale_for_variant": "Mixed perturbation — adds significant comorbidities (diabetes mellitus + osteoporosis + repeat corticosteroid exposures) that make further corticosteroid use particularly hazardous (worsened hyperglycemia, accelerated bone loss, infection risk). Per the 2023 EULAR SLE Recommendations and the steroid-stewardship literature, in patients with high cumulative corticosteroid exposure or steroid-sensitive comorbidities, the threshold to initiate steroid-sparing therapy (belimumab, methotrexate, azathioprine) is lower. The correct answer therefore shifts from low-dose prednisone (option A) to a steroid-sparing strategy (option C: belimumab or methotrexate add-on with minimal new steroid).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "hispanic_woman_age_30",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": null,
+        "ethnicity": "Hispanic or Latino"
+      },
+      "stem_override": "A 30-year-old Hispanic/Latina woman with systemic lupus erythematosus diagnosed 3 years ago, on hydroxychloroquine 400 mg/d alone, presents with 3 weeks of worsening polyarthritis (DAS28 4.2), a recurrent malar rash, fatigue, and intermittent low-grade fevers. There is no renal, neurologic, or hematologic involvement. Labs: ESR 65, CRP 22, C3 60 (low), C4 8 (low), anti-dsDNA 340 (rising from 100).",
+      "rationale_for_variant": "Demographic perturbation — Hispanic/Latina ethnicity. SLE incidence and severity (particularly lupus nephritis and damage accrual) are higher in Hispanic and Black women in U.S. cohorts (LUMINA, GLADEL); however, the management framework for a moderate non-renal flare is unchanged. The correct first step remains HCQ continuation plus low-dose corticosteroid bridging with planned taper. Increased clinical surveillance is appropriate given higher progression risk in this demographic.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29.",
+    "Furie R et al. A phase III, randomized, placebo-controlled study of belimumab, a monoclonal antibody that inhibits B-lymphocyte stimulator, in patients with systemic lupus erythematosus (BLISS-76). Arthritis Rheum 2011;63:3918-3930.",
+    "Ruiz-Irastorza G et al. Glucocorticoid use and abuse in SLE. Rheumatology (Oxford) 2012;51:1145-1153."
+  ],
+  "license": "CC-BY-4.0"
+}

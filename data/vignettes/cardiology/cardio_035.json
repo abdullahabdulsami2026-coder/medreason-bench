@@ -1,0 +1,56 @@
+{
+  "id": "cardio_035",
+  "specialty": "cardiology",
+  "subspecialty": "tricuspid_regurgitation",
+  "stem": "A 70-year-old woman with longstanding HFrEF (LVEF 35%) following a successful surgical mitral repair 2 years ago presents to clinic with progressive abdominal distension, anasarca, and dyspnea on minimal exertion despite escalating outpatient diuretic therapy. She is on maximally tolerated guideline-directed medical therapy (sacubitril/valsartan, carvedilol, spironolactone, dapagliflozin) and has been on torsemide 100 mg orally twice daily plus metolazone 5 mg three times per week for 4 weeks. Vital signs: BP 102/64 mmHg, HR 78 bpm, SpO2 96% on room air. Exam shows JVP at 14 cm H2O with prominent v-waves, hepatomegaly, ascites, and 3+ pitting lower-extremity edema. Cardiac auscultation reveals a soft holosystolic murmur at the lower left sternal border that increases with inspiration. Echocardiogram shows severe functional (secondary) tricuspid regurgitation (vena-contracta width 8 mm, EROA 0.6 cm^2), severe right-ventricular dilation with reduced systolic function (TAPSE 12 mm), and a moderately elevated estimated pulmonary-artery systolic pressure of 50 mmHg. The mitral repair is intact. Her STS score for surgical tricuspid valve replacement is 9% (high surgical risk).",
+  "question": "Which is the most appropriate next step in management?",
+  "options": {
+    "A": "Continue current medical management with maximal-dose diuretics; defer any procedural intervention",
+    "B": "Transcatheter edge-to-edge tricuspid repair (T-TEER) at an experienced center",
+    "C": "Open surgical tricuspid valve replacement with mechanical prosthesis",
+    "D": "Open surgical tricuspid annuloplasty alone, without leaflet intervention"
+  },
+  "correct": "B",
+  "rationale": "Severe symptomatic functional (secondary) tricuspid regurgitation refractory to maximal diuretic therapy carries a poor prognosis, and isolated surgical intervention has historically been associated with high operative mortality (10–30%). The TRILUMINATE Pivotal Trial (Sorajja et al., NEJM 2023) demonstrated that transcatheter edge-to-edge tricuspid repair (T-TEER) reduced symptoms (KCCQ score) and was a safe alternative in patients with severe symptomatic TR at high surgical risk. The 2023 ACC/AHA focused update added T-TEER as a Class IIa option for symptomatic severe secondary TR with persistent symptoms despite optimal medical therapy in patients who are at intermediate or high surgical risk. Continued diuresis alone (option A) does not address the structural problem and has already failed. Open surgical TVR (option C) is reserved for primary TR or when T-TEER is anatomically infeasible; high-risk patients tolerate open tricuspid surgery poorly. Annuloplasty alone (option D) is typically performed as concomitant repair during left-sided cardiac surgery (already done in this patient at the time of MV repair), not as a stand-alone late intervention.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 70,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_man",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man with longstanding HFrEF (LVEF 35%) following a successful surgical mitral repair 2 years ago presents to clinic with progressive abdominal distension, anasarca, and dyspnea on minimal exertion despite escalating outpatient diuretic therapy and maximal GDMT. Vital signs: BP 102/64 mmHg, HR 78 bpm, SpO2 96% on room air. Exam shows JVP at 14 cm H2O, hepatomegaly, ascites, and 3+ pitting lower-extremity edema. Echocardiogram shows severe functional (secondary) TR (vena-contracta width 8 mm, EROA 0.6 cm^2), severe RV dilation with reduced systolic function (TAPSE 12 mm), and an estimated pulmonary-artery systolic pressure of 50 mmHg. STS score for surgical TVR is 9% (high surgical risk).",
+      "rationale_for_variant": "Sex perturbation only — clinical context (functional secondary TR refractory to medical therapy in a high-risk patient) is unchanged. T-TEER remains the appropriate intervention.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "primary_TR_carcinoid",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman with a 5-year history of metastatic small-bowel carcinoid (somatostatin-receptor positive, on octreotide LAR with stable hepatic metastases) presents with progressive lower-extremity edema, ascites, and dyspnea on exertion. Vital signs are stable (BP 118/72 mmHg, HR 78 bpm). Echocardiogram shows severe TRICUSPID REGURGITATION with characteristic carcinoid valvular changes: thickened, retracted, and immobile tricuspid leaflets that fail to coapt, with severe right-atrial and right-ventricular dilation. The pulmonic valve also shows carcinoid involvement with mixed stenosis and regurgitation. Her STS score for tricuspid valve replacement is 4.5% (intermediate surgical risk). Her oncology team confirms stable systemic disease with a projected life expectancy >2 years.",
+      "rationale_for_variant": "Mixed perturbation — entirely different etiology (PRIMARY tricuspid regurgitation from carcinoid valvular disease, with structurally abnormal, retracted leaflets) in a patient with controlled metastatic disease and reasonable life expectancy. Carcinoid valvular involvement causes leaflet retraction and immobility that is NOT amenable to T-TEER (T-TEER requires reducible leaflet coaptation). Surgical tricuspid valve replacement is the established intervention for severe carcinoid tricuspid disease in patients with adequate life expectancy and acceptable surgical risk. Tests whether the model recognizes the etiology-driven distinction between functional secondary TR (T-TEER) and primary structural TR (surgical replacement).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Sorajja P et al. TRILUMINATE Pivotal: Transcatheter Repair for Tricuspid Regurgitation. NEJM 2023;388:1833-1842.",
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Møller JE et al. Carcinoid Heart Disease: Epidemiology, Pathophysiology, Outcome. Eur Heart J 2003;24:1230-1238."
+  ],
+  "license": "CC-BY-4.0"
+}

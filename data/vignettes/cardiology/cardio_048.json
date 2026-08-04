@@ -1,0 +1,56 @@
+{
+  "id": "cardio_048",
+  "specialty": "cardiology",
+  "subspecialty": "wearable_afib_detection",
+  "stem": "A 65-year-old asymptomatic man with hypertension and a transient ischemic attack 3 years ago (CHA2DS2-VASc 3: HTN + prior TIA + male) presents to clinic with an Apple Watch ECG strip he recorded 2 days ago. The strip shows an irregularly irregular rhythm and the watch automatically flagged the rhythm as 'atrial fibrillation' using its FDA-cleared single-lead AFib detection algorithm. He denies palpitations, dyspnea, syncope, or any symptoms during the recording. Vital signs in clinic today are normal: BP 132/78 mmHg, HR 76 bpm. A 12-lead ECG performed in clinic today shows normal sinus rhythm without ectopy. He has no other known arrhythmias. He asks whether he should start anticoagulation based on the watch result.",
+  "question": "Which is the most appropriate next step?",
+  "options": {
+    "A": "Confirmatory longer-duration ambulatory rhythm monitoring (extended Holter, 14- to 30-day event monitor, or implantable loop recorder); the anticoagulation decision should be based on confirmed AFib plus the patient's CHA2DS2-VASc score",
+    "B": "Initiate a direct oral anticoagulant immediately based on the Apple Watch strip alone",
+    "C": "Reassure as a likely false positive; no further evaluation needed",
+    "D": "Initiate a direct oral anticoagulant (apixaban) plus rate control given confirmed AFib documented on multiple monitoring strips and a CHA2DS2-VASc ≥2"
+  },
+  "correct": "A",
+  "rationale": "The Apple Heart Study (Perez MV et al., NEJM 2019) established that the Apple Watch's irregular-pulse notification has a positive predictive value of approximately 84% for AFib when subsequently monitored — a useful screening signal but not a definitive diagnosis from a single watch strip. The 2023 ACC/AHA AFib Guideline (and 2018 USPSTF Recommendation on AFib screening) emphasize that any wearable AFib alert requires confirmatory longer-duration ambulatory rhythm monitoring before anticoagulation is initiated, especially in asymptomatic patients with intermediate evidence. Initiating anticoagulation based on a single watch strip alone (option B) risks unnecessary bleeding from a false positive. Reassurance without further workup (option C) is unsafe given his CHA2DS2-VASc 3 (HTN + prior TIA + male) and prior cerebrovascular event — a missed AFib diagnosis carries high embolic risk. Initiating DOAC + rate control (option D) is the correct response AFTER confirmation of AFib on subsequent monitoring; it is premature based on the single watch strip alone.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 65,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_with_palpitations_episodic",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with hypertension and a transient ischemic attack 4 years ago (CHA2DS2-VASc 4: HTN + prior TIA + female + age ≥65) presents to clinic with an Apple Watch ECG strip showing an irregularly irregular rhythm flagged as 'atrial fibrillation,' recorded during a brief episode of palpitations 3 days ago. She denies syncope or any symptoms today. Vital signs are normal. A 12-lead ECG performed in clinic today shows normal sinus rhythm without ectopy. She has no prior documented arrhythmia. She asks whether she should start anticoagulation based on the watch result.",
+      "rationale_for_variant": "Age and sex perturbation — clinical content (single wearable AFib alert without confirmatory rhythm capture) is unchanged. The need for confirmatory longer-duration monitoring before initiating anticoagulation is independent of demographics; her higher CHA2DS2-VASc raises the urgency of confirming the diagnosis but does not justify treatment without confirmation.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "wearable_AFib_confirmed_on_subsequent_monitoring",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with hypertension and a transient ischemic attack 3 years ago (CHA2DS2-VASc 3) was previously seen for an Apple Watch strip flagging atrial fibrillation. A 30-day ambulatory event monitor was placed and has now documented two distinct symptomatic episodes of atrial fibrillation lasting >30 seconds, including a paroxysm of 4 hours, both confirmed by 12-lead-quality strips and reviewed by an electrophysiologist. He has no contraindications to oral anticoagulation, no history of major bleeding, and no significant valvular disease.",
+      "rationale_for_variant": "Mixed perturbation — confirmation of paroxysmal AFib on subsequent ambulatory monitoring. With CHA2DS2-VASc ≥2 in men (≥3 in women, excluding sex), the 2023 ACC/AHA AFib Guideline gives a Class I recommendation for oral anticoagulation (DOAC preferred over warfarin in nonvalvular AFib). The paroxysmal pattern carries the same stroke risk as persistent AFib. The correct answer therefore shifts from confirmatory monitoring (option A) to initiation of a DOAC plus rate-control strategy (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Perez MV et al. Large-Scale Assessment of a Smartwatch to Identify Atrial Fibrillation (Apple Heart Study). NEJM 2019;381:1909-1917.",
+    "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
+    "Davidson KW et al. Screening for Atrial Fibrillation: US Preventive Services Task Force Recommendation Statement. JAMA 2022;327:360-367."
+  ],
+  "license": "CC-BY-4.0"
+}

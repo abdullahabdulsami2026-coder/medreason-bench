@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_033",
+  "specialty": "autoimmune",
+  "subspecialty": "iga_vasculitis_henoch_schonlein",
+  "stem": "A 35-year-old man presents to clinic with 3 weeks of palpable purpura on the bilateral lower extremities (sparing the trunk), diffuse abdominal pain that worsens after meals, and bilateral knee and ankle polyarthritis. Vital signs stable. Labs: serum creatinine 1.4 mg/dL (RISEN from baseline 0.9 over 4 weeks); urinalysis with microscopic hematuria with dysmorphic red cells, occasional red-cell casts, and proteinuria 1.5 g/24h on quantification; CBC normal; ASO titer normal. Skin biopsy of a purpuric lesion demonstrates LEUKOCYTOCLASTIC VASCULITIS with IgA-DOMINANT immune deposits on direct immunofluorescence. Hepatitis B and C antibodies are negative; HIV negative; cryoglobulins negative; ANCA negative. The clinical picture is IgA vasculitis (Henoch-Schönlein purpura) in an adult with renal involvement (rising creatinine + proteinuria >1 g/24h).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Oral corticosteroids (prednisone 0.5–1 mg/kg/d) for renal involvement and abdominal pain; renal biopsy to assess severity (recommended when proteinuria >1 g/day or rising creatinine); ACE inhibitor or ARB for proteinuria reduction; close clinical and laboratory follow-up; for rapidly progressive nephritis with >50% crescents on biopsy — pulse IV methylprednisolone + cyclophosphamide or mycophenolate mofetil",
+    "B": "Aggressive cyclophosphamide induction even in the absence of crescentic disease",
+    "C": "No immunosuppression; symptomatic care only with NSAIDs",
+    "D": "Supportive care only (rest, hydration, leg elevation, NSAIDs for joint pain) with corticosteroids reserved ONLY for severe abdominal pain or persistent renal involvement — appropriate for pediatric IgA vasculitis given the high rate of spontaneous resolution"
+  },
+  "correct": "A",
+  "rationale": "Adult IgA vasculitis (Henoch-Schönlein purpura) is more likely than pediatric disease to have persistent renal involvement, and renal involvement is the major determinant of long-term morbidity (chronic kidney disease, end-stage kidney disease in approximately 10–30% of adults with significant renal involvement). Per the 2021 ACR/Vasculitis Foundation Small-Vessel Vasculitis Guideline and the 2021 KDIGO Glomerular Diseases Guideline, the management framework for adult IgA vasculitis with renal involvement (proteinuria >1 g/24h, rising creatinine) is: (1) oral corticosteroids 0.5–1 mg/kg/d for active vasculitic features and renal involvement; (2) renal biopsy when proteinuria >1 g/day or rising creatinine to grade histologic severity (Oxford MEST-C-like classification, percent crescents); (3) ACE inhibitor or ARB for proteinuria-reducing nephroprotection; (4) for rapidly progressive nephritis with extensive crescents (>50%) — pulse IV methylprednisolone + cyclophosphamide or mycophenolate mofetil. Aggressive cyclophosphamide upfront (option B) is overkill for non-crescentic disease. No immunosuppression (option C) is inadequate when significant renal involvement is present. The pediatric / supportive-only paradigm (option D) does not apply to adult disease with documented renal involvement.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 35,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "child_HSP_self_limited",
+      "demographics": {
+        "age": 8,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 8-year-old boy presents with 1 week of palpable purpura on the bilateral lower extremities and buttocks, mild bilateral knee and ankle polyarthritis, and intermittent abdominal cramping. He has had a recent upper-respiratory illness 2 weeks prior to symptom onset. Vital signs stable. Labs: creatinine 0.4 mg/dL (normal for age); urinalysis bland (no microscopic hematuria, no proteinuria); CBC normal. Skin biopsy demonstrates leukocytoclastic vasculitis with IgA-dominant immune deposits. The clinical picture is pediatric IgA vasculitis without renal involvement.",
+      "rationale_for_variant": "Mixed perturbation — pediatric IgA vasculitis (Henoch-Schönlein purpura), the classical pediatric form. Pediatric IgA vasculitis has a high rate of spontaneous resolution (>90% within weeks), and renal involvement (when it occurs) is generally milder and more likely to resolve than in adults. Per the 2021 ACR Small-Vessel Vasculitis Guideline and pediatric rheumatology consensus, the appropriate management is supportive care (rest, hydration, leg elevation, NSAIDs for joint pain), with corticosteroids reserved for severe abdominal pain (intussusception risk) or persistent renal involvement. Aggressive immunosuppression is not warranted in mild self-limited pediatric disease. The correct answer therefore shifts from adult-management corticosteroids + ACEi (option A) to pediatric supportive care (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "elderly_man_IgA_vasculitis",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man presents with 3 weeks of palpable purpura on the bilateral lower extremities, abdominal pain, and bilateral knee polyarthritis. Vital signs stable. Labs: creatinine 1.7 mg/dL (risen from baseline 1.0); urinalysis with microscopic hematuria, dysmorphic red cells, RBC casts, and proteinuria 1.8 g/24h. Skin biopsy: leukocytoclastic vasculitis with IgA-dominant deposits. ANCA negative; cryoglobulins negative; HCV/HBV negative.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (adult IgA vasculitis with renal involvement) is unchanged. Older adults have higher baseline CKD risk and lower renal reserve, which strengthens the rationale for early renal biopsy and corticosteroid + ACEi/ARB management. The framework remains the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Chung SA et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Polyarteritis Nodosa and IgA Vasculitis (Henoch-Schönlein Purpura). Arthritis Rheumatol 2021;73:1384-1393.",
+    "KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1-S276.",
+    "Pillebout E et al. Henoch-Schönlein Purpura in Adults: Outcome and Prognostic Factors. J Am Soc Nephrol 2002;13:1271-1278."
+  ],
+  "license": "CC-BY-4.0"
+}

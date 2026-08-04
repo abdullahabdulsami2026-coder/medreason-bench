@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_016",
+  "specialty": "autoimmune",
+  "subspecialty": "ra_cervical_spine",
+  "stem": "A 65-year-old woman with seropositive erosive rheumatoid arthritis for 20 years (currently on methotrexate + adalimumab) presents to clinic with 4 weeks of new posterior neck pain, occipital headaches, and bilateral hand and forearm paresthesias. She also reports a sense of unsteadiness and one episode of bilateral leg weakness when she briefly lost balance descending stairs. Vital signs are stable. Neurologic exam shows mild bilateral upper-extremity hyperreflexia, a positive Hoffmann sign on the right, and mild lower-extremity hyperreflexia with bilateral upgoing toes (positive Babinski) — features of an UPPER MOTOR NEURON syndrome consistent with cervical myelopathy. Cervical spine X-rays in flexion and extension show an atlantodental interval (ADI) of 5 mm in flexion (normal <3 mm; severe ≥9 mm), consistent with anterior atlantoaxial subluxation. Cervical MRI confirms pannus around the odontoid process and mild cord compression at C1–C2 with cord T2 hyperintensity at the level of compression. There is no fracture and no vertebral artery involvement on MRA.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Urgent neurosurgical evaluation for cervical fusion (occipitocervical or C1–C2) given symptomatic cord compression; high-dose corticosteroids; aggressive RA disease control; preoperative anesthesia consultation given difficult-airway risk; restrict neck extension during any future procedures",
+    "B": "NSAIDs and a soft cervical collar alone with reassessment in 4 weeks",
+    "C": "Conservative monitoring with serial cervical imaging every 6–12 months; optimize RA disease control; anesthesia consultation prior to any non-cervical surgical procedure (because of difficult-intubation and AAS-instability risk); avoid neck extension during procedures",
+    "D": "Increase oral DMARD dose only with no surgical evaluation; the cervical findings will resolve with better RA control"
+  },
+  "correct": "A",
+  "rationale": "Atlantoaxial subluxation (AAS) in long-standing seropositive erosive RA is a recognized complication caused by destruction of the transverse ligament and synovitis around the odontoid process (pannus). When it produces SYMPTOMATIC cord compression (myelopathy: upper motor neuron signs, weakness, gait disturbance, paresthesias from cervical spinal cord involvement), the 2022 EULAR Update and consensus expert practice support URGENT NEUROSURGICAL EVALUATION for cervical fusion (occipitocervical or C1–C2 instrumented fusion) to halt progression and prevent catastrophic spinal-cord injury. High-dose corticosteroids and aggressive RA disease control are adjuncts. Preoperative anesthesia consultation is essential because of the difficult airway (limited cervical mobility, AAS instability with neck extension during intubation). NSAIDs and collar alone (option B) are inadequate with myelopathy. Conservative monitoring (option C) is appropriate for ASYMPTOMATIC patients with minor AAS — not for this symptomatic cord-compression scenario. Increasing DMARD alone (option D) ignores the urgent neurosurgical indication.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 65,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "asymptomatic_AAS_minor",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman with seropositive erosive rheumatoid arthritis for 15 years on methotrexate + etanercept undergoes routine cervical-spine imaging in flexion and extension prior to a planned elective shoulder arthroplasty. She is COMPLETELY ASYMPTOMATIC: no neck pain, no headache, no paresthesias, no weakness. Neurologic examination is entirely normal (no hyperreflexia, no Hoffmann sign, no Babinski). Cervical X-rays show an atlantodental interval of 4 mm in flexion (mildly above the normal upper limit of 3 mm but well below the severe ≥9 mm threshold). Cervical MRI shows a small amount of pannus around the odontoid without cord compression and a normal cord signal.",
+      "rationale_for_variant": "Mixed perturbation — asymptomatic minor AAS without cord compression, identified incidentally during preoperative imaging. The appropriate management is NOT urgent fusion. Conservative observation with serial cervical imaging every 6–12 months, optimization of RA disease control to slow progression, and — crucially — ANESTHESIA CONSULTATION PRIOR TO ANY NON-CERVICAL SURGERY because intubation in patients with AAS carries a documented risk of cord injury from neck extension. Awake fiberoptic intubation with manual in-line stabilization is the standard approach. Cervical fusion is reserved for progression to symptoms or worsening AAS. The correct answer therefore shifts to conservative monitoring with anesthesia consultation (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "elderly_man_RA",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man with seropositive erosive rheumatoid arthritis for 25 years on methotrexate + adalimumab presents with 4 weeks of new posterior neck pain, occipital headaches, bilateral hand paresthesias, and one episode of leg weakness while descending stairs. Neurologic exam shows bilateral upper-extremity hyperreflexia, positive Hoffmann sign, and bilateral upgoing toes — consistent with cervical myelopathy. Cervical X-rays show ADI of 5 mm in flexion. Cervical MRI confirms pannus around the odontoid with mild cord compression at C1–C2 and cord T2 hyperintensity.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (symptomatic AAS with cord compression) is unchanged. Older patients have higher operative mortality but the alternative (untreated cord compression with risk of catastrophic injury) carries even higher morbidity. Urgent neurosurgical evaluation remains the appropriate management.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Smolen JS et al. EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs: 2022 update. Ann Rheum Dis 2023;82:3-18.",
+    "Bouchaud-Chabot A, Lioté F. Cervical spine involvement in rheumatoid arthritis: a review. Joint Bone Spine 2002;69:141-154.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Rheumatoid Arthritis."
+  ],
+  "license": "CC-BY-4.0"
+}

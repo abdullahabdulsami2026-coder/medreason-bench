@@ -1,0 +1,56 @@
+{
+  "id": "cardio_037",
+  "specialty": "cardiology",
+  "subspecialty": "aortic_dissection",
+  "stem": "A 62-year-old man with hypertension presents to the emergency department with the sudden onset of severe, tearing chest pain radiating to the back that began 1 hour ago. He is diaphoretic. Vital signs: BP 178/104 mmHg in the right arm and 118/72 mmHg in the left arm (BP differential of 60 mmHg), HR 102 bpm, RR 22, SpO2 96% on room air. Cardiac auscultation reveals a soft early diastolic decrescendo murmur at the left lower sternal border (new aortic regurgitation). Neurologic exam shows mild right-arm weakness consistent with carotid involvement. CT angiography of the chest, abdomen, and pelvis confirms a Stanford Type A aortic dissection with the intimal flap originating in the ascending aorta and extending into the descending thoracic aorta. There is no pericardial effusion or evidence of organ malperfusion below the diaphragm.",
+  "question": "Which is the most appropriate immediate management?",
+  "options": {
+    "A": "IV nitroprusside alone for blood-pressure control with admission for serial imaging",
+    "B": "IV beta-blocker (esmolol or labetalol) FIRST to reduce dP/dt, then nitroprusside as needed to target a systolic blood pressure of 100–120 mmHg, with emergent cardiothoracic surgery consultation for surgical repair",
+    "C": "Oral antihypertensive regimen and admission for observation",
+    "D": "Strict medical management with IV beta-blocker and nitroprusside without surgical intervention"
+  },
+  "correct": "B",
+  "rationale": "Stanford Type A aortic dissection (ascending aorta involvement, with or without descending extension) is a SURGICAL EMERGENCY with an untreated mortality of approximately 1–2% per hour in the first 24 hours. The 2022 ACC/AHA Aortic Disease Guideline (Class I) requires emergent cardiothoracic-surgery consultation for repair, while medical management focuses on reducing aortic shear stress (dP/dt) BEFORE reducing blood pressure. Beta-blockers (esmolol or labetalol) are given FIRST to lower heart rate and contractility; nitroprusside is added second to bring systolic BP to 100–120 mmHg. Giving a vasodilator FIRST without rate control (option A) increases reflex tachycardia and shear force, worsening the dissection. Oral therapy (option C) is far too slow. Strict medical management without surgery (option D) is appropriate only for uncomplicated Type B dissection — not Type A.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 62,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_70",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with hypertension presents to the emergency department with the sudden onset of severe, tearing chest pain radiating to the back. Vital signs: BP 178/104 mmHg right arm, 118/72 mmHg left arm, HR 102 bpm, RR 22, SpO2 96% on room air. Cardiac auscultation reveals a soft early diastolic decrescendo murmur at the left lower sternal border. Neurologic exam shows mild right-arm weakness. CT angiography confirms a Stanford Type A aortic dissection with the intimal flap originating in the ascending aorta and extending into the descending thoracic aorta. No pericardial effusion or distal malperfusion.",
+      "rationale_for_variant": "Age and sex perturbation only — clinical content (Type A dissection with surgical emergency criteria) is unchanged. Older women with Type A dissection have higher operative mortality but the alternative (medical management alone) has even higher short-term mortality; emergent surgical repair with rate-control-first medical bridging remains the Class I recommendation.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "stanford_type_b_uncomplicated",
+      "demographics": {
+        "age": 62,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 62-year-old man with hypertension presents to the emergency department with the sudden onset of severe, tearing chest pain radiating to the back. Vital signs: BP 178/104 mmHg in both arms (no inter-arm differential), HR 102 bpm, RR 18, SpO2 96% on room air. Cardiac auscultation is normal with no diastolic murmur. Neurologic exam is intact; abdominal exam is benign with no signs of mesenteric or limb malperfusion. CT angiography demonstrates an aortic dissection originating distal to the left subclavian artery (Stanford Type B, uncomplicated — no rupture, no malperfusion, no rapid expansion) with the ascending aorta spared.",
+      "rationale_for_variant": "Mixed perturbation — UNCOMPLICATED Stanford Type B dissection (descending aorta only, no ascending involvement, no malperfusion or rupture). Per the 2022 ACC/AHA Aortic Disease Guideline (Class I), the initial management of uncomplicated Type B dissection is medical: aggressive heart-rate and BP control with IV beta-blocker, then vasodilators as needed, with serial imaging. Surgery (open or endovascular TEVAR) is reserved for complicated Type B (rupture, malperfusion, refractory pain, or rapid aortic expansion). The correct answer therefore shifts from emergent surgery (option B) to strict medical management without surgery (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Isselbacher EM et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation 2022;146:e334-e482.",
+    "Erbel R et al. 2014 ESC Guidelines on the diagnosis and treatment of aortic diseases. Eur Heart J 2014;35:2873-2926.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Diseases of the Aorta."
+  ],
+  "license": "CC-BY-4.0"
+}

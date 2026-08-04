@@ -1,0 +1,56 @@
+{
+  "id": "cardio_040",
+  "specialty": "cardiology",
+  "subspecialty": "deep_vein_thrombosis",
+  "stem": "A 48-year-old man presents to the emergency department with 3 days of left calf swelling, pain, and warmth that began the day after returning from a transpacific flight (14 hours total in flight). Vital signs: BP 132/78 mmHg, HR 84 bpm, RR 14, SpO2 98% on room air. Exam shows unilateral left lower-extremity edema with calf circumference 4 cm greater than the right, mild tenderness along the deep venous system, and a positive Homans sign. Modified Wells DVT score is 3 (high probability). D-dimer is 1,800 ng/mL FEU. Compression ultrasound demonstrates non-compressible flow with thrombus extending from the popliteal to the superficial femoral vein, consistent with proximal DVT. He has no signs of pulmonary embolism, no hemodynamic compromise, and no limb-threatening features (no phlegmasia). He has no active malignancy and no contraindication to anticoagulation.",
+  "question": "Which is the most appropriate initial anticoagulation strategy?",
+  "options": {
+    "A": "Aspirin 81 mg orally daily as monotherapy",
+    "B": "A direct oral anticoagulant (apixaban or rivaroxaban) — initiated without parenteral bridging",
+    "C": "Warfarin orally without any parenteral bridge",
+    "D": "Catheter-directed thrombolysis with mechanical thrombectomy"
+  },
+  "correct": "B",
+  "rationale": "For acute proximal lower-extremity DVT in a non-cancer patient without contraindications, the CHEST 2021 Antithrombotic Therapy for VTE update and the 2020 ASH VTE Guidelines recommend a direct oral anticoagulant (apixaban or rivaroxaban) over LMWH-bridged warfarin (Grade 2B). DOACs offer comparable efficacy with reduced bleeding (especially intracranial), no need for INR monitoring, no parenteral bridging, and improved patient adherence. Apixaban is initiated at 10 mg twice daily for 7 days followed by 5 mg twice daily; rivaroxaban is initiated at 15 mg twice daily for 21 days followed by 20 mg daily. Aspirin alone (option A) is inadequate for acute VTE treatment. Warfarin without a parenteral bridge (option C) leaves the patient under-anticoagulated for 3–7 days while INR rises into therapeutic range — a period of high recurrent-thrombosis risk. Catheter-directed thrombolysis (option D) is reserved for limb-threatening iliofemoral DVT with phlegmasia cerulea dolens or extensive proximal thrombus with high risk of post-thrombotic syndrome in selected patients (ATTRACT subgroup analyses).",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 48,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "middle_aged_woman",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman presents to the emergency department with 3 days of left calf swelling, pain, and warmth that began the day after returning from a transpacific flight. Vital signs: BP 132/78 mmHg, HR 84 bpm, RR 14, SpO2 98% on room air. Exam shows unilateral left lower-extremity edema. Modified Wells DVT score is 3 (high probability). D-dimer is 1,800 ng/mL FEU. Compression ultrasound demonstrates non-compressible flow with thrombus extending from the popliteal to the superficial femoral vein. She has no signs of PE, no hemodynamic compromise, no limb-threatening features, no active malignancy, and no contraindication to anticoagulation.",
+      "rationale_for_variant": "Sex perturbation only — clinical content unchanged. DOAC monotherapy is the recommended approach for proximal DVT regardless of patient sex.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "iliofemoral_dvt_phlegmasia",
+      "demographics": {
+        "age": 55,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old man presents to the emergency department with 12 hours of severe left lower-extremity pain, massive edema, and a cyanotic discoloration of the limb. Vital signs: BP 122/72 mmHg, HR 110 bpm, RR 18, SpO2 96% on room air. Exam shows a markedly swollen, dusky-blue, cool left lower extremity from the inguinal region to the foot, with delayed capillary refill and weak distal pulses (phlegmasia cerulea dolens). Compression ultrasound and CT venography show extensive thrombus from the iliac vein through the common femoral, superficial femoral, and popliteal veins (iliofemoral DVT) with collateral compromise. He has no contraindication to thrombolysis.",
+      "rationale_for_variant": "Mixed perturbation — extensive iliofemoral DVT with PHLEGMASIA CERULEA DOLENS (limb-threatening venous occlusion with arterial compromise from massive edema). This is a vascular emergency. Per the CHEST 2021 Antithrombotic Therapy Guideline and consensus practice, catheter-directed thrombolysis (with or without mechanical thrombectomy) plus systemic anticoagulation is the appropriate intervention to restore venous patency and salvage the limb, in patients without contraindications. Anticoagulation alone is insufficient to restore flow before tissue loss occurs. The correct answer therefore shifts from DOAC monotherapy (option B) to catheter-directed thrombolysis with mechanical thrombectomy (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Stevens SM et al. Antithrombotic Therapy for VTE Disease: Second Update of the CHEST Guideline and Expert Panel Report. CHEST 2021;160:e545-e608.",
+    "Ortel TL et al. American Society of Hematology 2020 guidelines for management of venous thromboembolism: treatment of deep vein thrombosis and pulmonary embolism. Blood Adv 2020;4:4693-4738.",
+    "Vedantham S et al. Pharmacomechanical Catheter-Directed Thrombolysis for Deep-Vein Thrombosis (ATTRACT Trial). NEJM 2017;377:2240-2252."
+  ],
+  "license": "CC-BY-4.0"
+}

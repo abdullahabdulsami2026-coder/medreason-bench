@@ -1,0 +1,56 @@
+{
+  "id": "cardio_032",
+  "specialty": "cardiology",
+  "subspecialty": "mitral_stenosis",
+  "stem": "A 50-year-old woman who emigrated from a region with endemic rheumatic heart disease presents to clinic with progressive dyspnea on exertion (NYHA III) over the past year. She also reports recent palpitations. Cardiac auscultation reveals an opening snap shortly after S2 followed by a low-pitched diastolic rumble at the apex, accentuated by left-lateral decubitus positioning. ECG today demonstrates new atrial fibrillation with controlled rate. Transthoracic echocardiogram shows a doming mitral valve with thickened leaflets, a planimetered mitral-valve area of 1.2 cm^2, mean transmitral gradient of 9 mmHg at her resting heart rate, and a pulmonary-artery systolic pressure of 55 mmHg consistent with severe symptomatic rheumatic mitral stenosis. The Wilkins score is 6 (favorable morphology: pliable leaflets, mild thickening, mild calcification, mild subvalvular thickening). Transesophageal echocardiogram shows trivial mitral regurgitation and no left-atrial thrombus.",
+  "question": "Which is the most appropriate management for this patient's symptomatic severe rheumatic mitral stenosis?",
+  "options": {
+    "A": "Continued medical management with rate control and anticoagulation; defer any valve intervention",
+    "B": "Percutaneous mitral balloon commissurotomy (PMBC)",
+    "C": "Surgical mitral valve replacement",
+    "D": "Watchful waiting with serial echocardiograms every 12 months"
+  },
+  "correct": "B",
+  "rationale": "Symptomatic severe rheumatic mitral stenosis (mitral-valve area ≤1.5 cm^2 with NYHA II–IV symptoms) is an indication for valve intervention per the 2020 ACC/AHA Valvular Guideline. Percutaneous mitral balloon commissurotomy is the recommended first-line intervention (Class I) when ALL of the following are present: favorable valve morphology (Wilkins score ≤8 or equivalent grading scheme), absence of left-atrial thrombus on TEE, and absence of moderate-to-severe mitral regurgitation. This patient meets all three criteria. PMBC has comparable or superior outcomes to open commissurotomy in selected patients with much lower morbidity. Medical management alone (option A) and watchful waiting (option D) do not address the symptomatic severe obstruction. Surgical mitral valve replacement (option C) is reserved for patients who are not candidates for PMBC because of unfavorable morphology, LA thrombus, or significant MR.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 50,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "pregnant_woman_2nd_trimester",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old woman who is 22 weeks pregnant presents with progressive dyspnea on exertion (NYHA III) over the past 6 weeks. She has known childhood rheumatic fever from her country of origin. Cardiac auscultation reveals an opening snap and a low-pitched diastolic rumble at the apex. Transthoracic echocardiogram shows a doming mitral valve, a mitral-valve area of 1.2 cm^2, mean transmitral gradient of 10 mmHg, pulmonary-artery systolic pressure of 55 mmHg, Wilkins score 6, trivial MR, and no left-atrial thrombus on transesophageal echocardiogram. Her obstetric team confirms a structurally normal fetus on ultrasound and is engaged in shared decision-making.",
+      "rationale_for_variant": "Age and clinical-context perturbation. PMBC is the preferred valve intervention during pregnancy for symptomatic severe rheumatic MS with favorable morphology — fetal radiation exposure can be minimized with abdominal shielding, surgery (with cardiopulmonary bypass) carries 20–30% fetal-loss risk, and untreated severe MS carries high maternal and fetal morbidity. Per the 2020 ACC/AHA Valvular Guideline and 2018 ESC Pregnancy Guideline, PMBC remains the first-line intervention. The correct answer is unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "unfavorable_morphology_or_LA_thrombus",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old woman with longstanding rheumatic mitral stenosis presents with progressive dyspnea on exertion (NYHA III). Cardiac auscultation reveals an opening snap and a low-pitched diastolic rumble at the apex. Transthoracic echocardiogram shows a heavily calcified, immobile mitral valve with a planimetered area of 1.0 cm^2 and a mean transmitral gradient of 12 mmHg. Wilkins score is 12 (unfavorable: severely thickened, calcified, and subvalvular fibrosis). Transesophageal echocardiogram demonstrates a 12 mm mobile thrombus in the left-atrial appendage despite documented therapeutic anticoagulation for the past 4 weeks.",
+      "rationale_for_variant": "Mixed perturbation — both ABSOLUTE contraindications to PMBC are present: unfavorable Wilkins score (>8) AND left-atrial thrombus despite anticoagulation. Per the 2020 ACC/AHA Valvular Guideline, PMBC is contraindicated in this setting because of high risk of thromboembolism and inadequate commissurotomy from rigid leaflets. Surgical mitral valve replacement is the appropriate intervention. Tests whether the model recognizes the morphologic and TEE criteria that switch the patient from PMBC to surgical replacement.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Regitz-Zagrosek V et al. 2018 ESC Guidelines for the management of cardiovascular diseases during pregnancy. Eur Heart J 2018;39:3165-3241.",
+    "Wilkins GT et al. Percutaneous balloon dilatation of the mitral valve: an analysis of echocardiographic variables related to outcome and the mechanism of dilatation. Br Heart J 1988;60:299-308."
+  ],
+  "license": "CC-BY-4.0"
+}

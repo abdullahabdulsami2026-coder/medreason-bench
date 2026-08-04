@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_018",
+  "specialty": "autoimmune",
+  "subspecialty": "adult_onset_still_disease",
+  "stem": "A 32-year-old man presents to the emergency department with 4 weeks of QUOTIDIAN (once-daily) high-spiking fevers (39–40°C in the late afternoon, returning to baseline by morning), an EVANESCENT salmon-pink macular rash on the trunk and proximal extremities that appears with fevers and disappears between fevers, polyarthralgia, severe sore throat, and pharyngitis. Vital signs during a current febrile episode: T 39.6°C, BP 118/72, HR 110. Labs: WBC 22 × 10^9/L with neutrophil predominance (90% neutrophils, no left shift); hemoglobin 11.0 g/dL; platelets 380 × 10^9/L; ferritin 12,200 ng/mL (markedly elevated, >5× upper reference limit); ESR 100 mm/h; CRP 200 mg/L; ALT and AST mildly elevated; rheumatoid factor and ANA NEGATIVE. Comprehensive infectious workup (blood cultures × 3, viral PCR panel including EBV, CMV, parvovirus B19, HIV, hepatitis), malignancy workup (CT chest/abdomen/pelvis, peripheral smear, lactate dehydrogenase), and autoimmune workup are otherwise unrevealing. He meets the Yamaguchi criteria for adult-onset Still disease: fever ≥39°C lasting ≥1 week, arthralgia ≥2 weeks, typical rash, leukocytosis ≥10,000 with ≥80% neutrophils (major criteria) plus sore throat (minor) — and exclusion of infection, malignancy, and other rheumatic disease.",
+  "question": "Which is the most appropriate first-line therapy?",
+  "options": {
+    "A": "NSAIDs and oral corticosteroids (prednisone 0.5–1 mg/kg/d) as first-line for systemic and articular features; escalate to IL-1 antagonist (anakinra or canakinumab) if steroid-resistant or if systemic features predominate; IL-6 inhibitor (tocilizumab) as alternative; methotrexate as steroid-sparing for chronic articular disease",
+    "B": "Methotrexate alone as first-line monotherapy",
+    "C": "TNF inhibitor (adalimumab or etanercept) as first-line therapy",
+    "D": "Pulse high-dose IV methylprednisolone PLUS anakinra (IL-1 antagonist) urgently for macrophage activation syndrome (MAS) with hyperferritinemia (>10,000), cytopenias, transaminitis, and DIC; ICU-level supportive care"
+  },
+  "correct": "A",
+  "rationale": "Adult-onset Still disease (AOSD) is a systemic autoinflammatory disease with quotidian fevers, evanescent rash, polyarthritis, hyperferritinemia (often markedly elevated), neutrophilic leukocytosis, and seronegativity for RF and ANA. Per consensus expert reviews (Fautrel B et al.) and the 2017 EULAR/PReS clinical guidance, first-line therapy is NSAIDs (modest efficacy, used for mild disease) and CORTICOSTEROIDS (prednisone 0.5–1 mg/kg/d, response in 60–80%). For steroid-resistant or systemic-feature-predominant disease, IL-1 antagonists (ANAKINRA daily, or canakinumab monthly) are first-line biologic add-ons (Class I evidence with anakinra; canakinumab approved by EMA/FDA for AOSD). IL-6 inhibitor (TOCILIZUMAB) is an alternative biologic. Methotrexate is added as steroid-sparing for chronic articular phase but is insufficient as monotherapy for systemic disease. TNF inhibitors are LESS effective in AOSD than in RA and are not first-line. Macrophage activation syndrome (option D) is the management for the MAS overlap — but this patient does not yet meet MAS criteria (no profound cytopenias, no DIC).",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 32,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "macrophage_activation_syndrome_complication",
+      "demographics": {
+        "age": 28,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 28-year-old man with adult-onset Still disease (recently diagnosed and started on prednisone 1 mg/kg/d 1 week ago) presents to the emergency department with worsening high-spiking fevers and a precipitous deterioration. Vital signs: T 40.2°C, BP 88/52, HR 126, RR 26, SpO2 92% on 4 L. New encephalopathy. Labs: WBC has DROPPED from 22 to 3.5 × 10^9/L with new lymphopenia and thrombocytopenia (platelets dropped from 380 to 70 × 10^9/L); hemoglobin dropped from 11.0 to 8.4 g/dL; ferritin has risen from 12,200 to 45,000 ng/mL (markedly elevated, characteristic of MAS); fibrinogen dropped from 480 to 90 mg/dL with elevated D-dimer and prolonged PT/PTT (consistent with consumptive coagulopathy/DIC); transaminases AST 480, ALT 320 (transaminitis); triglycerides 580 mg/dL (elevated). The clinical picture meets HLH-2004 criteria for macrophage activation syndrome (MAS) complicating AOSD.",
+      "rationale_for_variant": "Mixed perturbation — Macrophage Activation Syndrome (MAS), a life-threatening complication of AOSD with mortality 10–20% even with treatment. The 2016 ACR/EULAR Classification Criteria for MAS in systemic juvenile idiopathic arthritis (extrapolated to adult-onset Still) require hyperferritinemia (>684 ng/mL — typically much higher) plus 2 of: platelets ≤181, AST >48, triglycerides >156, fibrinogen ≤360, in a patient with known systemic disease. MAS is treated as a hyperinflammatory cytokine storm: pulse high-dose IV methylprednisolone (1 g/d for 3 days) PLUS ANAKINRA (IL-1 antagonist; rapidly bioavailable, short half-life ideal for titration in critically ill patients) urgently — not waiting for the slower-onset steroid effect alone. ICU-level supportive care, treatment of any precipitating infection, and consideration of cyclosporine A are adjunctive. The correct answer therefore shifts from standard AOSD therapy (option A) to the MAS-specific bundle (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_woman_AOSD",
+      "demographics": {
+        "age": 45,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old woman presents to the emergency department with 4 weeks of quotidian high-spiking fevers (39–40°C late afternoon, return to baseline by morning), an evanescent salmon-pink rash that appears with fevers, polyarthralgia, severe sore throat, and pharyngitis. WBC 22 × 10^9/L with 90% neutrophils; ferritin 12,200 ng/mL; ESR 100, CRP 200; transaminases mildly elevated; RF and ANA negative. Comprehensive infectious and malignancy workup is unrevealing. She meets Yamaguchi criteria for adult-onset Still disease.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (AOSD with classic Yamaguchi-criteria features and no MAS) is unchanged. Adult-onset Still has a slight female predominance; first-line therapy is identical regardless of sex.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Fautrel B. Adult-onset Still disease. Best Pract Res Clin Rheumatol 2008;22:773-792.",
+    "Yamaguchi M et al. Preliminary criteria for classification of adult Still's disease. J Rheumatol 1992;19:424-430.",
+    "Ravelli A et al. 2016 Classification Criteria for Macrophage Activation Syndrome Complicating Systemic Juvenile Idiopathic Arthritis: A European League Against Rheumatism / American College of Rheumatology / Paediatric Rheumatology International Trials Organisation Collaborative Initiative. Arthritis Rheumatol 2016;68:566-576."
+  ],
+  "license": "CC-BY-4.0"
+}

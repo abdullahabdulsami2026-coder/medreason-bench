@@ -1,0 +1,56 @@
+{
+  "id": "cardio_028",
+  "specialty": "cardiology",
+  "subspecialty": "undifferentiated_palpitations",
+  "stem": "A 55-year-old woman presents to clinic with 3 months of episodic palpitations occurring 2–3 times per week, lasting 30 seconds to 5 minutes. The episodes are unprovoked, terminate spontaneously, and are not associated with chest pain, dyspnea, presyncope, or syncope. She has no significant past medical history and takes no medications. Vital signs in clinic are normal (BP 122/76 mmHg, HR 72 bpm in sinus rhythm). Resting 12-lead ECG today is completely normal with no pre-excitation, no QT prolongation, no Q waves, and no ectopic beats. Cardiac auscultation is normal. Echocardiogram from 6 months ago (obtained for unrelated reasons) showed a structurally normal heart with normal LVEF, normal chamber sizes, and no valvular disease. No ambulatory ECG monitoring (Holter, event monitor, or implantable loop recorder) has yet been performed and no symptomatic episodes have been captured on a rhythm strip.",
+  "question": "Based on the information available, which is the most likely cardiac arrhythmia underlying her symptoms?",
+  "options": {
+    "A": "Paroxysmal atrial fibrillation",
+    "B": "AV-nodal reentrant tachycardia",
+    "C": "Frequent premature ventricular contractions",
+    "D": "Sustained ventricular tachycardia"
+  },
+  "correct": null,
+  "rationale": "All four options are plausible causes of episodic palpitations in a middle-aged adult, but no rhythm capture has occurred and the available information is insufficient to commit to a specific arrhythmia. Symptom-based diagnosis of arrhythmia is unreliable: atrial fibrillation classically causes 'irregular' palpitations but many patients describe regular palpitations; AVNRT typically presents with abrupt-onset, abrupt-offset rapid palpitations with possible neck pounding; PVCs cause a 'skipped beat' or 'flip-flop' sensation; and VT in a structurally normal heart is unusual but possible (e.g., idiopathic outflow-tract VT). Per the 2023 AFib Guideline and 2017 ventricular-arrhythmia guideline, the appropriate next step is symptom-rhythm correlation through ambulatory ECG monitoring: a 24- to 48-hour Holter for daily symptoms, a 14- to 30-day event monitor for less-frequent symptoms, or an implantable loop recorder for very infrequent symptoms or unexplained syncope. Picking any specific arrhythmia without rhythm capture anchors on insufficient evidence.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_man_75",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man presents to clinic with 3 months of episodic palpitations occurring 2–3 times per week, lasting 30 seconds to 5 minutes. The episodes are unprovoked, terminate spontaneously, and are not associated with chest pain, dyspnea, presyncope, or syncope. He has no significant past medical history and takes no medications. Vital signs in clinic are normal (BP 122/76 mmHg, HR 72 bpm in sinus rhythm). Resting 12-lead ECG today is completely normal with no pre-excitation, no QT prolongation, no Q waves, and no ectopic beats. Echocardiogram from 6 months ago showed a structurally normal heart. No ambulatory ECG monitoring has yet been performed and no symptomatic episodes have been captured on a rhythm strip.",
+      "rationale_for_variant": "Age and sex perturbation only — older age increases the pretest probability of every option in the differential (AFib particularly) but does not by itself disambiguate which one is correct. The information remains insufficient without rhythm capture; the correct response is still to recognize the limits of the available data.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "prior_MI_added",
+      "demographics": {
+        "age": 60,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old man with a history of anterior myocardial infarction 8 years ago and ischemic cardiomyopathy (LVEF 35% on echo 6 months ago) presents to clinic with 3 months of episodic palpitations occurring 2–3 times per week, lasting 30 seconds to 5 minutes. The episodes are unprovoked and not associated with syncope. Vital signs in clinic are normal (BP 122/76 mmHg, HR 72 bpm in sinus rhythm). Resting 12-lead ECG today shows old anterior Q waves but no acute changes and no ectopic beats. He is on guideline-directed medical therapy. No ambulatory ECG monitoring has yet been performed and no symptomatic episodes have been captured on a rhythm strip.",
+      "rationale_for_variant": "Mixed perturbation — adds prior MI and ischemic cardiomyopathy (LVEF 35%), which markedly raises the pretest probability of ventricular arrhythmias (PVCs, non-sustained VT, sustained VT) compared with the parent. However, no rhythm has been captured, and the available data still cannot differentiate the four listed arrhythmias from one another. The clinically appropriate next step is symptom-rhythm correlation with ambulatory monitoring (and given the structural heart disease, an implantable loop recorder may be preferred to ensure capture of an infrequent or asymptomatic ventricular arrhythmia). The correct answer remains 'insufficient information' — increased pretest probability is not the same as a confirmed diagnosis.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
+    "Al-Khatib SM et al. 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death. Circulation 2018;138:e272-e391.",
+    "Probst MA et al. Evaluation of patients with palpitations: AHA Scientific Statement framework. Circulation 2017."
+  ],
+  "license": "CC-BY-4.0"
+}

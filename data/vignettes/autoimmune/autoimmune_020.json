@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_020",
+  "specialty": "autoimmune",
+  "subspecialty": "adversarial_polyarthralgia",
+  "stem": "A 38-year-old woman presents to clinic with 6 weeks of bilateral hand and knee arthralgia. She reports approximately 30 minutes of morning stiffness that improves with activity. Review of systems is otherwise UNREMARKABLE: no skin rash, no malar rash, no oral ulcers, no Raynaud phenomenon, no eye dryness or mouth dryness (no sicca symptoms), no preceding gastrointestinal or genitourinary infection, no constitutional symptoms (no fevers, no weight loss). Family history: mother with hypothyroidism (no rheumatic disease in the family). Vital signs in clinic are normal. Joint examination shows MILD MCP joint tenderness without exam-confirmed synovitis (no boggy swelling, no warmth, no effusion); mild knee tenderness without effusion. Resting cardiac and pulmonary exams are normal. Skin exam is normal. Laboratory testing has been ORDERED but is NOT YET available (no serology, no acute-phase reactants, no complete blood count results back). Hand and foot X-rays have been ordered but not yet performed. The clinic is awaiting these results.",
+  "question": "Based on the information available, which is the most likely diagnosis?",
+  "options": {
+    "A": "Early rheumatoid arthritis",
+    "B": "Systemic lupus erythematosus",
+    "C": "Fibromyalgia",
+    "D": "Post-viral arthritis (e.g., parvovirus B19-associated)"
+  },
+  "correct": null,
+  "rationale": "All four options are common causes of polyarthralgia in a young to middle-aged woman, but the available information is INSUFFICIENT to commit to any specific diagnosis. The 2010 ACR/EULAR RA classification criteria require both joint involvement AND serology AND acute-phase reactants AND duration — none of which can be assessed without serology and inflammatory markers. The 2019 EULAR/ACR SLE criteria require ANA ≥1:80 as an entry criterion plus weighted clinical and immunologic domains — none of the SLE-specific clinical features (rash, ulcers, Raynaud, sicca) are present, and serology is pending. Fibromyalgia is a clinical diagnosis requiring widespread pain and other features (fatigue, sleep disturbance, cognitive symptoms) per the 2016 ACR criteria — not assessable from arthralgia alone. Post-viral arthritis (parvovirus B19 in young women, hepatitis B/C, EBV) is a real consideration but requires viral serology to confirm. The clinically appropriate response is to recognize the limits of the available data and to obtain: (1) serology (RF, anti-CCP, ANA, anti-dsDNA, complements), (2) acute-phase reactants (ESR, CRP), (3) hand and foot X-rays for erosive disease, (4) hepatitis B and C serology, parvovirus B19 IgM and IgG serology in a young woman with new arthralgia, and (5) widespread-pain assessment. Picking any specific diagnosis without these data anchors on insufficient evidence.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 38,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_postmenopausal",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old postmenopausal woman presents to clinic with 6 weeks of bilateral hand and knee arthralgia. She reports approximately 30 minutes of morning stiffness. Review of systems is unremarkable: no skin rash, no oral ulcers, no Raynaud, no sicca symptoms, no preceding infection, no constitutional symptoms. Vital signs are normal. Joint exam shows mild MCP and knee tenderness without exam-confirmed synovitis or effusion. Skin exam is normal. Laboratory testing has been ordered but results are not yet available. Hand and foot X-rays have been ordered but not yet performed.",
+      "rationale_for_variant": "Age perturbation only — older age increases the pretest probability of every option in the differential (RA incidence peaks in the 60s; degenerative joint disease becomes a stronger consideration; postmenopausal status influences inflammatory marker baselines) but does not by itself disambiguate the diagnosis. The information remains insufficient to commit; the correct response is still to recognize the limits of the available data.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "acute_arthritis_with_fever_added",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old woman presents to clinic with 6 weeks of bilateral hand and knee arthralgia, mild morning stiffness, AND a new measured fever of 38.5°C today (the first measured febrile episode). Review of systems is otherwise unremarkable: no skin rash, no oral ulcers, no Raynaud, no sicca symptoms. No preceding infection identified. Vital signs: T 38.5°C, BP 116/72, HR 96, RR 16, SpO2 98%. Joint exam shows mild MCP and knee tenderness without exam-confirmed synovitis or effusion. Skin exam is normal. Laboratory testing has been ordered but results are not yet available. Hand and foot X-rays have been ordered but not yet performed. Blood cultures and joint aspiration have not been performed.",
+      "rationale_for_variant": "Mixed perturbation — adds a measured fever, which broadens (rather than narrows) the differential to include septic / reactive / viral arthritis, post-streptococcal arthritis, Lyme arthritis, gonococcal arthritis, and inflammatory arthropathies with constitutional features (early adult-onset Still disease, systemic vasculitis). The pretest probability shifts toward infectious or reactive etiologies, but committing to a specific arthropathy still requires confirmatory data: blood cultures, joint aspiration if effusion is detected, viral serology, throat/genital cultures if reactive arthritis is suspected, and Lyme serology in an endemic region. The correct response remains 'insufficient information' — the appropriate next step is to expand the workup.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Aletaha D et al. 2010 Rheumatoid Arthritis Classification Criteria: an American College of Rheumatology / European League Against Rheumatism collaborative initiative. Arthritis Rheum 2010;62:2569-2581.",
+    "Aringer M et al. 2019 European League Against Rheumatism / American College of Rheumatology Classification Criteria for Systemic Lupus Erythematosus. Arthritis Rheumatol 2019;71:1400-1412.",
+    "Wolfe F et al. 2016 Revisions to the 2010/2011 fibromyalgia diagnostic criteria. Semin Arthritis Rheum 2016;46:319-329."
+  ],
+  "license": "CC-BY-4.0"
+}

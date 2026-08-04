@@ -1,0 +1,56 @@
+{
+  "id": "cardio_039",
+  "specialty": "cardiology",
+  "subspecialty": "pulmonary_embolism",
+  "stem": "A 65-year-old woman who is post-operative day 5 from an elective right total knee arthroplasty presents with the sudden onset of dyspnea and pleuritic chest pain that began 2 hours ago. Vital signs: BP 92/64 mmHg (slightly low), HR 122 bpm, RR 28, SpO2 89% on 4 L nasal cannula. Cardiac auscultation reveals tachycardia, a loud P2, and a left parasternal heave. Lung exam is clear bilaterally. CT pulmonary angiography shows a saddle pulmonary embolism extending into both pulmonary arteries with right ventricular dilation (RV/LV ratio 1.4) and septal flattening. Bedside echocardiogram confirms a dilated, hypokinetic right ventricle with the McConnell sign (apical sparing). Labs: troponin I 0.18 ng/mL (URL 0.04), NT-proBNP 1,800 pg/mL. PESI class IV (high risk); the patient meets criteria for INTERMEDIATE-HIGH risk pulmonary embolism (RV dysfunction on imaging PLUS biomarker elevation, with borderline hypotension).",
+  "question": "Which is the most appropriate management for this intermediate-high risk pulmonary embolism?",
+  "options": {
+    "A": "Anticoagulation alone with low-molecular-weight heparin or a direct oral anticoagulant",
+    "B": "Catheter-directed thrombolysis with concurrent anticoagulation; admit to ICU; escalate to systemic thrombolysis or surgical embolectomy if hemodynamic deterioration",
+    "C": "Surgical pulmonary embolectomy as the first-line intervention",
+    "D": "Defer anticoagulation pending further imaging and biomarker re-check"
+  },
+  "correct": "B",
+  "rationale": "This patient has INTERMEDIATE-HIGH risk PE: imaging evidence of RV dysfunction (RV/LV >1.0, McConnell sign) PLUS biomarker elevation (troponin, NT-proBNP) AND borderline hemodynamics — all in the setting of a saddle PE post-orthopedic surgery. The 2019 ESC PE Guidelines (Class IIa) recommend reperfusion therapy in intermediate-high-risk patients who deteriorate hemodynamically; current expert consensus and the PEITHO trial framework support catheter-directed thrombolysis (lower bleeding risk than systemic) with concurrent anticoagulation in selected intermediate-high-risk patients to reduce RV strain, with escalation to systemic thrombolysis or surgical embolectomy if instability develops. Anticoagulation alone (option A) is appropriate for low-risk and most intermediate-low-risk patients but inadequate when RV dysfunction + biomarker elevation + borderline hemodynamics coexist. Surgical embolectomy first-line (option C) is reserved for patients with absolute contraindications to thrombolysis or when CDT fails. Withholding anticoagulation (option D) is unsafe with confirmed PE.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 65,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_man_immobility",
+      "demographics": {
+        "age": 78,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old man with prolonged immobility from a recent hip fracture (4 weeks ago) presents with the sudden onset of dyspnea and pleuritic chest pain that began 2 hours ago. Vital signs: BP 92/64 mmHg, HR 122 bpm, RR 28, SpO2 89% on 4 L nasal cannula. CT pulmonary angiography shows a saddle PE with RV dilation (RV/LV ratio 1.4). Echocardiogram confirms dilated hypokinetic RV with the McConnell sign. Troponin I 0.18 ng/mL, NT-proBNP 1,800 pg/mL. He meets criteria for intermediate-high risk PE.",
+      "rationale_for_variant": "Age and sex perturbation only — clinical context (intermediate-high risk PE with RV dysfunction and biomarker elevation) is unchanged. The recommendation for catheter-directed thrombolysis with concurrent anticoagulation is independent of age, although bleeding risk informs the route of reperfusion (CDT preferred over systemic in elderly).",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "low_risk_pe_stable",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old woman who recently completed an 8-hour transcontinental flight presents with mild dyspnea on exertion that began yesterday. Vital signs: BP 128/78 mmHg, HR 92 bpm, RR 18, SpO2 96% on room air. Lung exam is clear. CT pulmonary angiography shows a single segmental pulmonary embolism in the right lower lobe. Echocardiogram is normal with no RV dilation, no septal flattening, and a normal RV systolic function. Troponin I is undetectable; NT-proBNP is 80 pg/mL. The PESI class is II (low risk); she meets criteria for low-risk PE.",
+      "rationale_for_variant": "Mixed perturbation — low-risk PE without RV strain or biomarker elevation. Per the 2019 ESC PE Guidelines and CHEST 2021, low-risk PE is appropriately managed with anticoagulation alone, and direct oral anticoagulants (apixaban or rivaroxaban) are preferred over LMWH bridging to warfarin in non-cancer patients because they avoid parenteral therapy and INR monitoring. Outpatient management is reasonable for selected low-risk patients with adequate home support. Reperfusion therapies are not indicated. The correct answer therefore shifts from CDT (option B) to anticoagulation alone (option A).",
+      "perturbation_type": "mixed",
+      "correct_override": "A"
+    }
+  ],
+  "sources": [
+    "Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543-603.",
+    "Stevens SM et al. Antithrombotic Therapy for VTE Disease: Second Update of the CHEST Guideline and Expert Panel Report. CHEST 2021;160:e545-e608.",
+    "Meyer G et al. PEITHO: Fibrinolysis for patients with intermediate-risk pulmonary embolism. NEJM 2014;370:1402-1411."
+  ],
+  "license": "CC-BY-4.0"
+}

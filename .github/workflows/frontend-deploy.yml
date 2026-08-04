@@ -1,0 +1,14 @@
+# Vercel deploy on push to main. Implemented in Phase 5 once the frontend exists.
+name: frontend-deploy
+on:
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
+      - "results/aggregated/leaderboard.json"
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Phase-0 placeholder. Vercel wiring lands in Phase 5."

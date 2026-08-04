@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_027",
+  "specialty": "autoimmune",
+  "subspecialty": "scleroderma_pah",
+  "stem": "A 60-year-old woman with limited cutaneous systemic sclerosis (12-year history; anti-centromere strongly positive; longstanding Raynaud, sclerodactyly, telangiectasias, and esophageal dysmotility) presents with 6 months of progressive exertional dyspnea (NYHA III) and one episode of exertional syncope. Vital signs: BP 112/68 mmHg, HR 92 bpm, SpO2 92% on room air. Cardiac examination reveals a loud P2, a left parasternal heave, and prominent jugular venous v-waves. Echocardiogram demonstrates a dilated, hypokinetic right ventricle with septal flattening; estimated pulmonary-artery systolic pressure 60 mmHg; LVEF 60% with no significant valvular disease. HRCT chest shows minimal interstitial changes only. PFTs: FVC 75% predicted, DLCO 35% predicted (severely reduced — DLCO disproportionate to FVC, consistent with a vascular component rather than a parenchymal lung process). Right-heart catheterization confirms PRECAPILLARY pulmonary hypertension: mean pulmonary-artery pressure 38 mmHg, pulmonary capillary wedge pressure 9 mmHg, pulmonary vascular resistance 8 Wood units. There is no left heart disease, no significant ILD, and no chronic thromboembolic disease (V/Q scan normal). 6-minute walk distance is 280 m (functionally impaired). The diagnosis is SSc-associated pulmonary arterial hypertension (Group 1 PAH).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Upfront combination PAH-specific therapy (e.g., ambrisentan + tadalafil per the AMBITION trial in selected patients) OR sequential add-on per current guidelines; evaluate for parenteral prostacyclin (epoprostenol or treprostinil) if the patient is at high risk on the REVEAL Lite or REVEAL 2.0 risk score; refer to a pulmonary-hypertension specialty center for risk stratification and ongoing management; do NOT use SSc-specific immunosuppression as primary therapy for PAH alone (limited evidence for benefit and potential harm)",
+    "B": "PAH-specific monotherapy alone in this severe, high-risk patient",
+    "C": "Optimize heart-failure management for postcapillary pulmonary hypertension; do NOT initiate PAH-specific vasodilators (could worsen pulmonary edema in left-heart-disease-driven PH)",
+    "D": "Systemic anticoagulation as first-line therapy"
+  },
+  "correct": "A",
+  "rationale": "SSc-associated PAH is classified as WHO Group 1 PAH (associated with connective-tissue disease); the diagnosis is established on right-heart catheterization (mean PAP ≥20 mmHg + PCWP ≤15 mmHg + PVR >2 Wood units) per the 2022 ESC/ERS Pulmonary Hypertension Guidelines (Humbert M et al.). Limited-cutaneous SSc with anti-centromere positivity is the highest-risk SSc subtype for PAH (lifetime risk approximately 8–12%) and PAH is now the leading cause of death in long-standing limited-cutaneous SSc. Per the AMBITION trial (Galiè N et al., NEJM 2015), upfront combination therapy with ambrisentan (endothelin-receptor antagonist) plus tadalafil (PDE5 inhibitor) reduced clinical-failure events compared with monotherapy in patients with idiopathic, heritable, drug-induced, and CTD-associated PAH. Risk-stratified algorithms (REVEAL Lite, REVEAL 2.0, ESC/ERS 4-strata risk) drive escalation to parenteral prostacyclin in high-risk patients. Specialty-center referral is essential. Monotherapy alone in high-risk disease (option B) is suboptimal. Postcapillary-PH HFpEF management (option C) is inappropriate for confirmed precapillary disease. Systemic anticoagulation (option D) is no longer routinely recommended in CTD-associated PAH (the historical recommendation has been removed in current guidelines; bleeding risk outweighs benefit in many SSc patients with telangiectasias and GAVE).",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 60,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "post_capillary_PH_HFpEF_overlap",
+      "demographics": {
+        "age": 75,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old woman with limited cutaneous systemic sclerosis, hypertension, type 2 diabetes mellitus, obesity (BMI 34), and atrial fibrillation presents with progressive exertional dyspnea (NYHA III) and lower-extremity edema. Vital signs: BP 138/82, HR 84 bpm. Echocardiogram shows preserved LVEF (60%), mildly thickened LV walls, biatrial enlargement, grade II diastolic dysfunction, an estimated pulmonary-artery systolic pressure of 50 mmHg, and a dilated right ventricle. Right-heart catheterization shows POSTCAPILLARY pulmonary hypertension: mean pulmonary-artery pressure 30 mmHg, pulmonary capillary wedge pressure 22 mmHg (elevated, consistent with left heart disease), pulmonary vascular resistance 1.8 Wood units. The diagnosis is HFpEF with secondary postcapillary pulmonary hypertension (Group 2 PH).",
+      "rationale_for_variant": "Mixed perturbation — entirely different etiology (postcapillary PH from left heart disease, Group 2). PAH-specific vasodilators are NOT recommended in Group 2 PH and may WORSEN outcomes by increasing left-atrial filling pressure and pulmonary edema. Management is directed at the underlying left-heart pathology (HFpEF: diuresis, BP control, SGLT2 inhibitor per EMPEROR-Preserved/DELIVER, treatment of comorbidities like AFib and obesity). The correct answer therefore shifts from upfront combination PAH-specific therapy (option A) to optimization of HFpEF management (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "middle_aged_man_SSc_PAH",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with limited cutaneous systemic sclerosis (10-year history; anti-centromere strongly positive) presents with 6 months of progressive exertional dyspnea (NYHA III) and one episode of exertional syncope. Vital signs: BP 112/68, HR 92, SpO2 92% on room air. Cardiac exam: loud P2, left parasternal heave. Echocardiogram: dilated hypokinetic RV; estimated PASP 60 mmHg; LVEF 60% normal. HRCT: minimal ILD only. PFTs: FVC 75%, DLCO 35% (disproportionately reduced). RHC confirms precapillary PH: mPAP 38 mmHg, PCWP 9 mmHg, PVR 8 Wood units. SSc-associated PAH (Group 1).",
+      "rationale_for_variant": "Sex perturbation only — clinical context (limited-cutaneous SSc with confirmed precapillary Group 1 PAH) is unchanged. SSc and SSc-PAH are more common in women (4–7:1 female-to-male ratio), but the disease and management framework are sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Humbert M et al. 2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension. Eur Heart J 2022;43:3618-3731.",
+    "Galiè N et al. Initial Use of Ambrisentan plus Tadalafil in Pulmonary Arterial Hypertension (AMBITION). NEJM 2015;373:834-844.",
+    "Kowal-Bielecka O et al. Update of EULAR recommendations for the treatment of systemic sclerosis. Ann Rheum Dis 2017;76:1327-1339."
+  ],
+  "license": "CC-BY-4.0"
+}

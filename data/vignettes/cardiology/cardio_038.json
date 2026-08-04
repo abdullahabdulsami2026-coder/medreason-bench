@@ -1,0 +1,56 @@
+{
+  "id": "cardio_038",
+  "specialty": "cardiology",
+  "subspecialty": "hypertensive_emergency",
+  "stem": "A 55-year-old woman with poorly controlled hypertension presents to the emergency department with severe headache, blurred vision, and confusion that began 6 hours ago. Vital signs: BP 220/130 mmHg confirmed on repeated measurement, HR 96 bpm, RR 18, SpO2 96% on room air. Funduscopic examination reveals papilledema and flame-shaped hemorrhages. She has no chest pain. Neurologic examination is intact apart from confusion. Labs: serum creatinine 2.5 mg/dL (baseline 1.0), urinalysis with 3+ proteinuria. ECG shows LVH without acute ischemia. CT head shows no hemorrhage. The clinical picture is consistent with hypertensive emergency with acute end-organ damage (hypertensive encephalopathy + acute kidney injury + retinal changes).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "IV antihypertensive (nicardipine, clevidipine, or labetalol) targeting a 10–20% reduction in mean arterial pressure within the first hour, then to <160/110 mmHg over the next 2–6 hours",
+    "B": "Aggressive IV BP reduction by greater than 25% in the first hour to normalize blood pressure rapidly",
+    "C": "IV beta-blocker (esmolol/labetalol) FIRST to reduce dP/dt, then nitroprusside to target a systolic blood pressure of 100–120 mmHg",
+    "D": "IV labetalol or hydralazine plus IV magnesium sulfate for seizure prophylaxis with delivery planning"
+  },
+  "correct": "A",
+  "rationale": "Hypertensive emergency (severe BP elevation with acute end-organ damage) requires gradual, controlled IV BP reduction. The 2017 ACC/AHA Hypertension Guideline and consensus practice recommend reducing mean arterial pressure by no more than 10–20% in the first hour, then to <160/110 mmHg over the subsequent 2–6 hours, with the goal of further normalization over 24–48 hours. Aggressive reduction by >25% in the first hour (option B) is HARMFUL because chronic hypertension shifts cerebral, coronary, and renal autoregulation curves rightward — overly rapid reduction precipitates ischemic stroke, MI, or worsening AKI. Nicardipine, clevidipine, and labetalol are first-line agents for most hypertensive emergencies. The dP/dt-first / SBP 100–120 strategy (option C) applies specifically to aortic dissection. Labetalol/hydralazine plus magnesium with delivery (option D) is the management of severe preeclampsia in pregnancy — not applicable to this non-pregnant patient.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "concurrent_aortic_dissection",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with poorly controlled hypertension presents to the emergency department with the sudden onset of severe, tearing chest pain radiating to the back, accompanied by a severe headache. Vital signs: BP 220/130 mmHg right arm, 130/76 mmHg left arm, HR 102 bpm. Funduscopic exam shows papilledema. Cardiac auscultation reveals a soft early diastolic murmur at the left lower sternal border. CT angiography confirms a Stanford Type A aortic dissection with mild distal malperfusion. Labs: creatinine 2.0 mg/dL (baseline 1.0).",
+      "rationale_for_variant": "Mixed perturbation — concurrent Stanford Type A aortic dissection. Aortic-dissection BP management is fundamentally different from generic hypertensive emergency: (1) target SBP 100–120 mmHg (much lower than the <160/110 target for hypertensive encephalopathy) to reduce aortic shear, and (2) IV beta-blocker FIRST to reduce dP/dt before any vasodilator is given (otherwise reflex tachycardia worsens shear force). Nicardipine alone (option A) without prior rate control would increase shear stress. The correct answer therefore shifts to the dP/dt-first / SBP 100–120 strategy (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "pregnant_severe_preeclampsia",
+      "demographics": {
+        "age": 28,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 28-year-old woman at 34 weeks of gestation (G1P0) presents to the labor-and-delivery triage with severe headache, epigastric pain, and visual changes. Vital signs: BP 168/110 mmHg confirmed twice 15 minutes apart, HR 96 bpm. Funduscopy shows mild retinal arteriolar narrowing. Labs: 24-hour urine protein 5.2 g, AST 145 U/L, ALT 130 U/L, platelets 95,000/μL (HELLP-spectrum). Fetal heart-rate tracing is reassuring. The diagnosis is severe preeclampsia with HELLP features.",
+      "rationale_for_variant": "Mixed perturbation — severe preeclampsia / HELLP, the pregnancy-specific hypertensive emergency. Per ACOG Practice Bulletin 222 and the 2022 AHA Adverse Pregnancy Outcomes Statement, management is fundamentally different from non-pregnant hypertensive emergency: (1) IV labetalol or hydralazine targeted to <160/110 mmHg but NOT below 140/90 to maintain placental perfusion; (2) IV magnesium sulfate (4–6 g loading then 1–2 g/h maintenance) for seizure prophylaxis; (3) DELIVERY is the definitive treatment — at ≥34 weeks, deliver; <34 weeks, give corticosteroids for fetal lung maturity then deliver if maternal/fetal indicators worsen. ACE inhibitors and ARBs are absolutely contraindicated (teratogenic). The correct answer shifts to option D.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Whelton PK et al. 2017 ACC/AHA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults. Circulation 2018;138:e484-e594.",
+    "Williams B et al. 2018 ESC/ESH Guidelines for the management of arterial hypertension. Eur Heart J 2018;39:3021-3104.",
+    "ACOG Practice Bulletin 222: Gestational Hypertension and Preeclampsia. Obstet Gynecol 2020;135:e237-e260."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_024",
+  "specialty": "cardiology",
+  "subspecialty": "sick_sinus_syndrome",
+  "stem": "A 78-year-old man with hypertension presents to clinic with 4 months of intermittent presyncope and one episode of true syncope 2 weeks ago without warning. Between episodes he reports palpitations and lightheadedness. His outpatient ambulatory ECG monitor over 48 hours documents alternating sinus pauses up to 4.5 seconds (associated with the syncopal episode) and bursts of paroxysmal atrial fibrillation with rapid ventricular response (rates up to 150 bpm) — a tachy-brady pattern of sinus node dysfunction (sick sinus syndrome). His current medications are amlodipine and atorvastatin. He has no reversible causes (no QT-prolonging or AV-nodal-blocking drugs). Resting ECG today shows sinus bradycardia at 48 bpm with no AV block. Echocardiogram shows preserved LVEF (60%) with no structural heart disease.",
+  "question": "Which is the most appropriate next step in management?",
+  "options": {
+    "A": "Permanent dual-chamber pacemaker plus initiation of a rate-control agent (e.g., beta-blocker) for the tachycardia episodes",
+    "B": "Initiate an oral beta-blocker alone to control the tachycardia episodes",
+    "C": "Permanent dual-chamber pacemaker alone, with no further medical therapy",
+    "D": "Discontinue all his current medications and reassess the rhythm in 4 weeks"
+  },
+  "correct": "A",
+  "rationale": "Sick sinus syndrome with a tachy-brady pattern presents a therapeutic dilemma: rate-control agents needed to manage the tachycardia exacerbate the bradycardia and pauses, and pacing alone does not address the tachyarrhythmia. The 2018 ACC/AHA/HRS Bradycardia Guideline (Class I) recommends permanent pacemaker implantation in patients with symptomatic SSS. When pacing is in place, AV-nodal-blocking agents can then be safely used to suppress the tachycardia component (Class I as combined therapy). Initiating a beta-blocker alone (option B) without pacing risks worsening the bradycardia and pauses. Pacemaker alone (option C) leaves the symptomatic tachycardia episodes uncontrolled. Discontinuing medications (option D) is reasonable when reversible drug-induced bradycardia is suspected — but this patient is on amlodipine (a dihydropyridine CCB without significant AV-nodal effect) and atorvastatin, neither of which causes sinus dysfunction.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 78,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_78",
+      "demographics": {
+        "age": 78,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old woman with hypertension presents to clinic with 4 months of intermittent presyncope and one episode of true syncope 2 weeks ago without warning. Her outpatient ambulatory ECG over 48 hours documents alternating sinus pauses up to 4.5 seconds (associated with the syncopal episode) and bursts of paroxysmal atrial fibrillation with rapid ventricular response (rates up to 150 bpm). Her current medications are amlodipine and atorvastatin (no QT-prolonging or AV-nodal-blocking drugs). Resting ECG today shows sinus bradycardia at 48 bpm. Echocardiogram shows preserved LVEF (60%) with no structural heart disease.",
+      "rationale_for_variant": "Sex perturbation only — clinical features are unchanged. The combined-therapy approach (pacing plus rate control) is the same in older women.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "reversible_drug_induced_bradycardia",
+      "demographics": {
+        "age": 78,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old man with hypertension and dementia (recently started donepezil 10 mg daily 4 weeks ago) presents to clinic with 3 weeks of intermittent presyncope and one episode of syncope 1 week ago. Outpatient ambulatory ECG documents intermittent sinus pauses up to 4.0 seconds. He is also taking metoprolol succinate 100 mg daily for hypertension (initiated 6 months ago without prior bradycardia). Resting ECG today shows sinus bradycardia at 44 bpm without AV block. Echocardiogram shows preserved LVEF (60%) with no structural heart disease.",
+      "rationale_for_variant": "Mixed perturbation — the bradycardia is plausibly reversible from recently added donepezil (a cholinesterase inhibitor with vagotonic effects, well-described to cause bradycardia and syncope) plus chronic metoprolol (an AV-nodal-blocking beta-blocker). The 2018 ACC/AHA/HRS Bradycardia Guideline emphasizes that permanent pacing should NOT be implanted for reversible causes of bradycardia until those causes are addressed. The appropriate next step is to discontinue the offending agents and reassess the rhythm. Tests whether the model identifies a reversible drug-induced cause before committing to permanent pacing.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Kusumoto FM et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation 2019;140:e382-e482.",
+    "Glikson M et al. 2021 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy. Eur Heart J 2021;42:3427-3520.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Disorders of Sinus Node and Atrioventricular Node Function."
+  ],
+  "license": "CC-BY-4.0"
+}

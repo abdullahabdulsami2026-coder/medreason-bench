@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_026",
+  "specialty": "autoimmune",
+  "subspecialty": "scleroderma_renal_crisis",
+  "stem": "A 42-year-old woman with diffuse cutaneous systemic sclerosis (anti-RNA polymerase III strongly positive, mRSS 28) has been on prednisone 30 mg/d for the past 2 weeks for an apparent inflammatory myopathy overlap. She presents to the emergency department with the new onset of severe headache, blurred vision, and confusion. Vital signs: BP 220/130 mmHg confirmed twice, HR 96 bpm, RR 18, SpO2 96% on room air. Funduscopy demonstrates papilledema and flame-shaped hemorrhages (grade IV hypertensive retinopathy). Labs: serum creatinine 3.2 mg/dL (RISEN from baseline 0.9 over 5 days); urinalysis with microscopic hematuria and proteinuria 2 g/g; CBC with platelets 90,000/μL (low) and a peripheral smear demonstrating SCHISTOCYTES consistent with microangiopathic hemolytic anemia; LDH elevated; haptoglobin low. ANCA testing is NEGATIVE; anti-glomerular basement membrane antibody is NEGATIVE. The clinical picture is consistent with SCLERODERMA RENAL CRISIS — the classic triad of accelerated/malignant hypertension, acute kidney injury, and microangiopathic hemolytic anemia in a patient with diffuse SSc, with high-dose corticosteroid exposure as the major precipitating factor.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "HIGH-DOSE ACE INHIBITOR (captopril 12.5 mg orally every 8 hours, titrated upward as tolerated to maximum tolerable dose; or lisinopril) — paradoxically LIFESAVING in scleroderma renal crisis DESPITE rising creatinine; concurrently REDUCE OR DISCONTINUE the precipitating corticosteroid; aggressive blood-pressure control to <140/90 within 72 hours; supportive care for AKI (renal replacement therapy may be needed but renal recovery often follows ACE inhibitor therapy); monitor microangiopathic hemolysis; AVOID beta-blockers (do not improve outcomes); avoid nephrotoxins",
+    "B": "WITHHOLD ACE inhibitor due to acute kidney injury; switch to nitroprusside alone for blood-pressure control",
+    "C": "Continue prednisone at the current dose; treat blood pressure with intravenous beta-blocker (esmolol or labetalol)",
+    "D": "Initiate emergent hemodialysis without ACE inhibitor therapy; defer disease-modifying medication until creatinine improves"
+  },
+  "correct": "A",
+  "rationale": "Scleroderma renal crisis (SRC) is one of the few situations in nephrology where ACE INHIBITORS ARE ABSOLUTELY REQUIRED EVEN AS CREATININE RISES — the opposite of the standard reflex. The pathophysiology is renin-driven vasoconstriction of renal arterioles producing a vicious cycle of ischemia, hypertension, and microangiopathic hemolytic anemia; ACE inhibition interrupts this cycle and is LIFESAVING. The seminal observational data (Steen VD et al., NEJM 1990 / Ann Intern Med 1990) showed that captopril use reduced 1-year mortality in SRC from approximately 76% (pre-ACE inhibitor era) to approximately 24% (modern era), with renal recovery in many initially dialysis-dependent patients over weeks to months. Treatment principles per the UK Scleroderma Study Group consensus and 2017 EULAR SSc Recommendations: (1) initiate captopril 12.5 mg every 8 hours, rapidly titrate to the maximum tolerated dose; (2) target SBP reduction by 10–20 mmHg per 24 hours, achieving <140/90 within 72 hours; (3) reduce or discontinue corticosteroids (the precipitating factor — high-dose CS is a well-established trigger); (4) AVOID beta-blockers (reduce renal perfusion without outcome benefit); (5) renal replacement therapy as needed for AKI, with the expectation that many patients recover dialysis-independence over months. Withholding ACE inhibitor (option B) is the WRONG reflex and is associated with markedly worse outcomes. Continuing prednisone (option C) perpetuates the trigger. Dialysis without ACE inhibitor (option D) misses the disease-modifying step.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 42,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "normotensive_SRC_atypical",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with diffuse cutaneous systemic sclerosis (anti-RNA polymerase III strongly positive) on no corticosteroids presents with new microangiopathic hemolytic anemia (platelets 80,000/μL, schistocytes on smear, LDH elevated, haptoglobin low), acute kidney injury (creatinine risen from 0.8 to 2.6 over 1 week), and proteinuria 1.5 g/g. Notably, her blood pressure is 132/84 mmHg (NORMOTENSIVE) — atypical for SRC, which typically presents with malignant hypertension. ANCA and anti-GBM antibodies negative. The clinical picture is consistent with NORMOTENSIVE SRC, a rare (~10% of SRC cases) but well-described variant.",
+      "rationale_for_variant": "Mixed perturbation — NORMOTENSIVE SRC, an atypical presentation (~10% of SRC) that can be missed because clinicians anchor on the malignant-hypertension stereotype. The pathophysiology is the same renin-driven microangiopathy, and the management is the same: HIGH-DOSE ACE INHIBITOR initiation (despite normotension and rising creatinine), with cautious titration to avoid relative hypotension. Outcomes are actually WORSE in normotensive SRC than in hypertensive SRC because of delayed recognition. The correct answer therefore stays the same (option A) — but the recognition burden is higher.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    },
+    {
+      "variant_id": "elderly_man_post_high_dose_steroid",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man with diffuse cutaneous systemic sclerosis (anti-RNA polymerase III positive, mRSS 24) has been on prednisone 40 mg/d for the past 3 weeks (started by an outside provider for inflammatory arthritis). He presents with new severe headache, blurred vision, BP 218/128 mmHg confirmed twice, papilledema, creatinine risen from 0.9 to 3.4 mg/dL over 4 days, microangiopathic hemolytic anemia (platelets 85, schistocytes, LDH elevated). ANCA and anti-GBM antibodies negative.",
+      "rationale_for_variant": "Sex / age perturbation — clinical context (classic high-corticosteroid-dose-precipitated SRC with malignant hypertension and microangiopathy) is unchanged. SRC affects approximately 10–15% of patients with diffuse SSc; older patients have higher operative-mortality risk if they require RRT but the ACE-inhibitor management is identical.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Steen VD, Costantino JP, Shapiro AP, Medsger TA Jr. Outcome of renal crisis in systemic sclerosis: relation to availability of angiotensin converting enzyme (ACE) inhibitors. Ann Intern Med 1990;113:352-357.",
+    "Lynch BM et al. UK Scleroderma Study Group consensus best practice pathway for the diagnosis and management of scleroderma renal crisis. Clin Rheumatol 2016;35:529-536.",
+    "Kowal-Bielecka O et al. Update of EULAR recommendations for the treatment of systemic sclerosis. Ann Rheum Dis 2017;76:1327-1339."
+  ],
+  "license": "CC-BY-4.0"
+}

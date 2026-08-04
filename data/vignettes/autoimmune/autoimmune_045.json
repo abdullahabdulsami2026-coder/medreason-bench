@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_045",
+  "specialty": "autoimmune",
+  "subspecialty": "anti_synthetase_syndrome_ild",
+  "stem": "A 48-year-old woman presents to clinic with the following constellation over 4 months: progressive proximal muscle weakness (4/5 in shoulder abduction and hip flexion), 'mechanic's hands' (hyperkeratotic fissured lateral aspects of the fingers), Raynaud phenomenon, polyarthritis of the small joints of the hands (synovitis on examination), intermittent low-grade fevers, and progressive exertional dyspnea over 3 months. Vital signs: SpO2 92% on room air at rest. Lung exam reveals bibasilar fine inspiratory 'Velcro' crackles. Labs: creatine kinase 4,500 IU/L (elevated); aldolase elevated; ANTI-Jo-1 (anti-histidyl-tRNA synthetase) STRONGLY POSITIVE; ANA 1:640 cytoplasmic. HRCT chest demonstrates BILATERAL BASAL non-specific interstitial pneumonia (NSIP) pattern with extensive ground-glass opacities and reticulation, mild traction bronchiectasis, and no honeycombing. PFTs: FVC 65% predicted (restrictive), DLCO 50% predicted (significantly reduced). The clinical picture meets the Solomon criteria for anti-synthetase syndrome with significant interstitial lung disease. The lung disease is the dominant prognostic factor.",
+  "question": "Which is the most appropriate management for this anti-synthetase syndrome with ILD?",
+  "options": {
+    "A": "High-dose corticosteroids (prednisone 1 mg/kg/d, with IV methylprednisolone pulse for severe lung disease) PLUS mycophenolate mofetil 2–3 g/d (good evidence in anti-synthetase ILD per recent retrospective series) OR azathioprine; rituximab for refractory or severe ILD; consider IVIG; AVOID methotrexate because of pulmonary-toxicity overlap that confounds the clinical picture; cyclophosphamide for rapidly progressive ILD; pulmonology co-management with serial PFT every 3–6 months and HRCT yearly",
+    "B": "High-dose corticosteroids alone without an immunosuppressant",
+    "C": "Methotrexate as first-line conventional DMARD (despite the well-documented MTX pulmonary toxicity overlap with anti-synthetase ILD)",
+    "D": "Triple therapy with high-dose corticosteroids (IV methylprednisolone pulse 1 g/d × 3 days, then oral prednisone 1 mg/kg/d) PLUS cyclophosphamide (or rituximab) PLUS a calcineurin inhibitor (tacrolimus); ICU-level supportive care including non-invasive ventilation as needed; appropriate for ANTI-MDA5 dermatomyositis with rapidly progressive ILD given the very high mortality (~50% at 6 months without aggressive therapy)"
+  },
+  "correct": "A",
+  "rationale": "Anti-synthetase syndrome is a distinct inflammatory myopathy subtype defined by autoantibodies against aminoacyl-tRNA synthetases (most commonly anti-Jo-1; also anti-PL-7, anti-PL-12, anti-EJ, anti-OJ, anti-KS, anti-Zo, anti-Ha) and a characteristic clinical pentad: myositis + ILD + arthritis + Raynaud + mechanic's hands + fevers. ILD is the dominant prognostic factor and the leading cause of mortality. Per the 2021 ACR Inflammatory Myopathies Guideline and the ACR/CHEST 2023 ILD-in-Rheumatic-Diseases Guideline (Johnson SR et al.): (1) high-dose corticosteroids (with IV pulse for severe lung disease) PLUS a steroid-sparing immunosuppressant; (2) mycophenolate mofetil has accumulating evidence in anti-synthetase ILD and is often first-choice; azathioprine is alternative; (3) rituximab for refractory or severe ILD (RECITAL trial framework); (4) IVIG for myositis-component refractory disease; (5) METHOTREXATE IS GENERALLY AVOIDED in patients with anti-synthetase syndrome and ILD because MTX itself causes pulmonary toxicity that confounds the clinical picture and may worsen ILD; (6) cyclophosphamide is reserved for rapidly progressive ILD; (7) pulmonology co-management with PFT every 3–6 months. Corticosteroids alone (option B) are inadequate for ILD severity. MTX as first-line (option C) is the wrong choice because of pulmonary toxicity overlap. Triple therapy (option D) is the appropriate intensified regimen for anti-MDA5 RP-ILD — a different and even more aggressive subtype.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 48,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "rapidly_progressive_ILD_anti_MDA5",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old woman presents to the emergency department with 4 weeks of rapidly progressive dyspnea (now requiring 6 L nasal cannula at rest, SpO2 88%), associated with subtle proximal muscle weakness, palmar papules over the MCPs (Gottron's sign), reverse Gottron's papules (palmar interphalangeal hyperkeratotic ulcerated papules), and oral pain with 'inverse Gottron papules.' Cancer screening is in progress and unrevealing. Labs: CK 1,200 (only mildly elevated, clinically AMYOPATHIC dermatomyositis); ANTI-MDA5 antibody STRONGLY POSITIVE; ferritin 2,800 ng/mL (markedly elevated; the ferritin level is a strong negative prognostic marker in anti-MDA5 disease). HRCT chest: extensive bilateral consolidation and ground-glass opacities with rapidly evolving fibrotic changes consistent with rapidly progressive interstitial lung disease (RP-ILD). FVC 50% predicted, DLCO unobtainable due to dyspnea. The clinical picture is anti-MDA5 dermatomyositis with rapidly progressive ILD — a subtype with very high mortality (approximately 30–50% at 6 months without aggressive therapy).",
+      "rationale_for_variant": "Mixed perturbation — anti-MDA5 dermatomyositis with rapidly progressive ILD. This subtype has fundamentally different management because of its devastating short-term mortality. The standard anti-synthetase regimen (corticosteroids + MMF) is INADEQUATE; per Allenbach Y et al. and contemporary expert consensus, intensive TRIPLE THERAPY is required: (1) high-dose corticosteroids (IV methylprednisolone pulse 1 g/d × 3 days, then oral prednisone 1 mg/kg/d); (2) cyclophosphamide (oral or IV pulse) OR rituximab; (3) a CALCINEURIN INHIBITOR (tacrolimus or cyclosporine — tacrolimus is more commonly used and provides additional T-cell-directed immunosuppression). ICU-level supportive care including non-invasive ventilation, careful fluid management, and prophylaxis for opportunistic infections are essential. The correct answer therefore shifts from the standard anti-synthetase regimen (option A) to the intensive triple-therapy regimen (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_man_anti_synthetase",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old man presents with progressive proximal muscle weakness, mechanic's hands, Raynaud, polyarthritis, fevers, and exertional dyspnea over 4 months. CK 4,500; anti-Jo-1 strongly positive; ANA 1:640. HRCT: bilateral basal NSIP with ground-glass and reticulation; FVC 65%, DLCO 50%. The clinical picture is anti-synthetase syndrome with ILD.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (anti-Jo-1 anti-synthetase syndrome with NSIP-pattern ILD) is unchanged. The MMF + corticosteroids framework with avoidance of methotrexate applies regardless of age, with attention to infection risk on long-term immunosuppression in older patients.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Aggarwal R et al. 2021 American College of Rheumatology Guideline for the Treatment of Idiopathic Inflammatory Myopathies (in press).",
+    "Johnson SR et al. 2023 American College of Rheumatology / American College of Chest Physicians Guideline for the Treatment of Interstitial Lung Disease in People with Systemic Autoimmune Rheumatic Diseases. Arthritis Rheumatol 2024 (in press).",
+    "Tsuji H et al. Multicenter prospective study of the efficacy and safety of combined immunosuppressive therapy with high-dose glucocorticoid, tacrolimus, and cyclophosphamide in interstitial lung diseases accompanied by anti-MDA5 antibody-positive dermatomyositis. Arthritis Rheumatol 2020;72:488-498."
+  ],
+  "license": "CC-BY-4.0"
+}

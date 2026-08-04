@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_022",
+  "specialty": "autoimmune",
+  "subspecialty": "sjogren_systemic_complications",
+  "stem": "A 58-year-old woman with established primary Sjögren syndrome (8-year history; anti-Ro/SSA and anti-La/SSB strongly positive; previous focus score 3 on labial gland biopsy) presents to clinic with new-onset PALPABLE PURPURA on the bilateral lower extremities, a stocking-glove distribution peripheral neuropathy on examination (decreased pinprick and vibration sense distal to mid-shin and at the wrists), and laboratory features of glomerulonephritis (urine protein/creatinine ratio 2.0 g/g, microscopic hematuria with red-cell casts, and a rise in serum creatinine from 0.9 to 1.4 mg/dL). Vital signs stable. Examination shows mildly enlarged but non-tender bilateral cervical lymph nodes and a mildly enlarged right parotid gland. Labs: cryoglobulins POSITIVE (Type II — monoclonal IgM-kappa with polyclonal IgG); rheumatoid factor 480 IU/mL (markedly elevated); C3 80 mg/dL (low-normal); C4 4 mg/dL (markedly low). Hepatitis C antibody and HIV are NEGATIVE. Skin biopsy of a purpuric lesion shows leukocytoclastic vasculitis with cryoglobulin deposits.",
+  "question": "Which is the most appropriate next step in management?",
+  "options": {
+    "A": "Increase hydroxychloroquine alone with reassessment in 6 weeks",
+    "B": "Rituximab (anti-CD20) plus high-dose corticosteroids for the cryoglobulinemic vasculitis; biopsy of an enlarged lymph node to evaluate for the marked elevation in lymphoma risk seen in primary Sjögren; consider plasma exchange for severe organ-threatening features",
+    "C": "Methotrexate alone",
+    "D": "Rituximab plus chemotherapy regimen (R-CHOP or R-CVP) for confirmed MALT lymphoma; oncology co-management"
+  },
+  "correct": "B",
+  "rationale": "Primary Sjögren syndrome carries a 5–20× elevated risk of B-cell non-Hodgkin lymphoma (most commonly MALT-type, often arising in salivary glands or lymph nodes), with cryoglobulinemic vasculitis, persistent parotid enlargement, low C4, and lymphadenopathy as the classical risk factors for transformation. This patient has cryoglobulinemic vasculitis with multi-organ involvement (purpura, neuropathy, glomerulonephritis), a Type II cryoglobulin pattern (monoclonal IgM with polyclonal IgG), AND lymphadenopathy with parotid enlargement — together raising concern for an underlying lymphoproliferative process. Per the 2020 EULAR Sjögren Management recommendations, treatment is rituximab + high-dose corticosteroids for the vasculitic component (Class I evidence for cryoglobulinemic vasculitis), with plasma exchange added for severe organ-threatening disease. Lymph-node biopsy is essential because management shifts substantially if MALT lymphoma is confirmed. HCQ alone (option A) is inadequate for cryoglobulinemic vasculitis. Methotrexate alone (option C) is inadequate for severe systemic disease. Chemotherapy with R-CHOP/R-CVP (option D) is the management once a lymphoma diagnosis is biopsy-confirmed — but this patient does not yet have a confirmed diagnosis; the biopsy is what is being arranged.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 58,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "lymphoma_diagnosis_added_MALT",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman with established primary Sjögren syndrome (10-year history) presents with palpable purpura, peripheral neuropathy, and glomerulonephritis. Cryoglobulins positive Type II; RF strongly positive; C4 markedly low. HCV and HIV negative. Cervical lymph node biopsy returns: low-grade B-cell non-Hodgkin lymphoma with marginal-zone phenotype (CD20+, CD43+, CD5−, CD10−) consistent with extranodal MARGINAL-ZONE LYMPHOMA OF MUCOSA-ASSOCIATED LYMPHOID TISSUE (MALT lymphoma); peripheral-blood and bone-marrow studies show no leukemic involvement; staging CT shows localized lymphadenopathy without distant spread.",
+      "rationale_for_variant": "Mixed perturbation — confirmed MALT lymphoma in a patient with primary Sjögren and active cryoglobulinemic vasculitis. The treatment strategy now incorporates LYMPHOMA-DIRECTED therapy: rituximab is dual-purpose (treats both the B-cell lymphoma AND the cryoglobulinemic vasculitis), and combined chemoimmunotherapy regimens (R-CHOP for higher-grade transformation; R-CVP or rituximab monotherapy for low-grade MALT) are standard per oncology consensus. Co-management with oncology is essential. Corticosteroids and plasma exchange remain part of the vasculitic-component management as needed. The correct answer therefore shifts from rituximab + corticosteroids alone (option B) to rituximab + chemotherapy regimen with oncology co-management (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_man_severe_neurologic_SS",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with established primary Sjögren syndrome (6-year history) presents with palpable purpura, severe peripheral neuropathy, and glomerulonephritis. Cryoglobulins positive Type II; RF strongly positive; C4 low. HCV and HIV negative. Mildly enlarged cervical lymph nodes and parotid gland. Skin biopsy shows leukocytoclastic vasculitis with cryoglobulin deposits.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (cryoglobulinemic vasculitis with lymphoma risk in primary Sjögren) is unchanged. Male primary Sjögren patients have a higher rate of severe extra-glandular disease (vasculitis, lymphoma) compared with women, but the management framework is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Ramos-Casals M et al. EULAR recommendations for the management of Sjögren's syndrome with topical and systemic therapies. Ann Rheum Dis 2020;79:3-18.",
+    "Quartuccio L et al. Cryoglobulinemic vasculitis in primary Sjögren syndrome. Front Immunol 2018.",
+    "Voulgarelis M et al. Long-term remission of Sjögren syndrome-associated B-cell lymphomas after combined B-cell depletion therapy. Ann Rheum Dis 2013."
+  ],
+  "license": "CC-BY-4.0"
+}

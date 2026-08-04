@@ -1,0 +1,56 @@
+{
+  "id": "cardio_022",
+  "specialty": "cardiology",
+  "subspecialty": "ventricular_tachycardia_stable",
+  "stem": "A 64-year-old man with a history of anterior myocardial infarction 5 years ago (treated with primary PCI to the LAD; LVEF 38% on most recent echocardiogram) presents to the emergency department with palpitations and lightheadedness that began 1 hour ago. He is alert and conversational. Vital signs: BP 108/68 mmHg, HR 168 bpm, RR 20, SpO2 96% on room air. ECG shows a sustained, regular, monomorphic wide-complex tachycardia with QRS duration of 180 ms, AV dissociation visible in lead II, and a left bundle branch block-like morphology with rightward axis. The clinical history of structural heart disease and the ECG features (AV dissociation, monomorphic regular wide-complex tachycardia) make ventricular tachycardia the diagnosis.",
+  "question": "Which is the most appropriate acute therapy for this hemodynamically stable monomorphic ventricular tachycardia?",
+  "options": {
+    "A": "IV adenosine 6 mg, escalating to 12 mg",
+    "B": "IV verapamil 5 mg",
+    "C": "IV amiodarone 150 mg loading dose, followed by infusion",
+    "D": "Synchronized direct-current cardioversion at 100 J"
+  },
+  "correct": "C",
+  "rationale": "For hemodynamically STABLE sustained monomorphic ventricular tachycardia, the 2017 AHA/ACC/HRS Ventricular Arrhythmia Guideline (Class IIa) recommends intravenous antiarrhythmic therapy with procainamide (preferred), amiodarone, or sotalol. IV amiodarone (150 mg loading) is widely used and effective. Adenosine (option A) is generally ineffective for VT because VT is not AV-node dependent (rare exception: idiopathic outflow-tract VT). Verapamil (option B) is CONTRAINDICATED in monomorphic VT in patients with structural heart disease — it can cause hemodynamic collapse and is associated with increased mortality (rare exception: idiopathic verapamil-sensitive fascicular VT, which has distinct ECG features and no structural heart disease). Synchronized cardioversion (option D) is reserved for hemodynamically UNSTABLE patients; pharmacologic conversion is preferred when the patient is stable.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 64,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_man_70",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man with a history of anterior myocardial infarction 5 years ago (treated with primary PCI to the LAD; LVEF 38% on most recent echocardiogram) presents to the emergency department with palpitations and lightheadedness that began 1 hour ago. He is alert and conversational. Vital signs: BP 108/68 mmHg, HR 168 bpm, RR 20, SpO2 96% on room air. ECG shows a sustained, regular, monomorphic wide-complex tachycardia with QRS duration of 180 ms, AV dissociation visible in lead II, and a left bundle branch block-like morphology with rightward axis.",
+      "rationale_for_variant": "Age perturbation only — clinical context (post-MI, structural heart disease) and rhythm characteristics are unchanged. The verapamil contraindication and the preference for IV amiodarone or procainamide remain.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "hemodynamically_unstable",
+      "demographics": {
+        "age": 64,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 64-year-old man with a history of anterior myocardial infarction 5 years ago (LVEF 38%) presents to the emergency department with palpitations that began 30 minutes ago. He is now diaphoretic, confused, and barely arousable. Vital signs: BP 68/40 mmHg, HR 180 bpm, RR 30, SpO2 88% on non-rebreather. Cool, mottled extremities. ECG shows a sustained, regular, monomorphic wide-complex tachycardia with QRS duration of 180 ms, AV dissociation, and an LBBB-like morphology consistent with ventricular tachycardia.",
+      "rationale_for_variant": "Mixed perturbation — develops hemodynamic instability (hypotension, altered mental status, hypoperfusion). Per the 2017 AHA/ACC/HRS Ventricular Arrhythmia Guideline (Class I) and ACLS, immediate synchronized DC cardioversion is the appropriate management for any sustained tachyarrhythmia with hemodynamic compromise. Pharmacologic conversion is reserved for stable patients. Tests whether the model correctly escalates to cardioversion when instability develops.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Al-Khatib SM et al. 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death. Circulation 2018;138:e272-e391.",
+    "Zeppenfeld K et al. 2022 ESC Guidelines for the management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Eur Heart J 2022;43:3997-4126.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Ventricular Arrhythmias."
+  ],
+  "license": "CC-BY-4.0"
+}

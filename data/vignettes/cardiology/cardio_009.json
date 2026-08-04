@@ -1,0 +1,56 @@
+{
+  "id": "cardio_009",
+  "specialty": "cardiology",
+  "subspecialty": "vasospastic_angina",
+  "stem": "A 48-year-old woman with no significant cardiovascular risk factors and a 10-pack-year smoking history presents to clinic with recurrent episodes of substernal chest pain occurring at rest, predominantly between 2 AM and 6 AM, lasting 5–15 minutes. Episodes are not provoked by exertion and resolve with sublingual nitroglycerin. During an episode in the emergency department, ECG shows transient 2 mm ST-segment elevation in leads II, III, and aVF that resolves completely within 5 minutes after sublingual nitroglycerin. Coronary angiography during a pain-free interval reveals no obstructive epicardial coronary artery disease.",
+  "question": "What is the most likely diagnosis?",
+  "options": {
+    "A": "Stable exertional angina due to fixed coronary stenosis",
+    "B": "Non-ST-elevation myocardial infarction",
+    "C": "Vasospastic (Prinzmetal / variant) angina",
+    "D": "Microvascular angina"
+  },
+  "correct": "C",
+  "rationale": "Vasospastic (Prinzmetal / variant) angina is caused by transient focal coronary artery vasospasm. The hallmark features are rest pain (often nocturnal or in the early morning), transient ST-segment ELEVATION during episodes that resolves rapidly with nitrates, and absence of obstructive epicardial CAD on angiography. Definitive diagnosis is by provocative testing with intracoronary acetylcholine or ergonovine, or capture of typical ST changes during spontaneous symptoms (per the 2017 COVADIS criteria). Stable exertional angina is provoked by activity and produces ST depression. NSTEMI requires elevated troponin and a clinical/ECG ischemic pattern that does not resolve transiently. Microvascular angina presents with similar exertional or rest symptoms but typically shows ST depression (not elevation) during episodes and abnormal coronary flow reserve rather than focal epicardial vasospasm.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 48,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman with no significant cardiovascular risk factors and a 10-pack-year smoking history presents to clinic with recurrent episodes of substernal chest pain occurring at rest, predominantly between 2 AM and 6 AM, lasting 5–15 minutes. Episodes are not provoked by exertion and resolve with sublingual nitroglycerin. During an episode in the emergency department, ECG shows transient 2 mm ST-segment elevation in leads II, III, and aVF that resolves completely within 5 minutes after sublingual nitroglycerin. Coronary angiography during a pain-free interval reveals no obstructive epicardial coronary artery disease.",
+      "rationale_for_variant": "Age perturbation only — clinical content unchanged. Vasospastic angina is more common in younger to middle-aged adults but is well-described in older adults; the diagnostic features are identical.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "microvascular_angina_alt_diagnosis",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with hypertension and dyslipidemia presents to clinic with recurrent episodes of substernal chest pain occurring with exertion and at rest, lasting 5–15 minutes. Episodes partially resolve with sublingual nitroglycerin. ECGs captured during episodes show 1 mm ST-segment DEPRESSION (not elevation) in V4–V6 that normalises after symptoms resolve. Coronary angiography reveals no obstructive epicardial disease. Acetylcholine provocative testing is negative for focal vasospasm. Adenosine-stress cardiac magnetic resonance imaging demonstrates a reduced coronary flow reserve (<2.0) consistent with microvascular dysfunction.",
+      "rationale_for_variant": "Mixed perturbation — same chest-pain pattern but ECG shows ST DEPRESSION rather than elevation, provocative testing for vasospasm is negative, and dedicated microvascular testing (reduced coronary flow reserve) is positive. These features meet the COVADIS criteria for microvascular angina rather than vasospastic angina. Tests whether the model distinguishes the two non-obstructive coronary syndromes by their key discriminators (ECG pattern, provocative testing, microvascular function).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Beltrame JF et al. International standardization of diagnostic criteria for vasospastic angina (COVADIS). Eur Heart J 2017;38:2565-2568.",
+    "Ong P et al. International standardization of diagnostic criteria for microvascular angina (COVADIS). Int J Cardiol 2018;250:16-20.",
+    "Libby P, Braunwald E, et al. Braunwald's Heart Disease, 12th ed. (2021) — Chapter on Coronary Vasospasm and Microvascular Disease."
+  ],
+  "license": "CC-BY-4.0"
+}

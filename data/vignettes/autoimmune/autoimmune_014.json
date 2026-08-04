@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_014",
+  "specialty": "autoimmune",
+  "subspecialty": "ra_treat_to_target",
+  "stem": "A 52-year-old woman with seropositive rheumatoid arthritis (anti-CCP 220 U/mL, RF 70 IU/mL) has been on methotrexate 25 mg subcutaneously weekly with folic acid for 6 months. She bridged off prednisone 3 months ago. Despite optimal MTX dosing and verified medication adherence, her DAS28 today is 3.8 (moderate disease activity, above the low-activity target of <3.2). Joint exam shows persistent synovitis of multiple MCP and wrist joints. ESR 45, CRP 18 mg/L. TB screening is NEGATIVE (negative tuberculin skin test and negative interferon-gamma release assay), hepatitis B and C are negative, HIV negative. She has no significant comorbidities and no current infections.",
+  "question": "Which is the most appropriate next step?",
+  "options": {
+    "A": "Continue methotrexate at the current dose with reassessment in 6 months",
+    "B": "Add a biologic disease-modifying antirheumatic drug — TNF inhibitor (adalimumab, etanercept, infliximab, certolizumab, or golimumab) OR alternative biologic (tocilizumab IL-6, abatacept CTLA4-Ig, rituximab anti-CD20) — OR a targeted synthetic DMARD (JAK inhibitor: tofacitinib, baricitinib, or upadacitinib); continue methotrexate as the anchor; reassess DAS28 at 3 months per treat-to-target",
+    "C": "Initiate isoniazid 9-month prophylaxis for latent tuberculosis BEFORE initiating any TNF inhibitor; if RA control is needed urgently in the interim, consider a non-TNF biologic (rituximab, abatacept, or tocilizumab) or a JAK inhibitor",
+    "D": "Begin oral cyclophosphamide as the next step in immunosuppression"
+  },
+  "correct": "B",
+  "rationale": "Per the 2022 EULAR Update and the 2021 ACR RA Treatment Guideline, when a patient on optimized methotrexate (typically MTX ≥15–25 mg weekly for 3–6 months with verified adherence) has not reached the treat-to-target goal of remission or low disease activity, the next step is to add a biologic or targeted synthetic DMARD (TNF inhibitor, IL-6 inhibitor, T-cell co-stimulation blocker, B-cell-depleting antibody, or JAK inhibitor), continuing methotrexate as the anchor. The choice between a TNF inhibitor first vs an alternative class depends on patient comorbidities (e.g., concurrent uveitis favors TNFi; recent malignancy favors abatacept; cardiovascular comorbidity favors caution with JAKi per ORAL Surveillance). DAS28 reassessment at 3 months drives further escalation. Continuing the same dose without escalation (option A) violates treat-to-target. TB prophylaxis (option C) is the correct sequencing IF latent TB were positive — but this patient has confirmed negative TB screening. Cyclophosphamide (option D) is not used for routine RA escalation; it is reserved for severe extra-articular RA (rheumatoid vasculitis, organ-threatening disease).",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 52,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "latent_TB_positive_TST_or_IGRA",
+      "demographics": {
+        "age": 52,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 52-year-old woman with seropositive rheumatoid arthritis on methotrexate 25 mg subcutaneously weekly for 6 months has DAS28 3.8 with persistent synovitis. ESR and CRP elevated. Her interferon-gamma release assay returns POSITIVE (consistent with latent tuberculosis infection); chest X-ray shows no evidence of active TB; sputum AFB smears and PCR are negative. She has no constitutional symptoms of active TB. She has no other infectious risks (negative hepatitis B and C, negative HIV).",
+      "rationale_for_variant": "Mixed perturbation — latent TB infection. Per the 2022 EULAR RA Update and CDC/IDSA latent TB management recommendations, TNF inhibitors substantially increase the risk of TB reactivation (5–10× baseline), and latent TB must be treated before TNFi initiation. Recommended regimens include 9 months of isoniazid OR 4 months of rifampin OR 3 months of weekly isoniazid + rifapentine; the TNFi can be initiated after at least 1 month of latent-TB therapy in urgent RA cases (or full completion before TNFi if RA control permits). If RA control is needed urgently before completing TB prophylaxis, non-TNF biologics (rituximab, abatacept, tocilizumab) carry lower TB-reactivation risk and may be preferred. The correct answer therefore shifts to TB prophylaxis prior to TNFi (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "middle_aged_woman_with_inadequate_MTX_response",
+      "demographics": {
+        "age": 45,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old woman with seropositive rheumatoid arthritis on methotrexate 25 mg subcutaneously weekly with folic acid for 6 months has DAS28 3.8 with persistent synovitis. ESR 45, CRP 18 mg/L. TB screening NEGATIVE. Hepatitis B/C negative; HIV negative. No significant comorbidities or current infections.",
+      "rationale_for_variant": "Age perturbation only — clinical context (inadequate MTX response, no infectious risks) is unchanged. The treat-to-target framework with biologic or JAK-inhibitor add-on remains the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Smolen JS et al. EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs: 2022 update. Ann Rheum Dis 2023;82:3-18.",
+    "Fraenkel L et al. 2021 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis. Arthritis Rheumatol 2021;73:1108-1123.",
+    "Lewinsohn DM et al. Official American Thoracic Society / Infectious Diseases Society of America / Centers for Disease Control and Prevention Clinical Practice Guidelines: Diagnosis of Tuberculosis in Adults and Children. Clin Infect Dis 2017;64:e1-e33."
+  ],
+  "license": "CC-BY-4.0"
+}

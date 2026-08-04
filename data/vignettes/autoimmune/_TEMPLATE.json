@@ -1,0 +1,56 @@
+{
+  "id": "TEMPLATE_autoimmune_sle_serology",
+  "specialty": "autoimmune",
+  "subspecialty": "systemic_lupus_erythematosus",
+  "stem": "A 27-year-old woman presents with a malar rash sparing the nasolabial folds, painless oral ulcers, and arthralgias of the hands. ANA is positive at a titer of 1:320 with a homogeneous pattern.",
+  "question": "Which additional autoantibody is most specific for systemic lupus erythematosus?",
+  "options": {
+    "A": "Anti-Ro/SSA",
+    "B": "Anti-double-stranded DNA (anti-dsDNA)",
+    "C": "Rheumatoid factor",
+    "D": "Anti-centromere"
+  },
+  "correct": "B",
+  "rationale": "Anti-dsDNA antibodies are highly specific for SLE (>95%) and are part of both the EULAR/ACR 2019 and SLICC 2012 classification criteria; titers also correlate with disease activity, particularly lupus nephritis. ANA is sensitive but not specific (positive in scleroderma, Sjögren, drug-induced lupus, and ~5–15% of healthy adults). Anti-Ro/SSA is associated with SLE but is also common in Sjögren and neonatal lupus. Rheumatoid factor is non-specific and seen in RA, hepatitis C, and chronic infection. Anti-centromere is the hallmark of limited cutaneous systemic sclerosis (CREST), not SLE.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 27,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "male_presentation",
+      "demographics": {
+        "age": 30,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old man presents with a malar rash sparing the nasolabial folds, painless oral ulcers, and arthralgias of the hands. ANA is positive at a titer of 1:320 with a homogeneous pattern.",
+      "rationale_for_variant": "Sex perturbation only — clinical and serologic features are unchanged. SLE has a roughly 9:1 female-to-male ratio, but male SLE often presents with more severe disease (renal, cardiac, vascular). Tests whether the model lowers its diagnostic suspicion of SLE due to demographics or correctly anchors on the clinical + serologic features.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "elderly_onset",
+      "demographics": {
+        "age": 60,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 60-year-old woman presents with a malar rash sparing the nasolabial folds, painless oral ulcers, and arthralgias of the hands. ANA is positive at a titer of 1:320 with a homogeneous pattern. She takes hydralazine for chronic hypertension.",
+      "rationale_for_variant": "Mixed perturbation — age changes AND a hydralazine drug history is added, introducing drug-induced-lupus (DIL) as a competing diagnosis. The clinical reasoning task is therefore different from the parent: the model must distinguish idiopathic SLE (anti-dsDNA specific) from DIL (anti-histone specific, dsDNA negative). The correct answer remains anti-dsDNA as the most specific antibody for idiopathic SLE; this variant tests whether the model is distracted by the DIL pattern.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Firestein GS et al., Kelley & Firestein's Textbook of Rheumatology, 11th ed., Ch. 79 (Pathogenesis of Systemic Lupus Erythematosus).",
+    "Aringer M et al. 2019 European League Against Rheumatism / American College of Rheumatology Classification Criteria for Systemic Lupus Erythematosus. Arthritis Rheumatol 2019;71:1400-1412.",
+    "Petri M et al. Derivation and validation of the SLICC classification criteria for systemic lupus erythematosus. Arthritis Rheum 2012;64:2677-2686."
+  ],
+  "license": "CC-BY-4.0"
+}

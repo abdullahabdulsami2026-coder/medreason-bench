@@ -1,0 +1,56 @@
+{
+  "id": "cardio_019",
+  "specialty": "cardiology",
+  "subspecialty": "atrial_fibrillation_rate_control",
+  "stem": "A 68-year-old man with hypertension and obesity presents to the emergency department with palpitations and mild dyspnea on exertion that began 4 hours ago. He is alert and conversational. Vital signs: BP 138/82 mmHg, HR 138 bpm and irregularly irregular, RR 18, SpO2 97% on room air. Cardiac auscultation reveals an irregularly irregular rhythm without a murmur. Lung exam is clear. He has no history of heart failure, no preserved- or reduced-EF cardiomyopathy on prior echocardiogram (LVEF 60% one year ago), and no Wolff-Parkinson-White syndrome on baseline ECG. ECG today confirms atrial fibrillation with rapid ventricular response (rate 138 bpm) and no pre-excitation.",
+  "question": "Which is the most appropriate first-line intravenous agent for acute rate control in this patient?",
+  "options": {
+    "A": "IV diltiazem (non-dihydropyridine calcium-channel blocker)",
+    "B": "IV digoxin 0.5 mg loading dose",
+    "C": "IV adenosine 6 mg, escalating to 12 mg if needed",
+    "D": "IV amiodarone 150 mg loading dose"
+  },
+  "correct": "A",
+  "rationale": "For acute rate control in stable atrial fibrillation with rapid ventricular response in a patient WITHOUT heart failure, pre-excitation, or hypotension, both intravenous beta-blockers (e.g., metoprolol) and non-dihydropyridine calcium-channel blockers (diltiazem, verapamil) are Class I recommendations per the 2023 ACC/AHA AFib Guideline. Diltiazem provides rapid onset and predictable rate reduction. Digoxin (option B) has slow onset (hours) and is reserved for second-line use or for patients with concomitant HF when beta-blockers and CCBs are insufficient or not tolerated. Adenosine (option C) is used for terminating supraventricular tachycardias dependent on AV-node conduction (e.g., AVNRT) — it does NOT control rate in AFib because the multiple atrial wavefronts continue. Amiodarone (option D) is a rhythm-control agent and is generally not first-line for rate control in stable AFib without underlying HF.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 68,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman",
+      "demographics": {
+        "age": 78,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old woman with hypertension and obesity presents to the emergency department with palpitations and mild dyspnea on exertion that began 4 hours ago. She is alert and conversational. Vital signs: BP 138/82 mmHg, HR 138 bpm and irregularly irregular, RR 18, SpO2 97% on room air. Cardiac auscultation reveals an irregularly irregular rhythm without a murmur. Lung exam is clear. She has no history of heart failure, no preserved- or reduced-EF cardiomyopathy on prior echocardiogram (LVEF 60% one year ago), and no Wolff-Parkinson-White syndrome on baseline ECG. ECG today confirms atrial fibrillation with rapid ventricular response (rate 138 bpm) and no pre-excitation.",
+      "rationale_for_variant": "Age and sex perturbation only — clinical content (no HF, no pre-excitation, normal LVEF) is unchanged. The first-line acute rate-control choice is identical in older women.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "hfref_with_afib",
+      "demographics": {
+        "age": 68,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old man with non-ischemic dilated cardiomyopathy (LVEF 28% on echocardiogram one month ago) on chronic guideline-directed medical therapy (sacubitril/valsartan, carvedilol 12.5 mg BID, spironolactone, dapagliflozin) presents to the emergency department with palpitations and mild dyspnea that began 4 hours ago. He is alert and conversational. Vital signs: BP 118/72 mmHg, HR 138 bpm and irregularly irregular, RR 20, SpO2 96% on room air. Lung exam shows mild bibasilar crackles. ECG confirms atrial fibrillation with rapid ventricular response (rate 138 bpm) and no pre-excitation.",
+      "rationale_for_variant": "Mixed perturbation — adds HFrEF (LVEF 28%) on chronic GDMT. Non-dihydropyridine calcium-channel blockers (diltiazem, verapamil) are CONTRAINDICATED in HFrEF because of negative inotropy that can precipitate decompensation; this is a Class III recommendation in the 2023 ACC/AHA AFib Guideline. The appropriate first-line acute rate-control agent in HFrEF is an intravenous beta-blocker (e.g., metoprolol or esmolol, used cautiously). The correct answer therefore shifts away from diltiazem; in this option set, IV digoxin (option B) is the most appropriate of the listed choices because it preserves negative inotropy avoidance — a guideline-supported alternative in HFrEF when an oral beta-blocker is being titrated. Tests whether the model recognizes the diltiazem/verapamil contraindication in HFrEF.",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    }
+  ],
+  "sources": [
+    "Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Atrial Fibrillation."
+  ],
+  "license": "CC-BY-4.0"
+}

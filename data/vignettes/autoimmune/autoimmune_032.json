@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_032",
+  "specialty": "autoimmune",
+  "subspecialty": "egpa_churg_strauss",
+  "stem": "A 48-year-old woman with a 5-year history of severe asthma (multiple steroid-burst-requiring exacerbations per year on high-dose inhaled corticosteroid + long-acting beta-agonist) and chronic rhinosinusitis with nasal polyps presents with new-onset MONONEURITIS MULTIPLEX over the past 4 weeks (left wrist drop, right foot drop on examination with confirmed asymmetric axonal neuropathy on EMG/NCS) and progressive exertional dyspnea. Vital signs stable. Labs: ABSOLUTE EOSINOPHIL COUNT 8,500/μL (markedly elevated; >1,500 is significant for EGPA classification), IgE markedly elevated, p-ANCA POSITIVE on indirect immunofluorescence, MPO-ANCA POSITIVE on ELISA (anti-MPO is positive in 30–40% of EGPA patients and tends to associate with the vasculitic phenotype including glomerulonephritis and peripheral neuropathy). HRCT chest shows patchy ground-glass opacities. Cardiac MRI demonstrates myocardial edema with late gadolinium enhancement consistent with eosinophilic myocarditis (cardiac involvement). She meets the 1990 ACR criteria for EGPA: asthma + eosinophilia >10% + neuropathy + paranasal sinus abnormality + extravascular eosinophils on biopsy. The clinical picture is severe EGPA with cardiac and neurologic involvement.",
+  "question": "Which is the most appropriate induction therapy for this severe EGPA?",
+  "options": {
+    "A": "High-dose corticosteroids (prednisone 1 mg/kg/d, with IV methylprednisolone pulse for life-threatening cardiac involvement) PLUS cyclophosphamide for severe organ involvement (cardiac, neurologic, gastrointestinal, or renal); rituximab is a reasonable alternative; mepolizumab (anti-IL-5) is Class I per the MIRRA trial for relapsing or refractory disease and as steroid-sparing therapy in non-severe disease",
+    "B": "High-dose corticosteroids alone",
+    "C": "Empiric broad-spectrum antibiotics for presumed occult infection",
+    "D": "Corticosteroids + mepolizumab (anti-IL-5) WITHOUT cyclophosphamide — appropriate for non-severe EGPA without cardiac, neurologic, gastrointestinal, or renal involvement; the MIRRA trial supports mepolizumab for steroid-sparing in this population"
+  },
+  "correct": "A",
+  "rationale": "Eosinophilic granulomatosis with polyangiitis (formerly Churg-Strauss) presents in three classic phases: prodromal asthma + atopy, eosinophilia with organ infiltration, and small-vessel vasculitis with end-organ damage. Severe EGPA is defined by the FIVE-FACTOR SCORE — cardiomyopathy, gastrointestinal involvement, renal involvement, central-nervous-system involvement, and (in the 1996 version) age >65 — each independently predictive of mortality. This patient has cardiac involvement (eosinophilic myocarditis on cardiac MRI) and severe peripheral neurologic involvement, making her FFS ≥1 (severe disease). Per the 2021 ACR/Vasculitis Foundation EGPA Guideline and the EULAR recommendations, severe EGPA induction is high-dose corticosteroids (with IV pulse for life-threatening cardiac disease) PLUS cyclophosphamide; rituximab is a reasonable alternative. The MIRRA trial (Wechsler ME et al., NEJM 2017) established that mepolizumab (an IL-5 antagonist) increased remission and reduced steroid exposure in EGPA, and is now Class I for relapsing or refractory disease and as steroid-sparing in non-severe disease. Corticosteroids alone (option B) are inadequate for severe disease with cardiac/neurologic involvement. Antibiotics (option C) are inappropriate (no infection). Mepolizumab without cyclophosphamide (option D) is the regimen for NON-SEVERE EGPA — not for this patient with cardiac and severe neurologic involvement.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 48,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "limited_EGPA_pulmonary_only",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with longstanding severe asthma and chronic rhinosinusitis with nasal polyps presents with progressive exertional dyspnea over 6 weeks. Eosinophilia 5,200/μL; p-ANCA / MPO-ANCA positive. HRCT chest: patchy migratory ground-glass opacities with some septal thickening. There is NO peripheral neuropathy on examination (normal motor and sensory exam, normal EMG/NCS), NO cardiac involvement (cardiac MRI is normal, no myocardial edema, normal LVEF, no troponin elevation), NO gastrointestinal symptoms, normal renal function (creatinine 0.8, urinalysis bland), and no CNS symptoms. The Five-Factor Score is 0 (no severe-organ involvement). The clinical picture is non-severe EGPA with predominant respiratory and eosinophilic features.",
+      "rationale_for_variant": "Mixed perturbation — non-severe EGPA (FFS 0) without cardiac, neurologic, gastrointestinal, renal, or CNS involvement. Per the 2021 ACR/Vasculitis Foundation EGPA Guideline, non-severe EGPA can be managed without cyclophosphamide. The MIRRA trial (Wechsler ME et al., NEJM 2017) demonstrated that mepolizumab (an IL-5 inhibitor) plus corticosteroids was effective for both steroid-sparing and disease control in EGPA, and this is now the preferred regimen for non-severe disease. Avoiding cyclophosphamide spares the patient from chemotherapeutic toxicity (myelosuppression, infertility, malignancy risk, infection risk). The correct answer therefore shifts from severe-EGPA induction (option A) to corticosteroid + mepolizumab for non-severe disease (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "middle_aged_man_EGPA",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with longstanding severe asthma and chronic rhinosinusitis with nasal polyps presents with new mononeuritis multiplex (left wrist drop, right foot drop) and progressive exertional dyspnea. Eosinophilia 8,500/μL; IgE markedly elevated; p-ANCA positive; MPO-ANCA positive. HRCT chest: patchy ground-glass. Cardiac MRI: myocardial edema with LGE consistent with eosinophilic myocarditis. The clinical picture meets ACR criteria for severe EGPA with cardiac and neurologic involvement.",
+      "rationale_for_variant": "Sex perturbation only — clinical context (severe EGPA with FFS ≥1 from cardiac and neurologic involvement) is unchanged. The induction regimen (high-dose corticosteroids + cyclophosphamide or rituximab; mepolizumab for relapsing or refractory disease) is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Wechsler ME et al. Mepolizumab or Placebo for Eosinophilic Granulomatosis with Polyangiitis (MIRRA). NEJM 2017;376:1921-1932.",
+    "Chung SA et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Antineutrophil Cytoplasmic Antibody-Associated Vasculitis. Arthritis Rheumatol 2021;73:1366-1383.",
+    "Guillevin L et al. The Five-Factor Score revisited: assessment of prognoses of systemic necrotizing vasculitides based on the French Vasculitis Study Group (FVSG) cohort. Medicine (Baltimore) 2011;90:19-27."
+  ],
+  "license": "CC-BY-4.0"
+}

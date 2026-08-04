@@ -1,0 +1,56 @@
+{
+  "id": "cardio_046",
+  "specialty": "cardiology",
+  "subspecialty": "preeclampsia_cardiovascular",
+  "stem": "A 28-year-old G1P0 woman at 34 weeks of gestation presents to the labor-and-delivery triage with severe headache, blurred vision, and right-upper-quadrant epigastric pain. Vital signs: BP 168/110 mmHg confirmed twice 15 minutes apart in the right arm, HR 96 bpm, RR 18, SpO2 98% on room air. Funduscopy shows mild retinal arteriolar narrowing without papilledema. Neurologic examination is intact. Reflexes are 3+ with 2 beats of clonus. Labs: 24-hour urine protein 5.2 g (severe proteinuria), serum creatinine 1.1 mg/dL, AST 145 U/L and ALT 130 U/L (hepatic involvement), LDH 720 U/L, platelets 95,000/μL (low), peripheral smear with rare schistocytes. Fetal heart-rate monitoring shows a reassuring tracing with normal variability. The diagnosis is severe preeclampsia with HELLP-spectrum features.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Hospitalize, IV labetalol or hydralazine for blood-pressure control (target <160/110 but not below 140/90 to maintain placental perfusion), IV magnesium sulfate for seizure prophylaxis (4–6 g loading, then 1–2 g/h maintenance), and delivery planning (≥34 weeks: deliver; <34 weeks: corticosteroids for fetal lung maturity then deliver if maternal/fetal indicators worsen)",
+    "B": "Initiate oral nifedipine for blood-pressure control with outpatient follow-up in 24 hours",
+    "C": "Initiate ACE inhibitor (lisinopril) for blood-pressure control",
+    "D": "Aggressive IV BP reduction by greater than 25% in the first hour to normalize blood pressure"
+  },
+  "correct": "A",
+  "rationale": "Severe preeclampsia with HELLP-spectrum features (hypertension ≥160/110 + significant proteinuria + hepatic dysfunction + thrombocytopenia + neurologic symptoms) at ≥34 weeks of gestation is an indication for hospitalization, IV antihypertensive therapy, magnesium-sulfate seizure prophylaxis, and DELIVERY per ACOG Practice Bulletin 222. IV labetalol and IV hydralazine are first-line antihypertensives in pregnancy (oral nifedipine immediate-release is also acceptable). The BP target is <160/110 mmHg without dropping below 140/90 mmHg to maintain placental perfusion. Magnesium sulfate (4–6 g loading then 1–2 g/h maintenance) prevents progression to eclampsia. At ≥34 weeks of gestation, delivery is the definitive treatment; at <34 weeks, antenatal corticosteroids are given for fetal-lung maturity before delivery if clinical status permits. ACE inhibitors (option C) are TERATOGENIC — Pregnancy Category D, contraindicated. Outpatient management (option B) is unsafe with severe-features preeclampsia + HELLP. Aggressive BP reduction (option D) compromises placental perfusion and risks fetal demise.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_first_time_mother_age_40",
+      "demographics": {
+        "age": 40,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 40-year-old G1P0 woman at 34 weeks of gestation (advanced maternal age) presents to the labor-and-delivery triage with severe headache, blurred vision, and right-upper-quadrant epigastric pain. Vital signs: BP 168/110 mmHg confirmed twice, HR 96 bpm. Funduscopy shows mild retinal arteriolar narrowing. Reflexes 3+ with 2 beats of clonus. Labs: 24-hour urine protein 5.2 g, AST 145 U/L, ALT 130 U/L, platelets 95,000/μL. Fetal heart-rate tracing is reassuring. The diagnosis is severe preeclampsia with HELLP features.",
+      "rationale_for_variant": "Age perturbation only — clinical content (severe preeclampsia with HELLP at 34 weeks) is unchanged. Advanced maternal age (>35) increases preeclampsia risk and is associated with higher rates of severe features, but the management framework (IV antihypertensive + magnesium + delivery planning) is identical.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "chronic_HTN_with_superimposed_preeclampsia",
+      "demographics": {
+        "age": 33,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 33-year-old G2P1 woman at 32 weeks of gestation with a baseline diagnosis of chronic essential hypertension (managed with labetalol 200 mg BID throughout pregnancy with prior BPs 130–140/80–90 mmHg) presents to clinic with new-onset severe headache and lower-extremity edema. Vital signs: BP 172/112 mmHg, HR 98 bpm. Reflexes 3+. Labs: 24-hour urine protein 4.5 g (NEW from baseline 0.3 g), AST 110 U/L (newly elevated), platelets 110,000/μL. Fetal heart-rate tracing is reassuring. The diagnosis is chronic hypertension with SUPERIMPOSED severe preeclampsia.",
+      "rationale_for_variant": "Mixed perturbation — chronic hypertension with superimposed preeclampsia is a distinct ACOG diagnostic category. The acute management framework (IV labetalol or hydralazine for severe-range BP, IV magnesium sulfate for seizure prophylaxis, delivery planning) is fundamentally similar to severe preeclampsia in a previously normotensive patient — making the correct answer the same (option A) — but the threshold to deliver may be lower because of the higher background BP and end-organ-damage risk, and antepartum monitoring is more intensive. Tests whether the model recognizes the entity as a variant of severe preeclampsia warranting the same severe-features management bundle.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "ACOG Practice Bulletin 222: Gestational Hypertension and Preeclampsia. Obstet Gynecol 2020;135:e237-e260.",
+    "Parikh NI et al. Adverse Pregnancy Outcomes and Cardiovascular Disease Risk: AHA Scientific Statement. Circulation 2021;143:e902-e916.",
+    "Magee LA et al. The 2021 International Society for the Study of Hypertension in Pregnancy classification, diagnosis & management recommendations. Pregnancy Hypertens 2022;27:148-169."
+  ],
+  "license": "CC-BY-4.0"
+}

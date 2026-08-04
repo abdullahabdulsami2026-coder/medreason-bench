@@ -1,0 +1,57 @@
+{
+  "id": "cardio_014",
+  "specialty": "cardiology",
+  "subspecialty": "cardiogenic_shock",
+  "stem": "A 60-year-old man presents to the emergency department with an acute anterior STEMI and is taken urgently for primary PCI to the proximal left anterior descending artery. Following PCI he develops profound hypotension and signs of end-organ hypoperfusion. Current vital signs on norepinephrine 0.4 mcg/kg/min: BP 78/45 mmHg, HR 118 bpm, urine output 10 mL/h, lactate 4.5 mmol/L. Extremities are cool and mottled. Bedside echocardiogram shows a markedly hypokinetic anterior wall and apex with an LVEF of 20%, no significant mitral regurgitation, and a non-dilated right ventricle with preserved RV function. Right heart catheterization shows a cardiac index of 1.6 L/min/m^2, PCWP 26 mmHg, and CVP 10 mmHg. He meets SCAI Stage C–D criteria for cardiogenic shock.",
+  "question": "Based on current evidence, what is the most appropriate next step in hemodynamic support?",
+  "options": {
+    "A": "Continue norepinephrine and add dobutamine; defer mechanical support pending clinical reassessment in 6 hours",
+    "B": "Initiate intra-aortic balloon pump (IABP) counterpulsation",
+    "C": "Initiate Impella CP percutaneous left ventricular assist device for LV-dominant cardiogenic shock",
+    "D": "Volume resuscitation with 1 L crystalloid and inotropic support targeting right-ventricular function (dobutamine or milrinone), avoiding systemic vasodilators"
+  },
+  "correct": "C",
+  "rationale": "This patient meets SCAI Stage C–D criteria for LV-dominant cardiogenic shock complicating an acute anterior STEMI: hypoperfusion despite vasopressor support, elevated PCWP, low cardiac index, and clinical end-organ dysfunction. The DanGer Shock trial (Møller JE et al., NEJM 2024) randomized patients with STEMI-related cardiogenic shock to Impella CP (microaxial flow pump) versus standard care and demonstrated improved 6-month survival in the Impella arm. The 2022 AHA/ACC/HFSA HF Guideline recommends mechanical circulatory support for patients with refractory shock not responding to medical therapy. IABP (option B) was tested in IABP-SHOCK II and showed no mortality benefit and is no longer routinely recommended for AMI-related shock. Continuing escalating pharmacologic support without mechanical assistance (option A) delays definitive intervention. Volume resuscitation with RV-targeted support (option D) is appropriate for RV-dominant shock — not the LV-dominant pattern seen here.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 60,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_man_75",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man presents to the emergency department with an acute anterior STEMI and is taken urgently for primary PCI to the proximal left anterior descending artery. Following PCI he develops profound hypotension and signs of end-organ hypoperfusion. Current vital signs on norepinephrine 0.4 mcg/kg/min: BP 78/45 mmHg, HR 118 bpm, urine output 10 mL/h, lactate 4.5 mmol/L. Extremities are cool and mottled. Bedside echocardiogram shows a markedly hypokinetic anterior wall and apex with an LVEF of 20%, no significant mitral regurgitation, and a non-dilated right ventricle with preserved RV function. Right heart catheterization shows a cardiac index of 1.6 L/min/m^2, PCWP 26 mmHg, and CVP 10 mmHg. He meets SCAI Stage C–D criteria for cardiogenic shock.",
+      "rationale_for_variant": "Age perturbation only — clinical content and hemodynamics unchanged. Older patients in the DanGer Shock trial had similar Impella benefit but higher absolute risk of bleeding and renal complications. The recommendation for LV mechanical support remains the same; the threshold may be slightly more case-by-case given risk-benefit balance.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "RV_dominant_shock_inferior_MI",
+      "demographics": {
+        "age": 62,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 62-year-old man presents with an acute inferior STEMI with right-ventricular extension (1 mm ST elevation in V4R). He is taken for primary PCI to the proximal RCA. Following PCI he develops hypotension and signs of hypoperfusion. Current vital signs on norepinephrine 0.4 mcg/kg/min: BP 78/45 mmHg, HR 118 bpm, urine output 10 mL/h, lactate 4.5 mmol/L. Extremities are cool. Bedside echocardiogram shows a hypokinetic and dilated right ventricle, preserved LV function (LVEF 55%), and a small underfilled left ventricle. Right heart catheterization shows a cardiac index of 1.6 L/min/m^2, PCWP 12 mmHg, and CVP 18 mmHg.",
+      "rationale_for_variant": "Mixed perturbation — different infarct territory (inferior with RV extension) producing RV-dominant cardiogenic shock. RV-dominant shock requires a fundamentally different management approach: maintain preload with judicious volume (because the RV is preload-dependent), provide RV-targeted inotropy (dobutamine, milrinone), avoid systemic vasodilators that drop preload, and maintain AV synchrony. LV-targeted devices like Impella CP do not address RV failure; in severe RV failure, RV-specific support (Impella RP, ProtekDuo, or VA-ECMO if biventricular) may be needed. The correct initial approach is fluid resuscitation and RV-targeted inotropy, not LV mechanical support.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Baran DA et al. SCAI Clinical Expert Consensus Statement on the Classification of Cardiogenic Shock. Catheter Cardiovasc Interv 2019;94:29-37.",
+    "Møller JE et al. DanGer Shock: Microaxial Flow Pump or Standard Care in Infarct-Related Cardiogenic Shock. NEJM 2024;390:1382-1393.",
+    "Thiele H et al. IABP-SHOCK II: Intra-aortic balloon counterpulsation in acute myocardial infarction complicated by cardiogenic shock. NEJM 2012;367:1287-1296.",
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032."
+  ],
+  "license": "CC-BY-4.0"
+}

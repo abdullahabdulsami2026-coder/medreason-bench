@@ -1,0 +1,56 @@
+{
+  "id": "cardio_008",
+  "specialty": "cardiology",
+  "subspecialty": "toxin_associated_acute_coronary_syndrome",
+  "stem": "A 32-year-old man with no past medical history is brought to the emergency department by friends after using cocaine 3 hours ago. He reports substernal chest pain, palpitations, and anxiety that began 2 hours ago. Vital signs: BP 168/96 mmHg, HR 110 bpm, RR 18, SpO2 98% on room air. Cardiac auscultation reveals tachycardia without murmurs or gallops. ECG shows sinus tachycardia without ST-segment elevation, depression, or T-wave inversion. Initial troponin I is below the assay's detection threshold. Urine toxicology is positive for cocaine metabolites.",
+  "question": "Which medication is contraindicated as first-line therapy in this patient?",
+  "options": {
+    "A": "Aspirin 325 mg orally",
+    "B": "Sublingual nitroglycerin",
+    "C": "Intravenous metoprolol",
+    "D": "Intravenous lorazepam"
+  },
+  "correct": "C",
+  "rationale": "Beta-blockers (including metoprolol) are contraindicated as first-line therapy in cocaine-associated chest pain because alpha-adrenergic blockade is unopposed when beta-receptors are blocked, which can worsen coronary vasoconstriction and paradoxically increase blood pressure. The 2008 AHA Scientific Statement on Cocaine-Associated Chest Pain recommends benzodiazepines (e.g., lorazepam) for sympathomimetic anxiolysis and indirect blood pressure / heart rate reduction, sublingual nitroglycerin and calcium-channel blockers (e.g., diltiazem) for ongoing ischemia or hypertension, and aspirin as standard ACS therapy. If beta-blockade becomes necessary, mixed alpha/beta blockade with labetalol has been used cautiously, though evidence remains debated.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 32,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "young_woman",
+      "demographics": {
+        "age": 28,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 28-year-old woman with no past medical history is brought to the emergency department by friends after using cocaine 3 hours ago. She reports substernal chest pain, palpitations, and anxiety that began 2 hours ago. Vital signs: BP 168/96 mmHg, HR 110 bpm, RR 18, SpO2 98% on room air. Cardiac auscultation reveals tachycardia without murmurs. ECG shows sinus tachycardia without ST-segment changes. Initial troponin I is below the assay's detection threshold. Urine toxicology is positive for cocaine metabolites.",
+      "rationale_for_variant": "Sex perturbation only — clinical content unchanged. The pharmacologic contraindication to beta-blockers in cocaine-associated chest pain is sex-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "methamphetamine_alt_substance",
+      "demographics": {
+        "age": 35,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old man with no past medical history is brought to the emergency department after using methamphetamine 3 hours ago. He reports substernal chest pain, palpitations, and severe anxiety that began 2 hours ago. Vital signs: BP 178/100 mmHg, HR 130 bpm, RR 20, SpO2 98% on room air. Cardiac auscultation reveals tachycardia. ECG shows sinus tachycardia without ST-segment changes. Initial troponin I is below the assay's detection threshold. Urine toxicology is positive for amphetamines.",
+      "rationale_for_variant": "Mixed perturbation — substance changes from cocaine to methamphetamine, both sympathomimetics with overlapping chest-pain mechanisms. The evidence base for the beta-blocker contraindication is more robust for cocaine than for methamphetamine, but most expert reviews extend the same caution to methamphetamine because the underlying alpha-adrenergic physiology is similar. The correct answer remains beta-blocker avoidance as first-line. Tests whether the model generalises the cocaine teaching appropriately.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "McCord J et al. Management of Cocaine-Associated Chest Pain and Myocardial Infarction: AHA Scientific Statement. Circulation 2008;117:1897-1907.",
+    "Richards JR et al. Treatment of cocaine cardiovascular toxicity: a systematic review. Clin Toxicol 2016;54:345-364.",
+    "Libby P, Braunwald E, et al. Braunwald's Heart Disease, 12th ed. (2021) — Chapter on Cocaine and the Heart."
+  ],
+  "license": "CC-BY-4.0"
+}

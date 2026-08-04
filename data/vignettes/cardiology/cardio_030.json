@@ -1,0 +1,56 @@
+{
+  "id": "cardio_030",
+  "specialty": "cardiology",
+  "subspecialty": "acute_aortic_regurgitation",
+  "stem": "A 55-year-old man with poor dentition who underwent an extraction 3 weeks ago presents to the emergency department with the acute onset of severe dyspnea and orthopnea over the past 24 hours. Vital signs: BP 96/40 mmHg (wide pulse pressure 56 mmHg), HR 124 bpm, RR 30, SpO2 86% on non-rebreather. Cardiac auscultation reveals a soft S1 with a decrescendo holodiastolic murmur best heard at the left lower sternal border; he is too tachycardic to appreciate an Austin Flint murmur. Lung exam shows diffuse rales bilaterally. Chest X-ray demonstrates florid pulmonary edema with a normal-sized cardiac silhouette. Three sets of blood cultures are drawn; preliminary results from one set return gram-positive cocci in clusters at 2 hours. Bedside transthoracic echocardiogram shows a normal-sized left ventricle with a hyperdynamic LVEF of 70%, severe acute aortic regurgitation, and a flail aortic-valve leaflet with a vegetation, consistent with native-valve infective endocarditis.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Medical optimization with intravenous diuresis, supplemental oxygen, and overnight monitoring",
+    "B": "Initiate IV nitroprusside as a hemodynamic bridge to emergent surgical aortic-valve replacement, with concurrent IV antibiotic therapy targeting Staphylococcus aureus",
+    "C": "IV beta-blocker (metoprolol) to reduce heart rate and afterload",
+    "D": "Elective referral for outpatient surgical aortic-valve replacement within 4–6 weeks after antibiotic completion"
+  },
+  "correct": "B",
+  "rationale": "Acute severe aortic regurgitation does NOT permit time for the LV to dilate compensatorily; the result is rapidly rising LV end-diastolic pressure, severe pulmonary edema, and cardiogenic shock. Per the 2020 ACC/AHA Valvular Guideline (Class I) and the 2015 AHA Infective Endocarditis Guideline, emergent surgical aortic-valve replacement is required when acute severe AR causes hemodynamic compromise — particularly when accompanied by endocarditis. IV nitroprusside (and/or inotropes such as dobutamine if hypotensive) reduces afterload and is appropriate as a bridge to the operating room. IV antibiotics (e.g., vancomycin while awaiting culture and sensitivities, with anti-staphylococcal coverage) should be initiated immediately after blood cultures are drawn. IV beta-blockers (option C) are CONTRAINDICATED in acute severe AR — they reduce the compensatory tachycardia that maintains cardiac output and prolong diastolic regurgitation, worsening the regurgitant fraction. Medical management alone (option A) and elective surgical referral (option D) carry near-certain mortality given the active hemodynamic decompensation.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 55,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_endocarditis",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with poor dentition who underwent an extraction 3 weeks ago presents to the emergency department with the acute onset of severe dyspnea and orthopnea over the past 24 hours. Vital signs: BP 96/40 mmHg (wide pulse pressure 56 mmHg), HR 124 bpm, RR 30, SpO2 86% on non-rebreather. Cardiac auscultation reveals a soft S1 with a decrescendo holodiastolic murmur best heard at the left lower sternal border. Lung exam shows diffuse rales bilaterally. Chest X-ray demonstrates florid pulmonary edema with a normal-sized cardiac silhouette. Three sets of blood cultures are drawn; preliminary results from one set return gram-positive cocci in clusters at 2 hours. Bedside transthoracic echocardiogram shows a normal-sized left ventricle with a hyperdynamic LVEF of 70%, severe acute aortic regurgitation, and a flail aortic-valve leaflet with a vegetation.",
+      "rationale_for_variant": "Age and sex perturbation only — clinical content (acute severe AR + endocarditis + hemodynamic decompensation) is unchanged. The Class I indication for emergent AVR with bridging vasodilators and concurrent antibiotics is identical regardless of demographics. Older patients have higher operative mortality but the survival benefit of emergent surgery still outweighs medical management alone.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "chronic_severe_AR_asymptomatic_LVESD_55mm",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with a known bicuspid aortic valve and chronic severe aortic regurgitation (followed annually for 8 years) presents for routine follow-up. He is currently asymptomatic with no exertional limitation (NYHA I). Vital signs: BP 138/64 mmHg, HR 72 bpm. Cardiac auscultation reveals a soft, blowing decrescendo diastolic murmur at the left lower sternal border. Lung exam is clear. Today's echocardiogram shows severe chronic AR with regurgitant volume >60 mL/beat, an LV end-systolic dimension (LVESD) of 55 mm (up from 48 mm one year ago), and an LVEF of 50%. He has no infectious symptoms and has had no recent dental procedures.",
+      "rationale_for_variant": "Mixed perturbation — chronic severe AR with progressive LV remodeling. Per the 2020 ACC/AHA Valvular Guideline, surgical AVR is indicated in chronic severe AR for: (1) symptomatic patients (Class I), (2) asymptomatic patients with LVEF ≤55% (Class I), or (3) asymptomatic patients with LVESD >50 mm (Class IIa). This patient meets criteria #2 and #3 — but he is hemodynamically stable, not in pulmonary edema, and the surgery is ELECTIVE rather than emergent. The correct answer therefore shifts from emergent bridging-to-OR (option B) to elective referral for surgical aortic-valve replacement (option D). Tests whether the model distinguishes acute decompensation from chronic compensated AR meeting elective surgical criteria.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Baddour LM et al. Infective Endocarditis in Adults: Diagnosis, Antimicrobial Therapy, and Management of Complications. AHA Scientific Statement. Circulation 2015;132:1435-1486.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Aortic Regurgitation."
+  ],
+  "license": "CC-BY-4.0"
+}

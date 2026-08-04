@@ -1,0 +1,56 @@
+{
+  "id": "cardio_026",
+  "specialty": "cardiology",
+  "subspecialty": "torsades_de_pointes",
+  "stem": "A 65-year-old woman with hypertension is admitted with community-acquired pneumonia and is being treated with intravenous azithromycin and ceftriaxone. She also takes ondansetron PRN for nausea and is on chronic furosemide and hydrochlorothiazide. On hospital day 2 she develops the sudden onset of palpitations and syncope. Telemetry captures a polymorphic wide-complex tachycardia with a characteristic 'twisting of the points' morphology around the isoelectric baseline (torsades de pointes), which spontaneously terminates after 12 seconds. The post-conversion ECG shows a corrected QT interval of 580 ms. Vital signs after the episode: BP 102/64 mmHg, HR 88 bpm. Labs: serum potassium 2.9 mmol/L, magnesium 1.4 mg/dL.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "IV magnesium sulfate 2 g bolus, correct hypokalemia and hypomagnesemia, and discontinue all QT-prolonging agents",
+    "B": "IV amiodarone 150 mg loading dose followed by infusion",
+    "C": "Initiate chronic oral nadolol or propranolol",
+    "D": "Synchronized direct-current cardioversion at 100 J"
+  },
+  "correct": "A",
+  "rationale": "Acquired torsades de pointes is typically driven by QT prolongation from drugs (azithromycin, ondansetron, fluoroquinolones, methadone, antipsychotics, many others) and electrolyte disturbances (hypokalemia, hypomagnesemia). The 2017 AHA/ACC/HRS Ventricular Arrhythmia Guideline (Class I) recommends intravenous magnesium sulfate 2 g for acute torsades, regardless of the baseline magnesium level, plus aggressive correction of potassium to >4.0 mmol/L and magnesium to >2.0 mg/dL, AND immediate withdrawal of all QT-prolonging agents. Amiodarone (option B) further PROLONGS the QT interval and is contraindicated in torsades. Beta-blockers (option C) are appropriate for chronic prophylaxis in CONGENITAL long-QT syndromes (especially LQT1) but do not address the acute torsades episode in an acquired-QT setting. Synchronized cardioversion (option D) is reserved for sustained torsades that does not self-terminate or for hemodynamic instability; this patient self-terminated.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 65,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_80",
+      "demographics": {
+        "age": 80,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 80-year-old woman with hypertension is admitted with community-acquired pneumonia and is being treated with intravenous azithromycin and ceftriaxone. She also takes ondansetron PRN for nausea and is on chronic furosemide and hydrochlorothiazide. On hospital day 2 she develops the sudden onset of palpitations and syncope. Telemetry captures a polymorphic wide-complex tachycardia with a characteristic 'twisting of the points' morphology, which spontaneously terminates after 12 seconds. Post-conversion ECG shows a corrected QT interval of 580 ms. Vital signs after the episode: BP 102/64 mmHg, HR 88 bpm. Labs: serum potassium 2.9 mmol/L, magnesium 1.4 mg/dL.",
+      "rationale_for_variant": "Age perturbation only — clinical content (acquired torsades from drugs and electrolyte disturbance) is unchanged. Acute management is identical: IV magnesium, correct electrolytes, withdraw offending drugs.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "congenital_LQT1_chronic",
+      "demographics": {
+        "age": 22,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 22-year-old woman is referred to cardiology after she had a syncopal episode while swimming 1 month ago. Genetic testing has now confirmed long-QT syndrome type 1 (LQT1; KCNQ1 mutation). She is currently asymptomatic. Resting ECG shows a corrected QT interval of 490 ms with broad-based T waves. She has no acute symptoms now, no electrolyte abnormalities, takes no QT-prolonging medications, and her family history includes a maternal uncle who died suddenly at age 30 while swimming. Echocardiogram is structurally normal.",
+      "rationale_for_variant": "Mixed perturbation — clinical context shifts from acute acquired torsades to chronic management of a confirmed congenital long-QT syndrome (LQT1). Per the 2017 AHA/ACC/HRS Ventricular Arrhythmia Guideline (Class I) and HRS expert consensus, beta-blocker therapy with nadolol or propranolol is the cornerstone of chronic management for symptomatic LQT1 (and is reasonable in asymptomatic patients with high-risk genotype/phenotype features). LQT1 events are particularly triggered by sympathetic activation (exercise, especially swimming), and beta-blockade markedly reduces events. The correct answer therefore shifts from acute torsades treatment to chronic beta-blocker prophylaxis.",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Al-Khatib SM et al. 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death. Circulation 2018;138:e272-e391.",
+    "Drew BJ et al. Prevention of Torsade de Pointes in Hospital Settings: AHA/ACCF Scientific Statement. Circulation 2010;121:1047-1060.",
+    "Schwartz PJ, Crotti L. QTc Behavior During Exercise and Genetic Testing for the Long-QT Syndrome. Circulation 2011;124:2181-2184."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_044",
+  "specialty": "cardiology",
+  "subspecialty": "lipid_management_primary_prevention",
+  "stem": "A 55-year-old man with a 10-year history of hypertension (BP 138/86 mmHg today, on lisinopril) presents to clinic for cardiovascular risk assessment. He has no prior history of MI, stroke, peripheral arterial disease, or revascularization. He does not have diabetes mellitus (most recent HbA1c 5.6%) and is a never-smoker. Family history: father had MI at age 55. Lipid panel: total cholesterol 240 mg/dL, LDL-cholesterol 165 mg/dL, HDL-cholesterol 38 mg/dL, triglycerides 180 mg/dL. His pooled-cohort-equation 10-year ASCVD risk is calculated at 12% (intermediate risk per the 2018 ACC/AHA Cholesterol Guideline; the 'risk-enhancers' threshold for moderate-intensity statin starts at 7.5%). Coronary artery calcium (CAC) scoring performed for risk reclassification is 250 (75th percentile for age and sex), confirming the presence of subclinical atherosclerosis.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Lifestyle modifications alone (Mediterranean-style diet, exercise, weight loss) and reassess lipids in 6 months",
+    "B": "Moderate-to-high intensity statin (e.g., atorvastatin 40–80 mg daily or rosuvastatin 20–40 mg daily) per the 2018 ACC/AHA Cholesterol Guideline; CAC ≥100 supports statin initiation",
+    "C": "Low-intensity statin (e.g., pravastatin 10 mg daily)",
+    "D": "Document statin intolerance after at least 2 trials, then add ezetimibe or PCSK9 inhibitor as needed"
+  },
+  "correct": "B",
+  "rationale": "This patient has intermediate 10-year ASCVD risk (7.5–19.9%) by the pooled cohort equation. Per the 2018 ACC/AHA Cholesterol Guideline (Class IIa), CAC scoring is reasonable as a decision-aid in adults at intermediate risk; a CAC score ≥100 (or ≥75th percentile for age/sex) reclassifies the patient upward and supports statin initiation. With a CAC of 250, this patient has substantial subclinical atherosclerosis and qualifies for moderate-to-high intensity statin therapy. The 2019 ACC/AHA Primary Prevention Guideline reinforces this approach. Lifestyle alone (option A) is appropriate for low risk but inadequate when CAC and risk-enhancer features are present. Low-intensity statin (option C) is reserved for patients in whom moderate-intensity is not tolerated. Documenting intolerance and stepping to ezetimibe/PCSK9 (option D) is premature without first attempting moderate-to-high-intensity statin therapy.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_postmenopausal",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old postmenopausal woman with a 10-year history of hypertension (BP 138/86 mmHg today, on lisinopril) presents to clinic for cardiovascular risk assessment. She has no prior cardiovascular events, no diabetes mellitus (HbA1c 5.6%), and is a never-smoker. Her father had MI at age 55. Lipid panel: total cholesterol 240 mg/dL, LDL-C 165 mg/dL, HDL-C 38 mg/dL, triglycerides 180 mg/dL. Her 10-year ASCVD risk is 12% (intermediate). CAC score 250 (≥75th percentile for age and sex).",
+      "rationale_for_variant": "Sex perturbation only — clinical content (intermediate ASCVD risk + CAC ≥100) is unchanged. Statin benefit in postmenopausal women is comparable to men in primary-prevention trials. The recommendation for moderate-to-high intensity statin remains the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "statin_intolerance_persistent_LDL",
+      "demographics": {
+        "age": 55,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old man with hypertension and intermediate ASCVD risk (10-year risk 12%, CAC 250) has previously trialed atorvastatin 40 mg, then rosuvastatin 20 mg, and most recently pravastatin 40 mg. Each statin caused intolerable myalgias that resolved within 2 weeks of discontinuation and recurred on rechallenge (documented statin intolerance per the 2022 ACC Statin Intolerance Expert Decision Pathway). His LDL-cholesterol on the most recent attempt has plateaued at 120 mg/dL despite optimal lifestyle measures.",
+      "rationale_for_variant": "Mixed perturbation — documented statin intolerance with persistent LDL elevation despite at least two adequate trials. Per the 2022 ACC Expert Decision Pathway on Statin Intolerance and the 2018 Cholesterol Guideline, the appropriate next step is to add a non-statin LDL-lowering agent: ezetimibe (LDL reduction ~20%) is first-line; bempedoic acid is an option (CLEAR Outcomes trial); a PCSK9 inhibitor (alirocumab or evolocumab) is reasonable when LDL remains >100 mg/dL and ASCVD risk is high (or in established ASCVD when LDL is >70). The correct answer therefore shifts from initial statin selection to the documented-intolerance pathway (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Grundy SM et al. 2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol. JACC 2019;73:e285-e350.",
+    "Arnett DK et al. 2019 ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease. Circulation 2019;140:e596-e646.",
+    "Cheeley MK et al. 2022 ACC Expert Consensus Decision Pathway on the Role of Nonstatin Therapies for LDL-Cholesterol Lowering. JACC 2022;80:1366-1418."
+  ],
+  "license": "CC-BY-4.0"
+}

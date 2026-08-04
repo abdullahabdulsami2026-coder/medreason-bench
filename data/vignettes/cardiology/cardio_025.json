@@ -1,0 +1,56 @@
+{
+  "id": "cardio_025",
+  "specialty": "cardiology",
+  "subspecialty": "high_grade_av_block",
+  "stem": "A 70-year-old woman with hypertension and type 2 diabetes mellitus presents to clinic with 2 weeks of intermittent lightheadedness, mild dyspnea on exertion, and one near-syncopal episode while sitting. ECG shows sinus rhythm at 78 bpm with intermittent dropped QRS complexes that are NOT preceded by progressive PR prolongation — instead, the PR interval before each dropped beat is constant. The QRS complexes are wide (130 ms) with a left bundle branch block morphology. The pattern is consistent with Mobitz type II second-degree atrioventricular block. She is on no AV-nodal-blocking agents. Echocardiogram shows preserved LVEF (60%) with no structural heart disease. Electrolytes are normal.",
+  "question": "Which is the most appropriate next step in management?",
+  "options": {
+    "A": "Observation; no intervention is needed because the patient's symptoms are mild",
+    "B": "IV atropine 0.5 mg",
+    "C": "Temporary transvenous pacing followed by permanent dual-chamber pacemaker implantation",
+    "D": "Initiate IV beta-blocker to suppress ectopic atrial activity"
+  },
+  "correct": "C",
+  "rationale": "Mobitz type II second-degree AV block (constant PR before dropped QRS, often with wide QRS suggesting infranodal disease) carries a high risk of progression to complete (third-degree) AV block and sudden cardiac death. The 2018 ACC/AHA/HRS Bradycardia Guideline (Class I) recommends permanent pacemaker implantation for Mobitz II AV block REGARDLESS of symptoms — this is fundamentally different from Mobitz I (Wenckebach), which is usually nodal, benign, and only paced if symptomatic. Atropine (option B) acts on AV-nodal block but has no effect (or may even worsen) infranodal block; it is not appropriate for symptomatic Mobitz II beyond a brief temporizing trial. Beta-blockers (option D) worsen AV conduction and can precipitate complete heart block. Observation (option A) is unsafe given the high progression risk.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 70,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_man_75",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man with hypertension and type 2 diabetes mellitus presents to clinic with 2 weeks of intermittent lightheadedness, mild dyspnea on exertion, and one near-syncopal episode while sitting. ECG shows sinus rhythm at 78 bpm with intermittent dropped QRS complexes that are NOT preceded by progressive PR prolongation — the PR interval before each dropped beat is constant. The QRS complexes are wide (130 ms) with a left bundle branch block morphology, consistent with Mobitz type II second-degree atrioventricular block. He is on no AV-nodal-blocking agents. Echocardiogram shows preserved LVEF (60%) with no structural heart disease.",
+      "rationale_for_variant": "Sex perturbation only — clinical content unchanged. Mobitz II carries the same Class I indication for permanent pacing in older men.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "mobitz_I_wenckebach_asymptomatic",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with hypertension and type 2 diabetes mellitus is referred to cardiology for an incidentally noted ECG abnormality on a pre-operative evaluation. She is completely asymptomatic. ECG shows sinus rhythm at 78 bpm with intermittent dropped QRS complexes preceded by progressive PR-interval prolongation (each PR slightly longer than the prior beat) followed by a non-conducted P wave, then a reset to a shorter PR — the pattern of Mobitz type I (Wenckebach) second-degree AV block. The QRS complexes are narrow (90 ms). She is on no AV-nodal-blocking agents. Echocardiogram shows preserved LVEF (60%).",
+      "rationale_for_variant": "Mixed perturbation — the AV block is now Mobitz I (Wenckebach) rather than Mobitz II, AND the patient is asymptomatic. Mobitz I block is typically AT THE LEVEL of the AV node (often vagally mediated, especially in young athletes or during sleep), generally benign, and does NOT progress reliably to complete heart block. The 2018 ACC/AHA/HRS Bradycardia Guideline does not recommend permanent pacing for asymptomatic Mobitz I AV block. Observation is the correct approach. Tests whether the model correctly distinguishes nodal Mobitz I from infranodal Mobitz II — these have radically different management.",
+      "perturbation_type": "mixed",
+      "correct_override": "A"
+    }
+  ],
+  "sources": [
+    "Kusumoto FM et al. 2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay. Circulation 2019;140:e382-e482.",
+    "Glikson M et al. 2021 ESC Guidelines on cardiac pacing and cardiac resynchronization therapy. Eur Heart J 2021;42:3427-3520.",
+    "Surawicz B, Knilans TK. Chou's Electrocardiography in Clinical Practice, 6th ed. — Atrioventricular Block."
+  ],
+  "license": "CC-BY-4.0"
+}

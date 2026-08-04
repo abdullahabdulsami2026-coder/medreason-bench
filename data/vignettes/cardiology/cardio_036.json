@@ -1,0 +1,56 @@
+{
+  "id": "cardio_036",
+  "specialty": "cardiology",
+  "subspecialty": "valvular_disease_in_pregnancy",
+  "stem": "A 28-year-old woman with known rheumatic mitral stenosis from childhood rheumatic fever presents to clinic for preconception cardiac counseling. She wishes to conceive in the next 6 months and is asking for guidance on cardiac optimization before pregnancy. Currently NYHA II — she develops mild dyspnea climbing two flights of stairs. Cardiac auscultation reveals an opening snap and a low-pitched diastolic rumble at the apex. Transthoracic echocardiogram shows a doming mitral valve, a mitral-valve area of 1.4 cm^2 (moderate-to-severe), mean transmitral gradient of 8 mmHg at her resting heart rate, and a pulmonary-artery systolic pressure of 45 mmHg. Wilkins score is 6 (favorable: pliable leaflets, mild thickening, mild calcification, mild subvalvular thickening). Transesophageal echocardiogram shows trivial mitral regurgitation and no left-atrial thrombus. She has no other cardiovascular comorbidities and is on no chronic medications.",
+  "question": "What is the most appropriate preconception management?",
+  "options": {
+    "A": "Counsel the patient to avoid pregnancy entirely given her cardiac risk",
+    "B": "Initiate an ACE inhibitor (lisinopril) for cardiac protection prior to attempting conception",
+    "C": "Percutaneous mitral balloon commissurotomy preconception, with planned pregnancy after recovery and demonstration of improved hemodynamics",
+    "D": "Continue warfarin throughout pregnancy with close INR monitoring (if total daily warfarin dose is ≤5 mg)"
+  },
+  "correct": "C",
+  "rationale": "Symptomatic moderate-to-severe rheumatic mitral stenosis worsens during pregnancy because of the physiologic increase in cardiac output, heart rate, and intravascular volume — which raises transmitral gradient and left-atrial pressure, predisposing to pulmonary edema and atrial fibrillation. Per the 2020 ACC/AHA Valvular Guideline and the 2018 ESC Pregnancy Guideline, percutaneous mitral balloon commissurotomy (PMBC) is reasonable preconception (Class IIa) in symptomatic women with severe or moderate-severe rheumatic MS and favorable valve morphology, NO LA thrombus, and only trivial-to-mild MR. Successful PMBC reduces pregnancy-related decompensation. Counseling the patient to avoid pregnancy entirely (option A) is paternalistic and contradicts shared decision-making — the goal is to optimize cardiac status to permit pregnancy. ACE inhibitors (option B) are TERATOGENIC (FDA Pregnancy Category D; cause fetal renal dysgenesis, oligohydramnios, and skull hypoplasia) and must be discontinued before conception, not initiated. Option D (warfarin throughout pregnancy) is the management strategy for women with established MECHANICAL prosthetic valves — not for native rheumatic mitral stenosis without a prosthesis.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 28,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_38_NYHA_II",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old woman with known rheumatic mitral stenosis from childhood rheumatic fever presents to clinic for preconception cardiac counseling. She wishes to conceive in the next 6 months. Currently NYHA II — she develops mild dyspnea climbing two flights of stairs. Cardiac auscultation reveals an opening snap and a low-pitched diastolic rumble at the apex. Transthoracic echocardiogram shows a doming mitral valve, a mitral-valve area of 1.4 cm^2, mean transmitral gradient of 8 mmHg, and pulmonary-artery systolic pressure of 45 mmHg. Wilkins score is 6 (favorable). TEE shows trivial MR and no left-atrial thrombus. She has no other comorbidities and is on no chronic medications.",
+      "rationale_for_variant": "Age perturbation only — clinical content (symptomatic moderate-severe MS, favorable PMBC criteria, preconception planning) is unchanged. PMBC remains the appropriate preconception intervention regardless of maternal age within the reproductive range.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "prosthetic_mechanical_valve_pregnancy_anticoagulation",
+      "demographics": {
+        "age": 32,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 32-year-old woman with a mechanical bileaflet aortic valve replacement performed 4 years ago for bicuspid aortic stenosis presents to clinic for preconception cardiac counseling. She wishes to conceive in the next 6 months. She is currently asymptomatic (NYHA I) with normal prosthetic-valve function on echocardiogram. Her current anticoagulation is warfarin 4 mg orally daily with stable therapeutic INRs of 2.5–3.0 over the past 2 years. Her obstetric team is engaged in shared decision-making and the patient understands the relative risks of each anticoagulation strategy.",
+      "rationale_for_variant": "Mixed perturbation — entirely different scenario: established mechanical prosthetic valve with planned pregnancy, focused on the anticoagulation choice. Per the 2018 ESC Pregnancy Guideline and 2020 ACC/AHA Valvular Guideline, when the daily warfarin dose required to maintain therapeutic INR is ≤5 mg, continuing warfarin throughout pregnancy carries the LOWEST combined risk of maternal valve thrombosis and fetal complications (warfarin embryopathy is dose-dependent and rare at <5 mg/day). Alternatives — UFH or LMWH in the first trimester then warfarin from week 13 — carry higher maternal thromboembolic risk. Direct oral anticoagulants are CONTRAINDICATED in mechanical heart valves (RE-ALIGN trial). The correct answer therefore shifts to continuing warfarin (option D). Tests whether the model recognizes the warfarin dose threshold (≤5 mg) that drives the preferred strategy.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Regitz-Zagrosek V et al. 2018 ESC Guidelines for the management of cardiovascular diseases during pregnancy. Eur Heart J 2018;39:3165-3241.",
+    "Eikelboom JW et al. RE-ALIGN: Dabigatran versus warfarin in patients with mechanical heart valves. NEJM 2013;369:1206-1214."
+  ],
+  "license": "CC-BY-4.0"
+}

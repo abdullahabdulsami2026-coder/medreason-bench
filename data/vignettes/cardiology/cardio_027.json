@@ -1,0 +1,56 @@
+{
+  "id": "cardio_027",
+  "specialty": "cardiology",
+  "subspecialty": "wide_complex_tachycardia_diagnosis",
+  "stem": "A 68-year-old man with a history of anterior myocardial infarction 7 years ago and ischemic cardiomyopathy (LVEF 30%) presents to the emergency department with palpitations and lightheadedness. He is alert and conversational. Vital signs: BP 102/66 mmHg, HR 168 bpm, SpO2 96% on room air. ECG shows a sustained, regular wide-complex tachycardia at 168 bpm with QRS duration of 180 ms and a left bundle branch block-like morphology. Careful examination of the ECG reveals occasional independent P waves (sinus rate ~75 bpm) marching through the QRS complexes (i.e., dissociated from them), and one fusion beat is visible at the rhythm strip's mid-portion.",
+  "question": "Which ECG feature is most specific for ventricular tachycardia rather than supraventricular tachycardia with aberrant conduction in this patient?",
+  "options": {
+    "A": "Atrioventricular dissociation with capture and/or fusion beats",
+    "B": "Irregular rhythm with markedly varying QRS morphology and ventricular rates intermittently exceeding 250 bpm",
+    "C": "QRS duration greater than 120 ms with a right bundle-branch-block morphology",
+    "D": "QRS narrower in some leads than in others (intermittent narrowing)"
+  },
+  "correct": "A",
+  "rationale": "AV dissociation — independent atrial and ventricular activity, sometimes accompanied by capture beats (intermittent narrow QRS from a sinus impulse that conducts normally) or fusion beats (intermediate QRS morphology) — is highly specific for ventricular tachycardia, because in SVT with aberrant conduction the ventricular activity is driven by the atrium and the rhythms are coupled. The Brugada criteria for VT identification list AV dissociation as a major specific finding. QRS duration >120 ms (option C) is necessary for the diagnosis of wide-complex tachycardia but does not by itself differentiate VT from SVT-with-aberrancy. Option B (irregular rhythm with markedly varying QRS morphology and ventricular rates >250 bpm) describes pre-excited atrial fibrillation, which is a separate entity and not the same as VT. Option D (QRS narrower in some leads) suggests aberrant conduction (varying degrees of bundle-branch block), and is more consistent with SVT-with-aberrancy than VT.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 68,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_man_with_prior_MI",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man with a history of anterior myocardial infarction 9 years ago and ischemic cardiomyopathy (LVEF 30%) presents to the emergency department with palpitations and lightheadedness. He is alert and conversational. Vital signs: BP 102/66 mmHg, HR 168 bpm, SpO2 96% on room air. ECG shows a sustained, regular wide-complex tachycardia at 168 bpm with QRS duration of 180 ms and a left bundle branch block-like morphology. Careful examination reveals occasional independent P waves (sinus rate ~75 bpm) marching through the QRS complexes, and one fusion beat is visible at the rhythm strip's mid-portion.",
+      "rationale_for_variant": "Age perturbation only — clinical content is unchanged. Pretest probability of VT in older patients with prior MI is high; AV dissociation remains the most specific ECG feature distinguishing VT from SVT-with-aberrancy.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "wpw_pre_excited_afib_irregular",
+      "demographics": {
+        "age": 28,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 28-year-old man with a baseline ECG showing pre-excitation (short PR interval and delta waves consistent with Wolff-Parkinson-White syndrome) presents to the emergency department with palpitations 1 hour ago. He is alert and conversational. Vital signs: BP 122/78 mmHg, HR varies between 200 and 280 bpm. ECG shows an IRREGULARLY irregular wide-complex tachycardia with markedly VARYING QRS morphology beat-to-beat and ventricular rates intermittently exceeding 250 bpm — a pattern characteristic of atrial fibrillation conducting down an accessory pathway (pre-excited AFib). No discrete P waves are visible.",
+      "rationale_for_variant": "Mixed perturbation — entirely different rhythm. Pre-excited atrial fibrillation has a distinctive ECG signature: irregularly irregular rhythm, markedly varying QRS morphology (because conduction varies between the AV node and the accessory pathway beat-to-beat), and rates intermittently >250 bpm (the accessory pathway lacks the AV node's decremental conduction protection). These features are nearly pathognomonic for pre-excited AFib and distinguish it from both monomorphic VT (regular, fixed morphology) and SVT with aberrancy (regular, fixed morphology). The correct answer therefore shifts to option B (the description of pre-excited AFib). Tests whether the model recognizes the irregular-with-varying-morphology pattern as pre-excited AFib rather than VT.",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    }
+  ],
+  "sources": [
+    "Brugada P et al. A new approach to the differential diagnosis of a regular tachycardia with a wide QRS complex. Circulation 1991;83:1649-1659.",
+    "Al-Khatib SM et al. 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death. Circulation 2018;138:e272-e391.",
+    "Page RL et al. 2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia. Circulation 2016;133:e506-e574."
+  ],
+  "license": "CC-BY-4.0"
+}

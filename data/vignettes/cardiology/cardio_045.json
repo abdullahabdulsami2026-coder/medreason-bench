@@ -1,0 +1,56 @@
+{
+  "id": "cardio_045",
+  "specialty": "cardiology",
+  "subspecialty": "peripartum_cardiomyopathy",
+  "stem": "A 32-year-old woman presents to clinic at 4 weeks postpartum (G1P1, uncomplicated vaginal delivery, currently breastfeeding) with progressive dyspnea on exertion, orthopnea requiring three pillows, and bilateral lower-extremity edema over the past 2 weeks. She has no prior cardiac history. Vital signs: BP 128/82 mmHg, HR 108 bpm, RR 22, SpO2 95% on room air. Exam shows JVP at 12 cm H2O, an S3 gallop, mild bibasilar crackles, and 2+ pitting lower-extremity edema. ECG shows sinus tachycardia without ST/T changes. Labs: NT-proBNP 4,800 pg/mL, troponin negative, TSH normal. Coronary CT angiography reveals no obstructive coronary disease. Transthoracic echocardiogram shows a mildly dilated LV (LV end-diastolic dimension 60 mm), severely reduced systolic function (LVEF 28%), no significant valvular disease, and no LV thrombus. She meets diagnostic criteria for peripartum cardiomyopathy (HF with LVEF <45% in the last month of pregnancy or the first 5 months postpartum, with no other identifiable cause).",
+  "question": "Which is the most appropriate initial management plan?",
+  "options": {
+    "A": "Hydralazine + nitrate (replacing ACEi/ARB during lactation) + beta-blocker (carvedilol or metoprolol succinate) + diuresis as needed; consider bromocriptine adjunctive therapy and a wearable cardioverter-defibrillator pending recovery; defer ICD decision 3–6 months given recovery potential",
+    "B": "Initiate ACE inhibitor and full 4-pillar GDMT immediately; advise discontinuation of breastfeeding",
+    "C": "Continue current symptomatic management with no medical therapy until weaning",
+    "D": "Counsel on contraception and discuss recurrence risk in subsequent pregnancies (5–15% recurrence with full recovery; 30–50% with persistent dysfunction); contraindicate subsequent pregnancy if persistent LVEF <30% or NYHA III–IV"
+  },
+  "correct": "A",
+  "rationale": "Peripartum cardiomyopathy (PPCM) is a distinct entity managed differently from idiopathic DCM during the lactation window. Per the 2018 ESC Heart Failure Association PPCM Position Statement and the 2022 AHA/ACC/HFSA HF Guideline: (1) ACE inhibitors and ARBs are problematic during lactation because of theoretical fetal exposure risk and limited safety data — hydralazine plus nitrate is the established lactation-compatible alternative that achieves afterload reduction; (2) beta-blockers (metoprolol succinate or carvedilol) are acceptable during lactation; (3) diuretics are used as needed for congestion; (4) bromocriptine adjunctive therapy may be considered (German PPCM Registry, IPAC studies) although the evidence base is debated; (5) a wearable cardioverter-defibrillator (LifeVest) bridges the patient through the recovery window because >50% of PPCM patients recover LV function within 6 months — primary-prevention ICD decision is therefore deferred 3–6 months. Initiating ACEi and advising weaning (option B) is harsher than necessary when lactation-compatible alternatives exist. Withholding all medical therapy (option C) leaves a symptomatic HFrEF patient untreated. Counseling alone on subsequent-pregnancy risk (option D) is appropriate at later follow-up, not as the initial management.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 32,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_postpartum_woman_age_42",
+      "demographics": {
+        "age": 42,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 42-year-old woman presents to clinic at 4 weeks postpartum (G1P1, uncomplicated vaginal delivery, currently breastfeeding) with progressive dyspnea on exertion, orthopnea, and bilateral lower-extremity edema over the past 2 weeks. Vital signs: BP 128/82 mmHg, HR 108 bpm, RR 22, SpO2 95% on room air. Exam shows JVP at 12 cm H2O, an S3 gallop, mild bibasilar crackles, and 2+ pitting lower-extremity edema. NT-proBNP 4,800 pg/mL, troponin negative. Coronary CT angiography reveals no obstructive disease. Echocardiogram shows a mildly dilated LV (LVEDD 60 mm), LVEF 28%, no significant valvular disease, and no LV thrombus.",
+      "rationale_for_variant": "Age perturbation only — clinical context (PPCM in the lactation window) is unchanged. Older maternal age is associated with lower spontaneous-recovery rates and higher persistent-dysfunction risk, but the initial management framework — lactation-compatible vasodilation/beta-blockade plus consideration of bromocriptine plus WCD bridging — is the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "recurrent_PPCM_subsequent_pregnancy_planning",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old woman with a history of peripartum cardiomyopathy 4 years ago (LVEF nadir 25%, recovered to 50% by 12 months) presents to clinic for preconception counseling. She is considering a second pregnancy. Today's echocardiogram shows a current LVEF of 50% (recovered) with mildly dilated LV (LVEDD 56 mm) and no symptoms (NYHA I) on no cardiac medications. She has no other comorbidities. The discussion focuses on the risk of PPCM recurrence in a subsequent pregnancy and her contraceptive needs.",
+      "rationale_for_variant": "Mixed perturbation — preconception counseling for a woman with prior PPCM. Per the 2018 ESC HFA PPCM Position Statement and IPAC follow-up data: PPCM recurrence in subsequent pregnancy is approximately 30–50% in women with persistent LV dysfunction (LVEF <50%) and 5–15% in those with full recovery (LVEF ≥50%); maternal mortality in recurrent PPCM is meaningfully higher than in incident PPCM. Subsequent pregnancy is generally CONTRAINDICATED if persistent LVEF <30% or NYHA III–IV. The correct approach for this preconception visit is shared decision-making with explicit recurrence-risk counseling and contraceptive planning. The correct answer therefore shifts to option D.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Bauersachs J et al. Pathophysiology, diagnosis and management of peripartum cardiomyopathy: a position statement from the Heart Failure Association of the ESC. Eur J Heart Fail 2019;21:827-843.",
+    "Honigberg MC et al. IPAC: Investigations of Pregnancy-Associated Cardiomyopathy. JACC 2019;73:228-240.",
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_035",
+  "specialty": "autoimmune",
+  "subspecialty": "polyarteritis_nodosa",
+  "stem": "A 50-year-old man presents to clinic with 3 months of progressive fatigue, weight loss of 8 kg, low-grade fevers, mononeuritis multiplex (asymmetric foot drop and wrist drop on examination, with confirmed asymmetric axonal neuropathy on EMG/NCS), livedo reticularis on the lower extremities, and post-prandial abdominal pain. Vital signs today: BP 180/110 mmHg (significantly elevated; chronic hypertension is a known feature of renal involvement in PAN). Labs: ESR 80 mm/h, CRP 65 mg/L, normocytic anemia. CT angiography of the abdomen demonstrates multiple small ANEURYSMS of the mesenteric arteries with the classic 'rosary-bead' appearance and segmental stenoses of medium-sized renal and splenic arteries. ANCA testing is NEGATIVE (both PR3 and MPO). Hepatitis B surface antigen and hepatitis B DNA are NEGATIVE; hepatitis C antibody negative; HIV negative. The Five-Factor Score (FFS) is ≥1 (gastrointestinal involvement + cardiomyopathy/severe HTN). The clinical picture is severe ANCA-NEGATIVE polyarteritis nodosa.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "High-dose corticosteroids (prednisone 1 mg/kg/d, with IV methylprednisolone pulse for life-threatening features) PLUS cyclophosphamide for organ-threatening disease (FFS ≥1: cardiomyopathy, gastrointestinal involvement, renal involvement, central-nervous-system involvement); azathioprine or methotrexate for maintenance after induction; per the FFS-driven approach to PAN management",
+    "B": "ANCA-associated vasculitis induction regimen with rituximab (PAN is ANCA-negative — distinct entity from AAV; treatment paradigms differ)",
+    "C": "Corticosteroids alone with no steroid-sparing agent",
+    "D": "Antiviral therapy (entecavir or tenofovir alafenamide) PLUS plasma exchange PLUS a brief course of corticosteroids (avoiding prolonged immunosuppression that may worsen viral replication) — appropriate for HBV-associated PAN, where chronic HBV-driven immune-complex deposition is the pathogenic mechanism"
+  },
+  "correct": "A",
+  "rationale": "Polyarteritis nodosa is a necrotizing vasculitis of medium-sized arteries that is BIOLOGICALLY DISTINCT from ANCA-associated vasculitis (PAN is ANCA-negative; AAV is ANCA-positive). The FRENCH VASCULITIS STUDY GROUP (FVSG) FIVE-FACTOR SCORE (Guillevin L et al.) is used to stratify severity and guide induction: FFS items are renal involvement (creatinine >1.58 mg/dL or proteinuria >1 g/d), cardiomyopathy, gastrointestinal involvement, central-nervous-system involvement, and (in the original 1996 version) age >65 — each independently predictive of mortality. Per the 2021 ACR/Vasculitis Foundation PAN Guideline (Chung SA et al.), induction for FFS ≥1 (severe / organ-threatening) PAN is high-dose corticosteroids (prednisone 1 mg/kg/d, with IV methylprednisolone pulse for life-threatening features) PLUS cyclophosphamide (oral or IV pulse). Rituximab is not first-line in PAN (in contrast to ANCA-associated vasculitis). After remission, azathioprine or methotrexate is used for maintenance. ANCA-AAV regimens (option B) are NOT applied to PAN. Corticosteroids alone (option C) are inadequate for severe disease. The HBV-associated regimen (option D) is the management for hepatitis B-associated PAN, which is a distinct subtype with a fundamentally different paradigm.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 50,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "HBV_associated_PAN_active_replication",
+      "demographics": {
+        "age": 45,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old man with chronic hepatitis B (untreated; HBV DNA 4 × 10^6 IU/mL, HBeAg positive, transaminitis with ALT 240 U/L, AST 180 U/L) presents with mononeuritis multiplex, livedo reticularis, post-prandial abdominal pain, and severe hypertension (BP 180/108 mmHg). CT angiography demonstrates the rosary-bead appearance of mesenteric microaneurysms classic for polyarteritis nodosa. ANCA negative. Cryoglobulins negative. The clinical picture is HEPATITIS B-ASSOCIATED polyarteritis nodosa.",
+      "rationale_for_variant": "Mixed perturbation — HBV-associated PAN, a distinct subtype representing approximately 5–10% of all PAN cases. The pathogenic driver is chronic-HBV-driven immune-complex deposition in medium-vessel walls, and the management paradigm is fundamentally different from idiopathic PAN: prolonged conventional immunosuppression (corticosteroids + cyclophosphamide for months) WORSENS viral replication and accelerates hepatic decompensation. Per the 2021 ACR PAN Guideline and the FVSG protocol, HBV-associated PAN is treated with: (1) ANTIVIRAL THERAPY (entecavir, tenofovir alafenamide) to suppress HBV replication (the underlying driver); (2) PLASMA EXCHANGE to remove circulating immune complexes; (3) a BRIEF course of corticosteroids (typically 1–2 weeks at 1 mg/kg/d, then rapid taper) to control the acute vasculitic features without prolonged immunosuppression. Cyclophosphamide is generally avoided. The correct answer therefore shifts to the HBV-PAN-specific regimen (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "older_woman_PAN",
+      "demographics": {
+        "age": 65,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old woman presents with 3 months of progressive fatigue, weight loss, low-grade fevers, mononeuritis multiplex, livedo reticularis, and post-prandial abdominal pain. BP 178/106 mmHg. ESR 80, CRP 65, normocytic anemia. CT angiography: mesenteric microaneurysms with rosary-bead appearance and renal-artery stenoses. ANCA negative; HBV/HCV/HIV negative. FFS ≥1 (GI + severe HTN). Severe ANCA-negative PAN.",
+      "rationale_for_variant": "Sex / age perturbation only — clinical context (severe ANCA-negative idiopathic PAN with FFS ≥1) is unchanged. Older patients have higher infection risk on intensive immunosuppression and the original FFS includes age >65 as an independent predictor of mortality, but the induction-regimen framework (corticosteroids + cyclophosphamide for severe disease) is sex- and age-independent.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Chung SA et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Polyarteritis Nodosa and IgA Vasculitis (Henoch-Schönlein Purpura). Arthritis Rheumatol 2021;73:1384-1393.",
+    "Guillevin L et al. The Five-Factor Score revisited: assessment of prognoses of systemic necrotizing vasculitides based on the French Vasculitis Study Group (FVSG) cohort. Medicine (Baltimore) 2011;90:19-27.",
+    "Guillevin L et al. Treatment of polyarteritis nodosa related to hepatitis B virus. Arthritis Rheum 2004;51:482-487."
+  ],
+  "license": "CC-BY-4.0"
+}

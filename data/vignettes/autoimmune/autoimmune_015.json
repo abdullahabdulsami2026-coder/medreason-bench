@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_015",
+  "specialty": "autoimmune",
+  "subspecialty": "ra_associated_ild",
+  "stem": "A 60-year-old man with seropositive rheumatoid arthritis (anti-CCP highly positive, RF 240 IU/mL) for 8 years on methotrexate 20 mg subcutaneously weekly + hydroxychloroquine + low-dose prednisone presents with 6 months of progressive exertional dyspnea and a non-productive dry cough. Vital signs: BP 132/78, HR 92, RR 22, SpO2 92% on room air. Lung exam reveals bilateral fine basilar inspiratory crackles ('Velcro rales'). Chest CT (HRCT protocol) shows BILATERAL, BASILAR, peripheral RETICULAR opacities with TRACTION BRONCHIECTASIS and HONEYCOMBING — a usual interstitial pneumonia (UIP) pattern. PFTs: FVC 65% predicted (restrictive), DLCO 50% predicted (significantly reduced). RA disease activity is well controlled (DAS28 2.5). Prior chest CT 2 years ago showed minimal interstitial changes only.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Hold methotrexate (MTX-pneumonitis cannot be reliably distinguished from progressive RA-ILD on imaging or biopsy in many cases; the safer choice is to hold and observe); initiate antifibrotic therapy with NINTEDANIB for progressive fibrosing ILD (per the INBUILD trial); switch RA-directed therapy to a biologic with neutral or favorable ILD signal (rituximab or abatacept have the best evidence; avoid newer agents like tofacitinib without ILD data); pulmonary referral; PFT every 3–6 months",
+    "B": "Continue methotrexate at the current dose; the radiographic findings are unrelated to therapy",
+    "C": "Hold methotrexate; initiate immunosuppression with high-dose corticosteroids and mycophenolate mofetil (or alternatively azathioprine, cyclophosphamide, or rituximab) — directed at inflammatory ILD; switch RA-directed therapy as above",
+    "D": "Increase methotrexate dose to maximize RA disease control"
+  },
+  "correct": "A",
+  "rationale": "RA-associated ILD with a UIP pattern (basilar, peripheral, reticular changes with traction bronchiectasis and honeycombing) carries a poor prognosis comparable to idiopathic pulmonary fibrosis. The INBUILD trial (Flaherty KR et al., NEJM 2019) demonstrated that nintedanib (an antifibrotic tyrosine-kinase inhibitor targeting PDGFR, FGFR, VEGFR) slowed the decline in FVC in patients with PROGRESSIVE FIBROSING ILD across multiple etiologies including RA-ILD. The 2022 ATS/ERS/JRS/ALAT IPF Guideline and the 2023 ACR/CHEST RA-ILD Guideline support antifibrotic therapy in patients with UIP-pattern RA-ILD. Methotrexate is held because of the difficulty distinguishing MTX-pneumonitis from RA-ILD (and because MTX has been associated with pulmonary toxicity, although the causal relationship in RA-ILD is debated). RA-directed therapy is switched to rituximab or abatacept (best evidence for ILD-neutral or favorable signal). Continuing MTX (option B) and increasing MTX (option D) ignore the potential pulmonary toxicity. Initiating immunosuppression as primary therapy (option C) is the appropriate strategy for INFLAMMATORY (NSIP) patterns of RA-ILD — not for the UIP pattern described here.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 60,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "NSIP_pattern_RA_ILD",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old woman with seropositive rheumatoid arthritis (anti-CCP highly positive) for 6 years on methotrexate + hydroxychloroquine presents with 4 months of progressive exertional dyspnea and a non-productive dry cough. Lung exam reveals bilateral fine basilar inspiratory crackles. Chest CT (HRCT protocol) shows BILATERAL, predominantly LOWER-LOBE, GROUND-GLASS opacities and FINE RETICULATION WITHOUT honeycombing or significant traction bronchiectasis — a non-specific interstitial pneumonia (NSIP) pattern. PFTs: FVC 68% predicted, DLCO 55% predicted. RA disease activity well controlled.",
+      "rationale_for_variant": "Mixed perturbation — NSIP rather than UIP histopathologic / radiographic pattern. NSIP is the more INFLAMMATORY (less fibrotic) pattern of ILD and is more responsive to immunosuppression than UIP. Per the 2023 ACR/CHEST RA-ILD Guideline, the preferred approach for inflammatory NSIP-pattern RA-ILD is anti-inflammatory immunosuppression (high-dose corticosteroids during the acute phase, then steroid-sparing with mycophenolate mofetil, azathioprine, rituximab, or cyclophosphamide for severe disease) rather than antifibrotic monotherapy. RA-directed therapy is also switched to a biologic with favorable ILD signal. The correct answer therefore shifts from antifibrotic-led management (option A) to immunosuppression-led management (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "older_woman_RA_ILD",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with seropositive rheumatoid arthritis (anti-CCP highly positive, RF 240) for 10 years on methotrexate + hydroxychloroquine + low-dose prednisone presents with 6 months of progressive exertional dyspnea and a non-productive dry cough. Lung exam reveals bilateral fine basilar inspiratory crackles. Chest CT (HRCT protocol) shows BILATERAL, BASILAR, peripheral RETICULAR opacities with TRACTION BRONCHIECTASIS and HONEYCOMBING (UIP pattern). PFTs: FVC 65% predicted, DLCO 50% predicted. RA disease activity well controlled.",
+      "rationale_for_variant": "Sex / age perturbation — clinical context (UIP-pattern RA-ILD) is unchanged. Antifibrotic therapy with nintedanib remains the first-line approach for progressive fibrosing ILD regardless of age, although tolerance and dose adjustment may be needed in elderly patients (gastrointestinal side effects, hepatotoxicity surveillance).",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Flaherty KR et al. Nintedanib in Progressive Fibrosing Interstitial Lung Diseases (INBUILD). NEJM 2019;381:1718-1727.",
+    "Raghu G et al. Idiopathic Pulmonary Fibrosis (an Update) and Progressive Pulmonary Fibrosis in Adults: An Official ATS/ERS/JRS/ALAT Clinical Practice Guideline. Am J Respir Crit Care Med 2022;205:e18-e47.",
+    "Johnson SR et al. 2023 American College of Rheumatology / American College of Chest Physicians Guideline for the Treatment of Interstitial Lung Disease in People with Systemic Autoimmune Rheumatic Diseases. Arthritis Rheumatol 2024 (in press)."
+  ],
+  "license": "CC-BY-4.0"
+}

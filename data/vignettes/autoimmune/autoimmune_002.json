@@ -1,0 +1,58 @@
+{
+  "id": "autoimmune_002",
+  "specialty": "autoimmune",
+  "subspecialty": "lupus_nephritis",
+  "stem": "A 32-year-old woman with a 3-year history of systemic lupus erythematosus (previously managed with hydroxychloroquine and low-dose prednisone) presents with 4 weeks of progressive lower-extremity edema and dark urine. Vital signs: BP 158/96 mmHg, HR 84 bpm. Labs: serum creatinine 1.6 mg/dL (baseline 0.9), 24-hour urine protein 4.5 g, urinalysis with microscopic hematuria and red-cell casts; anti-dsDNA antibody 480 IU/mL (markedly elevated); C3 48 mg/dL and C4 6 mg/dL (markedly low). Renal biopsy demonstrates ISN/RPS Class IV (diffuse proliferative) lupus nephritis with NIH activity index 8/24 and chronicity index 1/12 (low chronicity). She is not pregnant, has no contraindications to standard immunosuppression, and is not planning a pregnancy in the next 12 months.",
+  "question": "Which is the most appropriate induction therapy?",
+  "options": {
+    "A": "Renoprotective therapy (ACE inhibitor/ARB plus blood-pressure control) with low-dose corticosteroids; defer aggressive cytotoxic immunosuppression because the kidney has irreversible damage",
+    "B": "High-dose corticosteroids PLUS mycophenolate mofetil (2–3 g/d) OR low-dose IV cyclophosphamide (Euro-Lupus regimen: 500 mg every 2 weeks for 6 doses) PLUS continued hydroxychloroquine; consider adjunctive belimumab (BLISS-LN) or voclosporin (AURORA) per recent trials",
+    "C": "High-dose corticosteroids plus AZATHIOPRINE plus hydroxychloroquine — the pregnancy-compatible regimen",
+    "D": "Rituximab monotherapy"
+  },
+  "correct": "B",
+  "rationale": "Class III (focal) and IV (diffuse) proliferative lupus nephritis with high activity and low chronicity require aggressive induction immunosuppression to preserve renal function. Per the 2024 ACR Lupus Nephritis Guideline and the 2023 EULAR SLE update, induction is high-dose corticosteroids plus EITHER mycophenolate mofetil 2–3 g/d (preferred in many populations including women of reproductive age) OR low-dose IV cyclophosphamide per the Euro-Lupus regimen (Houssiau 2002; 500 mg every 2 weeks for 6 doses, equivalent efficacy with lower cumulative dose than the NIH regimen). Hydroxychloroquine is continued (Class I; reduces flares and improves renal outcomes). Recent trials (BLISS-LN with belimumab, AURORA with voclosporin) support adjunctive therapy. Renoprotection alone (option A) is appropriate ONLY when chronicity dominates and inflammation is minimal — not in this active proliferative case. The pregnancy-compatible regimen with azathioprine (option C) is reserved for pregnant patients or those planning imminent pregnancy. Rituximab monotherapy (option D) is not first-line per LUNAR; it can be used in refractory disease.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 32,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_70_renal_chronicity",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with longstanding SLE (15 years) and prior episodes of lupus nephritis presents with stable proteinuria 2 g/24h and chronic kidney disease (creatinine 2.4 mg/dL, eGFR 24 mL/min/1.73 m^2; baseline creatinine over the past 2 years has been 2.0–2.4). BP 152/88 mmHg. Anti-dsDNA mildly elevated; complements only modestly low. Renal biopsy demonstrates ISN/RPS Class IV mixed lesions with NIH activity index 2/24 (low active inflammation) but chronicity index 9/12 (high — extensive glomerulosclerosis, interstitial fibrosis, and tubular atrophy).",
+      "rationale_for_variant": "Mixed perturbation — extensive renal chronicity (high chronicity index, low activity) means most of the renal damage is irreversible scarring rather than active inflammation. Per the 2024 ACR Lupus Nephritis Guideline and 2023 EULAR SLE update, aggressive cytotoxic immunosuppression in this setting confers little renal benefit (the 'damage horse has bolted') and exposes the patient to immunosuppression risks without proportionate gain. The appropriate strategy is renoprotection (ACE inhibitor/ARB, BP control), low-dose corticosteroids if needed for extrarenal activity, treat-to-target BP and proteinuria, and prepare for renal replacement therapy planning. The correct answer therefore shifts from aggressive induction (option B) to renoprotection-focused therapy (option A).",
+      "perturbation_type": "mixed",
+      "correct_override": "A"
+    },
+    {
+      "variant_id": "pregnant_woman_2nd_trimester_active_LN",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old woman who is 18 weeks pregnant (G1P0) with a 4-year history of SLE presents with new-onset proteinuria of 4.0 g/24h, microscopic hematuria with red-cell casts, creatinine 1.5 mg/dL (baseline 0.8), BP 160/100 mmHg, anti-dsDNA 420 IU/mL, and low complements. Renal biopsy performed at 18 weeks (deemed safer than empiric immunosuppression in this case) demonstrates ISN/RPS Class IV proliferative lupus nephritis with high activity. Fetal anatomy survey is normal; obstetrics is engaged in shared decision-making.",
+      "rationale_for_variant": "Mixed perturbation — active proliferative lupus nephritis during pregnancy. The standard induction regimens (mycophenolate mofetil and cyclophosphamide) are TERATOGENIC and absolutely contraindicated in pregnancy: mycophenolate causes facial clefts and limb malformations (FDA REMS program), and cyclophosphamide causes chromosomal damage and pregnancy loss. The pregnancy-compatible induction regimen for active lupus nephritis is high-dose corticosteroids + AZATHIOPRINE (compatible with pregnancy) + continued hydroxychloroquine (Class I in pregnancy and reduces flare and CHB risk). Calcineurin inhibitors (tacrolimus) and IV immunoglobulin are also pregnancy-compatible alternatives in selected cases. The correct answer therefore shifts to the pregnancy-compatible regimen (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Sammaritano LR et al. 2024 American College of Rheumatology Guideline for the Screening, Treatment, and Management of Lupus Nephritis. Arthritis Rheumatol 2024 (advance online).",
+    "Fanouriakis A et al. EULAR recommendations for the management of systemic lupus erythematosus: 2023 update. Ann Rheum Dis 2024;83:15-29.",
+    "Houssiau FA et al. Immunosuppressive therapy in lupus nephritis: the Euro-Lupus Nephritis Trial. Arthritis Rheum 2002;46:2121-2131.",
+    "Furie R et al. Two-Year, Randomized, Controlled Trial of Belimumab in Lupus Nephritis (BLISS-LN). NEJM 2020;383:1117-1128.",
+    "Rovin BH et al. Voclosporin for the treatment of lupus nephritis (AURORA). Lancet 2021;397:2070-2080."
+  ],
+  "license": "CC-BY-4.0"
+}

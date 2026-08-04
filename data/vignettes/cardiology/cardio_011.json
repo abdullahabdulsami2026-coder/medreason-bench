@@ -1,0 +1,56 @@
+{
+  "id": "cardio_011",
+  "specialty": "cardiology",
+  "subspecialty": "heart_failure_reduced_ef",
+  "stem": "A 62-year-old man with non-ischemic dilated cardiomyopathy is seen in clinic for a new diagnosis of heart failure. Echocardiogram shows a left ventricular ejection fraction of 28%, mildly dilated left ventricle, and no significant valvular disease. He is NYHA class II–III on exertion. Vital signs: BP 118/72 mmHg, HR 78 bpm, weight 82 kg. Labs: serum potassium 4.1 mmol/L, eGFR 68 mL/min/1.73 m^2, NT-proBNP 1,400 pg/mL. He has no diabetes and is not on any cardiac medications.",
+  "question": "According to the 2022 AHA/ACC/HFSA Heart Failure Guideline, which is the most appropriate initial guideline-directed medical therapy regimen?",
+  "options": {
+    "A": "ACE inhibitor and beta-blocker only, with sequential addition of an MRA and SGLT2 inhibitor over the next 6 months as tolerated",
+    "B": "ARNI (sacubitril/valsartan), beta-blocker (carvedilol, metoprolol succinate, or bisoprolol), MRA (spironolactone or eplerenone), and SGLT2 inhibitor (dapagliflozin or empagliflozin), initiated together with rapid up-titration over 4–6 weeks",
+    "C": "ARNI, beta-blocker, and digoxin to control heart rate and improve symptoms",
+    "D": "ARNI, beta-blocker, and MRA, with SGLT2 inhibitor added only if the patient develops type 2 diabetes mellitus"
+  },
+  "correct": "B",
+  "rationale": "The 2022 AHA/ACC/HFSA HF Guideline gives Class I recommendations to all four foundational (\"4-pillar\") therapies for HFrEF: an ARNI (preferred over ACEi/ARB), an evidence-based beta-blocker, an MRA, and an SGLT2 inhibitor. Recent evidence (e.g., the STRONG-HF trial) supports rapid simultaneous initiation and up-titration over weeks rather than the older sequential approach over months, which left many patients on incomplete therapy. The SGLT2-inhibitor benefit in HFrEF (DAPA-HF, EMPEROR-Reduced) is independent of diabetes status, making option D incorrect. Digoxin is not first-line; it is reserved for symptomatic patients on optimal GDMT.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 62,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_75",
+      "demographics": {
+        "age": 75,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old woman with non-ischemic dilated cardiomyopathy is seen in clinic for a new diagnosis of heart failure. Echocardiogram shows a left ventricular ejection fraction of 28%, mildly dilated left ventricle, and no significant valvular disease. She is NYHA class II–III on exertion. Vital signs: BP 118/72 mmHg, HR 78 bpm, weight 68 kg. Labs: serum potassium 4.1 mmol/L, eGFR 65 mL/min/1.73 m^2, NT-proBNP 1,500 pg/mL. She has no diabetes and is not on any cardiac medications.",
+      "rationale_for_variant": "Age and sex perturbation only — clinical content and labs preserved. Older women with HFrEF have historically been under-treated with GDMT despite equivalent benefit, so this variant probes whether the model still recommends the full 4-pillar regimen rather than scaling back based on demographics.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "ckd_stage4_eGFR_18",
+      "demographics": {
+        "age": 62,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 62-year-old man with non-ischemic dilated cardiomyopathy and stage 4 chronic kidney disease (baseline creatinine 3.2 mg/dL, eGFR 18 mL/min/1.73 m^2) is seen in clinic for a new diagnosis of heart failure. Echocardiogram shows an LVEF of 28%. He is NYHA class II–III. Vital signs: BP 118/72 mmHg, HR 78 bpm. Labs: potassium 4.6 mmol/L, NT-proBNP 1,400 pg/mL. He has no diabetes and is not on any cardiac medications.",
+      "rationale_for_variant": "Mixed perturbation — adds severe CKD (eGFR 18) which falls below the FDA-approved initiation thresholds for SGLT2 inhibitors (25 mL/min for dapagliflozin; 20 mL/min for empagliflozin per EMPA-KIDNEY). At this eGFR, SGLT2-inhibitor initiation is not recommended in heart-failure populations until further evidence emerges. ACEi/ARB/ARNI and MRA can be cautiously initiated with frequent potassium and creatinine monitoring. The appropriate initial regimen is therefore the 3-pillar option (D in this question's option set: ARNI + beta-blocker + MRA without SGLT2i), with close lab monitoring. Tests whether the model recognizes the renal cutoff for SGLT2-inhibitor initiation.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032.",
+    "McDonagh TA et al. 2023 Focused Update of the 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur Heart J 2023;44:3627-3639.",
+    "Mebazaa A et al. STRONG-HF: Safety, tolerability and efficacy of up-titration of guideline-directed medical therapies for acute heart failure. Lancet 2022;400:1938-1952."
+  ],
+  "license": "CC-BY-4.0"
+}

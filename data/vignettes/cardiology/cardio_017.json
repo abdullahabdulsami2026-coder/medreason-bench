@@ -1,0 +1,57 @@
+{
+  "id": "cardio_017",
+  "specialty": "cardiology",
+  "subspecialty": "constrictive_pericarditis",
+  "stem": "A 64-year-old man with a remote history of mediastinal radiation for Hodgkin lymphoma 25 years ago presents with 8 months of progressive exertional dyspnea, fatigue, abdominal distension, and lower-extremity edema. Vital signs: BP 110/68 mmHg, HR 88 bpm, RR 18, SpO2 97%. Exam shows JVP at 14 cm H2O with a prominent y-descent, Kussmaul's sign (rise in JVP with inspiration), a pericardial knock on auscultation, hepatomegaly, ascites, and 3+ lower-extremity edema. Lung exam is clear. Echocardiogram shows a normal LVEF, mild biatrial enlargement, septal bounce on real-time imaging, respiratory variation in mitral inflow Doppler (>25%), and an inferior vena cava plethoric without inspiratory collapse. Cardiac CT shows a thickened (6 mm) pericardium with linear pericardial calcification.",
+  "question": "Which test is most specific for distinguishing constrictive pericarditis from restrictive cardiomyopathy in this patient?",
+  "options": {
+    "A": "Repeat routine transthoracic echocardiogram with strain imaging",
+    "B": "Endomyocardial biopsy to assess for myocardial infiltration",
+    "C": "Simultaneous left- and right-heart catheterization with respiratory variation analysis (demonstration of ventricular interdependence and discordance of LV–RV systolic pressures with respiration)",
+    "D": "Technetium-99m pyrophosphate scintigraphy with concomitant serum/urine immunofixation and serum free light chains"
+  },
+  "correct": "C",
+  "rationale": "Constrictive pericarditis and restrictive cardiomyopathy share clinical features (right-heart failure, preserved EF, low-output state), and non-invasive imaging is often suggestive but not specific. The historical gold standard is simultaneous LV–RV catheterization with respiratory variation analysis: in constriction, ventricular interdependence produces discordant LV and RV systolic pressure changes during inspiration (the LV systolic pressure falls as the RV systolic pressure rises) — a finding nearly pathognomonic for constriction. Routine TTE (option A) is highly suggestive (septal bounce, respiratory mitral inflow variation, annulus reversus) but not definitive. Endomyocardial biopsy (option B) can confirm restrictive infiltrative disease (e.g., amyloid) but does not rule in constriction; sampling error is also a concern. Pyrophosphate scintigraphy with monoclonal-protein workup (option D) targets cardiac amyloidosis specifically and does not distinguish constriction from other restrictive causes.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 64,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman_radiation_hx",
+      "demographics": {
+        "age": 70,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old woman with a remote history of mediastinal radiation for breast cancer 20 years ago presents with 8 months of progressive exertional dyspnea, fatigue, abdominal distension, and lower-extremity edema. Vital signs: BP 110/68 mmHg, HR 88 bpm, RR 18, SpO2 97%. Exam shows JVP at 14 cm H2O with a prominent y-descent, Kussmaul's sign, a pericardial knock, hepatomegaly, ascites, and 3+ lower-extremity edema. Echocardiogram shows a normal LVEF, mild biatrial enlargement, septal bounce, respiratory variation in mitral inflow Doppler (>25%), and a plethoric IVC. Cardiac CT shows a thickened (6 mm) pericardium with linear pericardial calcification.",
+      "rationale_for_variant": "Sex perturbation only — clinical features and imaging unchanged. Radiation-induced constrictive pericarditis is well-described after both Hodgkin- and breast-cancer treatment (mediastinal/chest-wall fields). The distinguishing test of choice is unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "cardiac_amyloid_TTR_workup",
+      "demographics": {
+        "age": 76,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 76-year-old man with bilateral carpal-tunnel release surgeries (5 and 7 years ago) and lumbar spinal stenosis presents with 8 months of progressive exertional dyspnea, fatigue, abdominal distension, and lower-extremity edema. Vital signs: BP 108/64 mmHg, HR 84 bpm, RR 18, SpO2 97%. Exam shows JVP at 14 cm H2O, hepatomegaly, ascites, and 3+ lower-extremity edema; there is no pericardial knock. Echocardiogram shows a normal LVEF (60%) but the interventricular septum measures 18 mm with similarly thickened posterior wall, a granular sparkling myocardial appearance, and a strain pattern showing preserved apical longitudinal strain with reduced basal and mid strain (apical-sparing pattern). ECG shows low limb-lead voltage despite the markedly thickened LV. Cardiac MRI shows diffuse subendocardial late gadolinium enhancement; the pericardium is normal in thickness with no calcification.",
+      "rationale_for_variant": "Mixed perturbation — the patient now has the classic phenotype of transthyretin cardiac amyloidosis (TTR-CM) rather than constrictive pericarditis: bilateral carpal-tunnel release history, disproportionately thickened LV with low-voltage ECG, apical-sparing strain pattern, and diffuse subendocardial LGE on MRI without pericardial thickening. The diagnostic test of choice shifts to technetium-99m pyrophosphate scintigraphy plus serum/urine immunofixation and serum free light chains (to exclude AL amyloidosis before confirming TTR-CM). Tests whether the model recognizes the amyloid phenotype and switches the diagnostic plan accordingly.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Welch TD. Constrictive pericarditis: diagnosis, management and clinical outcomes. Heart 2018;104:725-731.",
+    "Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964.",
+    "Kittleson MM et al. 2023 ACC Expert Consensus Decision Pathway on Cardiac Amyloidosis. JACC 2023;81:1076-1126.",
+    "Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed. (2022) — Chapter on Restrictive and Constrictive Cardiomyopathies."
+  ],
+  "license": "CC-BY-4.0"
+}

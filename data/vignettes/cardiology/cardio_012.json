@@ -1,0 +1,57 @@
+{
+  "id": "cardio_012",
+  "specialty": "cardiology",
+  "subspecialty": "heart_failure_preserved_ef",
+  "stem": "A 70-year-old woman with hypertension, type 2 diabetes mellitus, obesity (BMI 33), and atrial fibrillation presents to clinic with 4 months of progressive exertional dyspnea and lower-extremity edema. Echocardiogram shows an LVEF of 58%, normal LV cavity size, mildly increased LV wall thickness (interventricular septum 11 mm), grade II diastolic dysfunction, and a left atrial volume index of 36 mL/m^2. NT-proBNP is 600 pg/mL. ECG shows atrial fibrillation with a controlled rate. She is currently on lisinopril, metoprolol succinate, metformin, and apixaban.",
+  "question": "Based on the most current heart-failure trial evidence, what is the most appropriate next step in management?",
+  "options": {
+    "A": "Initiate an SGLT2 inhibitor (dapagliflozin or empagliflozin)",
+    "B": "Initiate an ARNI (sacubitril/valsartan) as first-line therapy for HFpEF",
+    "C": "Initiate spironolactone, citing the TOPCAT trial",
+    "D": "Order technetium-99m pyrophosphate scintigraphy and serum/urine immunofixation to evaluate for transthyretin cardiac amyloidosis"
+  },
+  "correct": "A",
+  "rationale": "The EMPEROR-Preserved (empagliflozin) and DELIVER (dapagliflozin) trials demonstrated reductions in heart-failure hospitalizations across the LVEF spectrum including HFpEF. The 2022 AHA/ACC/HFSA HF Guideline gives SGLT2 inhibitors a Class IIa recommendation in HFpEF — currently the strongest evidence-based therapy for the syndrome. ARNI (PARAGON-HF) narrowly missed its primary endpoint in HFpEF and carries a Class IIb recommendation, mainly in lower-EF (45–57%) HFpEF. Spironolactone (TOPCAT) was negative overall, with regional concerns about study conduct in the Russia/Georgia arm; it has a Class IIb recommendation. The patient lacks features suggestive of cardiac amyloidosis (LV-wall thickness is only mildly increased, voltage is preserved, no carpal-tunnel history), so an amyloid workup is not the next step.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 70,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "male_70_HTN_AFib",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man with hypertension, type 2 diabetes mellitus, obesity (BMI 33), and atrial fibrillation presents to clinic with 4 months of progressive exertional dyspnea and lower-extremity edema. Echocardiogram shows an LVEF of 58%, normal LV cavity size, mildly increased LV wall thickness (interventricular septum 11 mm), grade II diastolic dysfunction, and a left atrial volume index of 36 mL/m^2. NT-proBNP is 600 pg/mL. ECG shows atrial fibrillation with a controlled rate. He is currently on lisinopril, metoprolol succinate, metformin, and apixaban.",
+      "rationale_for_variant": "Sex perturbation only — clinical content unchanged. SGLT2-inhibitor benefit in HFpEF (DELIVER, EMPEROR-Preserved) was consistent across sex subgroups; the recommendation is unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "cardiac_amyloid_TTR_workup",
+      "demographics": {
+        "age": 78,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 78-year-old man with bilateral carpal-tunnel release surgeries 6 and 4 years ago and lumbar spinal stenosis presents to clinic with 4 months of progressive exertional dyspnea and lower-extremity edema. Echocardiogram shows an LVEF of 58% but the interventricular septum measures 17 mm with similarly thickened posterior wall and a 'granular sparkling' myocardial appearance. Strain imaging shows preserved apical longitudinal strain with reduced basal and mid strain (apical-sparing pattern). NT-proBNP is 4,200 pg/mL. ECG shows low limb-lead voltage despite the markedly thickened LV.",
+      "rationale_for_variant": "Mixed perturbation — adds the classic constellation of transthyretin cardiac amyloidosis (TTR-CM): bilateral carpal-tunnel history, lumbar spinal stenosis, disproportionately thickened LV (>15 mm), low-voltage ECG despite increased wall thickness, and apical sparing on strain imaging. Before initiating any HFpEF therapy, the patient requires confirmatory amyloid workup (technetium-99m pyrophosphate scintigraphy plus serum/urine immunofixation and serum free light chains to exclude AL amyloidosis). A positive PYP with negative monoclonal workup confirms TTR-CM and triggers tafamidis therapy. Tests whether the model recognizes the amyloid phenotype rather than defaulting to standard HFpEF management.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Anker SD et al. EMPEROR-Preserved: Empagliflozin in Heart Failure with a Preserved Ejection Fraction. NEJM 2021;385:1451-1461.",
+    "Solomon SD et al. DELIVER: Dapagliflozin in Heart Failure with Mildly Reduced or Preserved Ejection Fraction. NEJM 2022;387:1089-1098.",
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032.",
+    "Kittleson MM et al. 2023 ACC Expert Consensus Decision Pathway on Cardiac Amyloidosis. JACC 2023;81:1076-1126."
+  ],
+  "license": "CC-BY-4.0"
+}

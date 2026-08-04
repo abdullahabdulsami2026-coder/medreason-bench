@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_028",
+  "specialty": "autoimmune",
+  "subspecialty": "giant_cell_arteritis_cranial",
+  "stem": "A 72-year-old woman presents to the emergency department with 4 weeks of new severe right-sided temporal headache, jaw claudication after a few minutes of chewing, and scalp tenderness. Yesterday she experienced an episode of TRANSIENT MONOCULAR VISION LOSS in her right eye lasting approximately 5 minutes (amaurosis fugax). She has no prior history of vision problems. Vital signs are stable. Physical examination reveals a tender, nodular, pulseless right superficial temporal artery and mildly tender left temporal artery. Funduscopy is currently normal (the amaurosis fugax has resolved). Labs: ESR 95 mm/h, CRP 80 mg/L, normocytic normochromic anemia (Hgb 10.6 g/dL). The clinical picture is consistent with cranial giant cell arteritis with a vision-threatening feature (amaurosis fugax — a strong predictor of impending permanent monocular vision loss if untreated).",
+  "question": "Which is the most appropriate immediate management?",
+  "options": {
+    "A": "IV methylprednisolone 1 g daily for 3 days (vision-threatening features) followed by oral prednisone 60 mg/d; do NOT delay treatment to await temporal artery biopsy; arrange temporal artery biopsy within 1–2 weeks (steroids in this short window do not invalidate biopsy yield); add tocilizumab if refractory or for steroid-sparing per the GiACTA trial",
+    "B": "Temporal artery biopsy FIRST; defer corticosteroids until biopsy result is available (5–10 days)",
+    "C": "Oral prednisone 12.5–25 mg/d as initial therapy (the regimen typical for polymyalgia rheumatica WITHOUT cranial GCA features) without IV pulse",
+    "D": "MRI brain first to rule out alternative diagnoses; defer corticosteroids until imaging is reviewed"
+  },
+  "correct": "A",
+  "rationale": "Giant cell arteritis with VISION-THREATENING features (amaurosis fugax, transient monocular vision loss, diplopia, or established permanent vision loss in one eye) is an OPHTHALMIC EMERGENCY. Once one eye has developed permanent vision loss, the contralateral eye becomes acutely vulnerable; without treatment, the second eye is at high risk of permanent ischemic optic neuropathy within days. The 2018 EULAR GCA Recommendations (Hellmich B et al.) and the 2021 ACR/Vasculitis Foundation GCA Guideline (Maz M et al.) recommend IV methylprednisolone 500–1000 mg/d for 3 days for vision-threatening disease, then oral prednisone 60 mg/d (1 mg/kg/d, max 80 mg/d) — INITIATED IMMEDIATELY without waiting for biopsy. Steroids given within 1–2 weeks of biopsy do not significantly reduce biopsy yield. The GiACTA trial (Stone JH et al., NEJM 2017) established tocilizumab + steroid taper as superior to steroid taper alone for sustained remission, supporting tocilizumab Class I for refractory disease and as a steroid-sparing agent. Biopsy first (option B) WASTES the therapeutic window during which permanent vision loss can be prevented. Low-dose oral prednisone (option C) is appropriate for PMR-only patients without cranial features — but is dangerously inadequate for cranial vision-threatening GCA. MRI first (option D) is unnecessary and delays treatment.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 72,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "PMR_only_no_cranial_features",
+      "demographics": {
+        "age": 72,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 72-year-old woman presents to clinic with 6 weeks of bilateral shoulder-girdle and pelvic-girdle pain, prolonged morning stiffness lasting >1 hour, and difficulty rising from a chair. She has NO headache, NO jaw claudication, NO scalp tenderness, NO visual symptoms (no amaurosis fugax, no diplopia, no permanent vision loss), and the temporal arteries are non-tender, non-nodular, and have normal pulses. Funduscopy is normal. Labs: ESR 65 mm/h, CRP 30 mg/L. The clinical picture is consistent with polymyalgia rheumatica (PMR) without features of giant cell arteritis.",
+      "rationale_for_variant": "Mixed perturbation — PMR-only without GCA features. PMR and GCA can occur as a spectrum (40–50% of GCA patients have PMR symptoms; 10–15% of PMR patients have or develop GCA), but management differs substantially when GCA is excluded. Per the 2015 EULAR/ACR PMR Recommendations and the 2021 ACR PMR Guideline, the appropriate initial therapy for isolated PMR is oral prednisone 12.5–25 mg/d (NOT high-dose, NOT IV pulse) with a slow taper over 12–24 months; tocilizumab is reasonable for refractory or relapsing disease and as a steroid-sparing agent (SAPHYR/SEMAPHORE evidence). High-dose IV methylprednisolone is over-treatment for isolated PMR and exposes the patient to substantial steroid toxicity. The correct answer therefore shifts from the GCA emergency regimen (option A) to the PMR-only regimen (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "elderly_man_GCA_with_aortitis",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man presents with 4 weeks of new severe headache, jaw claudication, scalp tenderness, and an episode of transient monocular vision loss yesterday. CT angiography (obtained because of asymmetric arm blood pressures and a high-pitched bruit in the right supraclavicular region) demonstrates LARGE-VESSEL VASCULITIS with thickening of the thoracic aorta and proximal aortic-arch branches consistent with large-vessel GCA / aortitis. Vital signs stable. Funduscopy normal. ESR 95, CRP 80, normocytic anemia.",
+      "rationale_for_variant": "Sex / age perturbation with addition of large-vessel involvement (aortitis) — clinical context (vision-threatening cranial GCA) is preserved AND large-vessel involvement is now documented. Per the 2018 EULAR and 2021 ACR GCA recommendations, the initial high-dose corticosteroid regimen is the SAME as for isolated cranial GCA (IV methylprednisolone 1 g × 3 d → oral prednisone 60 mg/d), and tocilizumab is added either initially (for steroid-sparing) or for refractory disease per GiACTA. The DIFFERENCE in large-vessel GCA / aortitis is the surveillance regimen: serial CTA or MRA imaging is recommended to monitor for aortic dilation/aneurysm, dissection risk, and large-vessel stenosis. The acute management answer is unchanged.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Hellmich B et al. 2018 Update of the EULAR recommendations for the management of large vessel vasculitis. Ann Rheum Dis 2020;79:19-30.",
+    "Stone JH et al. Trial of Tocilizumab in Giant-Cell Arteritis (GiACTA). NEJM 2017;377:317-328.",
+    "Maz M et al. 2021 American College of Rheumatology / Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis. Arthritis Rheumatol 2021;73:1349-1365."
+  ],
+  "license": "CC-BY-4.0"
+}

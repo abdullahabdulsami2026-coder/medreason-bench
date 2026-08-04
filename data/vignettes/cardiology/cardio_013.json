@@ -1,0 +1,56 @@
+{
+  "id": "cardio_013",
+  "specialty": "cardiology",
+  "subspecialty": "acute_decompensated_heart_failure",
+  "stem": "A 68-year-old man with a history of HFrEF (LVEF 30%) on home furosemide 40 mg orally twice daily presents to the emergency department with 5 days of progressive dyspnea, orthopnea, and a 6 kg weight gain. Vital signs: BP 132/80 mmHg, HR 96 bpm, RR 22, SpO2 91% on room air. Exam shows JVP at 14 cm H2O, bibasilar crackles, an S3 gallop, and 2+ pitting lower-extremity edema. Chest X-ray shows pulmonary vascular congestion. Labs: NT-proBNP 6,800 pg/mL, troponin 0.02 ng/mL (normal), creatinine 1.4 mg/dL (baseline 1.2), potassium 4.2 mmol/L.",
+  "question": "Which is the most appropriate initial intravenous diuretic strategy for this patient?",
+  "options": {
+    "A": "Furosemide 40 mg IV once daily (equivalent to the patient's home oral dose, given once daily)",
+    "B": "Furosemide 80–100 mg IV bolus given twice daily (approximately 2–2.5 times the home oral dose, divided BID), with re-assessment of urine output and weight at 2–6 hours and dose escalation if diuresis is inadequate",
+    "C": "Add metolazone 5 mg orally before optimizing the loop diuretic dose to achieve a more rapid diuresis",
+    "D": "Convert to oral hydrochlorothiazide 25 mg daily and discharge with strict sodium restriction"
+  },
+  "correct": "B",
+  "rationale": "The DOSE-AHF trial (Felker GM et al., NEJM 2011) compared low-dose vs high-dose IV furosemide and continuous vs bolus dosing in acute decompensated heart failure. High-dose IV bolus (~2.5× the home oral dose) produced greater symptom relief and weight loss with only mild, transient creatinine rise that did not affect long-term outcomes. The 2022 AHA/ACC/HFSA HF Guideline (Class I) recommends an initial IV loop diuretic dose at least equal to the patient's home oral dose, with re-assessment within hours and dose escalation if response is inadequate. A once-daily dose at 1× home oral (option A) typically under-decongests. Sequential nephron blockade with metolazone (option C) is reserved for diuretic resistance after the loop is optimized. Oral conversion before adequate decongestion (option D) is unsafe in a patient with active congestion and hypoxia.",
+  "difficulty": "easy",
+  "demographics": {
+    "age": 68,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_woman_82",
+      "demographics": {
+        "age": 82,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "An 82-year-old woman with a history of HFrEF (LVEF 30%) on home furosemide 40 mg orally twice daily presents to the emergency department with 5 days of progressive dyspnea, orthopnea, and a 6 kg weight gain. Vital signs: BP 132/80 mmHg, HR 96 bpm, RR 22, SpO2 91% on room air. Exam shows JVP at 14 cm H2O, bibasilar crackles, an S3 gallop, and 2+ pitting lower-extremity edema. Labs: NT-proBNP 7,200 pg/mL, creatinine 1.4 mg/dL (baseline 1.2), potassium 4.2 mmol/L.",
+      "rationale_for_variant": "Age and sex perturbation only — diuretic strategy is unchanged. Older patients warrant closer monitoring of electrolytes and renal function during diuresis but the initial dose strategy is identical.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "cardiorenal_syndrome_creat_doubled",
+      "demographics": {
+        "age": 68,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old man with a history of HFrEF (LVEF 30%) on home furosemide 40 mg orally twice daily was admitted 48 hours ago for acute decompensated heart failure. He has received furosemide 80 mg IV BID with 4 kg of weight loss and improving symptoms. Today his creatinine has risen from 1.2 mg/dL on admission to 2.4 mg/dL; potassium is 4.6 mmol/L. He remains volume-overloaded with persistent JVP at 12 cm H2O, bibasilar crackles, and 2+ edema. Vital signs are stable.",
+      "rationale_for_variant": "Mixed perturbation — adds Type 1 cardiorenal syndrome (creatinine doubling during ongoing diuresis). Post-hoc analyses of DOSE-AHF and the ROSE-AHF trial showed that worsening renal function during effective decongestion does not portend worse long-term outcomes, provided the patient is achieving symptom relief and weight loss. The 2022 HF Guideline supports continued (or intensified) diuresis as long as decongestion is occurring and the patient is hemodynamically stable, with close monitoring. The correct strategy remains aggressive IV bolus loop diuresis with monitoring — the same answer as the parent. Tests whether the model resists the temptation to halt diuresis at the first creatinine bump.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Felker GM et al. DOSE-AHF: Diuretic Strategies in Patients with Acute Decompensated Heart Failure. NEJM 2011;364:797-805.",
+    "Chen HH et al. ROSE-AHF: Low-dose dopamine or low-dose nesiritide in acute heart failure with renal dysfunction. JAMA 2013;310:2533-2543.",
+    "Heidenreich PA et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation 2022;145:e895-e1032."
+  ],
+  "license": "CC-BY-4.0"
+}

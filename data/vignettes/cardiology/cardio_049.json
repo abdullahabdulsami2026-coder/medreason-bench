@@ -1,0 +1,56 @@
+{
+  "id": "cardio_049",
+  "specialty": "cardiology",
+  "subspecialty": "geriatric_aortic_stenosis",
+  "stem": "An 86-year-old woman with hypertension, dyslipidemia, mild chronic kidney disease (eGFR 48 mL/min/1.73 m^2), and moderate frailty (gait speed 0.65 m/s, slightly reduced grip strength) presents to clinic with 4 months of progressive exertional dyspnea (NYHA III) and one episode of presyncope. She is cognitively intact and lives independently with her daughter. Vital signs: BP 128/72 mmHg, HR 70 bpm, SpO2 96% on room air. Cardiac auscultation reveals a harsh, late-peaking systolic ejection murmur at the right upper sternal border radiating to the carotids with a delayed, diminished carotid upstroke. Transthoracic echocardiogram shows severe symptomatic aortic stenosis: aortic-valve area 0.7 cm^2, mean transvalvular gradient 50 mmHg, peak velocity 4.6 m/s, LVEF 50%, and no other significant valvular disease. STS-PROM operative-mortality score is 8.5% (intermediate-high risk for surgical AVR). CT angiography shows favorable transfemoral access for TAVR. She has no severe comorbidities limiting life expectancy.",
+  "question": "Which is the most appropriate next step?",
+  "options": {
+    "A": "Heart-team evaluation with consideration of TAVR (reasonable and increasingly preferred in older patients with intermediate-to-high surgical risk per PARTNER 3, Evolut Low-Risk, and CoreValve High-Risk evidence) versus surgical AVR; integrate frailty assessment, comorbidities, vascular access, and patient preferences",
+    "B": "Surgical aortic valve replacement alone, given anatomic suitability and absence of severe comorbidities",
+    "C": "Watchful waiting with palliation only, given patient age",
+    "D": "Balloon aortic valvuloplasty as definitive long-term therapy"
+  },
+  "correct": "A",
+  "rationale": "Severe symptomatic aortic stenosis is an indication for valve replacement (Class I per the 2020 ACC/AHA Valvular Guideline), and the choice between TAVR and surgical AVR is made by a multidisciplinary heart team. In older patients (≥75–80) with intermediate-to-high surgical risk (STS-PROM 4–8% intermediate; >8% high), TAVR is reasonable and often preferred, with accumulating evidence of TAVR non-inferiority (PARTNER 3, Evolut Low-Risk) and superiority in some endpoints in selected populations. Frailty assessment is integral to the heart-team decision because it predicts both procedural outcomes and recovery. Default to surgical AVR alone (option B) without considering TAVR is not consistent with current evidence in this risk profile. Watchful waiting with palliation (option C) is reserved for patients with limited life expectancy from non-cardiac causes or those who decline intervention after informed discussion. Balloon aortic valvuloplasty (option D) is palliative only and is not definitive therapy in adults.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 86,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "middle_aged_man_low_risk_AS",
+      "demographics": {
+        "age": 58,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 58-year-old man with no significant comorbidities and minimal frailty presents to clinic with severe symptomatic aortic stenosis: aortic-valve area 0.7 cm^2, mean transvalvular gradient 50 mmHg, peak velocity 4.6 m/s, LVEF 55%. STS-PROM score is 1.2% (low surgical risk). CT angiography shows favorable transfemoral access. He has no contraindications to surgery, no anatomic features that would preclude either approach, and a long projected life expectancy. He has independently researched both TAVR and SAVR and asks for guidance on which is preferred.",
+      "rationale_for_variant": "Mixed perturbation — middle-aged man with LOW surgical risk (STS-PROM <4%). Per the 2020 ACC/AHA Valvular Guideline, surgical AVR remains the preferred initial approach for younger, low-risk patients because of the longer follow-up data on durability of surgical bioprosthetic and mechanical valves; TAVR is a reasonable alternative based on patient preference and anatomy after heart-team discussion. Long-term TAVR durability data are still maturing in low-risk patients (PARTNER 3 5-year, Evolut Low-Risk follow-up ongoing). The correct answer therefore shifts from a TAVR-leaning evaluation to a SAVR-preferred recommendation with shared decision-making (option B).",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    },
+    {
+      "variant_id": "elderly_severe_frailty_NYHA_IV",
+      "demographics": {
+        "age": 92,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 92-year-old woman with severe frailty (gait speed 0.4 m/s, dependent in 4/6 ADLs, recent unintentional 8 kg weight loss), advanced dementia (MMSE 14/30), and recurrent aspiration pneumonia presents with NYHA IV symptoms and recent admission for cardiogenic pulmonary edema requiring inotrope support. Echocardiogram confirms severe AS (AVA 0.7 cm^2, mean gradient 48 mmHg, LVEF 30%). STS-PROM 14% (high risk). Family discussion centers on the trade-offs between TAVR, SAVR, and conservative management given her quality of life and life expectancy.",
+      "rationale_for_variant": "Mixed perturbation — extreme frailty, advanced dementia, recurrent aspiration, multiple high-risk features. Per the 2020 ACC/AHA Valvular Guideline and the AHA Palliative Care for Cardiovascular Disease Statement, in patients whose life expectancy is limited (typically <12 months) by non-cardiac comorbidities or whose quality of life would not improve meaningfully with valve replacement, palliative care with optimization of medical therapy is the appropriate path. Heart-team decision-making must include shared decision-making with family, palliative-care input, and consideration of frailty-adjusted outcomes. The correct answer therefore shifts to watchful waiting with palliation (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    }
+  ],
+  "sources": [
+    "Otto CM et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227.",
+    "Mack MJ et al. PARTNER 3: Transcatheter Aortic-Valve Replacement with a Balloon-Expandable Valve in Low-Risk Patients. NEJM 2019;380:1695-1705.",
+    "Popma JJ et al. Evolut Low Risk Trial: Transcatheter Aortic-Valve Replacement with a Self-Expanding Valve in Low-Risk Patients. NEJM 2019;380:1706-1715."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,169 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "medreason-bench"
+version = "0.0.1"
+description = "Clinical LLM reasoning evaluation in cardiology and autoimmune disease."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [
+  { name = "Abdullah Abdul Sami" },
+  { name = "Hansraj Hitesh" },
+]
+keywords = [
+  "clinical-nlp",
+  "llm-evaluation",
+  "benchmark",
+  "cardiology",
+  "autoimmune-disease",
+  "rheumatology",
+  "fairness",
+  "calibration",
+  "hallucination",
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  # Frontier model SDKs
+  "anthropic>=0.39",
+  "openai>=1.50",
+  "google-genai>=0.2",
+  # Open-model providers
+  "groq>=0.11",
+  "together>=1.2",
+  "ollama>=0.3",
+  # Datasets + data tooling
+  "datasets>=2.20",
+  "pydantic>=2.7",
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "scikit-learn>=1.4",
+  # Misc
+  "python-dotenv>=1.0",
+  "rich>=13.7",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2",
+  "pytest-cov>=5.0",
+  "mypy>=1.10",
+  "ruff>=0.5",
+  "pre-commit>=3.7",
+  "ipykernel>=6.29",
+  "jupyterlab>=4.2",
+]
+
+[project.urls]
+Repository = "https://github.com/abdullahabdulsami2026-coder/medreason-bench"
+Issues    = "https://github.com/abdullahabdulsami2026-coder/medreason-bench/issues"
+
+# ── Hatch packaging ───────────────────────────────────────────────
+[tool.hatch.build.targets.wheel]
+packages = ["eval", "data"]
+
+# ── Ruff ──────────────────────────────────────────────────────────
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["frontend", "paper", "notebooks"]
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "W",   # warnings
+  "I",   # isort
+  "N",   # pep8-naming
+  "UP",  # pyupgrade
+  "B",   # bugbear
+  "A",   # builtins shadowing
+  "C4",  # comprehensions
+  "SIM", # simplify
+  "PTH", # use pathlib
+  "RET", # returns
+]
+ignore = [
+  "E501",  # line length handled by formatter
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+# ── Mypy ──────────────────────────────────────────────────────────
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+exclude = [
+  "frontend/",
+  "paper/",
+  "notebooks/",
+  "tests/",
+]
+
+[[tool.mypy.overrides]]
+module = ["eval.*"]
+strict = true
+disallow_untyped_defs = true
+disallow_any_explicit = false  # we sometimes need Any for SDK responses
+
+[[tool.mypy.overrides]]
+module = ["datasets.*", "ollama.*", "together.*", "google.genai.*"]
+ignore_missing_imports = true
+
+# ── Pytest ────────────────────────────────────────────────────────
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra --strict-markers --strict-config"
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+  "ignore::DeprecationWarning:datasets.*",
+]
+
+# ── Coverage ──────────────────────────────────────────────────────
+# Per the brief: ≥80% coverage on `eval/metrics` and `eval/runners`. We
+# measure all of `eval/` but `omit` Phase-0 stubs so the threshold reflects
+# what's actually been implemented.
+[tool.coverage.run]
+branch = true
+source = ["eval", "data"]
+omit = [
+  # Phase 0 stubs — implementations land in later phases and will be
+  # added back to coverage when their tests land.
+  "eval/metrics/calibration.py",
+  "eval/metrics/fairness.py",
+  "eval/metrics/hallucination.py",
+  "eval/metrics/reasoning_judge.py",
+  "eval/runners/together_runner.py",
+  "eval/prompts/open_ended.py",
+  # Trivial package init files.
+  "data/__init__.py",
+  "data/loaders/__init__.py",
+  "data/filters/__init__.py",
+  "data/vignettes/__init__.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+fail_under = 80
+exclude_lines = [
+  "pragma: no cover",
+  "if __name__ == .__main__.:",
+  "raise NotImplementedError",
+]

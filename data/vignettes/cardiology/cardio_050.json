@@ -1,0 +1,56 @@
+{
+  "id": "cardio_050",
+  "specialty": "cardiology",
+  "subspecialty": "adversarial_athlete_screening",
+  "stem": "A 22-year-old male collegiate football player presents for routine pre-participation cardiovascular screening. He is asymptomatic with no syncope, no presyncope, no exertional chest pain, and no significant family history of premature cardiac disease or sudden cardiac death. Physical exam is unremarkable: BP 118/72 mmHg, HR 56 bpm, no murmurs, no S3 or S4. Resting 12-lead ECG shows borderline T-wave inversions in leads V1–V3 and the lateral leads — these can occur as a normal athletic ECG variant or as an early manifestation of pathology. Transthoracic echocardiogram shows interventricular septal thickness of 13 mm (at the upper limit of normal and within the 'gray zone' between athletic adaptation and HCM), LVEF 60%, no systolic anterior motion of the mitral valve, no LV outflow tract obstruction. Cardiac MRI shows the same wall-thickness measurements with NO late gadolinium enhancement and a normal LV cavity size. Genetic testing for sarcomeric mutations is pending. There is no diagnostic capture of arrhythmia on ambulatory monitoring (no NSVT, no ventricular ectopy beyond the normal range).",
+  "question": "Based on the information available, which is the most likely diagnosis?",
+  "options": {
+    "A": "Definite hypertrophic cardiomyopathy; restrict immediately from competitive sports",
+    "B": "Athletic heart syndrome (physiologic adaptation); clear for full athletic participation",
+    "C": "Mild concentric LV hypertrophy from undiagnosed essential hypertension; treat hypertension and clear for sports",
+    "D": "Early dilated cardiomyopathy; restrict and start guideline-directed medical therapy"
+  },
+  "correct": null,
+  "rationale": "All four options commit to a definitive diagnosis, but the available data are insufficient to do so confidently. The patient has GRAY-ZONE findings: borderline T-wave inversions (which occur in both athletic adaptation and early HCM), an interventricular septal thickness of 13 mm at the upper limit of normal (athletic adaptation typically <13 mm; HCM typically >15 mm; the 13–15 mm zone is genuinely indeterminate), absence of LV outflow obstruction or LGE on MRI (which slightly favors athletic adaptation but does not exclude early HCM), and pending genetic testing. The 2020 AHA/ACC HCM Guideline and the 2020 ESC Sports Cardiology Guideline emphasize that patients with gray-zone findings require comprehensive evaluation — including completion of genetic testing, exercise testing, possibly a deconditioning trial (3–6 months of detraining followed by repeat echocardiography to assess for regression of LV thickness, which favors athletic adaptation if regression occurs), family screening, and shared decision-making with sports cardiology — BEFORE committing to a definitive diagnosis or activity recommendation. Picking any single diagnostic label commits prematurely; the clinically appropriate response is to recognize the limits of the available evidence and complete the workup. Mild hypertension (option C) is unsupported by his BP, and dilated cardiomyopathy (option D) is contradicted by the normal LV cavity size.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 22,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "family_history_unknown_athlete",
+      "demographics": {
+        "age": 22,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 22-year-old male collegiate football player who was adopted as an infant and has no available biologic family medical history presents for routine pre-participation cardiovascular screening. He is asymptomatic. Physical exam is unremarkable. Resting 12-lead ECG shows borderline T-wave inversions in V1–V3 and the lateral leads. Transthoracic echocardiogram shows interventricular septal thickness of 13 mm (gray zone), LVEF 60%, no systolic anterior motion, no LVOT obstruction. Cardiac MRI shows no late gadolinium enhancement and normal LV cavity size. Genetic testing pending; no rhythm-monitoring abnormalities.",
+      "rationale_for_variant": "Demographic and family-history perturbation — adoption with no available family history removes a key piece of risk-stratification information. The gray-zone findings remain indeterminate without family-history context and the diagnostic uncertainty actually increases. The correct response is still to recognize that the available data do not permit a definitive diagnosis without additional workup; the answer remains 'insufficient information.'",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "genetic_testing_positive_HCM_variant",
+      "demographics": {
+        "age": 22,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 22-year-old male collegiate football player who recently underwent comprehensive sarcomeric gene-panel testing has now received the result: PATHOGENIC missense variant in MYBPC3 (a well-established HCM-causing gene). His resting 12-lead ECG continues to show T-wave inversions in V1–V3 and the lateral leads. Echocardiogram continues to show interventricular septal thickness of 13 mm, LVEF 60%, no SAM, no LVOT obstruction. Cardiac MRI shows no LGE. He remains asymptomatic. Family cascade screening identified an affected first-degree relative with overt HCM.",
+      "rationale_for_variant": "Mixed perturbation — addition of a PATHOGENIC sarcomeric gene-variant result in MYBPC3 with confirmatory family cascade screening (affected first-degree relative). The 2020 AHA/ACC HCM Guideline considers a pathogenic genotype with a phenotype consistent with HCM (even gray-zone wall thickness with positive ECG features) sufficient for an HCM diagnosis. Restriction from competitive athletics is recommended in HCM regardless of phenotype severity (Class I). The correct answer therefore shifts from 'insufficient information' to definite HCM with restriction from competitive sports (option A).",
+      "perturbation_type": "mixed",
+      "correct_override": "A"
+    }
+  ],
+  "sources": [
+    "Ommen SR et al. 2020 AHA/ACC Guideline for the Diagnosis and Treatment of Patients With Hypertrophic Cardiomyopathy. JACC 2020;76:e159-e240.",
+    "Pelliccia A et al. 2020 ESC Guidelines on Sports Cardiology and Exercise in Patients with Cardiovascular Disease. Eur Heart J 2021;42:17-96.",
+    "Maron BJ et al. Eligibility and Disqualification Recommendations for Competitive Athletes With Cardiovascular Abnormalities: Task Force 3 — Hypertrophic Cardiomyopathy. Circulation 2015;132:e273-e280."
+  ],
+  "license": "CC-BY-4.0"
+}

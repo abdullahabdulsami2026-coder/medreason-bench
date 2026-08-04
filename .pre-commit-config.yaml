@@ -1,0 +1,54 @@
+# MedReason-Bench — pre-commit hooks
+# Install:  pre-commit install
+# Run all:  pre-commit run --all-files
+
+repos:
+  # ── House-keeping ───────────────────────────────────────────────
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ["--maxkb=2000"]
+      - id: detect-private-key
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+
+  # ── Python: ruff (lint + format) ────────────────────────────────
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.5.0
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  # ── Python: mypy strict on /eval ────────────────────────────────
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.10.0
+    hooks:
+      - id: mypy
+        files: ^eval/
+        additional_dependencies:
+          - "pydantic>=2.7"
+          - "types-requests"
+
+  # ── Frontend: prettier on TS/TSX/JSON/MD ────────────────────────
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        files: \.(ts|tsx|js|jsx|json|md|yml|yaml|css|html)$
+        exclude: ^(paper/|notebooks/|results/|data/vignettes/.*\.json$)
+
+  # ── Secret-scan for accidental key commits ──────────────────────
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: ^(\.env\.example|package-lock\.json|frontend/pnpm-lock\.yaml)$

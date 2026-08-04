@@ -1,0 +1,56 @@
+{
+  "id": "cardio_041",
+  "specialty": "cardiology",
+  "subspecialty": "hypertrophic_cardiomyopathy",
+  "stem": "A 28-year-old man presents to clinic with two episodes of exertional syncope in the past 6 months while playing recreational basketball. His paternal uncle died suddenly at age 32 during exercise. Vital signs: BP 122/74 mmHg, HR 68 bpm. Cardiac auscultation reveals a harsh systolic ejection murmur at the left lower sternal border that increases markedly with the Valsalva maneuver and decreases with squatting. ECG shows left ventricular hypertrophy by voltage criteria with deep, narrow Q waves in the inferior and lateral leads. Transthoracic echocardiogram demonstrates asymmetric septal hypertrophy (interventricular septum 18 mm, posterior wall 11 mm), systolic anterior motion (SAM) of the mitral valve with a left-ventricular outflow tract gradient of 60 mmHg with provocation, and an LVEF of 70%. Cardiac MRI confirms hypertrophic cardiomyopathy with mild patchy late gadolinium enhancement (<10% of LV mass). Genetic testing is pending; first-degree relative screening has not yet been initiated.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Initiate a beta-blocker for symptomatic LVOT obstruction; restrict from competitive athletics; refer for primary-prevention ICD given Class I high-risk features (family history of sudden cardiac death <40 PLUS exertional syncope); initiate first-degree relative screening",
+    "B": "Initiate an ACE inhibitor for cardiac protection and reassess in 6 months",
+    "C": "Initiate digoxin for symptomatic relief and improve LV outflow",
+    "D": "Counsel on exercise restriction from competitive athletics as the primary intervention; consider beta-blocker only if symptoms persist; defer ICD pending further longitudinal risk stratification"
+  },
+  "correct": "A",
+  "rationale": "This patient has obstructive HCM with TWO Class I primary-prevention ICD risk factors per the 2020 AHA/ACC HCM Guideline: (1) a first-degree or close relative with sudden cardiac death attributable to HCM at age <50, and (2) recent unexplained syncope (within the past 6 months). Either factor alone is sufficient for Class I (or strong IIa) ICD indication; combined, an ICD is clearly indicated. Symptomatic LVOT obstruction is treated initially with non-vasodilating beta-blockers (or non-dihydropyridine calcium channel blockers if beta-blockers are not tolerated); cardiac myosin inhibitors (mavacamten) may be considered as next-line. ACE inhibitors (option B) are problematic in obstructive HCM because afterload reduction worsens LVOT obstruction. Digoxin (option C) is CONTRAINDICATED — increased contractility worsens obstruction. Activity restriction alone (option D) addresses one risk factor but defers the Class I ICD recommendation that this patient already meets.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 28,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "middle_aged_woman_HCM",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman presents to clinic with two episodes of exertional syncope in the past 6 months. Her paternal uncle died suddenly at age 32 during exercise. Vital signs: BP 122/74 mmHg, HR 68 bpm. Cardiac auscultation reveals a harsh systolic ejection murmur at the left lower sternal border that increases markedly with Valsalva. Echocardiogram demonstrates asymmetric septal hypertrophy (interventricular septum 18 mm), SAM of the mitral valve with a LVOT gradient of 60 mmHg with provocation, and an LVEF of 70%. Cardiac MRI confirms HCM with mild patchy late gadolinium enhancement.",
+      "rationale_for_variant": "Sex perturbation only — clinical content (high-risk obstructive HCM with family history of SCD <50 plus recent unexplained syncope) is unchanged. ICD indication and beta-blocker therapy remain Class I.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "young_athlete_HCM_low_risk_features",
+      "demographics": {
+        "age": 19,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 19-year-old college soccer player presents to clinic for cardiac evaluation after an episode of mild lightheadedness during a match (no syncope). He has no family history of sudden cardiac death and no other symptoms. Vital signs: BP 118/72 mmHg, HR 60 bpm. Cardiac auscultation reveals a soft systolic murmur at the left lower sternal border that does not increase substantially with Valsalva. Echocardiogram shows asymmetric septal hypertrophy (interventricular septum 16 mm) without SAM and without significant LVOT obstruction (resting gradient 12 mmHg, post-Valsalva 18 mmHg). Cardiac MRI confirms HCM with no late gadolinium enhancement. Genetic testing is pending. He has NO major HCM SCD risk factors (no family history of SCD, no syncope, no NSVT on ambulatory monitor, no extreme LV hypertrophy ≥30 mm, no extensive LGE, normal BP response to exercise).",
+      "rationale_for_variant": "Mixed perturbation — young athlete with HCM but WITHOUT major SCD risk factors. Per the 2020 AHA/ACC HCM Guideline and the 2015 AHA/ACC Athletes Eligibility Recommendations (Task Force 3), restriction from competitive athletics is recommended for HCM regardless of phenotype severity (Class I), but primary-prevention ICD is not indicated in patients without major risk factors. The correct intervention is therefore activity restriction with beta-blocker for symptoms only if present, with deferred ICD decision pending longitudinal risk stratification. Tests whether the model recognizes the risk-stratified approach to ICD versus the universal recommendation for competitive-athletic restriction in HCM.",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    }
+  ],
+  "sources": [
+    "Ommen SR et al. 2020 AHA/ACC Guideline for the Diagnosis and Treatment of Patients With Hypertrophic Cardiomyopathy. JACC 2020;76:e159-e240.",
+    "Authors/Task Force members. 2014 ESC Guidelines on diagnosis and management of hypertrophic cardiomyopathy. Eur Heart J 2014;35:2733-2779.",
+    "Maron BJ et al. Eligibility and Disqualification Recommendations for Competitive Athletes With Cardiovascular Abnormalities: Task Force 3 — Hypertrophic Cardiomyopathy. Circulation 2015;132:e273-e280."
+  ],
+  "license": "CC-BY-4.0"
+}

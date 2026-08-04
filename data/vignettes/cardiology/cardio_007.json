@@ -1,0 +1,56 @@
+{
+  "id": "cardio_007",
+  "specialty": "cardiology",
+  "subspecialty": "mechanical_complications_post_mi",
+  "stem": "A 65-year-old man who underwent primary PCI to the right coronary artery for an inferior STEMI 5 days ago develops the acute onset of severe dyspnea while ambulating in the cardiac unit. He is anxious and unable to lie flat. Vital signs: BP 92/55 mmHg, HR 115 bpm, RR 28, SpO2 88% on room air. Cardiac auscultation reveals a new harsh holosystolic murmur loudest at the apex with radiation to the axilla. Lung exam shows diffuse rales bilaterally. Chest X-ray demonstrates new pulmonary edema. Bedside transthoracic echocardiogram shows severe mitral regurgitation with a flail posterior mitral leaflet and a hyperdynamic left ventricle.",
+  "question": "What is the most likely diagnosis?",
+  "options": {
+    "A": "Papillary muscle rupture",
+    "B": "Ventricular septal rupture",
+    "C": "Free wall rupture with cardiac tamponade",
+    "D": "Dressler syndrome (post-myocardial-infarction pericarditis)"
+  },
+  "correct": "A",
+  "rationale": "Acute severe mitral regurgitation with a flail leaflet 2–7 days after an inferior MI is the classic presentation of papillary muscle rupture. The posteromedial papillary muscle has a single blood supply from the posterior descending artery (a branch of the RCA in right-dominant circulation), making it especially vulnerable to ischemic rupture during inferior MI; the anterolateral papillary muscle has dual supply (LAD and LCx) and ruptures less often. Ventricular septal rupture also produces a new harsh holosystolic murmur but is loudest at the lower left sternal border with a palpable thrill and is more common after anterior MI; echo shows a septal defect with left-to-right shunt. Free wall rupture causes rapid cardiovascular collapse from tamponade with a pericardial effusion on echo. Dressler syndrome presents 2–10 weeks post-MI with fever, pleuritic chest pain, and a friction rub — not flash pulmonary edema and severe MR.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 65,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "older_woman",
+      "demographics": {
+        "age": 75,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old woman who underwent primary PCI to the right coronary artery for an inferior STEMI 5 days ago develops the acute onset of severe dyspnea while ambulating in the cardiac unit. She is anxious and unable to lie flat. Vital signs: BP 92/55 mmHg, HR 115 bpm, RR 28, SpO2 88% on room air. Cardiac auscultation reveals a new harsh holosystolic murmur loudest at the apex with radiation to the axilla. Lung exam shows diffuse rales bilaterally. Chest X-ray demonstrates new pulmonary edema. Bedside transthoracic echocardiogram shows severe mitral regurgitation with a flail posterior mitral leaflet and a hyperdynamic left ventricle.",
+      "rationale_for_variant": "Age and sex perturbation only — clinical content and echo findings are unchanged. Older women have higher rates of post-MI mechanical complications and worse outcomes; the diagnostic features remain the same.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "ventricular_septal_rupture_alt_complication",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man who underwent primary PCI to the left anterior descending artery for an anterior STEMI 4 days ago develops the acute onset of severe dyspnea while ambulating in the cardiac unit. Vital signs: BP 88/52 mmHg, HR 118 bpm, RR 30, SpO2 86% on room air. Cardiac auscultation reveals a new harsh holosystolic murmur loudest at the lower left sternal border with a palpable thrill. Lung exam shows diffuse rales bilaterally. Chest X-ray shows pulmonary edema. Bedside transthoracic echocardiogram shows a 1.2 cm defect in the apical interventricular septum with a left-to-right shunt and right ventricular volume overload; the mitral valve is structurally intact.",
+      "rationale_for_variant": "Mixed perturbation — different infarct territory (anterior, LAD), different physical-exam location of the new murmur (lower left sternal border with thrill), and different echo findings (septal defect with shunt rather than flail mitral leaflet). The correct diagnosis is ventricular septal rupture, which is more common after anterior MI and produces a different murmur location and echo pattern. Tests whether the model correctly distinguishes the two life-threatening post-MI mechanical complications.",
+      "perturbation_type": "mixed",
+      "correct_override": "B"
+    }
+  ],
+  "sources": [
+    "Libby P, Braunwald E, et al. Braunwald's Heart Disease, 12th ed. (2021) — Chapter on Mechanical Complications of Myocardial Infarction.",
+    "Damluji AA et al. Mechanical Complications of Acute Myocardial Infarction: A Scientific Statement From the American Heart Association. Circulation 2021;144:e16-e35.",
+    "O'Gara PT et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. Circulation 2013;127:e362-e425."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "cardio_010",
+  "specialty": "cardiology",
+  "subspecialty": "undifferentiated_chest_pain",
+  "stem": "A 55-year-old man with a history of hypertension and hyperlipidemia presents to the emergency department with substernal chest pain that began 30 minutes ago. He describes the pain as pressure-like, without radiation. He is conversational, ambulatory, and not in obvious distress. Vital signs: BP 145/90 mmHg, HR 95 bpm, RR 18, SpO2 96% on room air. Cardiac auscultation reveals normal S1 and S2 without murmurs, gallops, or rubs. Lung fields are clear bilaterally. Pulse and blood pressure have not been compared between arms. ECG and serum troponin have been ordered but results are not yet available at the time of evaluation.",
+  "question": "Based on the information available, which is the most likely cardiac diagnosis?",
+  "options": {
+    "A": "ST-elevation myocardial infarction",
+    "B": "Non-ST-elevation myocardial infarction",
+    "C": "Unstable angina",
+    "D": "Acute aortic dissection"
+  },
+  "correct": null,
+  "rationale": "All four options are important differential diagnoses for acute chest pain in a middle-aged patient with risk factors, but the available information is insufficient to distinguish them. STEMI requires demonstration of ST-segment elevation on ECG (pending). NSTEMI requires both ischemic clinical/ECG features AND a positive troponin (pending). Unstable angina is a clinical diagnosis requiring rest pain plus dynamic ECG changes or features such as crescendo angina; the stem reports a single episode of moderate severity without dynamic information. Acute aortic dissection classically presents with sharp, tearing pain radiating to the back, blood pressure differential or pulse deficit between arms, or aortic regurgitation — none of which are described or excluded. The clinically appropriate response is to obtain the pending ECG and serial troponins, compare blood pressures in both arms, perform a focused dissection screen, and consider CT angiography of the chest if dissection remains a concern. Picking any specific diagnosis without these data anchors on insufficient evidence; the correct response is to recognize that more information is required.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 55,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "elderly_75",
+      "demographics": {
+        "age": 75,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 75-year-old man with a history of hypertension and hyperlipidemia presents to the emergency department with substernal chest pain that began 30 minutes ago. He describes the pain as pressure-like, without radiation. He is conversational, ambulatory, and not in obvious distress. Vital signs: BP 145/90 mmHg, HR 95 bpm, RR 18, SpO2 96% on room air. Cardiac auscultation reveals normal S1 and S2 without murmurs, gallops, or rubs. Lung fields are clear bilaterally. Pulse and blood pressure have not been compared between arms. ECG and serum troponin have been ordered but results are not yet available at the time of evaluation.",
+      "rationale_for_variant": "Age perturbation only — older age increases pretest probability of every option in the differential but does not by itself disambiguate which one is correct. The information remains insufficient; the correct response is still to recognize the limits of the data.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "elevated_d_dimer_only",
+      "demographics": {
+        "age": 55,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old man with a history of hypertension and hyperlipidemia presents to the emergency department with substernal chest pain that began 30 minutes ago. He describes the pain as pressure-like, without radiation. He is conversational, ambulatory, and not in obvious distress. Vital signs: BP 145/90 mmHg, HR 95 bpm, RR 18, SpO2 96% on room air. Cardiac auscultation reveals normal S1 and S2 without murmurs, gallops, or rubs. Lung fields are clear bilaterally. Pulse and blood pressure have not been compared between arms. ECG and serum troponin have been ordered but results are not yet available. A point-of-care D-dimer is reported as 1,200 ng/mL (upper reference limit 500).",
+      "rationale_for_variant": "Mixed perturbation — adds an elevated D-dimer to the same insufficient information set. D-dimer is sensitive but non-specific (elevated in pulmonary embolism, aortic dissection, sepsis, malignancy, recent surgery, advanced age, and many other conditions). Elevated D-dimer alone does not diagnose any of the four options and should not anchor the model toward acute aortic dissection (option D). The correct answer remains 'insufficient information' (null) — confirmatory imaging (CT angiography) and the pending ECG / troponin are required.",
+      "perturbation_type": "mixed",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Gulati M et al. 2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain. Circulation 2021;144:e368-e454.",
+    "Hiratzka LF et al. 2010 ACCF/AHA Guidelines for the Diagnosis and Management of Patients With Thoracic Aortic Disease. Circulation 2010;121:e266-e369.",
+    "Libby P, Braunwald E, et al. Braunwald's Heart Disease, 12th ed. (2021) — Chapter on Approach to the Patient With Chest Pain."
+  ],
+  "license": "CC-BY-4.0"
+}

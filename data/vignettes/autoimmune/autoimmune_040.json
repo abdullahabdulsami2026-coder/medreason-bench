@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_040",
+  "specialty": "autoimmune",
+  "subspecialty": "reactive_arthritis_post_infection",
+  "stem": "A 30-year-old man presents to clinic with 3 weeks of acute asymmetric oligoarticular arthritis affecting the right knee and left ankle with effusions, mild conjunctivitis bilaterally, and resolving urethritis (treated 4 weeks ago with azithromycin 1 g for confirmed Chlamydia trachomatis cervicitis-equivalent symptoms). He had unprotected intercourse 6 weeks ago with a partner subsequently diagnosed with chlamydia. Vital signs stable. Examination shows R knee effusion, L ankle synovitis, mild bilateral conjunctival injection, and an enthesitis tender point at the right Achilles insertion. Labs: HLA-B27 POSITIVE; rheumatoid factor and anti-CCP NEGATIVE; ESR 50 mm/h; CRP 28 mg/L. Joint aspirate from the right knee is bland (cell count 5,000/μL with neutrophilic predominance, sterile gram stain, sterile cultures, no crystals). The clinical picture is REACTIVE ARTHRITIS following genitourinary chlamydia (Reiter spectrum: arthritis + conjunctivitis + urethritis).",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "NSAIDs as first-line therapy (e.g., naproxen 500 mg BID); intra-articular corticosteroid injection for monoarticular flares (e.g., right knee); ensure complete antibiotic treatment of the triggering infection (already received azithromycin); reassure the patient that approximately 50% of reactive arthritis cases self-resolve within 3–6 months",
+    "B": "Continue azithromycin antibiotic course alone with no anti-inflammatory therapy",
+    "C": "High-dose systemic corticosteroids (prednisone 60 mg/d) as first-line",
+    "D": "Sulfasalazine (or methotrexate) as a conventional DMARD; ophthalmology surveillance for evolving uveitis; consider biologic escalation if refractory; appropriate for CHRONIC / persistent reactive arthritis lasting >6 months without spontaneous resolution"
+  },
+  "correct": "A",
+  "rationale": "Reactive arthritis is an inflammatory arthritis triggered by an antecedent infection (typically genitourinary — Chlamydia trachomatis — or gastrointestinal — Salmonella, Shigella, Yersinia, Campylobacter). HLA-B27 positivity (40–80%) confers risk and tends to predict more severe and chronic disease. Per the 2018 ACR/NPF Spondyloarthritis Guideline and consensus expert practice, the management of acute reactive arthritis is: (1) ENSURE complete antibiotic treatment of the triggering infection (this patient already received azithromycin for chlamydia — generally adequate for the genitourinary trigger; ongoing antibiotics are not the inflammatory-arthritis treatment); (2) NSAIDs as first-line for joint inflammation (naproxen or indomethacin at full anti-inflammatory doses); (3) intra-articular corticosteroid injection for monoarticular flares; (4) physical therapy; (5) reassurance — approximately 50% of cases resolve spontaneously within 3–6 months. Continued antibiotics alone (option B) treat the infection but do not address joint inflammation. High-dose systemic corticosteroids (option C) are over-treatment for acute disease and risk masking other diagnoses. Conventional DMARDs (option D) are reserved for CHRONIC / persistent reactive arthritis lasting >6 months — not acute disease.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 30,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "chronic_ReA_more_than_6_months",
+      "demographics": {
+        "age": 32,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 32-year-old man with documented reactive arthritis triggered by chlamydial urethritis 8 months ago (treated with azithromycin) returns to clinic with persistent oligoarticular arthritis of the right knee, left ankle, and bilateral feet despite 6 months of full-dose NSAIDs and several intra-articular corticosteroid injections. Synovitis remains active on examination. He has developed new bilateral anterior uveitis on a recent ophthalmology visit. ESR remains elevated at 45, CRP 22. The clinical picture is CHRONIC reactive arthritis (>6 months) with new uveitis.",
+      "rationale_for_variant": "Mixed perturbation — chronic / persistent reactive arthritis lasting >6 months with new uveitis. Per the 2018 ACR/NPF Spondyloarthritis Guideline and consensus expert practice, the management framework for chronic ReA shifts to: (1) sulfasalazine as first-line conventional DMARD (with the strongest evidence in chronic ReA); methotrexate is an alternative; (2) ophthalmology co-management for uveitis (topical corticosteroids and cycloplegics for anterior uveitis; systemic immunosuppression for posterior or persistent disease); (3) escalation to biologic therapy (TNF inhibitor) for refractory disease. The correct answer therefore shifts from NSAID-first acute management (option A) to chronic-ReA management with sulfasalazine + ophthalmology (option D).",
+      "perturbation_type": "mixed",
+      "correct_override": "D"
+    },
+    {
+      "variant_id": "post_enteric_Yersinia_ReA",
+      "demographics": {
+        "age": 28,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 28-year-old man presents to clinic with 3 weeks of acute asymmetric oligoarticular arthritis (right knee, left ankle), mild conjunctivitis, and a clinical history of recent Yersinia enterocolitica gastroenteritis 5 weeks ago (stool culture confirmed; treated supportively, no antibiotics required given mild course). Vital signs stable. HLA-B27 positive; RF and anti-CCP negative. ESR 50, CRP 28. Joint aspirate sterile.",
+      "rationale_for_variant": "Etiologic-trigger perturbation only — clinical context (acute reactive arthritis) is unchanged. Reactive arthritis can be triggered by either genitourinary (Chlamydia trachomatis) or gastrointestinal (Salmonella, Shigella, Yersinia, Campylobacter, Clostridioides difficile) infections. The management framework (NSAIDs first-line, intra-articular corticosteroids for monoarticular flares, conventional DMARD if chronic) is independent of the specific triggering organism. Antibiotic prophylaxis or treatment of an asymptomatic / resolved enteric trigger is not indicated.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Carter JD, Hudson AP. Reactive arthritis: clinical aspects and medical management. Rheum Dis Clin North Am 2009;35:21-44.",
+    "Coates LC, Singh JA et al. (collected). 2018 ACR/NPF Spondyloarthritis Guidelines and contemporary expert reviews.",
+    "Selmi C, Gershwin ME. Diagnosis and classification of reactive arthritis. Autoimmun Rev 2014;13:546-549."
+  ],
+  "license": "CC-BY-4.0"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "autoimmune_005",
+  "specialty": "autoimmune",
+  "subspecialty": "anti_ro_ssa_congenital_heart_block",
+  "stem": "A 30-year-old woman with known systemic lupus erythematosus and strongly positive anti-Ro/SSA and anti-La/SSB antibodies (since SLE diagnosis 4 years ago) is in her first pregnancy and presents at 18 weeks of gestation for routine fetal cardiac surveillance. She has been on hydroxychloroquine 400 mg/d throughout pregnancy. Maternal vital signs are normal; she is asymptomatic. Fetal echocardiography by maternal-fetal medicine demonstrates a fetal heart rate of 90 bpm with a 2:1 atrioventricular conduction pattern consistent with INCOMPLETE (second-degree, Mobitz-II-like) atrioventricular block — first detection on this pregnancy. The PR interval was prolonged on the prior fetal Doppler 2 weeks ago. There are no structural cardiac defects, no fetal hydrops, and the fetal anatomy is otherwise normal. The amniotic-fluid volume is normal.",
+  "question": "Which is the most appropriate management?",
+  "options": {
+    "A": "Continue routine fetal cardiac surveillance only; maternal medication is not indicated for fetal AV block",
+    "B": "Initiate maternal fluorinated corticosteroid (dexamethasone 4 mg/d or betamethasone) — these cross the placenta and may slow progression of incomplete fetal AV block; continue close fetal cardiac surveillance; plan for neonatal pacemaker if the block progresses to complete block by delivery",
+    "C": "Initiate maternal hydroxychloroquine 400 mg/d throughout pregnancy (and in subsequent pregnancies starting preconception) for prevention of recurrent congenital heart block per the PATCH trial",
+    "D": "Plan immediate delivery to evaluate the fetus directly"
+  },
+  "correct": "B",
+  "rationale": "Anti-Ro/SSA-mediated congenital heart block (CHB) typically presents between 18–24 weeks of gestation when maternal IgG antibodies cross the placenta and damage the fetal AV node. The published evidence (largely observational with selected RCT data) supports a window of opportunity at the INCOMPLETE block stage (1st or 2nd degree, with PR prolongation or 2:1 conduction): maternal FLUORINATED corticosteroids (dexamethasone or betamethasone — these cross the placenta unlike non-fluorinated agents like prednisone, which is largely metabolized by placental 11β-hydroxysteroid dehydrogenase) may slow progression. Once complete (third-degree) block has developed, the damage is generally irreversible and fetal pacing is impractical; the focus shifts to surveillance and neonatal pacemaker planning. Routine surveillance alone (option A) misses an actionable window. Maternal HCQ throughout pregnancy (option C) is the established PREVENTION strategy in subsequent pregnancies after a prior CHB-affected pregnancy (PATCH trial; recurrence reduced from ~17% to ~7%) — but this patient is already on HCQ and has now developed first-detection block, so the question is treatment, not prevention. Immediate delivery (option D) at 18 weeks is non-viable and inappropriate.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 30,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [
+    {
+      "variant_id": "prior_complete_AVB_pregnancy_recurrence_prevention",
+      "demographics": {
+        "age": 32,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 32-year-old woman with known SLE and strongly positive anti-Ro/SSA and anti-La/SSB antibodies presents to clinic for preconception counseling. Her FIRST pregnancy 3 years ago was complicated by fetal complete (third-degree) congenital heart block detected at 22 weeks; the neonate underwent permanent pacemaker placement on day 3 of life and is now thriving with developmentally normal milestones at age 3. She wishes to attempt a second pregnancy in the next 6 months. Maternal SLE is currently quiescent (SLEDAI <4 for 18 months) on hydroxychloroquine 400 mg/d alone. The discussion centers on strategies to reduce the risk of recurrent CHB in the next pregnancy.",
+      "rationale_for_variant": "Mixed perturbation — preconception planning for prevention of recurrent congenital heart block in a woman with a prior CHB-affected pregnancy. Per the PATCH trial (Izmirly PM et al.), maternal hydroxychloroquine 400 mg/d initiated preconception and continued throughout pregnancy reduces the recurrence rate of CHB in anti-Ro/SSA-positive women with a prior affected pregnancy from approximately 17% (historic baseline) to approximately 7%. Hydroxychloroquine is also recommended for general SLE management in pregnancy (Class I). The correct answer therefore shifts from incomplete-block treatment (option B) to recurrence prevention with maternal HCQ (option C).",
+      "perturbation_type": "mixed",
+      "correct_override": "C"
+    },
+    {
+      "variant_id": "older_first_time_mother_anti_Ro_high_titer_no_block",
+      "demographics": {
+        "age": 38,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 38-year-old nulliparous woman with anti-Ro/SSA strongly positive (high titer) but no clinical SLE features presents at 16 weeks of gestation. She has no prior pregnancies and no history of fetal CHB. Maternal SLE evaluation is negative. Fetal echocardiography at 16 weeks today shows a normal AV conduction pattern with normal PR interval. The family is asking what surveillance and prophylaxis are appropriate.",
+      "rationale_for_variant": "Age perturbation only — clinical context (anti-Ro/SSA-positive pregnancy without prior CHB and currently no detectable conduction abnormality) is unchanged. Per the 2018 ESC Pregnancy Guideline and consensus expert recommendations, fetal cardiac surveillance with serial fetal echocardiography from approximately 16–18 to 26 weeks (the highest-risk window) is recommended weekly or biweekly in anti-Ro/SSA-positive pregnancies. Routine prophylactic intervention is not indicated in primagravida women without a prior CHB-affected pregnancy; the recommendation is surveillance, with treatment (fluorinated corticosteroid) reserved for incomplete block detection.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    }
+  ],
+  "sources": [
+    "Izmirly PM et al. Maternal hydroxychloroquine and the risk of recurrent congenital heart block in fetuses of anti-SSA/Ro-positive mothers (PATCH). JACC 2020;76:292-302.",
+    "Brito-Zerón P et al. The clinical spectrum of autoimmune congenital heart block. Nat Rev Rheumatol 2015;11:301-312.",
+    "Regitz-Zagrosek V et al. 2018 ESC Guidelines for the management of cardiovascular diseases during pregnancy. Eur Heart J 2018;39:3165-3241."
+  ],
+  "license": "CC-BY-4.0"
+}
