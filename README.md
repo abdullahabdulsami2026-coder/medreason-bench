@@ -17,6 +17,7 @@ git clone https://github.com/abdullahabdulsami2026-coder/medreason-bench.git
 cd medreason-bench
 
 python3 -m pip install -e ".[dev]"      # or: uv venv && uv pip install -e ".[dev]"
+                                        # runtime only: pip install -r requirements.txt
 cp .env.example .env.local              # then add your ANTHROPIC_API_KEY
 ```
 
@@ -29,12 +30,15 @@ python3 -m eval.pipeline --smoke
 Expected output:
 
 ```
-Wrote claude-sonnet-4-6__phase1_smoke__20260804T170000Z.jsonl
-      claude-sonnet-4-6__phase1_smoke__20260804T170000Z.manifest.json
+Wrote <model>__phase1_smoke__<timestamp>.jsonl
+      <model>__phase1_smoke__<timestamp>.manifest.json
 
-Ran 10 items in 12.4s (0 errored).
-Top-1 accuracy: 9/10 = 90.0%
+Ran 10 items in <elapsed> (0 errored).
+Top-1 accuracy: <n>/10
 ```
+
+The smoke set is a 10-case wiring check, not a benchmark result. No scores from it
+are reported here or anywhere else in this repo.
 
 Other useful invocations:
 
@@ -113,6 +117,17 @@ Every case carries a written rationale and literature sources, so a disputed gra
 | Together.ai runner | **Stub** |
 
 There are no published results yet: `results/` and `paper/figures/` are empty, so this README shows no leaderboard rather than a placeholder one.
+
+## Status and intended write-up
+
+This is an in-progress research project, not a finished benchmark. The corpus and the
+harness are done; the three metrics that motivate the benchmark — calibration,
+hallucination, and demographic fairness — are specified and supported by the data but
+not yet implemented, so no model has been scored on them.
+
+The intended write-up targets an AMIA submission once those metrics are implemented and
+a full evaluation has been run. `paper/main.tex` is a section skeleton with no results
+written; it is committed to show the planned structure, not a draft in progress.
 
 ---
 
