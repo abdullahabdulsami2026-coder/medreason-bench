@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_013__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_013",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:30:44+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 68,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 68-year-old man with known heart failure with reduced ejection fraction (LVEF 30%) arrives at the emergency department reporting 5 days of worsening breathlessness, inability to lie flat, and a 6 kg increase in body weight. His outpatient regimen includes furosemide 40 mg orally twice daily. On presentation, blood pressure is 132/80 mmHg, heart rate is 96 bpm, respiratory rate is 22 breaths per minute, and oxygen saturation is 91% on room air. Physical examination reveals jugular venous pressure elevated to 14 cm H2O, bilateral basilar rales, a third heart sound, and 2+ pitting edema of the lower extremities. Chest radiograph demonstrates pulmonary vascular redistribution and congestion. Laboratory results are notable for NT-proBNP 6,800 pg/mL, troponin 0.02 ng/mL (within normal limits), serum creatinine 1.4 mg/dL (his established baseline is 1.2 mg/dL), and serum potassium 4.2 mmol/L.",
+    "rationale_for_variant": "The stem has been rewritten using different sentence structures and synonymous phrasing throughout—for example, 'breathlessness' for 'dyspnea,' 'inability to lie flat' for 'orthopnea,' 'bilateral basilar rales' for 'bibasilar crackles,' and 'third heart sound' for 'S3 gallop'—while every clinical fact, numeric value, and level of detail from the original has been preserved exactly. The diagnosis, severity of decompensation, home diuretic regimen, and all laboratory and vital-sign data remain identical, so the clinical reasoning pathway is unchanged. Option B remains unambiguously correct because the patient's presentation and baseline medications are unaltered, and the evidence-based recommendation for high-dose IV bolus furosemide at 2–2.5 times the home oral dose with early reassessment still applies.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

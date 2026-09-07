@@ -1,0 +1,18 @@
+{
+  "run_id": "dda50f5a-ad89-4a90-bc08-3f46ae287808",
+  "model": "llama3.1:8b",
+  "model_version": "llama3.1:8b",
+  "dataset": "vignettes+variants",
+  "dataset_version": "1.1.1",
+  "prompt_template": "mcq",
+  "confidence_method": "verbalized_0_100",
+  "n_items": 399,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 0,
+  "prompt_hash": "26c85aa0de7fa420b02ec067051c2cd51c6640906371829c4544eda1f2d0cbb0",
+  "git_sha": "ca9491116219353462b666d342a0cca1de616f95",
+  "started_at": "2026-09-07T03:40:19.015670+00:00",
+  "finished_at": "2026-09-07T03:40:19.037245+00:00",
+  "total_elapsed_s": 0.021601375192403793
+}

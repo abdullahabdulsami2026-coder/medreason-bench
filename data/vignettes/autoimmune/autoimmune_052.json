@@ -1,0 +1,29 @@
+{
+  "id": "autoimmune_052",
+  "specialty": "autoimmune",
+  "subspecialty": "antiphospholipid_syndrome_pregnancy",
+  "stem": "A 32-year-old woman at 10 weeks of gestation presents to the maternal-fetal medicine clinic for evaluation of recurrent pregnancy loss. She reports three prior consecutive pregnancy losses: two occurred at 7–8 weeks of gestation and one at 13 weeks. She denies any personal history of arterial or venous thrombosis, livedo reticularis, thrombocytopenia, or neurologic symptoms. She has no known connective tissue disease and takes no medications other than prenatal vitamins. Family history is notable for a maternal aunt with 'a clotting problem' — the specific diagnosis and laboratory findings are unknown. Vital signs are normal. Physical examination is unremarkable: no livedo reticularis, no skin ulcers, no synovitis, no malar rash, no oral ulcers. Laboratory results from today's visit are as follows: complete blood count is normal (platelet count 198 × 10⁹/L), creatinine 0.7 mg/dL, urinalysis normal. Antiphospholipid antibody testing was sent at today's visit and results are PENDING — no prior antiphospholipid antibody testing has ever been performed. Lupus anticoagulant assay, anticardiolipin IgG/IgM, and anti-β2-glycoprotein I IgG/IgM results are not yet available. Thrombophilia panel (factor V Leiden, prothrombin G20210A mutation, protein C, protein S, antithrombin) has been ordered but is also pending. Uterine anatomy evaluation (hysteroscopy and pelvic MRI) has been ordered but not yet performed. Parental karyotyping has not been done.",
+  "question": "Based on the information currently available, which is the most appropriate next management step for this patient's recurrent pregnancy loss?",
+  "options": {
+    "A": "Start low-dose aspirin plus prophylactic low-molecular-weight heparin now for presumed antiphospholipid syndrome",
+    "B": "Start prednisone 10 mg daily for presumed autoimmune pregnancy loss",
+    "C": "Initiate empiric progesterone supplementation for luteal phase deficiency",
+    "D": "Refer for uterine septum resection based on presumed structural uterine anomaly"
+  },
+  "correct": null,
+  "rationale": "The stem describes a clinically compelling presentation for antiphospholipid syndrome (APS) — three consecutive pregnancy losses meeting the obstetric clinical criterion — but the critical laboratory data required to establish or refute any APS diagnosis (lupus anticoagulant, anticardiolipin IgG/IgM, anti-β2-glycoprotein I IgG/IgM) are explicitly pending and have never previously been obtained. Furthermore, the structural uterine evaluation, parental karyotyping, and inherited thrombophilia panel are all incomplete. Without these results, no management step can be selected from the available options. Option A (aspirin plus prophylactic LMWH) is the standard treatment for obstetric APS confirmed by positive antiphospholipid antibodies on two occasions ≥12 weeks apart per ISTH/ACR/EULAR guidelines, but the stem provides no antiphospholipid antibody results — neither a first positive result nor a confirmatory second result — so the APS diagnosis cannot be made and this regimen cannot be prescribed. Option B (empiric prednisone) is supported by no guideline for recurrent pregnancy loss: corticosteroids have shown no benefit and potential harm in unexplained RPL, and they are not the regimen for suspected obstetric APS (aspirin/heparin are), so this option is indefensible regardless of the pending results. Option C (empiric progesterone for luteal phase deficiency) is sometimes considered in recurrent early pregnancy loss, but luteal phase deficiency has not been evaluated (no progesterone levels, no endometrial biopsy, no cycle history provided), and prescribing progesterone empirically at 10 weeks without a diagnostic basis is not supported by current evidence or guidelines (ASRM 2012 Practice Committee Opinion); moreover, ignoring the high pre-test probability of APS in favor of an unevaluated diagnosis would be clinically inappropriate. Option D (referral for uterine septum resection) requires first documenting a uterine septum on imaging or hysteroscopy; the pelvic MRI and hysteroscopy have been ordered but not yet performed, and no structural anomaly has been identified — selecting surgical referral without a structural diagnosis is not supportable. In summary, the key discriminating information — antiphospholipid antibody results (current and confirmatory), uterine anatomy imaging, parental karyotype, and thrombophilia panel — is absent from the stem, making it impossible to justify any of the four management options.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 32,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [],
+  "sources": [
+    "Miyakis S et al. International consensus statement on an update of the classification criteria for definite antiphospholipid syndrome (APS). J Thromb Haemost 2006;4:295-306.",
+    "American Society for Reproductive Medicine Practice Committee. Evaluation and treatment of recurrent pregnancy loss: a committee opinion. Fertil Steril 2012;98:1103-1111.",
+    "Tektonidou MG et al. EULAR recommendations for the management of antiphospholipid syndrome in adults. Ann Rheum Dis 2019;78:1296-1304."
+  ],
+  "license": "CC-BY-4.0"
+}

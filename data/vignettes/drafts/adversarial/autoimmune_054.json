@@ -1,0 +1,40 @@
+{
+  "draft_id": "autoimmune_054",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "rejected",
+  "review_note": "elimination from stem findings licenses NPSLE; machine review, user-approved",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:42:53+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "autoimmune_054",
+    "specialty": "autoimmune",
+    "subspecialty": "neuropsychiatric_lupus",
+    "stem": "A 29-year-old woman with a 3-year history of systemic lupus erythematosus (SLE) presents to the emergency department with a 10-day history of progressive confusion, emotional lability, and two witnessed generalized tonic-clonic seizures in the past 48 hours. She is currently on hydroxychloroquine 400 mg daily; no other immunosuppressants are prescribed. She has no prior history of neuropsychiatric events. Vital signs: T 37.2°C, BP 148/92 mmHg, HR 88, RR 16, SpO2 99% on room air. Neurological examination reveals mild disorientation to time, labile affect, and brisk deep tendon reflexes bilaterally; no focal motor deficits, no cranial nerve abnormalities, no meningismus. General examination: no active malar rash, no discoid lesions, no oral ulcers, no livedo reticularis, no peripheral edema. Cardiac and pulmonary exams are normal. Laboratory results available: serum creatinine 0.9 mg/dL, CBC shows mild normocytic anemia (Hgb 10.8 g/dL), platelet count 210,000/µL, WBC 4,200/µL. Urinalysis shows trace protein, no red cell casts. Comprehensive metabolic panel is otherwise within normal limits; glucose 94 mg/dL; ammonia level not yet resulted. Complement levels (C3, C4), anti-dsDNA antibody titer, antiphospholipid antibody panel (anticardiolipin IgG/IgM, anti-β2-glycoprotein I, lupus anticoagulant), and CSF analysis have all been sent but results are NOT YET AVAILABLE. Brain MRI with and without contrast has been ordered but has NOT YET been performed. EEG has been ordered but NOT YET performed.",
+    "question": "Based on the information currently available, which is the most likely etiology of this patient's neuropsychiatric presentation?",
+    "options": {
+      "A": "Diffuse neuropsychiatric SLE (lupus cerebritis) due to active systemic inflammation",
+      "B": "Antiphospholipid antibody syndrome-related cerebral thromboembolism",
+      "C": "SLE-associated autoimmune encephalitis (anti-neuronal antibody mediated)",
+      "D": "Posterior reversible encephalopathy syndrome (PRES) secondary to hypertension and SLE"
+    },
+    "correct": null,
+    "rationale": "The stem describes an SLE patient with new-onset seizures and encephalopathy — a classic neuropsychiatric SLE (NPSLE) presentation — but critically omits the key discriminating investigations required to assign a specific etiology. The four options represent the principal mechanistic categories of NPSLE and SLE-associated neurological disease, yet none can be confirmed or excluded from the available data.\n\nMissing information that would discriminate among the options includes: (1) complement levels and anti-dsDNA titer — needed to gauge systemic lupus activity and support inflammatory/lupus cerebritis; (2) antiphospholipid antibody panel results — essential to diagnose APS-related thromboembolism; (3) CSF analysis including cell count, protein, glucose, oligoclonal bands, and anti-neuronal antibodies (e.g., anti-NMDAR, anti-CASPR2) — required to evaluate autoimmune encephalitis; (4) brain MRI — indispensable for detecting infarcts (APS), white-matter changes (lupus cerebritis), or posterior cortical-subcortical vasogenic edema (PRES); and (5) EEG — needed to characterize seizure type and cortical dysfunction.\n\nOption A (diffuse NPSLE / lupus cerebritis): Plausible in an SLE patient with encephalopathy and seizures, but requires evidence of systemic disease activity (elevated anti-dsDNA, low complements) and exclusion of structural, vascular, and infectious causes on MRI and CSF. None of these results are available.\n\nOption B (APS-related cerebral thromboembolism): Highly plausible given the clinical picture, but requires a positive antiphospholipid antibody panel (confirmed on two occasions ≥12 weeks apart per Sapporo/Sydney criteria) AND neuroimaging demonstrating ischemic infarct. Both are pending.\n\nOption C (SLE-associated autoimmune encephalitis): A recognized but less common NPSLE mechanism; diagnosis requires CSF pleocytosis, specific anti-neuronal antibodies, and supportive MRI findings — all pending. Cannot be confirmed or excluded.\n\nOption D (PRES): The blood pressure of 148/92 mmHg is mildly elevated but is not severely hypertensive (typically >160-180/100-110 mmHg in PRES), and the diagnosis requires MRI demonstration of posterior cortical-subcortical vasogenic edema. MRI is not yet available, making PRES neither confirmable nor excludable.\n\nBecause the key discriminating investigations (MRI, CSF analysis including anti-neuronal antibodies, complement levels, anti-dsDNA, and antiphospholipid antibody panel) are all pending, no specific etiology can be concluded from the available data. The appropriate response is to recognize the insufficiency of the current information and await results before committing to a diagnosis.",
+    "difficulty": "medium",
+    "demographics": {
+      "age": 29,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Fanouriakis A, Kostopoulou M, Alunno A, et al. 2019 update of the EULAR recommendations for the management of systemic lupus erythematosus. Ann Rheum Dis. 2019;78(6):736-745.",
+      "Hanly JG. Diagnosis and management of neuropsychiatric SLE. Best Pract Res Clin Rheumatol. 2005;19(5):663-676.",
+      "Miyakis S, Lockshin MD, Atsumi T, et al. International consensus statement on an update of the classification criteria for definite antiphospholipid syndrome (APS). J Thromb Haemost. 2006;4(2):295-306."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

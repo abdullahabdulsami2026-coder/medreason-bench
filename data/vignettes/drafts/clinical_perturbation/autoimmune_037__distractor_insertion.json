@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_037__distractor_insertion",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_037",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:28:12+00:00",
+  "variant": {
+    "variant_id": "distractor_normal_tsh",
+    "demographics": {
+      "age": 40,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 40-year-old woman presents to clinic with 2 weeks of palpable purpura on the bilateral lower extremities (distal-predominant, sparing the trunk and upper extremities) without ulceration. She reports mild leg fatigue but NO systemic symptoms: no fever, no abdominal pain, no joint pain (apart from mild localized tenderness in the affected skin), no neurologic symptoms, no hemoptysis, and no preceding infection. Three weeks prior to symptom onset, she completed a 7-day course of TRIMETHOPRIM-SULFAMETHOXAZOLE for an uncomplicated urinary tract infection. Fasting glucose obtained at this visit is 92 mg/dL (normal). Vital signs are normal. Labs: complete blood count and basic metabolic panel are normal; urinalysis is bland (no microscopic hematuria, no proteinuria, no casts); creatinine 0.8 mg/dL (baseline). Punch biopsy of a purpuric lesion demonstrates LEUKOCYTOCLASTIC VASCULITIS with a mixed perivascular infiltrate; direct immunofluorescence shows NO IgA-dominant deposits and NO granulomatous inflammation.",
+    "rationale_for_variant": "A single incidental finding — a normal fasting glucose of 92 mg/dL — was inserted as a distractor. Normoglycemia neither supports an alternative diagnosis nor alters the drug-induced cutaneous small-vessel vasculitis picture, so the correct answer (A) is unchanged.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "distractor_insertion",
+    "correct_override": null
+  },
+  "vignette": null
+}

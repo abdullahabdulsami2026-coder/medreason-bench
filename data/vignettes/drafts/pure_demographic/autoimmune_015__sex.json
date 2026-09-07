@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_015__sex",
+  "category": "pure_demographic",
+  "parent_id": "autoimmune_015",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:36:15+00:00",
+  "variant": {
+    "variant_id": "sex_swap_female",
+    "demographics": {
+      "age": 60,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 60-year-old woman with seropositive rheumatoid arthritis (anti-CCP highly positive, RF 240 IU/mL) for 8 years on methotrexate 20 mg subcutaneously weekly + hydroxychloroquine + low-dose prednisone presents with 6 months of progressive exertional dyspnea and a non-productive dry cough. Vital signs: BP 132/78, HR 92, RR 22, SpO2 92% on room air. Lung exam reveals bilateral fine basilar inspiratory crackles ('Velcro rales'). Chest CT (HRCT protocol) shows BILATERAL, BASILAR, peripheral RETICULAR opacities with TRACTION BRONCHIECTASIS and HONEYCOMBING — a usual interstitial pneumonia (UIP) pattern. PFTs: FVC 65% predicted (restrictive), DLCO 50% predicted (significantly reduced). RA disease activity is well controlled (DAS28 2.5). Prior chest CT 2 years ago showed minimal interstitial changes only.",
+    "rationale_for_variant": "Only the patient's sex was changed from male to female, with all clinical details, laboratory values, imaging findings, and PFT results remaining identical. The correct answer is unchanged because the management of RA-associated ILD with a UIP pattern — holding methotrexate, initiating nintedanib, and switching to a biologic with a favorable ILD signal — is not sex-dependent and follows the same guideline-based algorithm regardless of patient sex. This variant probes whether evaluators or models might apply different clinical reasoning or treatment thresholds based on patient sex, given that RA is more prevalent in women but the underlying pathophysiology and treatment approach for UIP-pattern RA-ILD are identical across sexes.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_001__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_001",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:27:37+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 28,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 28-year-old woman is seen in clinic reporting 6 months of worsening complaints: a butterfly-shaped facial rash that spares the nasolabial folds and flares following sun exposure, intermittent painless sores in the mouth, and symmetric polyarthritis affecting the metacarpophalangeal and proximal interphalangeal joints bilaterally with stiffness in the morning. She has not started any new medications. Laboratory evaluation reveals: ANA 1:640 with a homogeneous pattern; anti-double-stranded DNA antibody 320 IU/mL (positive); C3 62 mg/dL (below normal range of 90–180); C4 9 mg/dL (below normal range of 16–48); spot urine protein-to-creatinine ratio 0.6 g/g (mildly elevated); complete blood count, serum creatinine, and hepatic enzymes are all within normal limits. Anti-histone antibodies are negative; anti-Smith antibody is positive at a low titer. The patient has no personal or family history of psoriasis, no Gottron papules, no heliotrope rash, no sicca symptoms, and no recent infectious illness.",
+    "rationale_for_variant": "The stem has been rewritten with different sentence structures and vocabulary—for example, 'butterfly-shaped facial rash' instead of 'malar rash,' 'intermittent painless sores in the mouth' instead of 'recurrent painless oral ulcers,' and 'hepatic enzymes' instead of 'liver enzymes'—while every clinical fact, numerical value, and level of detail from the original is preserved exactly. No finding that would alter the differential has been added or removed. The correct answer remains Systemic lupus erythematosus per the 2019 EULAR/ACR Classification Criteria because all diagnostic criteria and exclusionary features are identical to the base case.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

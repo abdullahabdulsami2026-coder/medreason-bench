@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_004__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_004",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:05+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 68,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 68-year-old man with a history of hypertension, hyperlipidemia, type 2 diabetes mellitus, and established coronary artery disease (he underwent percutaneous coronary intervention to a mid-LAD lesion 3 years prior) arrives at the emergency department reporting two episodes of substernal chest pressure occurring at rest over the preceding 24 hours, each episode lasting approximately 15 minutes. The discomfort has since resolved. On presentation, his blood pressure is 142/88 mmHg, heart rate is 78 bpm, and oxygen saturation is 96% on room air. Cardiovascular examination reveals no abnormalities. A 12-lead ECG demonstrates 1.5 mm ST-segment depression in leads V4 through V6, with no ST elevation present. His initial troponin I level is 0.8 ng/mL, markedly above the upper reference limit of 0.04 ng/mL. His current medications include aspirin 81 mg once daily, atorvastatin, metoprolol, and lisinopril.",
+    "rationale_for_variant": "The stem has been entirely reworded using alternative sentence structures and synonymous phrasing (e.g., 'established coronary artery disease' for 'known coronary artery disease,' 'chest pressure' for 'chest pain,' 'preceding 24 hours' for 'past 24 hours') while every clinical fact, numerical value, and level of detail from the original is preserved. No findings were added, removed, or altered, so the patient's TIMI risk score and high-risk classification remain identical. Consequently, the early invasive strategy with coronary angiography within 24 hours (option B) remains unambiguously the correct answer.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

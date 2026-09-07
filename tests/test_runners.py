@@ -9,6 +9,8 @@ from __future__ import annotations
 from typing import Any
 from unittest.mock import MagicMock
 
+import pytest
+
 from eval.prompts.confidence import parse_confidence_response
 from eval.runners.anthropic_runner import AnthropicRunner
 from eval.schemas import MCQItem
@@ -134,20 +136,29 @@ def test_runner_recovers_after_transient_failure() -> None:
 # ── Sampling-parameter propagation ────────────────────────────────
 
 
-def test_runner_passes_sampling_params_to_sdk() -> None:
+def test_runner_passes_temperature_but_never_both_sampling_params() -> None:
+    # Claude 4.6+ rejects requests specifying both temperature and top_p,
+    # so the runner sends exactly one and refuses ambiguous configs.
     client = make_mock_client("ANSWER: A\nCONFIDENCE: 50\nRATIONALE: x")
-    runner = AnthropicRunner(
-        model="m",
-        temperature=0.3,
-        top_p=0.9,
-        max_tokens=512,
-        client=client,
-        max_retries=1,
-    )
+    runner = AnthropicRunner(model="m", temperature=0.3, max_tokens=512, client=client)
     runner.run(SAMPLE_ITEM)
     kwargs = client.messages.create.call_args.kwargs
     assert kwargs["model"] == "m"
     assert kwargs["temperature"] == 0.3
-    assert kwargs["top_p"] == 0.9
+    assert "top_p" not in kwargs
     assert kwargs["max_tokens"] == 512
     assert kwargs["messages"][0]["role"] == "user"
+
+
+def test_runner_passes_top_p_alone_when_non_default() -> None:
+    client = make_mock_client("ANSWER: A\nCONFIDENCE: 50\nRATIONALE: x")
+    runner = AnthropicRunner(model="m", top_p=0.9, client=client)
+    runner.run(SAMPLE_ITEM)
+    kwargs = client.messages.create.call_args.kwargs
+    assert kwargs["top_p"] == 0.9
+    assert "temperature" not in kwargs
+
+
+def test_runner_rejects_both_sampling_params() -> None:
+    with pytest.raises(ValueError, match="temperature or top_p"):
+        AnthropicRunner(model="m", temperature=0.3, top_p=0.9, client=MagicMock())

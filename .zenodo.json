@@ -1,0 +1,32 @@
+{
+  "title": "MedReason-Bench: Clinical LLM Reasoning Evaluation in Cardiology and Autoimmune Disease",
+  "description": "DRAFT metadata \u2014 do not deposit until corpus review completes. MedReason-Bench is a benchmark of 100 hand-written clinical vignettes (50 cardiology, 50 autoimmune) with within-case demographic variants, answer-preserving clinical perturbations, and adversarial unanswerable cases, plus a reproducible evaluation harness measuring accuracy, calibration, hallucination/abstention, robustness, and fairness. This deposit covers corpus v1.0.0 (human-reviewed items only); machine-generated expansion drafts are excluded pending review. No benchmark results are published yet.",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Abdul Sami, Abdullah",
+      "affiliation": "Northwestern University"
+    }
+  ],
+  "keywords": [
+    "clinical reasoning",
+    "large language models",
+    "benchmark",
+    "cardiology",
+    "autoimmune disease",
+    "fairness",
+    "calibration",
+    "hallucination",
+    "medical question answering"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/abdullahabdulsami2026-coder/medreason-bench",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "DRAFT \u2014 placeholder metadata prepared before v1.0.0 release; verify author list, ORCIDs, and version before any Zenodo deposit. Code is MIT-licensed; the clinical cases are CC-BY-4.0."
+}

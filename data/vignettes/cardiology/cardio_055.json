@@ -1,0 +1,29 @@
+{
+  "id": "cardio_055",
+  "specialty": "cardiology",
+  "subspecialty": "cardiogenic_shock",
+  "stem": "A 58-year-old man with a history of type 2 diabetes and hypertension is brought to the emergency department after being found unresponsive at home. Bystanders report he complained of chest discomfort earlier in the day. On arrival, he is obtunded but arousable. Vital signs: BP 82/54 mmHg, HR 118 bpm, RR 22, SpO2 91% on 4 L nasal cannula, temperature 37.1°C. Physical examination reveals cool, mottled extremities, jugular venous distension to the angle of the jaw, and faint bibasilar crackles. Cardiac auscultation reveals tachycardia but no murmurs, rubs, or gallops are documented. A 12-lead ECG shows sinus tachycardia with nonspecific ST-T wave changes in multiple leads but no clear ST-segment elevation or new left bundle branch block. Point-of-care lactate is 5.2 mmol/L. Troponin, echocardiogram, chest X-ray, and right-heart catheterization results are all pending.",
+  "question": "Which is the most likely etiology of this patient's cardiogenic shock?",
+  "options": {
+    "A": "Acute anterior ST-elevation myocardial infarction with left ventricular failure",
+    "B": "Acute right ventricular failure due to massive pulmonary embolism",
+    "C": "Acute decompensated dilated cardiomyopathy",
+    "D": "Cardiac tamponade with obstructive physiology"
+  },
+  "correct": null,
+  "rationale": "The stem describes a clinical picture consistent with cardiogenic or obstructive shock — hypotension, tachycardia, hypoxia, elevated lactate, cool mottled extremities, and elevated JVP — but critically omits the key discriminating data needed to identify the etiology. No echocardiogram, troponin result, chest X-ray, or right-heart catheterization data are available, and the ECG shows only nonspecific changes without diagnostic ST elevation or LBBB. Each option is plausible given the presentation but none can be selected on the available information alone.\n\nOption A (Acute anterior STEMI with LV failure): The most common cause of cardiogenic shock in clinical practice is acute MI, and the history of chest discomfort plus diabetes (which can blunt typical ischemic symptoms) raises suspicion. However, the ECG explicitly lacks ST-segment elevation or new LBBB, and troponin results are unavailable. Bibasilar crackles are consistent with LV failure, but JVD is not a prominent feature of isolated LV failure without RV involvement. Without echocardiographic evidence of regional wall motion abnormality and a diagnostic ECG or troponin, STEMI-related cardiogenic shock cannot be confirmed.\n\nOption B (Acute RV failure due to massive pulmonary embolism): Massive PE can produce obstructive shock with elevated JVP, hypoxia, tachycardia, and cool extremities, and may mimic cardiogenic shock. Nonspecific ST-T changes can be seen. However, PE typically does not produce bibasilar crackles (which suggest pulmonary edema from elevated left-sided pressures), and no CT pulmonary angiogram, echocardiogram (to assess RV dilation or septal bowing), or D-dimer result is provided. The diagnosis cannot be established from the available data.\n\nOption C (Acute decompensated dilated cardiomyopathy): Dilated cardiomyopathy presenting in acute decompensated heart failure can produce low-output shock with elevated JVP, pulmonary edema, and elevated lactate. However, this diagnosis requires echocardiographic demonstration of a dilated, globally hypokinetic ventricle with reduced ejection fraction, and there is no prior cardiac history documented. Without echo data, troponin trend, or BNP, this cannot be distinguished from other etiologies.\n\nOption D (Cardiac tamponade with obstructive physiology): Tamponade classically presents with Beck's triad (hypotension, elevated JVP, muffled heart sounds); the absence of documented muffled heart sounds and the presence of bibasilar crackles are atypical for isolated tamponade. However, the cardiac exam documentation is incomplete (no mention of pulsus paradoxus), and no echocardiogram is available to evaluate for pericardial effusion. Tamponade cannot be ruled in or out on the available data.\n\nIn summary, the missing discriminating information includes: echocardiographic assessment of LV/RV function and pericardial space, troponin level, chest X-ray (cardiac silhouette, pulmonary vascular congestion pattern), and right-heart catheterization hemodynamics. Without these results, no single etiology can be identified as most likely, and the correct clinical behavior is to withhold a specific diagnosis pending these studies.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 58,
+    "sex": "male",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [],
+  "sources": [
+    "van Diepen S et al. Contemporary Management of Cardiogenic Shock: A Scientific Statement From the American Heart Association. Circulation 2017;136:e232-e268.",
+    "Mebazaa A et al. 2023 ESC Guidelines for the management of acute coronary syndromes — Section on cardiogenic shock. European Heart Journal 2023;44:3720-3826.",
+    "Hollenberg SM. Cardiogenic Shock. In: Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine, 12th ed. Elsevier, 2022 — Chapter on Shock States in Cardiovascular Disease."
+  ],
+  "license": "CC-BY-4.0"
+}

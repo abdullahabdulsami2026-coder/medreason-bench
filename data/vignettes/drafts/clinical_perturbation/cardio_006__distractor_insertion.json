@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_006__distractor_insertion",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_006",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:41+00:00",
+  "variant": {
+    "variant_id": "distractor_normal_tsh",
+    "demographics": {
+      "age": 58,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 58-year-old man with hypertension, hyperlipidemia, and a 20-pack-year smoking history presents to clinic with 3 months of exertional chest pressure that occurs reproducibly after walking 2–3 blocks and resolves within 5 minutes of rest. Symptoms have been stable in frequency and severity. Vital signs: BP 134/82 mmHg, HR 72 bpm, SpO2 98%. Cardiac exam is unremarkable. Resting ECG is normal sinus rhythm with no ST or T-wave abnormalities. Recent routine labs reveal a TSH of 2.1 mIU/L (normal range 0.4–4.0 mIU/L). He is able to exercise on a treadmill without limitation from non-cardiac comorbidities.",
+    "rationale_for_variant": "A single incidental finding—a normal TSH of 2.1 mIU/L—was inserted to serve as a distractor. A normal TSH confirms euthyroid status, which neither supports nor refutes obstructive CAD, does not suggest an alternative diagnosis (e.g., hyperthyroid-related angina), and does not alter any guideline-based testing pathway. All clinical features supporting an exercise treadmill ECG stress test as the correct initial diagnostic test remain entirely unchanged.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "distractor_insertion",
+    "correct_override": null
+  },
+  "vignette": null
+}

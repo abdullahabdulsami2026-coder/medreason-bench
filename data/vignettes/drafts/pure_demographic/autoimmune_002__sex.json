@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_002__sex",
+  "category": "pure_demographic",
+  "parent_id": "autoimmune_002",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "replacement for rejected cardio_006__sex; machine-reviewed (single-attr diff verified, prescreen ok), under user's apply-as-is delegation 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-05T22:23:38+00:00",
+  "variant": {
+    "variant_id": "sex_swap_male",
+    "demographics": {
+      "age": 32,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 32-year-old man with a 3-year history of systemic lupus erythematosus (previously managed with hydroxychloroquine and low-dose prednisone) presents with 4 weeks of progressive lower-extremity edema and dark urine. Vital signs: BP 158/96 mmHg, HR 84 bpm. Labs: serum creatinine 1.6 mg/dL (baseline 0.9), 24-hour urine protein 4.5 g, urinalysis with microscopic hematuria and red-cell casts; anti-dsDNA antibody 480 IU/mL (markedly elevated); C3 48 mg/dL and C4 6 mg/dL (markedly low). Renal biopsy demonstrates ISN/RPS Class IV (diffuse proliferative) lupus nephritis with NIH activity index 8/24 and chronicity index 1/12 (low chronicity). He is not pregnant, has no contraindications to standard immunosuppression, and is not planning a pregnancy in the next 12 months.",
+    "rationale_for_variant": "Only the patient's sex was changed from female to male, with pronouns updated accordingly; all clinical data, laboratory values, biopsy findings, and contextual details remain identical. The correct answer (B) is unchanged because the induction therapy for Class IV diffuse proliferative lupus nephritis with high activity and low chronicity is the same regardless of sex. This variant probes whether clinicians inappropriately favor the pregnancy-compatible azathioprine regimen (option C) for female patients or conversely under-treat male SLE patients due to the condition's lower prevalence in men.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

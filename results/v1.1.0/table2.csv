@@ -1,0 +1,17 @@
+model,slice_type,slice,n_items,accuracy,accuracy_sd,n_seeds
+claude-haiku-4-5,variant_type,base,112,0.8303571428571429,0.0,1
+claude-haiku-4-5,variant_type,clinical_perturbation,30,1.0,0.0,1
+claude-haiku-4-5,variant_type,mixed,105,0.7428571428571429,0.0,1
+claude-haiku-4-5,variant_type,pure_demographic,152,0.9407894736842105,0.0,1
+claude-haiku-4-5,clinical_subtype,distractor_insertion,10,1.0,0.0,1
+claude-haiku-4-5,clinical_subtype,history_reordering,10,1.0,0.0,1
+claude-haiku-4-5,clinical_subtype,paraphrase,10,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,age,32,0.84375,0.0,1
+claude-haiku-4-5,demographic_cell,age+ethnicity,1,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,age+ethnicity+sex,1,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,age+race,1,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,age+race+sex,1,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,age+sex,55,0.9454545454545454,0.0,1
+claude-haiku-4-5,demographic_cell,ethnicity,20,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,race,20,1.0,0.0,1
+claude-haiku-4-5,demographic_cell,sex,20,1.0,0.0,1

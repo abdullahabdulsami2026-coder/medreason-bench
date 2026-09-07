@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_015__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_015",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:31:09+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 60,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 60-year-old man carries an 8-year history of seropositive rheumatoid arthritis (anti-CCP strongly positive, RF 240 IU/mL) and has been managed with subcutaneous methotrexate 20 mg once weekly, hydroxychloroquine, and low-dose prednisone. He now presents with a 6-month history of gradually worsening breathlessness on exertion accompanied by a dry, non-productive cough. On examination, vital signs are: BP 132/78 mmHg, HR 92 beats/min, RR 22 breaths/min, and SpO2 92% breathing room air. Auscultation of the lungs reveals bilateral fine basilar inspiratory crackles ('Velcro rales'). High-resolution chest CT (HRCT protocol) demonstrates bilateral, basilar, peripherally distributed reticular opacities with traction bronchiectasis and honeycombing, consistent with a usual interstitial pneumonia (UIP) pattern. Pulmonary function testing shows an FVC of 65% predicted (restrictive pattern) and a DLCO of 50% predicted (markedly reduced). Rheumatoid arthritis disease activity is well controlled, with a DAS28 of 2.5. A chest CT obtained 2 years earlier demonstrated only minimal interstitial abnormalities.",
+    "rationale_for_variant": "The stem has been entirely reworded using alternative sentence structures and synonyms (e.g., 'gradually worsening breathlessness on exertion' for 'progressive exertional dyspnea,' 'strongly positive' for 'highly positive,' 'markedly reduced' for 'significantly reduced') while every clinical fact, numerical value, and level of detail from the original vignette is preserved unchanged. No finding relevant to the differential diagnosis has been added, removed, or altered. Consequently, the reasoning pathway and the correct answer (A) remain fully intact.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

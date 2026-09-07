@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_009__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_009",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:28:54+00:00",
+  "variant": {
+    "variant_id": "history_reordering_exam_first",
+    "demographics": {
+      "age": 48,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "During an emergency department visit, a 48-year-old woman is found to have transient 2 mm ST-segment elevation in leads II, III, and aVF on ECG that resolves completely within 5 minutes after sublingual nitroglycerin. Coronary angiography performed during a pain-free interval reveals no obstructive epicardial coronary artery disease. She has no significant cardiovascular risk factors and a 10-pack-year smoking history. On further history, she reports recurrent episodes of substernal chest pain occurring at rest, predominantly between 2 AM and 6 AM, lasting 5–15 minutes. The episodes are not provoked by exertion and resolve with sublingual nitroglycerin.",
+    "rationale_for_variant": "The presentation now leads with the ECG and angiographic findings before introducing the patient's background and symptom history, reversing the original chronological order of information. All clinical facts, numbers, and findings are preserved verbatim; only their sequence has changed. The correct answer remains vasospastic (Prinzmetal/variant) angina because every diagnostic hallmark—transient ST elevation at rest resolving with nitrates, nocturnal timing, absence of obstructive CAD, and no exertional provocation—is still present and unaltered.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

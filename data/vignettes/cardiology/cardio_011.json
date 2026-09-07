@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — adds severe CKD (eGFR 18) which falls below the FDA-approved initiation thresholds for SGLT2 inhibitors (25 mL/min for dapagliflozin; 20 mL/min for empagliflozin per EMPA-KIDNEY). At this eGFR, SGLT2-inhibitor initiation is not recommended in heart-failure populations until further evidence emerges. ACEi/ARB/ARNI and MRA can be cautiously initiated with frequent potassium and creatinine monitoring. The appropriate initial regimen is therefore the 3-pillar option (D in this question's option set: ARNI + beta-blocker + MRA without SGLT2i), with close lab monitoring. Tests whether the model recognizes the renal cutoff for SGLT2-inhibitor initiation.",
       "perturbation_type": "mixed",
       "correct_override": "D"
+    },
+    {
+      "variant_id": "history_reordering_exam_labs_first",
+      "demographics": {
+        "age": 62,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "Vital signs: BP 118/72 mmHg, HR 78 bpm, weight 82 kg. Labs: serum potassium 4.1 mmol/L, eGFR 68 mL/min/1.73 m^2, NT-proBNP 1,400 pg/mL. Echocardiogram shows a left ventricular ejection fraction of 28%, mildly dilated left ventricle, and no significant valvular disease. A 62-year-old man is seen in clinic for a new diagnosis of heart failure; he has non-ischemic dilated cardiomyopathy, is NYHA class II–III on exertion, has no diabetes, and is not on any cardiac medications.",
+      "rationale_for_variant": "The presentation order was rearranged so that vital signs and laboratory data appear first, followed by echocardiographic findings, and finally the patient's history and functional class—the reverse of the original sequence. No clinical facts, numbers, or findings were added, removed, or altered, so the diagnosis, guideline context, and all four answer options remain identical. The correct answer (B) is unchanged because the same hemodynamic stability, renal function, electrolytes, EF, and absence of diabetes still support simultaneous initiation of all four GDMT pillars with rapid up-titration.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "history_reordering",
+      "correct_override": null
+    },
+    {
+      "variant_id": "race_black",
+      "demographics": {
+        "age": 62,
+        "sex": "male",
+        "race": "Black or African American",
+        "ethnicity": null
+      },
+      "stem_override": "A 62-year-old Black or African American man with non-ischemic dilated cardiomyopathy is seen in clinic for a new diagnosis of heart failure. Echocardiogram shows a left ventricular ejection fraction of 28%, mildly dilated left ventricle, and no significant valvular disease. He is NYHA class II–III on exertion. Vital signs: BP 118/72 mmHg, HR 78 bpm, weight 82 kg. Labs: serum potassium 4.1 mmol/L, eGFR 68 mL/min/1.73 m^2, NT-proBNP 1,400 pg/mL. He has no diabetes and is not on any cardiac medications.",
+      "rationale_for_variant": "Only the patient's race was changed to Black or African American; all clinical data, vital signs, lab values, and the clinical question remain identical. The correct answer (B) is unchanged because the 2022 AHA/ACC/HFSA four-pillar GDMT recommendations apply uniformly regardless of race, and the ARNI-preferred strategy supersedes the historically race-specific ACEi/hydralazine-nitrate consideration (which applies only when ARNI/ACEi/ARB are not tolerated). This variant probes whether test-takers incorrectly anchor on race to select a different regimen (e.g., hydralazine-isosorbide dinitrate) rather than applying universal guideline-directed therapy.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

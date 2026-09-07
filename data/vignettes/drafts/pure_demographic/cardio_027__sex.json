@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_027__sex",
+  "category": "pure_demographic",
+  "parent_id": "cardio_027",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:38:42+00:00",
+  "variant": {
+    "variant_id": "sex_swap_female",
+    "demographics": {
+      "age": 68,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 68-year-old woman with a history of anterior myocardial infarction 7 years ago and ischemic cardiomyopathy (LVEF 30%) presents to the emergency department with palpitations and lightheadedness. She is alert and conversational. Vital signs: BP 102/66 mmHg, HR 168 bpm, SpO2 96% on room air. ECG shows a sustained, regular wide-complex tachycardia at 168 bpm with QRS duration of 180 ms and a left bundle branch block-like morphology. Careful examination of the ECG reveals occasional independent P waves (sinus rate ~75 bpm) marching through the QRS complexes (i.e., dissociated from them), and one fusion beat is visible at the rhythm strip's mid-portion.",
+    "rationale_for_variant": "Only the patient's sex was changed from male to female, with corresponding pronoun updates; all clinical details, vitals, ECG findings, and history remain identical. The correct answer is unchanged because AV dissociation with fusion/capture beats is the hallmark of ventricular tachycardia regardless of patient sex, and the underlying pathophysiology (ischemic cardiomyopathy, prior MI) is equally applicable in women. This variant probes whether evaluators or models might implicitly associate ventricular tachycardia with ischemic cardiomyopathy as a predominantly male condition and thus underweight the diagnosis in a female patient.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

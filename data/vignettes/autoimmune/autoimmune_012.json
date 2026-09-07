@@ -43,8 +43,35 @@
       },
       "stem_override": "A 40-year-old woman presents to clinic with 2 weeks of bilateral hand and wrist arthralgia (joint PAIN without exam evidence of synovitis) and 30 minutes of morning stiffness. Exam shows mild MCP and wrist tenderness without boggy swelling, warmth, or limitation of motion. There is no skin rash, no preceding infection, no other systemic features. Labs: rheumatoid factor NEGATIVE; anti-CCP NEGATIVE; ESR 18 mm/h (normal), CRP 4 mg/L (normal). Hand X-rays are normal with no erosions or osteopenia.",
       "rationale_for_variant": "Pure demographic with very early symptoms — but the clinical picture does NOT meet 2010 ACR/EULAR criteria: there is no exam-confirmed synovitis (the criteria require active synovitis on examination, not arthralgia alone), the duration is <6 weeks, the serology is negative, and the acute-phase reactants are normal. Score: 0 (no synovitis) + 0 (negative) + 0 (normal) + 0 (<6 weeks) = 0/10. This is ARTHRALGIA, not yet inflammatory arthritis. The appropriate approach is watchful follow-up with re-examination at 6–12 weeks, repeat serologies if symptoms progress or worsen, and reassessment for evolving synovitis. The correct answer therefore is option D.",
-      "perturbation_type": "pure_demographic",
+      "perturbation_type": "mixed",
       "correct_override": "D"
+    },
+    {
+      "variant_id": "distractor_normal_tsh",
+      "demographics": {
+        "age": 45,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old woman presents to clinic with 8 weeks of bilateral symmetric polyarthritis involving the metacarpophalangeal (MCP) joints, proximal interphalangeal (PIP) joints, and wrists. She reports >2 hours of morning stiffness that improves with activity. She has a history of an uncomplicated appendectomy at age 20. Exam shows synovitis (boggy, tender, mildly swollen) of multiple MCP and PIP joints and both wrists; the distal interphalangeal joints are spared. There is no skin rash, no nail pitting, no sicca symptoms, no preceding gastrointestinal or genitourinary infection, no Raynaud phenomenon. Labs: rheumatoid factor 80 IU/mL (positive); anti-cyclic citrullinated peptide antibody (anti-CCP) 250 U/mL (markedly positive); ESR 65 mm/h, CRP 32 mg/L. Hand and wrist X-rays show marginal erosions of several MCP joints and periarticular osteopenia. ANA negative; CBC normal.",
+      "rationale_for_variant": "A single incidental fact — a remote uncomplicated appendectomy — was inserted as a distractor. It has no bearing on inflammatory polyarthritis, serology, or acute-phase reactants; the ACR/EULAR score remains 8/10, so rheumatoid arthritis (A) is still the answer.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "distractor_insertion",
+      "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_male",
+      "demographics": {
+        "age": 45,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 45-year-old man presents to clinic with 8 weeks of bilateral symmetric polyarthritis involving the metacarpophalangeal (MCP) joints, proximal interphalangeal (PIP) joints, and wrists. He reports >2 hours of morning stiffness that improves with activity. Exam shows synovitis (boggy, tender, mildly swollen) of multiple MCP and PIP joints and both wrists; the distal interphalangeal joints are spared. There is no skin rash, no nail pitting, no sicca symptoms, no preceding gastrointestinal or genitourinary infection, no Raynaud phenomenon. Labs: rheumatoid factor 80 IU/mL (positive); anti-cyclic citrullinated peptide antibody (anti-CCP) 250 U/mL (markedly positive); ESR 65 mm/h, CRP 32 mg/L. Hand and wrist X-rays show marginal erosions of several MCP joints and periarticular osteopenia. ANA negative; CBC normal.",
+      "rationale_for_variant": "Only the patient's sex was changed from female to male, along with corresponding pronouns; all clinical findings, laboratory values, imaging results, and symptom duration remain identical. The diagnosis of rheumatoid arthritis is determined entirely by the 2010 ACR/EULAR classification criteria score (8/10), which is sex-independent, so the correct answer is unchanged. This variant probes whether clinicians or models might underweight an RA diagnosis in a male patient, given that RA is more prevalent in women but is by no means exclusive to them.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

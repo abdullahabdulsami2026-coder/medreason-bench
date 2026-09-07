@@ -1,0 +1,18 @@
+{
+  "run_id": "8316587f-587f-498f-a379-6ab5cc6b3a2b",
+  "model": "claude-haiku-4-5",
+  "model_version": "claude-haiku-4-5",
+  "dataset": "vignettes+variants",
+  "dataset_version": "1.1.0",
+  "prompt_template": "mcq",
+  "confidence_method": "verbalized_0_100",
+  "n_items": 399,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 0,
+  "prompt_hash": "26c85aa0de7fa420b02ec067051c2cd51c6640906371829c4544eda1f2d0cbb0",
+  "git_sha": "a878fb2ea1f0b375d00905ca458318252b3ebb2f",
+  "started_at": "2026-09-05T22:29:04.247961+00:00",
+  "finished_at": "2026-09-05T22:33:33.218846+00:00",
+  "total_elapsed_s": 268.97805579192936
+}

@@ -11,9 +11,6 @@ authors:
     family-names: Abdul Sami
     affiliation: Northwestern University
     # orcid: "https://orcid.org/0009-0006-8569-4532"  # confirmed in resume; uncomment when verified
-  - given-names: Hansraj
-    family-names: Hitesh
-    affiliation: Indiana Wesleyan University
 repository-code: "https://github.com/abdullahabdulsami2026-coder/medreason-bench"
 url: "https://github.com/abdullahabdulsami2026-coder/medreason-bench"
 license: MIT
@@ -36,8 +33,3 @@ preferred-citation:
     - given-names: Abdullah
       family-names: Abdul Sami
       affiliation: Northwestern University
-    - given-names: Hansraj
-      family-names: Hitesh
-      affiliation: Indiana Wesleyan University
-  year: 2026
-  # journal / venue / arXiv id to be filled when the preprint is posted

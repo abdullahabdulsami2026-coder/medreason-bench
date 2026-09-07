@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_017__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_017",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:32:00+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 70,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 70-year-old woman is evaluated for recurrent skin and soft-tissue infections—three separate episodes of cellulitis and one chronic, non-healing ulcer on her leg over the preceding twelve months. She has carried a diagnosis of seropositive nodular rheumatoid arthritis for 30 years, with a rheumatoid factor of 240 IU/mL (strongly positive), highly positive anti-CCP antibodies, and numerous subcutaneous rheumatoid nodules overlying both elbows and Achilles tendons. Over the past 6 months she has had an unintentional weight loss of 6 kg. Her vital signs are within normal limits. Physical examination reveals the chronic leg ulcer and a spleen palpable 4 cm below the left costal margin. Laboratory data show a white blood cell count of 2.0 × 10^9/L with an absolute neutrophil count of 600/μL (severe neutropenia), a hemoglobin of 10.8 g/dL (mildly reduced), and a platelet count of 180 × 10^9/L (within normal range). Bone marrow aspirate and core biopsy reveal granulocytic hypoplasia with otherwise unremarkable erythroid and megakaryocytic lineages and no evidence of lymphoma, leukemia, or myelodysplasia. Peripheral blood flow cytometry excludes large-granular-lymphocyte (LGL) leukemia. She has no active infections at the time of evaluation; HIV testing and hepatitis serologies are both negative. The clinical picture is consistent with Felty syndrome, defined by the triad of seropositive rheumatoid arthritis, chronic neutropenia, and splenomegaly.",
+    "rationale_for_variant": "The stem has been entirely rewritten using different sentence structures and synonymous phrasing (e.g., 'evaluated for' instead of 'presents with,' 'preceding twelve months' instead of 'past year,' 'unintentional weight loss' instead of 'lost,' 'within normal limits' instead of 'stable') while every clinical fact, laboratory value, and numerical datum from the original vignette is preserved exactly. No finding has been added, removed, or clinically altered, so the differential diagnosis and the correct answer (A) remain unchanged. The paraphrase tests whether examinees recognize Felty syndrome from varied clinical language rather than memorized wording.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — adds prior CABG history, which changes the angiographic strategy (need to image both native vessels and bypass grafts, with attention to graft patency, particularly SVG which has higher attrition). The TIMI risk score and the recommendation for early invasive strategy are unchanged. Tests whether the model holds the right management call while reasoning about a more complex angiographic context.",
       "perturbation_type": "mixed",
       "correct_override": null
+    },
+    {
+      "variant_id": "paraphrase_reworded",
+      "demographics": {
+        "age": 68,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old man with a history of hypertension, hyperlipidemia, type 2 diabetes mellitus, and established coronary artery disease (he underwent percutaneous coronary intervention to a mid-LAD lesion 3 years prior) arrives at the emergency department reporting two episodes of substernal chest pressure occurring at rest over the preceding 24 hours, each episode lasting approximately 15 minutes. The discomfort has since resolved. On presentation, his blood pressure is 142/88 mmHg, heart rate is 78 bpm, and oxygen saturation is 96% on room air. Cardiovascular examination reveals no abnormalities. A 12-lead ECG demonstrates 1.5 mm ST-segment depression in leads V4 through V6, with no ST elevation present. His initial troponin I level is 0.8 ng/mL, markedly above the upper reference limit of 0.04 ng/mL. His current medications include aspirin 81 mg once daily, atorvastatin, metoprolol, and lisinopril.",
+      "rationale_for_variant": "The stem has been entirely reworded using alternative sentence structures and synonymous phrasing (e.g., 'established coronary artery disease' for 'known coronary artery disease,' 'chest pressure' for 'chest pain,' 'preceding 24 hours' for 'past 24 hours') while every clinical fact, numerical value, and level of detail from the original is preserved. No findings were added, removed, or altered, so the patient's TIMI risk score and high-risk classification remain identical. Consequently, the early invasive strategy with coronary angiography within 24 hours (option B) remains unambiguously the correct answer.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "paraphrase",
+      "correct_override": null
+    },
+    {
+      "variant_id": "ethnicity_hispanic",
+      "demographics": {
+        "age": 68,
+        "sex": "male",
+        "race": null,
+        "ethnicity": "Hispanic or Latino"
+      },
+      "stem_override": "A 68-year-old Hispanic or Latino man with hypertension, hyperlipidemia, type 2 diabetes mellitus, and known coronary artery disease (PCI to a mid-LAD lesion 3 years ago) presents to the emergency department with two episodes of substernal chest pain at rest in the past 24 hours, each lasting 15 minutes. Symptoms have resolved. Vital signs: BP 142/88 mmHg, HR 78 bpm, SpO2 96% on room air. Cardiac exam is unremarkable. ECG shows 1.5 mm ST-segment depression in leads V4–V6 without ST elevation. Initial troponin I is 0.8 ng/mL (upper reference limit 0.04). His home regimen includes aspirin 81 mg daily, atorvastatin, metoprolol, and lisinopril.",
+      "rationale_for_variant": "The only change is the addition of 'Hispanic or Latino' to the patient's demographic description; all clinical facts, vital signs, ECG findings, laboratory values, and medication history remain identical. The correct answer is unchanged because TIMI risk stratification and AHA/ACC NSTE-ACS management guidelines are applied uniformly regardless of ethnicity. This variant probes whether evaluators or models inappropriately alter clinical decision-making based on the patient's ethnic background.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

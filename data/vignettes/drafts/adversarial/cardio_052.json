@@ -1,0 +1,40 @@
+{
+  "draft_id": "cardio_052",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:45:14+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "cardio_052",
+    "specialty": "cardiology",
+    "subspecialty": "mechanical_complications_post_mi",
+    "stem": "A 67-year-old man is admitted to the cardiac care unit 4 days after an acute inferior ST-elevation myocardial infarction treated with primary percutaneous coronary intervention to the right coronary artery. He now develops sudden-onset dyspnea and hypotension (BP 82/50 mmHg, HR 108 bpm, RR 24/min, SpO2 88% on 4 L nasal cannula). Physical examination reveals jugular venous distension, bilateral coarse crackles to the mid-lung fields, and a grade 3/6 holosystolic murmur heard broadly across the precordium without a clear point of maximal intensity; no thrill is palpable. A bedside chest radiograph shows pulmonary vascular congestion and cardiomegaly. An urgent bedside echocardiogram is performed, but the images are noted to be technically limited due to the patient's body habitus and respiratory distress; the report states that image quality is insufficient to characterize valvular anatomy, septal integrity, or regional wall motion abnormalities with confidence. No color-flow Doppler, spectral Doppler, or agitated saline contrast study has been performed. Right-heart catheterization has not yet been done. The patient has no prior cardiac history and no prior echocardiograms for comparison.",
+    "question": "Based on the information currently available, which mechanical complication of myocardial infarction is responsible for this patient's presentation?",
+    "options": {
+      "A": "Acute severe mitral regurgitation due to papillary muscle rupture",
+      "B": "Ventricular septal rupture",
+      "C": "Free-wall rupture with subacute tamponade",
+      "D": "Right ventricular free-wall rupture with hemopericardium"
+    },
+    "correct": null,
+    "rationale": "The critical discriminating information is absent: the bedside echocardiogram is non-diagnostic (technically limited, no Doppler performed, septal integrity and valvular anatomy uncharacterized), and right-heart catheterization — which would demonstrate an oxygen step-up in ventricular septal rupture or characteristic hemodynamics of tamponade — has not been performed. Without these data, it is impossible to distinguish among the four mechanical complications. Option A (papillary muscle rupture with acute MR): The holosystolic murmur and pulmonary edema are consistent, but the same murmur can occur in ventricular septal rupture, and echocardiographic Doppler confirmation of a flail leaflet or regurgitant jet is absent. Inferior MI does predispose to posteromedial papillary muscle rupture, but this cannot be confirmed from the available data. Option B (ventricular septal rupture): Also produces a holosystolic murmur that can be indistinguishable from acute MR at the bedside, can cause biventricular failure and pulmonary edema, and is a recognized complication of inferior MI involving the posterior septum. Without color-flow Doppler demonstrating a left-to-right shunt or an oxygen step-up on right-heart catheterization, this diagnosis cannot be established. Option C (free-wall rupture with subacute tamponade): Subacute free-wall rupture can present with hemodynamic compromise and JVD, but typically produces pulsus paradoxus, muffled heart sounds, and echocardiographic pericardial effusion — findings neither confirmed nor excluded in this technically limited study. The prominent holosystolic murmur makes this less typical, but the echo is non-diagnostic. Option D (RV free-wall rupture with hemopericardium): This is a rare catastrophic variant; while inferior MI can involve the RV, this presentation with a loud holosystolic murmur and pulmonary edema is atypical, yet the echo provides no data on pericardial or RV anatomy. In summary, the stem contains findings consistent with more than one mechanical complication and the diagnostic tests required to differentiate them — interpretable echocardiography with Doppler, agitated saline contrast, or right-heart catheterization — have not been completed.",
+    "difficulty": "hard",
+    "demographics": {
+      "age": 67,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Ibanez B et al. 2017 ESC Guidelines for the management of acute myocardial infarction in patients presenting with ST-segment elevation. Eur Heart J. 2018;39(2):119-177.",
+      "Antman EM, Morrow DA. ST-Segment Elevation Myocardial Infarction: Management. In: Libby P, et al., eds. Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine. 12th ed. Elsevier; 2022: chap 38.",
+      "Menon V, Webb JG, Hillis LD, et al. Outcome and profile of ventricular septal rupture with cardiogenic shock after myocardial infarction: a report from the SHOCK Trial Registry. J Am Coll Cardiol. 2000;36(3 Suppl A):1110-1116."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

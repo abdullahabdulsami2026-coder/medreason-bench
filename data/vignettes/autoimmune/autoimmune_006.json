@@ -45,6 +45,33 @@
       "rationale_for_variant": "Demographic perturbation — Hispanic/Latina ethnicity. SLE incidence and severity (particularly lupus nephritis and damage accrual) are higher in Hispanic and Black women in U.S. cohorts (LUMINA, GLADEL); however, the management framework for a moderate non-renal flare is unchanged. The correct first step remains HCQ continuation plus low-dose corticosteroid bridging with planned taper. Increased clinical surveillance is appropriate given higher progression risk in this demographic.",
       "perturbation_type": "pure_demographic",
       "correct_override": null
+    },
+    {
+      "variant_id": "paraphrase_reworded",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old woman with a 4-year history of systemic lupus erythematosus, maintained on hydroxychloroquine 400 mg/d as her sole therapy (she has been off corticosteroids for 18 months and was in clinical remission), comes to the outpatient clinic reporting 3 weeks of progressively worsening polyarthritis (DAS28 4.2), a recurring malar rash, fatigue, and intermittent low-grade fevers. Her vital signs are within normal limits. She has NO renal involvement (urinalysis is unremarkable, serum creatinine 0.8 mg/dL), no neurological symptoms, no cytopenia (complete blood count is normal), and no serositis. Laboratory results reveal: ESR 65 mm/h, CRP 22 mg/L, C3 60 mg/dL (below normal), C4 8 mg/dL (below normal), and anti-dsDNA antibody titer 340 IU/mL, which has risen from a baseline of 100 IU/mL measured 6 months prior.",
+      "rationale_for_variant": "The stem has been entirely reworded using different sentence structures and synonymous phrasing (e.g., 'a 4-year history of' instead of 'diagnosed 4 years ago,' 'comes to the outpatient clinic reporting' instead of 'presents to clinic with,' 'within normal limits' instead of 'stable,' 'unremarkable' instead of 'bland') while preserving every clinical fact, numerical value, and diagnostic detail exactly. No finding has been added, removed, or altered in a way that would shift the differential diagnosis or management decision. The correct answer remains A because the clinical scenario—a moderate mucocutaneous and musculoskeletal SLE flare without organ-threatening features, on background hydroxychloroquine—still mandates continuation of hydroxychloroquine plus addition of low-dose oral prednisone with a planned taper, per 2023 EULAR recommendations.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "paraphrase",
+      "correct_override": null
+    },
+    {
+      "variant_id": "ethnicity_hispanic",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": "Hispanic or Latino"
+      },
+      "stem_override": "A 35-year-old Hispanic or Latino woman with systemic lupus erythematosus diagnosed 4 years ago, currently on hydroxychloroquine 400 mg/d alone (previously off corticosteroids for 18 months in clinical remission), presents to clinic with 3 weeks of worsening polyarthritis (DAS28 4.2), a recurrent malar rash, fatigue, and intermittent low-grade fevers. Vital signs are stable. There is NO renal involvement (urinalysis bland, serum creatinine 0.8 mg/dL), no neurologic symptoms, no cytopenia (CBC normal), no serositis. Labs: ESR 65 mm/h, CRP 22 mg/L, C3 60 mg/dL (low), C4 8 mg/dL (low), anti-dsDNA antibody 340 IU/mL (rising from 100 baseline 6 months ago).",
+      "rationale_for_variant": "Only the patient's ethnicity has been changed from unstated to Hispanic or Latino; all clinical findings, laboratory values, and disease characteristics remain identical. The correct answer is unchanged because the 2023 EULAR SLE management recommendations apply regardless of ethnicity, and the clinical scenario (moderate mucocutaneous/musculoskeletal flare without organ-threatening features) dictates the same management. This variant probes whether evaluators or models might incorrectly alter their clinical reasoning based on the known higher SLE prevalence or severity patterns sometimes associated with Hispanic/Latino populations, when the presented data fully determines the answer.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — adds Type 1 cardiorenal syndrome (creatinine doubling during ongoing diuresis). Post-hoc analyses of DOSE-AHF and the ROSE-AHF trial showed that worsening renal function during effective decongestion does not portend worse long-term outcomes, provided the patient is achieving symptom relief and weight loss. The 2022 HF Guideline supports continued (or intensified) diuresis as long as decongestion is occurring and the patient is hemodynamically stable, with close monitoring. The correct strategy remains aggressive IV bolus loop diuresis with monitoring — the same answer as the parent. Tests whether the model resists the temptation to halt diuresis at the first creatinine bump.",
       "perturbation_type": "mixed",
       "correct_override": null
+    },
+    {
+      "variant_id": "paraphrase_reworded",
+      "demographics": {
+        "age": 68,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old man with known heart failure with reduced ejection fraction (LVEF 30%) arrives at the emergency department reporting 5 days of worsening breathlessness, inability to lie flat, and a 6 kg increase in body weight. His outpatient regimen includes furosemide 40 mg orally twice daily. On presentation, blood pressure is 132/80 mmHg, heart rate is 96 bpm, respiratory rate is 22 breaths per minute, and oxygen saturation is 91% on room air. Physical examination reveals jugular venous pressure elevated to 14 cm H2O, bilateral basilar rales, a third heart sound, and 2+ pitting edema of the lower extremities. Chest radiograph demonstrates pulmonary vascular redistribution and congestion. Laboratory results are notable for NT-proBNP 6,800 pg/mL, troponin 0.02 ng/mL (within normal limits), serum creatinine 1.4 mg/dL (his established baseline is 1.2 mg/dL), and serum potassium 4.2 mmol/L.",
+      "rationale_for_variant": "The stem has been rewritten using different sentence structures and synonymous phrasing throughout—for example, 'breathlessness' for 'dyspnea,' 'inability to lie flat' for 'orthopnea,' 'bilateral basilar rales' for 'bibasilar crackles,' and 'third heart sound' for 'S3 gallop'—while every clinical fact, numeric value, and level of detail from the original has been preserved exactly. The diagnosis, severity of decompensation, home diuretic regimen, and all laboratory and vital-sign data remain identical, so the clinical reasoning pathway is unchanged. Option B remains unambiguously correct because the patient's presentation and baseline medications are unaltered, and the evidence-based recommendation for high-dose IV bolus furosemide at 2–2.5 times the home oral dose with early reassessment still applies.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "paraphrase",
+      "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_female",
+      "demographics": {
+        "age": 68,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 68-year-old woman with a history of HFrEF (LVEF 30%) on home furosemide 40 mg orally twice daily presents to the emergency department with 5 days of progressive dyspnea, orthopnea, and a 6 kg weight gain. Vital signs: BP 132/80 mmHg, HR 96 bpm, RR 22, SpO2 91% on room air. Exam shows JVP at 14 cm H2O, bibasilar crackles, an S3 gallop, and 2+ pitting lower-extremity edema. Chest X-ray shows pulmonary vascular congestion. Labs: NT-proBNP 6,800 pg/mL, troponin 0.02 ng/mL (normal), creatinine 1.4 mg/dL (baseline 1.2), potassium 4.2 mmol/L.",
+      "rationale_for_variant": "Only the patient's sex was changed from male to female, with the pronoun updated accordingly; all clinical data, vital signs, laboratory values, and history remain identical. The correct answer is unchanged because the DOSE-AHF trial evidence and AHA/ACC/HFSA guideline recommendations for IV loop diuretic dosing in acute decompensated HFrEF apply equally regardless of sex. This variant probes whether evaluators or models might inappropriately adjust diuretic management recommendations based on the patient's sex.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

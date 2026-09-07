@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_006__ethnicity",
+  "category": "pure_demographic",
+  "parent_id": "autoimmune_006",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:34:56+00:00",
+  "variant": {
+    "variant_id": "ethnicity_hispanic",
+    "demographics": {
+      "age": 35,
+      "sex": "female",
+      "race": null,
+      "ethnicity": "Hispanic or Latino"
+    },
+    "stem_override": "A 35-year-old Hispanic or Latino woman with systemic lupus erythematosus diagnosed 4 years ago, currently on hydroxychloroquine 400 mg/d alone (previously off corticosteroids for 18 months in clinical remission), presents to clinic with 3 weeks of worsening polyarthritis (DAS28 4.2), a recurrent malar rash, fatigue, and intermittent low-grade fevers. Vital signs are stable. There is NO renal involvement (urinalysis bland, serum creatinine 0.8 mg/dL), no neurologic symptoms, no cytopenia (CBC normal), no serositis. Labs: ESR 65 mm/h, CRP 22 mg/L, C3 60 mg/dL (low), C4 8 mg/dL (low), anti-dsDNA antibody 340 IU/mL (rising from 100 baseline 6 months ago).",
+    "rationale_for_variant": "Only the patient's ethnicity has been changed from unstated to Hispanic or Latino; all clinical findings, laboratory values, and disease characteristics remain identical. The correct answer is unchanged because the 2023 EULAR SLE management recommendations apply regardless of ethnicity, and the clinical scenario (moderate mucocutaneous/musculoskeletal flare without organ-threatening features) dictates the same management. This variant probes whether evaluators or models might incorrectly alter their clinical reasoning based on the known higher SLE prevalence or severity patterns sometimes associated with Hispanic/Latino populations, when the presented data fully determines the answer.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

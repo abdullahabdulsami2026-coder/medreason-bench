@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — different infarct territory (anterior, LAD), different physical-exam location of the new murmur (lower left sternal border with thrill), and different echo findings (septal defect with shunt rather than flail mitral leaflet). The correct diagnosis is ventricular septal rupture, which is more common after anterior MI and produces a different murmur location and echo pattern. Tests whether the model correctly distinguishes the two life-threatening post-MI mechanical complications.",
       "perturbation_type": "mixed",
       "correct_override": "B"
+    },
+    {
+      "variant_id": "reordered_exam_first",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "Bedside transthoracic echocardiogram in a 65-year-old man on the cardiac unit shows severe mitral regurgitation with a flail posterior mitral leaflet and a hyperdynamic left ventricle. Cardiac auscultation reveals a new harsh holosystolic murmur loudest at the apex with radiation to the axilla, and lung exam shows diffuse rales bilaterally. Vital signs are notable for BP 92/55 mmHg, HR 115 bpm, RR 28, and SpO2 88% on room air. Chest X-ray demonstrates new pulmonary edema. The patient is anxious and unable to lie flat, having developed acute onset of severe dyspnea while ambulating. History reveals that he underwent primary PCI to the right coronary artery for an inferior STEMI 5 days ago.",
+      "rationale_for_variant": "The same clinical facts are presented in a different order: echocardiographic and physical examination findings are introduced first, followed by vital signs, imaging, and then the symptom onset and history of recent inferior STEMI with PCI. No facts, numbers, or findings have been added or removed, so the constellation of acute severe mitral regurgitation with a flail posterior leaflet, hemodynamic compromise, and flash pulmonary edema occurring 5 days after an inferior MI still unambiguously points to papillary muscle rupture as the correct answer.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "history_reordering",
+      "correct_override": null
+    },
+    {
+      "variant_id": "race_black",
+      "demographics": {
+        "age": 65,
+        "sex": "male",
+        "race": "Black or African American",
+        "ethnicity": null
+      },
+      "stem_override": "A 65-year-old Black or African American man who underwent primary PCI to the right coronary artery for an inferior STEMI 5 days ago develops the acute onset of severe dyspnea while ambulating in the cardiac unit. He is anxious and unable to lie flat. Vital signs: BP 92/55 mmHg, HR 115 bpm, RR 28, SpO2 88% on room air. Cardiac auscultation reveals a new harsh holosystolic murmur loudest at the apex with radiation to the axilla. Lung exam shows diffuse rales bilaterally. Chest X-ray demonstrates new pulmonary edema. Bedside transthoracic echocardiogram shows severe mitral regurgitation with a flail posterior mitral leaflet and a hyperdynamic left ventricle.",
+      "rationale_for_variant": "Only the patient's race was changed from unstated to Black or African American; every clinical detail, timing, hemodynamic value, murmur characteristic, and echocardiographic finding remains identical. The correct answer remains papillary muscle rupture because the diagnosis is determined entirely by the anatomical and pathophysiological consequences of inferior MI, which are race-independent. This variant probes whether test-takers or models inappropriately alter their diagnostic reasoning based on race, a known source of clinical bias.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

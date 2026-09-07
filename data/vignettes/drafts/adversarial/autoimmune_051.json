@@ -1,0 +1,40 @@
+{
+  "draft_id": "autoimmune_051",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:41:24+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "autoimmune_051",
+    "specialty": "autoimmune",
+    "subspecialty": "sle_diagnosis",
+    "stem": "A 28-year-old woman presents to her primary care physician with a 6-week history of fatigue, diffuse hair thinning, and intermittent low-grade fever (temperature up to 38.1 °C). She reports occasional joint aching in her hands and knees but denies frank joint swelling. Review of systems is NOTABLY INCOMPLETE: she is unsure whether she has had any rash (she has not closely examined her face or body), she cannot recall whether she has had oral sores, and she has not noticed any change in urine color or output. She denies Raynaud phenomenon, sicca symptoms, muscle weakness, and preceding infection. She takes no medications. On examination, vital signs are notable only for a temperature of 37.9 °C; skin and mucosal examination is DEFERRED by the clinician at this visit. Musculoskeletal examination reveals mild tenderness to palpation of the MCP joints bilaterally but NO SYNOVITIS is documented. Initial laboratory results returned so far: CBC shows mild normocytic anemia (hemoglobin 10.8 g/dL) with a normal white cell count and platelet count; ESR 55 mm/h; CRP 9 mg/L; basic metabolic panel normal; urinalysis PENDING. ANA testing has NOT yet been sent. Complement levels, anti-dsDNA, anti-Sm, anti-Ro/SSA, anti-La/SSB, anti-U1-RNP, RF, anti-CCP, direct Coombs test, and parvovirus B19 serology have NOT yet been drawn.",
+    "question": "Based on the information available, which is the most likely diagnosis?",
+    "options": {
+      "A": "Systemic lupus erythematosus",
+      "B": "Parvovirus B19 arthropathy",
+      "C": "Undifferentiated connective tissue disease",
+      "D": "Early rheumatoid arthritis"
+    },
+    "correct": null,
+    "rationale": "The stem provides insufficient information to support any of the four diagnoses. Critical discriminating data are missing or explicitly deferred, making it impossible to apply any established classification or diagnostic criteria. (1) SYSTEMIC LUPUS ERYTHEMATOSUS: The 2019 EULAR/ACR SLE classification criteria require a positive ANA (≥1:80) as a mandatory entry criterion before any domain scoring is applied — ANA has NOT been sent. Even if ANA were positive, the clinical domain contributions cannot be scored: skin and mucosal examination was deferred (so malar rash, discoid rash, and oral ulcers are unknown), urinalysis is pending (so renal involvement is unknown), synovitis is not confirmed, and the immunology workup (anti-dsDNA, anti-Sm, complement levels, direct Coombs) is entirely absent. The mild normocytic anemia is non-specific and could represent iron deficiency, anemia of chronic disease, hemolysis, or infection. SLE cannot be classified or diagnosed. (2) PARVOVIRUS B19 ARTHROPATHY: B19 is a leading mimic in a young woman with symmetric small-joint arthralgia, low-grade fever, and anemia — but parvovirus B19 serology has explicitly NOT been drawn, no sick contacts or rash are documented, and the anemia is uncharacterized (no reticulocyte count), so B19 arthropathy cannot be concluded. (3) UNDIFFERENTIATED CONNECTIVE TISSUE DISEASE: UCTD requires, at minimum, at least one clinical feature suggestive of a connective tissue disease AND a positive ANA, with the presentation not yet meeting full classification criteria for any defined CTD, typically sustained over ≥12 months. ANA is not available, the skin and mucosal examination was deferred, the symptom duration is only 6 weeks (far below the conventional 12-month threshold used in UCTD definitions), and the immunology workup is incomplete. UCTD cannot be concluded. (4) EARLY RHEUMATOID ARTHRITIS: RF and anti-CCP have NOT been drawn, no synovitis is documented on examination (tenderness only), and the 2010 ACR/EULAR criteria cannot be scored without serology and confirmed joint involvement, so early RA cannot be concluded. The clinically appropriate response is to recognize that the available data are insufficient and to complete the workup: perform a full skin and mucosal examination, obtain ANA and the full autoantibody panel (anti-dsDNA, anti-Sm, anti-Ro/SSA, anti-La/SSB, anti-U1-RNP, RF, anti-CCP), complement levels (C3, C4, CH50), direct Coombs test, serum ferritin, urinalysis with microscopy, parvovirus B19 serology, and reassess the patient after results are available.",
+    "difficulty": "easy",
+    "demographics": {
+      "age": 28,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Aringer M et al. 2019 European League Against Rheumatism / American College of Rheumatology Classification Criteria for Systemic Lupus Erythematosus. Arthritis Rheumatol 2019;71:1400-1412.",
+      "Mosca M, Tani C, Bombardieri S. Undifferentiated connective tissue diseases (UCTD): a new frontier for rheumatology. Best Pract Res Clin Rheumatol 2007;21:1011-1023.",
+      "Yamaguchi M et al. Preliminary criteria for classification of adult Still's disease. J Rheumatol 1992;19:424-430."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

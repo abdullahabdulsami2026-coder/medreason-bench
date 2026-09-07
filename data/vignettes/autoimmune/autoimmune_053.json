@@ -1,0 +1,29 @@
+{
+  "id": "autoimmune_053",
+  "specialty": "autoimmune",
+  "subspecialty": "anti_ro_ssa_congenital_heart_block",
+  "stem": "A 31-year-old woman is referred to rheumatology after a fetal echocardiogram performed at 24 weeks of gestation demonstrated an irregular fetal heart rhythm. The obstetrician ordered the study because of a prior pregnancy complicated by an unspecified fetal arrhythmia at 22 weeks that resolved spontaneously without intervention. The current fetal echo report is available and shows an intermittent irregular rhythm; the specific degree of atrioventricular (AV) block — whether first-degree, second-degree, or complete (third-degree) — is NOT documented in the report provided to the rheumatologist, and the original tracing is not yet available for review. The mother's review of systems is notable only for mild intermittent joint aching without confirmed synovitis; she denies rash, oral ulcers, Raynaud phenomenon, sicca symptoms, or serositis. She has no prior diagnosis of any autoimmune disease. Vital signs are normal. Laboratory studies obtained to date include: CBC normal; comprehensive metabolic panel normal; complement C3 and C4 levels within normal limits; anti-dsDNA negative; ANA 1:80 with a homogeneous pattern. Antibody studies that have NOT yet been resulted or ordered include: anti-Ro/SSA (both 52-kDa and 60-kDa subunits), anti-La/SSB, anti-U1-RNP, and anti-Sm. The gestational age is currently 24 weeks and 3 days.",
+  "question": "Based on the information currently available, which management step is most appropriate for this pregnancy?",
+  "options": {
+    "A": "Begin maternal oral hydroxychloroquine 400 mg daily to reduce the risk of progression to complete heart block",
+    "B": "Begin maternal oral dexamethasone 4 mg daily to treat established fetal second-degree or third-degree AV block",
+    "C": "Refer immediately for in utero fetal cardiac pacing given confirmed complete congenital heart block",
+    "D": "Reassure the patient that the fetal arrhythmia is benign and requires no further cardiac or immunological surveillance"
+  },
+  "correct": null,
+  "rationale": "The stem is missing two critical discriminating pieces of information that are required before any of the four management options can be justified: (1) the DEGREE of fetal AV block has not been established — the fetal echo report documents only 'intermittent irregular rhythm' without specifying first-, second-, or third-degree AV block, and the original tracing is unavailable; and (2) maternal anti-Ro/SSA and anti-La/SSB antibody status is unknown, as these results have not yet been ordered or resulted. Both pieces of information are essential gating conditions for every listed option. Option A — Hydroxychloroquine: Current evidence (including the PATCH trial and observational data) suggests that maternal hydroxychloroquine may reduce recurrence risk of immune-mediated congenital heart block (CHB) in anti-Ro/SSA-positive women with a prior affected pregnancy, but this indication requires CONFIRMED maternal anti-Ro/SSA positivity, which has not been established in this case. Initiating hydroxychloroquine without confirmed anti-Ro/SSA seropositivity is not supported by available evidence. Option B — Dexamethasone: Fluorinated corticosteroids (dexamethasone or betamethasone) are sometimes used for second-degree AV block in anti-Ro/SSA-positive pregnancies, though evidence for efficacy is contested and guidelines are not uniform. This option requires BOTH confirmed anti-Ro/SSA positivity AND confirmed second-degree (or early third-degree) AV block — neither condition is documented in the stem. Option C — In utero fetal cardiac pacing: This intervention is reserved for refractory, haemodynamically compromising complete (third-degree) CHB unresponsive to medical management. The stem explicitly states that the degree of AV block is unknown; complete heart block has not been confirmed. This option therefore cannot be supported. Option D — Reassurance with no further surveillance: Given that a prior pregnancy was complicated by a fetal arrhythmia and the current fetal echo shows an irregular rhythm, dismissing the finding as benign without completing the anti-Ro/SSA/La antibody workup and without characterising the degree of block would be clinically inappropriate and potentially harmful. The correct clinical behaviour is to (a) urgently obtain anti-Ro/SSA (52-kDa and 60-kDa) and anti-La/SSB antibody levels; (b) obtain the original fetal echocardiogram tracing for expert review to characterise the degree of AV block; and (c) defer management decisions until both pieces of information are available. No management option among A–D can be selected on the basis of the information provided.",
+  "difficulty": "hard",
+  "demographics": {
+    "age": 31,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [],
+  "sources": [
+    "Izmirly PM, Saxena A, Buyon JP. Progress in the pathogenesis and treatment of cardiac manifestations of neonatal lupus. Curr Opin Rheumatol 2017;29:467-472.",
+    "Donofrio MT, Moon-Grady AJ, Hornberger LK, et al. Diagnosis and treatment of fetal cardiac disease: a scientific statement from the American Heart Association. Circulation 2014;129:2183-2242.",
+    "Friedman DM, Llanos C, Izmirly PM, et al. Evaluation of fetuses in a study of intravenous immunoglobulin as preventive therapy for congenital heart block: Results of a multicenter, prospective, open-label clinical trial. Arthritis Rheum 2010;62:1138-1146."
+  ],
+  "license": "CC-BY-4.0"
+}

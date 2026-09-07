@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_007__distractor_insertion",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_007",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:30:10+00:00",
+  "variant": {
+    "variant_id": "distractor_normal_tsh",
+    "demographics": {
+      "age": 28,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 28-year-old woman with a 2-year history of systemic lupus erythematosus on hydroxychloroquine and low-dose prednisone presents to the emergency department with new-onset generalized tonic-clonic seizures (witnessed by her partner) followed by frank psychosis (paranoid delusions, auditory hallucinations) over the past 72 hours. There is no fever, no neck stiffness, no focal infection. Vital signs: T 37.0°C, BP 138/82 mmHg, HR 96 bpm. Brain MRI shows multifocal subcortical white-matter hyperintensities without acute infarction. Lumbar puncture is unremarkable: CSF cell count 3, protein 38 mg/dL, glucose 65 mg/dL, gram stain and cultures negative. Toxicology and metabolic workup are negative. Labs: lupus anticoagulant POSITIVE; anti-cardiolipin and anti-β2GPI IgG positive; anti-dsDNA elevated; complements low. Anti-ribosomal-P antibodies positive. Thyroid-stimulating hormone (TSH) is 2.1 mIU/L (normal range 0.4–4.0 mIU/L). The clinical picture is consistent with neuropsychiatric SLE (NP-SLE) with a combined inflammatory and antiphospholipid-mediated thrombotic component; infectious encephalitis, metabolic encephalopathy, and primary psychiatric disease have been excluded.",
+    "rationale_for_variant": "A single incidental finding — a normal TSH of 2.1 mIU/L — was inserted to serve as a distractor. This value is entirely within the reference range and excludes thyroid dysfunction as a contributor to the neuropsychiatric presentation, making it diagnostically irrelevant. It does not support any alternative diagnosis nor does it alter the established dual inflammatory and antiphospholipid-mediated mechanism, so the correct answer (A) remains unambiguously appropriate.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "distractor_insertion",
+    "correct_override": null
+  },
+  "vignette": null
+}

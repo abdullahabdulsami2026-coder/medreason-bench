@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_003__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_003",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:28:01+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 55,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 55-year-old man with a history of hypertension is brought to the emergency department reporting sharp pain on the left side of his chest that radiates toward the left axilla, having started 2 hours prior to arrival. He appears diaphoretic on examination. His vital signs are as follows: blood pressure 138/85 mmHg, heart rate 78 bpm, and oxygen saturation 97% on room air. Auscultation of the heart reveals no abnormal findings. A 12-lead ECG demonstrates 2 mm of ST-segment elevation in leads I, aVL, V5, and V6, along with 1 mm of reciprocal ST-segment depression in leads III and aVF. In the precordial leads V1 through V3, there is 1 mm of ST-segment depression.",
+    "rationale_for_variant": "The stem has been rewritten with restructured sentences and varied vocabulary (e.g., 'brought to' instead of 'presents to,' 'reports sharp pain' instead of 'presents with sharp chest pain,' 'prior to arrival' instead of 'ago') while every clinical fact, numeric value, lead designation, and finding is preserved exactly. The ECG pattern of lateral ST elevation with inferior reciprocal changes and anterior ST depression remains identical, unambiguously pointing to the left circumflex artery as the culprit vessel. No clinical data were added, removed, or altered that could shift the differential diagnosis.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — Catastrophic Antiphospholipid Syndrome (CAPS), an extremely rare and life-threatening (mortality ~30–50% in the modern era) presentation with rapid multi-organ thrombosis. Per the CAPS Registry guidance and the 2019 EULAR APS recommendations, the standard 'triple therapy' is therapeutic anticoagulation + high-dose corticosteroids + IV immunoglobulin and/or plasma exchange. Rituximab and eculizumab are considered in refractory cases. ICU-level supportive care is essential. The correct answer therefore shifts from preconception aspirin + prophylactic LMWH (option A) to the CAPS-specific bundle (option D).",
       "perturbation_type": "mixed",
       "correct_override": "D"
+    },
+    {
+      "variant_id": "history_reordering_exam_labs_first",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "Comprehensive thrombophilia and antiphospholipid workup in a 30-year-old woman has demonstrated: lupus anticoagulant POSITIVE on two occasions ≥12 weeks apart; anti-cardiolipin IgG HIGH titer (>40 GPL units) on two occasions ≥12 weeks apart; and anti-β2-glycoprotein-I IgG positive on two occasions ≥12 weeks apart. She is currently NOT on anticoagulation. These results, combined with her clinical history, confirm that she meets the revised Sapporo / Sydney criteria for primary antiphospholipid syndrome with both vascular thrombosis and pregnancy-morbidity criteria. Her clinical history is as follows: one provoked deep-vein thrombosis 2 years ago in the setting of long-haul travel, treated with 6 months of anticoagulation; and three first-trimester miscarriages (at 8, 10, and 9 weeks of gestation, none with identifiable embryologic abnormalities). She now presents to clinic for preconception cardiac and reproductive counseling and wishes to conceive in the next 6 months.",
+      "rationale_for_variant": "The variant presents the laboratory findings and current anticoagulation status first, followed by the clinical history (DVT before miscarriages), reversing the original chronological order of presentation. All facts, numbers, and clinical details remain identical; only the sequence in which information is introduced has changed. The diagnosis of primary APS with both vascular thrombosis and pregnancy-morbidity criteria is unchanged, so the recommended strategy of low-dose aspirin plus prophylactic LMWH with adjunctive hydroxychloroquine (option A) remains unambiguously correct.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "history_reordering",
+      "correct_override": null
+    },
+    {
+      "variant_id": "race_asian",
+      "demographics": {
+        "age": 30,
+        "sex": "female",
+        "race": "Asian",
+        "ethnicity": null
+      },
+      "stem_override": "A 30-year-old Asian woman presents to clinic for preconception cardiac and reproductive counseling. Her history includes three first-trimester miscarriages (at 8, 10, and 9 weeks of gestation, none with identifiable embryologic abnormalities) and one provoked deep-vein thrombosis 2 years ago in the setting of long-haul travel, treated with 6 months of anticoagulation. Subsequent comprehensive thrombophilia and antiphospholipid workup demonstrated: lupus anticoagulant POSITIVE on two occasions ≥12 weeks apart; anti-cardiolipin IgG HIGH titer (>40 GPL units) on two occasions ≥12 weeks apart; anti-β2-glycoprotein-I IgG positive on two occasions ≥12 weeks apart. She meets the revised Sapporo / Sydney criteria for primary antiphospholipid syndrome with both vascular thrombosis and pregnancy-morbidity criteria. She is currently NOT on anticoagulation. She wishes to conceive in the next 6 months.",
+      "rationale_for_variant": "Only the patient's race has been changed from unstated to Asian; all clinical facts, laboratory values, diagnostic criteria, and sentence order remain identical. The correct answer is unchanged because the management of antiphospholipid syndrome in pregnancy per EULAR and ACR guidelines is not race-dependent. This variant probes whether evaluators or models inappropriately alter treatment recommendations based on racial background in an autoimmune/thrombophilia context.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

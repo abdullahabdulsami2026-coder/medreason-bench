@@ -45,6 +45,19 @@
       "rationale_for_variant": "Mixed perturbation — the clinical context shifts from acute presentation to chronic management of recurrent symptomatic AVNRT despite first-line beta-blockade. Per the 2015 ACC/AHA/HRS SVT Guideline (Class I), catheter ablation of the slow pathway is recommended as a definitive therapy for symptomatic recurrent AVNRT, with high success rates (>95%) and a low risk of AV block (<1% in experienced centers). The correct answer therefore shifts from acute (vagal maneuvers + adenosine) to definitive (catheter ablation). Tests whether the model correctly distinguishes acute termination from long-term management.",
       "perturbation_type": "mixed",
       "correct_override": "C"
+    },
+    {
+      "variant_id": "sex_swap_male",
+      "demographics": {
+        "age": 35,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old man with no significant past medical history presents to the emergency department with the sudden onset of palpitations and lightheadedness 30 minutes ago after climbing a flight of stairs. He has had two similar self-limited episodes over the past year. He is alert, conversational, and has no chest pain or dyspnea. Vital signs: BP 116/72 mmHg, HR 188 bpm, RR 18, SpO2 97% on room air. Cardiac auscultation reveals a rapid, regular rhythm. Lung exam is clear. ECG shows a regular narrow-complex tachycardia at 188 bpm with no clearly visible P waves (suggesting a P wave buried in or immediately after the QRS, classic for typical AV-nodal reentrant tachycardia). The baseline ECG between episodes is normal with no pre-excitation and no structural heart disease on prior echocardiogram.",
+      "rationale_for_variant": "Only the patient's sex was changed from female to male, with corresponding pronoun updates; all clinical findings, vital signs, ECG findings, and history remain identical. AVNRT occurs in both sexes (though somewhat more commonly in women), and the acute management algorithm — vagal maneuvers followed by IV adenosine — is the same regardless of sex. This variant probes whether evaluators or models incorrectly associate AVNRT management or SVT likelihood with a particular sex.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

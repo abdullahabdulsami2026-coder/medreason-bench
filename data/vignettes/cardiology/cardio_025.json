@@ -45,6 +45,19 @@
       "rationale_for_variant": "Mixed perturbation — the AV block is now Mobitz I (Wenckebach) rather than Mobitz II, AND the patient is asymptomatic. Mobitz I block is typically AT THE LEVEL of the AV node (often vagally mediated, especially in young athletes or during sleep), generally benign, and does NOT progress reliably to complete heart block. The 2018 ACC/AHA/HRS Bradycardia Guideline does not recommend permanent pacing for asymptomatic Mobitz I AV block. Observation is the correct approach. Tests whether the model correctly distinguishes nodal Mobitz I from infranodal Mobitz II — these have radically different management.",
       "perturbation_type": "mixed",
       "correct_override": "A"
+    },
+    {
+      "variant_id": "sex_swap_male",
+      "demographics": {
+        "age": 70,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 70-year-old man with hypertension and type 2 diabetes mellitus presents to clinic with 2 weeks of intermittent lightheadedness, mild dyspnea on exertion, and one near-syncopal episode while sitting. ECG shows sinus rhythm at 78 bpm with intermittent dropped QRS complexes that are NOT preceded by progressive PR prolongation — instead, the PR interval before each dropped beat is constant. The QRS complexes are wide (130 ms) with a left bundle branch block morphology. The pattern is consistent with Mobitz type II second-degree atrioventricular block. He is on no AV-nodal-blocking agents. Echocardiogram shows preserved LVEF (60%) with no structural heart disease. Electrolytes are normal.",
+      "rationale_for_variant": "Only the patient's sex was changed from female to male, with the corresponding pronoun updated from 'She' to 'He'; all clinical findings, values, and facts remain identical. The correct answer is unchanged because Mobitz type II AV block management per ACC/AHA/HRS guidelines mandates permanent pacemaker implantation regardless of patient sex. This variant probes whether evaluators or models incorrectly apply sex-based reasoning to a guideline-driven, sex-neutral cardiac conduction disorder.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

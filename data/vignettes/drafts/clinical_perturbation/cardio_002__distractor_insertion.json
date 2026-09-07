@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_002__distractor_insertion",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_002",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:28:47+00:00",
+  "variant": {
+    "variant_id": "distractor_normal_tsh",
+    "demographics": {
+      "age": 58,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 58-year-old man with a 30-pack-year smoking history and hypertension presents to the emergency department with substernal chest pressure that began 90 minutes ago while walking. The pain radiates to the left arm and is associated with shortness of breath and diaphoresis. He has a well-healed right inguinal hernia repair from five years ago. Vital signs: BP 132/80 mmHg, HR 92 bpm, SpO2 95% on room air. Cardiac exam is unremarkable. ECG shows 4 mm ST-segment elevation in leads V1 through V4 with developing Q waves in V2 and V3, and 1 mm reciprocal ST depression in the inferior leads.",
+    "rationale_for_variant": "A single incidental fact — a well-healed remote inguinal hernia repair — was inserted as a distractor. It has no cardiovascular relevance and does not alter the anterior ST-elevation pattern in V1–V4, so the culprit-vessel answer (LAD, option C) is unchanged.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "distractor_insertion",
+    "correct_override": null
+  },
+  "vignette": null
+}

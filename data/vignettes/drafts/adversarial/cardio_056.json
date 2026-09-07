@@ -1,0 +1,40 @@
+{
+  "draft_id": "cardio_056",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:47:15+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "cardio_056",
+    "specialty": "cardiology",
+    "subspecialty": "pericardial_tamponade",
+    "stem": "A 48-year-old man is evaluated in the emergency department for 5 days of progressive exertional dyspnea and a sensation of chest heaviness. He has a history of treated stage II Hodgkin lymphoma (completed mediastinal radiation 4 years ago) and is currently in remission. He takes no cardiac medications. On examination, blood pressure is 108/72 mmHg in both arms, heart rate is 96 bpm, respiratory rate is 18 breaths per minute, and oxygen saturation is 96% on room air. The jugular venous pressure appears mildly elevated. Heart sounds are distant. There is no peripheral edema. A chest radiograph shows an enlarged cardiac silhouette with clear lung fields. A 12-lead ECG shows sinus tachycardia and low-voltage QRS complexes; no electrical alternans is present. A point-of-care echocardiogram confirms a large circumferential pericardial effusion. However, the image quality is limited and the study is documented as technically inadequate for assessment of chamber collapse, respiratory variation in valve inflow velocities, or inferior vena cava size and collapsibility. No prior echocardiogram or pericardial fluid analysis is available.",
+    "question": "Based on the information available, which is the most appropriate immediate management step for this patient?",
+    "options": {
+      "A": "Emergency pericardiocentesis at the bedside",
+      "B": "Urgent surgical pericardial window",
+      "C": "Discharge home with outpatient repeat echocardiography in 48 hours",
+      "D": "Initiation of high-dose NSAIDs and colchicine with outpatient follow-up"
+    },
+    "correct": null,
+    "rationale": "The critical missing information is whether hemodynamic compromise from cardiac tamponade physiology is actually present. The stem deliberately omits the echocardiographic signs of tamponade (right atrial or right ventricular diastolic collapse, exaggerated respiratory variation in mitral and tricuspid inflow, plethoric non-collapsing IVC) because the point-of-care study is documented as technically inadequate for these assessments. Additionally, the hemodynamic picture is ambiguous: BP is 108/72 mmHg without a documented pulsus paradoxus measurement, and the JVP is only mildly elevated. Without confirmation of tamponade physiology, the urgency and modality of intervention cannot be determined from the available data alone. Option A (emergency bedside pericardiocentesis) requires confirmation of tamponade physiology — either hemodynamic instability or echocardiographic evidence of chamber compromise — neither of which is established in this stem; proceeding without this confirmation could expose the patient to procedural risk unnecessarily. Option B (urgent surgical pericardial window) is appropriate in specific circumstances such as loculated effusion, recurrent effusion, or need for tissue diagnosis in radiation-associated or malignant pericarditis, but the stem provides no information about effusion loculation, prior drainage attempts, or tissue-diagnosis requirement that would favor surgery over percutaneous drainage; furthermore, tamponade physiology has not been confirmed. Option C (discharge with outpatient follow-up) is unsafe: a large circumferential effusion with distant heart sounds and mildly elevated JVP has not had tamponade physiology excluded, and discharge before a technically adequate echocardiogram risks decompensation. Option D (NSAIDs and colchicine with outpatient follow-up) would be appropriate for uncomplicated pericarditis with a small or moderate effusion, but the effusion here is large, tamponade has not been excluded, and the radiation history raises concern for constrictive or effusive-constrictive disease requiring further evaluation; outpatient management of a large effusion of uncertain hemodynamic significance in this context is not supportable. In summary, the stem lacks pulsus paradoxus measurement, technically adequate echocardiographic hemodynamic assessment, and clinical hemodynamic status sufficient to distinguish among these four management strategies.",
+    "difficulty": "medium",
+    "demographics": {
+      "age": 48,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. European Heart Journal 2015;36:2921-2964.",
+      "Hoit BD. Pericardial disease and pericardial tamponade. Critical Care Medicine 2007;35(8 Suppl):S355-S364.",
+      "Otto CM, ed. Textbook of Clinical Echocardiography, 6th ed. Elsevier, 2018. Chapter on pericardial disease and cardiac tamponade."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

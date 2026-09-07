@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_008__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_008",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:30:59+00:00",
+  "variant": {
+    "variant_id": "reordered_exam_first",
+    "demographics": {
+      "age": 32,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "Vital signs in a 32-year-old man with no past medical history are: BP 168/96 mmHg, HR 110 bpm, RR 18, SpO2 98% on room air. Cardiac auscultation reveals tachycardia without murmurs or gallops. ECG shows sinus tachycardia without ST-segment elevation, depression, or T-wave inversion. Initial troponin I is below the assay's detection threshold. Urine toxicology is positive for cocaine metabolites. He was brought to the emergency department by friends after using cocaine 3 hours ago, and reports substernal chest pain, palpitations, and anxiety that began 2 hours ago.",
+    "rationale_for_variant": "The clinical facts are presented in a different order: physical examination findings, vital signs, and investigation results are described before the history of cocaine use and the onset of symptoms. No fact, number, or finding has been added, removed, or altered, so the cocaine-associated chest pain scenario is unchanged. The contraindication of intravenous metoprolol due to unopposed alpha-adrenergic stimulation in the setting of cocaine use remains unambiguously correct.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

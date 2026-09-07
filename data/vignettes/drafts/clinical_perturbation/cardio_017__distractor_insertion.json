@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_017__distractor_insertion",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_017",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:30:52+00:00",
+  "variant": {
+    "variant_id": "distractor_normal_tsh",
+    "demographics": {
+      "age": 64,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 64-year-old man with a remote history of mediastinal radiation for Hodgkin lymphoma 25 years ago presents with 8 months of progressive exertional dyspnea, fatigue, abdominal distension, and lower-extremity edema. He has stable benign prostatic hyperplasia managed with tamsulosin. Vital signs: BP 110/68 mmHg, HR 88 bpm, RR 18, SpO2 97%. Exam shows JVP at 14 cm H2O with a prominent y-descent, Kussmaul's sign (rise in JVP with inspiration), a pericardial knock on auscultation, hepatomegaly, ascites, and 3+ lower-extremity edema. Lung exam is clear. Echocardiogram shows a normal LVEF, mild biatrial enlargement, septal bounce on real-time imaging, respiratory variation in mitral inflow Doppler (>25%), and an inferior vena cava plethoric without inspiratory collapse. Cardiac CT shows a thickened (6 mm) pericardium with linear pericardial calcification.",
+    "rationale_for_variant": "A single incidental fact — stable benign prostatic hyperplasia on tamsulosin — was inserted as a distractor. It is unrelated to the constriction-versus-restriction question and supports no answer option, so the correct answer (C) is unchanged.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "distractor_insertion",
+    "correct_override": null
+  },
+  "vignette": null
+}

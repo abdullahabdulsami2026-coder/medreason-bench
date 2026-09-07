@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_042__distractor_insertion",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_042",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:14+00:00",
+  "variant": {
+    "variant_id": "distractor_normal_tsh",
+    "demographics": {
+      "age": 38,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 38-year-old man (recreational distance runner; 25–30 miles per week) presents to clinic with 6 weeks of bilateral heel pain that is worse with the first few steps in the morning and after periods of rest, and improves slightly with walking. Examination shows tenderness at the Achilles-tendon insertion bilaterally and tenderness at the medial calcaneal tubercle (the plantar-fascia origin) bilaterally. He has NO inflammatory back pain, NO peripheral synovitis, NO skin or nail psoriasis, NO inflammatory bowel symptoms, NO uveitis, and NO recent gastrointestinal or genitourinary infections. Vital signs stable. Labs: rheumatoid factor and anti-CCP negative; ESR 12 mm/h, CRP 4 mg/L (within normal limits); HLA-B27 NEGATIVE; ferritin 85 ng/mL (normal). He has tried RICE protocol and a 2-week course of ibuprofen with limited improvement.",
+    "rationale_for_variant": "A single incidental finding — a normal ferritin of 85 ng/mL — was inserted as a distractor. Normal iron stores are irrelevant to mechanical enthesopathy in a runner and support no answer option; the absence of SpA red flags is unchanged, so the correct answer (A) stands.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "distractor_insertion",
+    "correct_override": null
+  },
+  "vignette": null
+}

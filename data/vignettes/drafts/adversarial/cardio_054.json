@@ -1,0 +1,40 @@
+{
+  "draft_id": "cardio_054",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:46:22+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "cardio_054",
+    "specialty": "cardiology",
+    "subspecialty": "heart_failure_preserved_ef",
+    "stem": "A 72-year-old woman with a history of hypertension, type 2 diabetes mellitus, and obesity (BMI 34 kg/m²) presents to an outpatient cardiology clinic with a 4-month history of progressive exertional dyspnea and lower-extremity edema. She denies orthopnea, paroxysmal nocturnal dyspnea, and chest pain. Vital signs: BP 158/92 mmHg, HR 78 bpm, RR 16, SpO2 94% on room air, weight 98 kg. Cardiac examination reveals a regular rate and rhythm; S1 and S2 are present; no murmurs, rubs, or extra heart sounds are appreciated. Trace bilateral pitting edema is noted at the ankles. Lung fields are clear to auscultation bilaterally. A 12-lead ECG shows normal sinus rhythm with left ventricular hypertrophy by voltage criteria and nonspecific ST-T wave changes. Chest radiograph demonstrates mild cardiomegaly without pulmonary vascular congestion or pleural effusions. A transthoracic echocardiogram is reported as showing preserved left ventricular ejection fraction (LVEF 58%) with concentric left ventricular remodeling; however, diastolic function grading is explicitly listed as 'indeterminate' due to inconclusive Doppler parameters, and no E/e′ ratio, tricuspid regurgitation velocity, or left atrial volume index is provided in the report. Serum BNP has been ordered but the result is not yet available.",
+    "question": "Based on the information currently available, which pharmacological strategy is most strongly indicated to reduce cardiovascular morbidity in this patient?",
+    "options": {
+      "A": "Initiate an SGLT2 inhibitor (empagliflozin) targeting symptomatic heart failure with preserved ejection fraction",
+      "B": "Initiate a mineralocorticoid receptor antagonist (spironolactone) to reduce hospitalizations in heart failure with preserved ejection fraction",
+      "C": "Initiate an angiotensin receptor-neprilysin inhibitor (sacubitril-valsartan) to improve outcomes in heart failure with preserved ejection fraction",
+      "D": "Initiate loop diuretic therapy (furosemide) targeting congestive symptoms"
+    },
+    "correct": null,
+    "rationale": "The key discriminating information required to select any of the four pharmacological strategies is absent from the stem. A confirmed diagnosis of heart failure with preserved ejection fraction (HFpEF) requires not only a preserved LVEF but also objective evidence of elevated left-sided filling pressures or diastolic dysfunction — typically established by an E/e′ ratio ≥15, left atrial volume index >34 mL/m², tricuspid regurgitation velocity >2.8 m/s, or an elevated natriuretic peptide level. The echocardiographic diastolic function grading in this case is explicitly indeterminate, no supporting Doppler parameters are provided, and the BNP result is pending. Without this information, it is impossible to confirm HFpEF as the etiology of the patient's dyspnea and edema, or to exclude alternative explanations (e.g., obesity-related dyspnea, pulmonary disease, or hypertensive heart disease without overt heart failure). Each option therefore cannot be justified: Option A (empagliflozin for HFpEF): The EMPEROR-Preserved and DELIVER trials established benefit in confirmed HFpEF. Because the diagnosis of HFpEF cannot be confirmed without objective evidence of elevated filling pressures — which is indeterminate here and the BNP is pending — the indication cannot be established from the available data. Option B (spironolactone for HFpEF): The TOPCAT trial and subsequent analyses support consideration of mineralocorticoid receptor antagonists in HFpEF, but again, the diagnosis of HFpEF is unconfirmed. Additionally, renal function and potassium levels are not provided, making safety assessment impossible. Option C (sacubitril-valsartan for HFpEF): The PARAGON-HF trial showed a borderline, subgroup-dependent signal for sacubitril-valsartan in HFpEF. Even if one accepts a potential role, the diagnosis of HFpEF is unconfirmed, and current guidelines do not provide a strong uniform recommendation for this agent in HFpEF. Option D (loop diuretic therapy): the stem documents clear lung fields, only trace ankle edema, and a chest radiograph without pulmonary vascular congestion — there is no objective congestion to treat, and empiric diuresis without confirmed elevated filling pressures is not supported. The clinically appropriate action is to await the BNP result, obtain complete diastolic function Doppler parameters (or perform exercise stress echocardiography if resting parameters remain indeterminate), and confirm or exclude HFpEF before committing to a diagnosis-specific pharmacological strategy.",
+    "difficulty": "hard",
+    "demographics": {
+      "age": 72,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Heidenreich PA, Bozkurt B, Aguilar D, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Journal of the American College of Cardiology 2022;79:e263-e421.",
+      "Nagueh SF, Smiseth OA, Appleton CP, et al. Recommendations for the Evaluation of Left Ventricular Diastolic Function by Echocardiography: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. Journal of the American Society of Echocardiography 2016;29:277-314.",
+      "McDonagh TA, Metra M, Adamo M, et al. 2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. European Heart Journal 2021;42:3599-3726."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

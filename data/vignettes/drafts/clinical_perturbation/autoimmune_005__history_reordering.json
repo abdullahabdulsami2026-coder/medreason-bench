@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_005__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_005",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:23+00:00",
+  "variant": {
+    "variant_id": "reordered_exam_first",
+    "demographics": {
+      "age": 30,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "Fetal echocardiography by maternal-fetal medicine at 18 weeks of gestation demonstrates a fetal heart rate of 90 bpm with a 2:1 atrioventricular conduction pattern consistent with INCOMPLETE (second-degree, Mobitz-II-like) atrioventricular block — first detection in this pregnancy. There are no structural cardiac defects, no fetal hydrops, and the fetal anatomy is otherwise normal. The amniotic-fluid volume is normal. Two weeks prior, the PR interval was prolonged on fetal Doppler. Maternal vital signs are normal; she is asymptomatic. The patient is a 30-year-old woman in her first pregnancy presenting for routine fetal cardiac surveillance. She has known systemic lupus erythematosus with strongly positive anti-Ro/SSA and anti-La/SSB antibodies since her SLE diagnosis 4 years ago. She has been on hydroxychloroquine 400 mg/d throughout pregnancy.",
+    "rationale_for_variant": "The presentation now leads with the fetal echocardiographic and Doppler findings, then maternal examination findings, and finally the obstetric and rheumatologic history, reversing the conventional history-first order. All facts, numbers, and clinical details are preserved exactly; only their sequence has changed. The correct answer remains B because the clinical scenario — incomplete fetal AV block at 18 weeks in an anti-Ro/SSA-positive mother already on hydroxychloroquine — is identical and still represents an actionable window for maternal fluorinated corticosteroid therapy.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

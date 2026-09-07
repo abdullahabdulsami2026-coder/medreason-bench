@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_002__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_002",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:27:29+00:00",
+  "variant": {
+    "variant_id": "reordered_exam_first",
+    "demographics": {
+      "age": 32,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "Vital signs: BP 158/96 mmHg, HR 84 bpm. Labs: serum creatinine 1.6 mg/dL (baseline 0.9), 24-hour urine protein 4.5 g, urinalysis with microscopic hematuria and red-cell casts; anti-dsDNA antibody 480 IU/mL (markedly elevated); C3 48 mg/dL and C4 6 mg/dL (markedly low). Renal biopsy demonstrates ISN/RPS Class IV (diffuse proliferative) lupus nephritis with NIH activity index 8/24 and chronicity index 1/12 (low chronicity). These findings are from a 32-year-old woman who presents with 4 weeks of progressive lower-extremity edema and dark urine. She has a 3-year history of systemic lupus erythematosus previously managed with hydroxychloroquine and low-dose prednisone. She is not pregnant, has no contraindications to standard immunosuppression, and is not planning a pregnancy in the next 12 months.",
+    "rationale_for_variant": "The variant presents the objective data (vital signs, laboratory results, and biopsy findings) before the history and presenting symptoms, reversing the conventional order of clinical presentation. All facts, values, and clinical details are identical to the base case; only their sequence has changed. The correct answer remains B because the same clinical picture — active Class IV lupus nephritis with high activity index, low chronicity, and no pregnancy plans — mandates the same induction regimen regardless of the order in which information is disclosed.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

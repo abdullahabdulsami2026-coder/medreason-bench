@@ -23,12 +23,14 @@ CONFIDENCE_SUFFIX: str = (
     "After your answer, report your confidence as an integer 0-100. "
     "Calibrate honestly: say 50 if unsure, say 95 only if near-certain.\n\n"
     "Format your response EXACTLY as:\n"
-    "ANSWER: <letter>\n"
+    "ANSWER: <letter, or NONE if no option is supported by the vignette>\n"
     "CONFIDENCE: <0-100>\n"
     "RATIONALE: <2-3 sentences>\n"
 )
 
-_ANSWER_RE = re.compile(r"ANSWER\s*:\s*([A-Z])", re.IGNORECASE)
+# NONE must be tried before the single-letter branch, otherwise
+# "ANSWER: None" would parse as the letter N.
+_ANSWER_RE = re.compile(r"ANSWER\s*:\s*(NONE|[A-Z])\b", re.IGNORECASE)
 _CONFIDENCE_RE = re.compile(r"CONFIDENCE\s*:\s*(\d{1,3})", re.IGNORECASE)
 _RATIONALE_RE = re.compile(
     r"RATIONALE\s*:\s*(.+?)(?:\n\s*\n|\Z)",
@@ -45,13 +47,16 @@ def parse_confidence_response(raw: str) -> tuple[str | None, int | None, str | N
     Returns:
         A tuple ``(answer_letter, confidence_int, rationale)``. Each field
         is ``None`` if the corresponding section was absent or unparseable.
-        ``confidence_int`` is clamped to ``[0, 100]``.
+        ``ANSWER: NONE`` (the abstention channel) also yields ``None`` for
+        the answer. ``confidence_int`` is clamped to ``[0, 100]``.
     """
     answer_match = _ANSWER_RE.search(raw)
     confidence_match = _CONFIDENCE_RE.search(raw)
     rationale_match = _RATIONALE_RE.search(raw)
 
     answer: str | None = answer_match.group(1).upper() if answer_match else None
+    if answer == "NONE":
+        answer = None
 
     confidence: int | None
     if confidence_match is None:

@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_005__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_005",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:59+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 60,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 60-year-old woman with a history of hypertension and dyslipidemia is brought to the emergency department reporting three separate episodes of substernal chest discomfort occurring at rest over the preceding 24 hours, each episode lasting between 5 and 15 minutes. The most recent episode resolved on its own approximately 1 hour before arrival. On examination, blood pressure is 138/85 mmHg, heart rate is 75 bpm, and oxygen saturation is 97% on room air. Cardiac auscultation reveals no abnormal findings. An ECG obtained during the latest symptomatic episode demonstrated transient T-wave inversions in leads V4 through V6, which have since returned to baseline. The initial troponin I level is measured at 0.03 ng/mL against an upper reference limit of 0.04 ng/mL.",
+    "rationale_for_variant": "The stem has been rewritten using different sentence structures and vocabulary (e.g., 'discomfort' for 'pain,' 'preceding' for 'past,' 'demonstrated' for 'showed,' 'returned to baseline' for 'normalized') while every clinical fact, numeric value, and level of detail from the original vignette is preserved exactly. No findings have been added, removed, or altered in a clinically meaningful way. The correct answer remains B because the distinction between NSTEMI and unstable angina still hinges on the Fourth Universal Definition requirement for a rise-and-fall pattern of serial troponin values with at least one above the 99th-percentile upper reference limit.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

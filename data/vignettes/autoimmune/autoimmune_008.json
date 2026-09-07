@@ -45,6 +45,33 @@
       "rationale_for_variant": "Sex / age and indication perturbation only — the AAO retinopathy-screening framework is the same for SLE and RA patients on HCQ, and the screening starts at 5 years for the same reasons. Age >60 is one of the higher-risk features that may warrant slightly closer surveillance, but the annual SD-OCT + 10-2 visual field framework remains the standard.",
       "perturbation_type": "pure_demographic",
       "correct_override": null
+    },
+    {
+      "variant_id": "distractor_normal_tsh",
+      "demographics": {
+        "age": 50,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old woman with systemic lupus erythematosus has been on hydroxychloroquine 400 mg/d (5 mg/kg actual body weight, weight 80 kg) for 6 years. Disease has been stable on hydroxychloroquine alone. Her most recent ophthalmologic screening 1 year ago (5 years on HCQ) was completely normal: SD-OCT and 10-2 visual field testing without abnormalities; fundus exam normal. She has no visual symptoms, no renal disease, and no concomitant tamoxifen. A routine 25-hydroxyvitamin D level obtained at her annual physical is 38 ng/mL (sufficient). Her primary-care physician asks about ongoing screening for HCQ retinopathy and dose adjustments.",
+      "rationale_for_variant": "A single incidental finding — a sufficient 25-hydroxyvitamin D of 38 ng/mL — was inserted as a distractor. Vitamin D status is neither a risk factor for HCQ retinopathy nor relevant to the 2016 AAO screening recommendations, and it supports no answer option. All other details are verbatim, so the correct answer (A) is unchanged.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "distractor_insertion",
+      "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_male",
+      "demographics": {
+        "age": 50,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 50-year-old man with systemic lupus erythematosus has been on hydroxychloroquine 400 mg/d (5 mg/kg actual body weight, weight 80 kg) for 6 years. Disease has been stable on hydroxychloroquine alone. His most recent ophthalmologic screening 1 year ago (5 years on HCQ) was completely normal: SD-OCT and 10-2 visual field testing without abnormalities; fundus exam normal. He has no visual symptoms, no renal disease, and no concomitant tamoxifen. His primary-care physician asks about ongoing screening for HCQ retinopathy and dose adjustments.",
+      "rationale_for_variant": "Only the patient's sex was changed from female to male, with corresponding pronoun updates; all clinical facts, drug doses, weights, durations, and findings remain identical. The correct answer (A) is unchanged because the 2016 AAO HCQ screening guidelines apply regardless of patient sex, and none of the risk-stratification factors (dose, renal disease, age, tamoxifen, retinal disease) are sex-dependent in this context. This variant probes whether clinicians or models inappropriately associate SLE or HCQ monitoring recommendations with female sex, given that SLE predominantly affects women but the management guidelines are sex-neutral.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

@@ -1,6 +1,6 @@
 """Aggregate results/runs/*.jsonl into results/aggregated/leaderboard.json.
 
-Not yet implemented. Aggregates results/runs/*.jsonl into a leaderboard.
+Implemented in Phase 4. See `MEDREASON_BENCH_CLAUDE_CODE_BRIEF.md` Section 4 step 4.
 """
 
 from __future__ import annotations

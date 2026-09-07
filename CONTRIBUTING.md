@@ -29,7 +29,7 @@ Thanks for considering a contribution. This project is a public, peer-review-qua
 
 1. Place the JSON in `data/vignettes/<specialty>/<id>.json`. The schema is in `data/vignettes/schema.py`.
 2. Cite source(s) — textbook, guideline, peer-reviewed paper. No PHI.
-3. Two-reviewer rule: a second author must review and sign off in `data/vignettes/REVIEW_LOG.md`.
+3. Review: the maintainer reviews and signs off on every contributed vignette before merge.
 
 ## Reporting issues
 

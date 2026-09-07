@@ -1,0 +1,40 @@
+{
+  "draft_id": "cardio_053",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "rejected",
+  "review_note": "provocation testing and stress CMR both guideline-defensible; machine review, user-approved",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:45:53+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "cardio_053",
+    "specialty": "cardiology",
+    "subspecialty": "vasospastic_angina",
+    "stem": "A 48-year-old woman is referred to a cardiology clinic for evaluation of recurrent chest discomfort. She reports episodes of substernal pressure lasting 10–20 minutes, occurring at variable times — sometimes at rest in the early morning, sometimes during mild exertion such as walking to her car. The episodes partially resolve with rest but have not been systematically tested with sublingual nitroglycerin. She has a 15 pack-year smoking history and quit 2 years ago. She takes no regular cardiac medications. Resting 12-lead ECG obtained between episodes is normal sinus rhythm with no ST-segment or T-wave abnormalities. A transthoracic echocardiogram shows normal LV size and function (LVEF 65%), no wall-motion abnormalities, and no significant valvular disease. A standard Bruce-protocol exercise stress test was performed: she exercised to 10.2 METs, achieved 92% of maximum predicted heart rate, and the test was terminated due to fatigue. No chest pain was reproduced during exercise, and there were no ST-segment changes throughout the test. Fasting lipid panel: LDL 118 mg/dL, HDL 52 mg/dL, triglycerides 140 mg/dL. Fasting glucose 94 mg/dL. High-sensitivity troponin I obtained during a symptomatic episode in the emergency department 3 weeks ago was reported as 'borderline elevated' at 16 ng/L (laboratory upper reference limit 15 ng/L for women), with a repeat value at 3 hours of 15 ng/L. Coronary CT angiography (CCTA) was performed and showed mild non-obstructive coronary artery disease (< 30% stenosis in the proximal LAD) with no high-risk plaque features; all other segments were angiographically normal.",
+    "question": "Which of the following is the most appropriate next diagnostic or management step?",
+    "options": {
+      "A": "Proceed directly to invasive coronary angiography with acetylcholine provocation testing to confirm vasospastic angina",
+      "B": "Initiate empiric long-acting calcium channel blocker therapy and discharge with a diagnosis of vasospastic angina",
+      "C": "Initiate high-intensity statin therapy and aspirin for presumed non-obstructive coronary artery disease with plaque-related ischemia (INOCA)",
+      "D": "Refer for cardiac MRI with adenosine stress perfusion to evaluate for microvascular coronary disease"
+    },
+    "correct": null,
+    "rationale": "The stem deliberately withholds the single most discriminating piece of information needed to select among these four options: the result of ambulatory ECG monitoring (or in-hospital telemetry) during a spontaneous symptomatic episode. Without documented transient ST-segment elevation or ST depression time-locked to symptoms, it is impossible to distinguish vasospastic angina from microvascular coronary disease (INOCA/CMD), non-obstructive CAD with stable symptoms, or another etiology. Each option therefore cannot be defended from the available data alone.\n\nAdditional ambiguities compound the uncertainty: (1) The borderline troponin elevation (16 ng/L versus a URL of 15 ng/L, with a repeat of 15 ng/L) does not meet the rising-and-falling delta criterion for type 1 MI, but its significance — whether it reflects a minor myocardial injury, assay variability, or a true ischemic event — is indeterminate without serial values and clinical context. (2) The exercise stress test was negative for ischemia at high workload, which argues against fixed obstructive disease but does not exclude vasospasm (which is often catecholamine-suppressed during exercise) or microvascular dysfunction. (3) The CCTA confirms non-obstructive disease but cannot distinguish vasospasm from microvascular disease as the mechanism of symptoms. (4) The variable timing of episodes (rest and exertion) is consistent with both vasospastic and microvascular etiologies and does not permit a mechanistic diagnosis.\n\nOption A (invasive angiography with acetylcholine provocation) is the gold-standard test for confirming vasospastic angina, but current ESC and ACC/AHA guidance reserves provocation testing for patients in whom vasospasm is the leading diagnosis after non-invasive evaluation — including documented transient ST changes during spontaneous episodes or a failed empiric trial of calcium channel blockers. The stem provides no such documentation; proceeding directly to invasive testing is not justified without this prior step.\n\nOption B (empiric calcium channel blocker with a diagnosis of vasospastic angina) requires at minimum either documented transient ECG changes during symptoms or a clinical pattern strongly consistent with vasospasm (predominantly rest angina with complete relief by nitrates, clear circadian pattern). The stem describes variable-timing episodes without documented ECG correlation and without a nitroglycerin response, making a definitive diagnosis of vasospastic angina — and empiric labeling — premature.\n\nOption C (high-intensity statin and aspirin for INOCA/plaque-related ischemia) would be appropriate if the mechanism were determined to be endothelial dysfunction or plaque-related non-obstructive disease, but the stem does not provide coronary reactivity testing results, fractional flow reserve measurements, or any functional assessment of the non-obstructive lesion. Initiating this regimen as the 'most appropriate next step' presupposes a mechanism that has not been established.\n\nOption D (cardiac MRI with adenosine stress perfusion for microvascular disease) is a reasonable diagnostic consideration for suspected CMD/INOCA, but the stem does not provide the results of ambulatory monitoring, a nitroglycerin response trial, or any other finding that would specifically direct evaluation toward microvascular disease over vasospasm. Selecting this option over provocation testing (option A) — or vice versa — cannot be justified from the available data alone.\n\nThe key missing information is: (1) ambulatory or in-hospital ECG documentation during a symptomatic episode, and (2) the patient's response (or lack thereof) to sublingual nitroglycerin. These two data points are explicitly cited in ESC and ACC/AHA guidance as essential prerequisites for directing the diagnostic workup toward vasospastic angina versus microvascular disease versus other causes of chest pain with non-obstructive coronary arteries.",
+    "difficulty": "hard",
+    "demographics": {
+      "age": 48,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Kunadian V et al. An EAPCI Expert Consensus Document on Ischaemia with Non-Obstructive Coronary Arteries in Collaboration with European Heart Rhythm Association, Heart Failure Association, and ESC Working Group on Thrombosis. Eur Heart J 2020;41:3504-3520.",
+      "Beltrame JF et al. International Standardization of Diagnostic Criteria for Vasospastic Angina. Eur Heart J 2017;38:2565-2568.",
+      "Knuuti J et al. 2019 ESC Guidelines for the Diagnosis and Management of Chronic Coronary Syndromes. Eur Heart J 2020;41:407-477."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

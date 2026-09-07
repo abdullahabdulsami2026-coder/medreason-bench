@@ -45,6 +45,33 @@
       "rationale_for_variant": "Age perturbation only — clinical content (controlled SLE on a regimen that includes methotrexate, planning pregnancy in 6 months) is unchanged. Advanced maternal age (≥35) increases baseline obstetric risk (preeclampsia, gestational diabetes, fetal aneuploidy) but does not alter the SLE-specific medication-adjustment plan. The same plan applies: stop MTX ≥3 months preconception, continue HCQ + low-dose prednisone, substitute azathioprine if needed, ≥6 months of remission required.",
       "perturbation_type": "pure_demographic",
       "correct_override": null
+    },
+    {
+      "variant_id": "history_reordering_exam_labs_first",
+      "demographics": {
+        "age": 28,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "Vital signs and labs are entirely normal: BP 118/72, no proteinuria, normal complements, anti-dsDNA negative. On examination and review of serologies, she is anti-Ro/SSA negative and has no antiphospholipid antibodies. Her current SLE manifestations are mild to moderate skin and joint disease. She has been clinically and serologically stable on hydroxychloroquine 400 mg/d, prednisone 5 mg/d, and methotrexate 15 mg/wk for the past 18 months, with a SLEDAI-2K consistently <4. She has no history of lupus nephritis and no prior pregnancies. The patient is a 28-year-old woman with systemic lupus erythematosus diagnosed 4 years ago who now presents to clinic for preconception counseling, wishing to conceive in the next 6 months and asking about medication adjustments.",
+      "rationale_for_variant": "The variant presents the laboratory and examination findings first, followed by the current medication and disease-stability data, and concludes with the demographic and chief-complaint framing that opened the original vignette. No clinical facts, numbers, or diagnoses were added, removed, or altered. The correct answer remains B because all the medically relevant details—methotrexate use, disease remission duration, absence of nephritis or antiphospholipid antibodies, and the desire to conceive within 6 months—are fully preserved and unchanged.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "history_reordering",
+      "correct_override": null
+    },
+    {
+      "variant_id": "ethnicity_hispanic",
+      "demographics": {
+        "age": 28,
+        "sex": "female",
+        "race": null,
+        "ethnicity": "Hispanic or Latino"
+      },
+      "stem_override": "A 28-year-old Hispanic or Latino woman with systemic lupus erythematosus diagnosed 4 years ago presents to clinic for preconception counseling. Her current SLE manifestations are mild to moderate skin and joint disease, and she has been clinically and serologically stable on hydroxychloroquine 400 mg/d, prednisone 5 mg/d, and methotrexate 15 mg/wk for the past 18 months (SLEDAI-2K consistently <4). She has no history of lupus nephritis, no antiphospholipid antibodies, no prior pregnancies. She is anti-Ro/SSA negative. Vital signs and labs are normal: BP 118/72, no proteinuria, normal complements, anti-dsDNA negative. She wishes to conceive in the next 6 months and is asking about medication adjustments.",
+      "rationale_for_variant": "Only the patient's ethnicity was changed from unstated to Hispanic or Latino; all clinical facts, laboratory values, medication details, and sentence order remain identical. The correct answer (B) is determined entirely by SLE disease status, medication teratogenicity, and guideline-based preconception management, none of which vary by ethnicity. This variant probes whether clinicians or models might incorrectly weight ethnicity-related SLE severity stereotypes (Hispanic patients can have more severe SLE on average, but this patient's specific clinical profile drives the answer) rather than the clinical evidence presented.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

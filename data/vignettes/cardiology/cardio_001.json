@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — age changes AND chest pain is replaced with autonomic anginal-equivalent symptoms (weakness, dyspnea, nausea) characteristic of silent MI in long-standing diabetics. The ECG finding is unchanged, so the correct answer (RCA) still holds, but the clinical narrative no longer contains the classic textbook chest-pain anchor. Tests whether the model recognizes inferior STEMI from the ECG when the symptom history is non-classic.",
       "perturbation_type": "mixed",
       "correct_override": null
+    },
+    {
+      "variant_id": "distractor_normal_tsh",
+      "demographics": {
+        "age": 62,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 62-year-old man with hypertension and dyslipidemia presents to the emergency department with crushing substernal chest pain radiating to the jaw that began 1 hour ago. He is diaphoretic and nauseated. Vital signs: BP 148/92 mmHg, HR 68 bpm, SpO2 97% on room air. He has a known history of well-controlled hypothyroidism on stable levothyroxine therapy, with a TSH of 2.4 mIU/L on his most recent outpatient labs. Cardiac auscultation reveals a regular rate without murmurs, gallops, or rubs. ECG shows 3 mm ST-segment elevation in leads II, III, and aVF, with reciprocal ST-segment depression in leads I and aVL. There are no precordial ST changes.",
+      "rationale_for_variant": "The only addition is a history of well-controlled hypothyroidism with a normal TSH of 2.4 mIU/L, which is a stable, treated comorbidity that does not alter the ECG pattern, the differential diagnosis, or the identification of the culprit vessel. Hypothyroidism does not cause inferior ST-segment elevation or mimic RCA occlusion, so it serves purely as a distractor. The inferior STEMI pattern (ST elevation in II, III, aVF with reciprocal depression in I and aVL) continues to point unambiguously to the right coronary artery as the culprit vessel.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "distractor_insertion",
+      "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_female",
+      "demographics": {
+        "age": 62,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 62-year-old woman with hypertension and dyslipidemia presents to the emergency department with crushing substernal chest pain radiating to the jaw that began 1 hour ago. She is diaphoretic and nauseated. Vital signs: BP 148/92 mmHg, HR 68 bpm, SpO2 97% on room air. Cardiac auscultation reveals a regular rate without murmurs, gallops, or rubs. ECG shows 3 mm ST-segment elevation in leads II, III, and aVF, with reciprocal ST-segment depression in leads I and aVL. There are no precordial ST changes.",
+      "rationale_for_variant": "Only the patient's sex and corresponding pronouns were changed from male to female; all clinical data, ECG findings, and vital signs remain identical. The culprit vessel is determined entirely by the ECG pattern of inferior ST elevation with reciprocal changes, which is independent of patient sex, so the correct answer (RCA) is unchanged. This variant probes whether evaluators or models might underweight classic ischemic presentations in women or default to atypical-presentation assumptions based on sex bias.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

@@ -11,6 +11,6 @@ at run-time; vignettes are textbook-style and demographic-anonymized.
 | MedMCQA          | `medmcqa`                     | topic ∈ {cardiology, rheumatology, immunology} | MIT       |
 | MedQA-USMLE      | `bigbio/med_qa`               | regex on cardio + autoimmune keywords          | MIT       |
 | PubMedQA         | `pubmed_qa`                   | MeSH terms cardio + autoimmune                 | MIT       |
-| Custom Vignettes | `data/vignettes/` (this repo) | hand-written, two-reviewer rule                | CC-BY-4.0 |
+| Custom Vignettes | `data/vignettes/` (this repo) | hand-written, single-author review                | CC-BY-4.0 |
 
 Filter scripts live in `data/filters/` and the rationale for each filter is documented in `notebooks/02_subspecialty_filtering.ipynb` (added in Phase 2).

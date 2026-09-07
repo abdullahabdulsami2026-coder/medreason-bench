@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_009__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_009",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:30:27+00:00",
+  "variant": {
+    "variant_id": "history_reordering_exam_labs_first",
+    "demographics": {
+      "age": 28,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "Vital signs and labs are entirely normal: BP 118/72, no proteinuria, normal complements, anti-dsDNA negative. On examination and review of serologies, she is anti-Ro/SSA negative and has no antiphospholipid antibodies. Her current SLE manifestations are mild to moderate skin and joint disease. She has been clinically and serologically stable on hydroxychloroquine 400 mg/d, prednisone 5 mg/d, and methotrexate 15 mg/wk for the past 18 months, with a SLEDAI-2K consistently <4. She has no history of lupus nephritis and no prior pregnancies. The patient is a 28-year-old woman with systemic lupus erythematosus diagnosed 4 years ago who now presents to clinic for preconception counseling, wishing to conceive in the next 6 months and asking about medication adjustments.",
+    "rationale_for_variant": "The variant presents the laboratory and examination findings first, followed by the current medication and disease-stability data, and concludes with the demographic and chief-complaint framing that opened the original vignette. No clinical facts, numbers, or diagnoses were added, removed, or altered. The correct answer remains B because all the medically relevant details—methotrexate use, disease remission duration, absence of nephritis or antiphospholipid antibodies, and the desire to conceive within 6 months—are fully preserved and unchanged.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

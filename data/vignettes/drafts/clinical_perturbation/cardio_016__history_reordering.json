@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_016__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_016",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:31:30+00:00",
+  "variant": {
+    "variant_id": "reordered_exam_first",
+    "demographics": {
+      "age": 55,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "On examination, a 55-year-old woman is found to have JVP elevated to the angle of the jaw with a prominent x-descent, muffled heart sounds, and clear lung fields. Pulsus paradoxus is measured at 18 mmHg. Vital signs reveal BP 86/58 mmHg, HR 122 bpm, RR 24, and SpO2 95% on room air. Bedside transthoracic echocardiogram shows a large circumferential pericardial effusion with right-atrial systolic collapse, right-ventricular early-diastolic collapse, and a plethoric inferior vena cava without inspiratory collapse. ECG shows electrical alternans with low voltage. The patient reports 24 hours of progressively worsening dyspnea, chest tightness, and lightheadedness. Her medical history is notable for rheumatoid arthritis managed with chronic prednisone.",
+    "rationale_for_variant": "The physical examination and investigation findings are presented before the symptom history and background history, reversing the conventional order used in the base case. All numerical values, clinical findings, and diagnoses remain identical, preserving the unambiguous diagnosis of hemodynamically significant cardiac tamponade. The correct answer (B: urgent percutaneous pericardiocentesis under echocardiographic guidance) is unchanged because no facts have been added, removed, or altered. This reordering tests whether examinees can identify the correct management regardless of the narrative sequence in which clinical information is presented.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

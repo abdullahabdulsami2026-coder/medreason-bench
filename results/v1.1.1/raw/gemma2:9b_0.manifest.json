@@ -1,0 +1,18 @@
+{
+  "run_id": "580af019-221b-45a7-bdec-2bed81030270",
+  "model": "gemma2:9b",
+  "model_version": "gemma2:9b",
+  "dataset": "vignettes+variants",
+  "dataset_version": "1.1.1",
+  "prompt_template": "mcq",
+  "confidence_method": "verbalized_0_100",
+  "n_items": 399,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 0,
+  "prompt_hash": "26c85aa0de7fa420b02ec067051c2cd51c6640906371829c4544eda1f2d0cbb0",
+  "git_sha": "ca9491116219353462b666d342a0cca1de616f95",
+  "started_at": "2026-09-07T06:07:33.436403+00:00",
+  "finished_at": "2026-09-07T12:30:37.977035+00:00",
+  "total_elapsed_s": 2296.485572792124
+}

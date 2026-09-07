@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 # ── Demographics + variants ───────────────────────────────────────
 
@@ -50,9 +50,15 @@ class VignetteVariant(BaseModel):
     the answer while clinical perturbations may not.
 
     ``correct_override`` lets a variant declare a different correct
-    answer than the parent vignette; this is required for
-    ``"clinical_perturbation"`` or ``"mixed"`` variants whose changes
-    actually move the right answer.
+    answer than the parent vignette; this is required for ``"mixed"``
+    variants whose changes actually move the right answer.
+    ``pure_demographic`` and ``clinical_perturbation`` variants must
+    preserve the answer (``correct_override`` stays None) — robustness
+    and fairness metrics rely on that invariant.
+
+    ``perturbation_subtype`` refines ``clinical_perturbation`` into the
+    three answer-preserving robustness probes (distractor insertion,
+    history reordering, paraphrase); it is None for other types.
     """
 
     model_config = ConfigDict(extra="forbid")
@@ -66,6 +72,14 @@ class VignetteVariant(BaseModel):
         "clinical_perturbation",
         "mixed",
     ] = "pure_demographic"
+    perturbation_subtype: (
+        Literal[
+            "distractor_insertion",
+            "history_reordering",
+            "paraphrase",
+        ]
+        | None
+    ) = None
     correct_override: str | None = None
 
 
@@ -95,6 +109,39 @@ class Vignette(BaseModel):
     variants: list[VignetteVariant] = Field(default_factory=list)
     sources: list[str] = Field(default_factory=list)
     license: str = "CC-BY-4.0"
+
+
+class DraftRecord(BaseModel):
+    """A generated corpus-expansion item awaiting human review.
+
+    Drafts live in ``data/vignettes/drafts/`` and never enter the main
+    corpus until a reviewer sets ``reviewed=True`` with
+    ``status="approved"`` and runs the promote step
+    (``scripts/review_drafts.py promote``). Exactly one of ``variant``
+    (a new variant for the existing case ``parent_id``) or ``vignette``
+    (a new adversarial base case) is set.
+    """
+
+    model_config = ConfigDict(extra="forbid")
+
+    draft_id: str
+    category: Literal["clinical_perturbation", "pure_demographic", "adversarial"]
+    parent_id: str | None = None
+    reviewed: bool = False
+    status: Literal["pending", "approved", "rejected", "promoted"] = "pending"
+    review_note: str = ""
+    generator_model: str
+    generated_at: str
+    variant: VignetteVariant | None = None
+    vignette: Vignette | None = None
+
+    @model_validator(mode="after")
+    def _payload_shape(self) -> DraftRecord:
+        if (self.variant is None) == (self.vignette is None):
+            raise ValueError("exactly one of variant/vignette must be set")
+        if (self.variant is not None) != (self.parent_id is not None):
+            raise ValueError("parent_id is required iff the draft is a variant")
+        return self
 
 
 class MCQItem(BaseModel):
@@ -155,6 +202,9 @@ class RunMetadata(BaseModel):
     model: str
     model_version: str
     dataset: str
+    dataset_version: str = "unknown"
+    prompt_template: str = "mcq"
+    confidence_method: str = "verbalized_0_100"
     n_items: int = Field(ge=0)
     temperature: float
     top_p: float

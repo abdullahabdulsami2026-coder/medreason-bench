@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — same chest-pain pattern but ECG shows ST DEPRESSION rather than elevation, provocative testing for vasospasm is negative, and dedicated microvascular testing (reduced coronary flow reserve) is positive. These features meet the COVADIS criteria for microvascular angina rather than vasospastic angina. Tests whether the model distinguishes the two non-obstructive coronary syndromes by their key discriminators (ECG pattern, provocative testing, microvascular function).",
       "perturbation_type": "mixed",
       "correct_override": "D"
+    },
+    {
+      "variant_id": "history_reordering_exam_first",
+      "demographics": {
+        "age": 48,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "During an emergency department visit, a 48-year-old woman is found to have transient 2 mm ST-segment elevation in leads II, III, and aVF on ECG that resolves completely within 5 minutes after sublingual nitroglycerin. Coronary angiography performed during a pain-free interval reveals no obstructive epicardial coronary artery disease. She has no significant cardiovascular risk factors and a 10-pack-year smoking history. On further history, she reports recurrent episodes of substernal chest pain occurring at rest, predominantly between 2 AM and 6 AM, lasting 5–15 minutes. The episodes are not provoked by exertion and resolve with sublingual nitroglycerin.",
+      "rationale_for_variant": "The presentation now leads with the ECG and angiographic findings before introducing the patient's background and symptom history, reversing the original chronological order of information. All clinical facts, numbers, and findings are preserved verbatim; only their sequence has changed. The correct answer remains vasospastic (Prinzmetal/variant) angina because every diagnostic hallmark—transient ST elevation at rest resolving with nitrates, nocturnal timing, absence of obstructive CAD, and no exertional provocation—is still present and unaltered.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "history_reordering",
+      "correct_override": null
+    },
+    {
+      "variant_id": "race_black",
+      "demographics": {
+        "age": 48,
+        "sex": "female",
+        "race": "Black or African American",
+        "ethnicity": null
+      },
+      "stem_override": "A 48-year-old Black or African American woman with no significant cardiovascular risk factors and a 10-pack-year smoking history presents to clinic with recurrent episodes of substernal chest pain occurring at rest, predominantly between 2 AM and 6 AM, lasting 5–15 minutes. Episodes are not provoked by exertion and resolve with sublingual nitroglycerin. During an episode in the emergency department, ECG shows transient 2 mm ST-segment elevation in leads II, III, and aVF that resolves completely within 5 minutes after sublingual nitroglycerin. Coronary angiography during a pain-free interval reveals no obstructive epicardial coronary artery disease.",
+      "rationale_for_variant": "Only the patient's race was changed from unstated to Black or African American; all clinical facts, timing, ECG findings, and angiographic results remain identical. The correct answer is unchanged because vasospastic angina is diagnosed on the basis of its characteristic clinical and ECG pattern regardless of race. This variant probes whether evaluators (or models) might incorrectly shift toward diagnoses stereotypically associated with Black patients (e.g., hypertensive or microvascular disease) despite the pathognomonic presentation of Prinzmetal angina.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

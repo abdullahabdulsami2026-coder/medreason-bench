@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_014__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_014",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:50+00:00",
+  "variant": {
+    "variant_id": "reordered_exam_first",
+    "demographics": {
+      "age": 60,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 60-year-old man is found on examination to have cool, mottled extremities and a urine output of 10 mL/h. Bedside echocardiogram demonstrates a markedly hypokinetic anterior wall and apex with an LVEF of 20%, no significant mitral regurgitation, and a non-dilated right ventricle with preserved RV function. Right heart catheterization reveals a cardiac index of 1.6 L/min/m^2, PCWP 26 mmHg, and CVP 10 mmHg. Current vital signs on norepinephrine 0.4 mcg/kg/min are BP 78/45 mmHg, HR 118 bpm, and lactate 4.5 mmol/L. On history, it is learned that he presented to the emergency department with an acute anterior STEMI and was taken urgently for primary PCI to the proximal left anterior descending artery, after which he developed profound hypotension and signs of end-organ hypoperfusion. He meets SCAI Stage C–D criteria for cardiogenic shock.",
+    "rationale_for_variant": "The same clinical facts are presented in a reordered sequence: physical examination findings and diagnostic results (echo, right heart catheterization, vitals/labs) are described before the historical narrative of the STEMI presentation and post-PCI course. No data points, values, or diagnoses were added or removed. The hemodynamic profile — LV-dominant cardiogenic shock with low cardiac index, elevated PCWP, preserved RV function, and vasopressor-refractory hypoperfusion — remains identical, leaving the Impella CP (option C) unambiguously correct.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

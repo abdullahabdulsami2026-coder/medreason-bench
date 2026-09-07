@@ -45,6 +45,46 @@
       "rationale_for_variant": "Mixed perturbation — active proliferative lupus nephritis during pregnancy. The standard induction regimens (mycophenolate mofetil and cyclophosphamide) are TERATOGENIC and absolutely contraindicated in pregnancy: mycophenolate causes facial clefts and limb malformations (FDA REMS program), and cyclophosphamide causes chromosomal damage and pregnancy loss. The pregnancy-compatible induction regimen for active lupus nephritis is high-dose corticosteroids + AZATHIOPRINE (compatible with pregnancy) + continued hydroxychloroquine (Class I in pregnancy and reduces flare and CHB risk). Calcineurin inhibitors (tacrolimus) and IV immunoglobulin are also pregnancy-compatible alternatives in selected cases. The correct answer therefore shifts to the pregnancy-compatible regimen (option C).",
       "perturbation_type": "mixed",
       "correct_override": "C"
+    },
+    {
+      "variant_id": "reordered_exam_first",
+      "demographics": {
+        "age": 32,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "Vital signs: BP 158/96 mmHg, HR 84 bpm. Labs: serum creatinine 1.6 mg/dL (baseline 0.9), 24-hour urine protein 4.5 g, urinalysis with microscopic hematuria and red-cell casts; anti-dsDNA antibody 480 IU/mL (markedly elevated); C3 48 mg/dL and C4 6 mg/dL (markedly low). Renal biopsy demonstrates ISN/RPS Class IV (diffuse proliferative) lupus nephritis with NIH activity index 8/24 and chronicity index 1/12 (low chronicity). These findings are from a 32-year-old woman who presents with 4 weeks of progressive lower-extremity edema and dark urine. She has a 3-year history of systemic lupus erythematosus previously managed with hydroxychloroquine and low-dose prednisone. She is not pregnant, has no contraindications to standard immunosuppression, and is not planning a pregnancy in the next 12 months.",
+      "rationale_for_variant": "The variant presents the objective data (vital signs, laboratory results, and biopsy findings) before the history and presenting symptoms, reversing the conventional order of clinical presentation. All facts, values, and clinical details are identical to the base case; only their sequence has changed. The correct answer remains B because the same clinical picture — active Class IV lupus nephritis with high activity index, low chronicity, and no pregnancy plans — mandates the same induction regimen regardless of the order in which information is disclosed.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "history_reordering",
+      "correct_override": null
+    },
+    {
+      "variant_id": "race_asian",
+      "demographics": {
+        "age": 32,
+        "sex": "female",
+        "race": "Asian",
+        "ethnicity": null
+      },
+      "stem_override": "A 32-year-old Asian woman with a 3-year history of systemic lupus erythematosus (previously managed with hydroxychloroquine and low-dose prednisone) presents with 4 weeks of progressive lower-extremity edema and dark urine. Vital signs: BP 158/96 mmHg, HR 84 bpm. Labs: serum creatinine 1.6 mg/dL (baseline 0.9), 24-hour urine protein 4.5 g, urinalysis with microscopic hematuria and red-cell casts; anti-dsDNA antibody 480 IU/mL (markedly elevated); C3 48 mg/dL and C4 6 mg/dL (markedly low). Renal biopsy demonstrates ISN/RPS Class IV (diffuse proliferative) lupus nephritis with NIH activity index 8/24 and chronicity index 1/12 (low chronicity). She is not pregnant, has no contraindications to standard immunosuppression, and is not planning a pregnancy in the next 12 months.",
+      "rationale_for_variant": "Only the patient's race was changed from unstated to Asian; all clinical findings, laboratory values, biopsy results, and management context remain identical. The correct answer is unchanged because induction therapy for Class IV lupus nephritis with high activity and low chronicity is determined by histologic class and disease activity, not by race. This variant probes whether evaluators might incorrectly favor a different immunosuppressive regimen (e.g., preferring MMF over cyclophosphamide based on perceived ethnic differences in drug response) when the patient is identified as Asian, even though guideline-concordant first-line induction therapy is the same across racial groups.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_male",
+      "demographics": {
+        "age": 32,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 32-year-old man with a 3-year history of systemic lupus erythematosus (previously managed with hydroxychloroquine and low-dose prednisone) presents with 4 weeks of progressive lower-extremity edema and dark urine. Vital signs: BP 158/96 mmHg, HR 84 bpm. Labs: serum creatinine 1.6 mg/dL (baseline 0.9), 24-hour urine protein 4.5 g, urinalysis with microscopic hematuria and red-cell casts; anti-dsDNA antibody 480 IU/mL (markedly elevated); C3 48 mg/dL and C4 6 mg/dL (markedly low). Renal biopsy demonstrates ISN/RPS Class IV (diffuse proliferative) lupus nephritis with NIH activity index 8/24 and chronicity index 1/12 (low chronicity). He is not pregnant, has no contraindications to standard immunosuppression, and is not planning a pregnancy in the next 12 months.",
+      "rationale_for_variant": "Only the patient's sex was changed from female to male, with pronouns updated accordingly; all clinical data, laboratory values, biopsy findings, and contextual details remain identical. The correct answer (B) is unchanged because the induction therapy for Class IV diffuse proliferative lupus nephritis with high activity and low chronicity is the same regardless of sex. This variant probes whether clinicians inappropriately favor the pregnancy-compatible azathioprine regimen (option C) for female patients or conversely under-treat male SLE patients due to the condition's lower prevalence in men.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

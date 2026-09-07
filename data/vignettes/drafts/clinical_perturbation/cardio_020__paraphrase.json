@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_020__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "cardio_020",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:31:40+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 28,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 28-year-old man whose resting ECG had previously demonstrated a short PR interval and delta waves diagnostic of Wolff-Parkinson-White syndrome arrives at the emergency department reporting a sudden onset of palpitations that began 1 hour ago. He remains awake and conversational but endorses chest discomfort. His vital signs are as follows: BP 122/78 mmHg, HR approximately 240 bpm, RR 22 breaths per minute, and SpO2 96% on room air. The 12-lead ECG obtained in the department reveals an irregularly irregular wide-complex tachycardia with bizarre, continuously varying QRS morphology and rates that intermittently reach 280 bpm — a presentation consistent with atrial fibrillation conducting via the accessory pathway (pre-excited atrial fibrillation). He has no documented history of structural heart disease or heart failure.",
+    "rationale_for_variant": "The stem has been rewritten with altered sentence structure and vocabulary (e.g., 'arrives at' instead of 'presents to,' 'endorses chest discomfort' instead of 'complaining of chest discomfort,' 'awake and conversational' instead of 'alert, conversational') while preserving every clinical fact, numerical value, and level of diagnostic detail. The ECG findings, vital signs, and clinical context are identical to the original, so the hemodynamically stable pre-excited atrial fibrillation diagnosis is unchanged. Consequently, IV procainamide 10 mg/kg infused at 20 mg/min remains the unambiguously correct first-line pharmacologic choice, as AV-nodal blocking agents are still contraindicated and the patient is still hemodynamically stable.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

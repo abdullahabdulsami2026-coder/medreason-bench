@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_006__paraphrase",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_006",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:29:35+00:00",
+  "variant": {
+    "variant_id": "paraphrase_reworded",
+    "demographics": {
+      "age": 35,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 35-year-old woman with a 4-year history of systemic lupus erythematosus, maintained on hydroxychloroquine 400 mg/d as her sole therapy (she has been off corticosteroids for 18 months and was in clinical remission), comes to the outpatient clinic reporting 3 weeks of progressively worsening polyarthritis (DAS28 4.2), a recurring malar rash, fatigue, and intermittent low-grade fevers. Her vital signs are within normal limits. She has NO renal involvement (urinalysis is unremarkable, serum creatinine 0.8 mg/dL), no neurological symptoms, no cytopenia (complete blood count is normal), and no serositis. Laboratory results reveal: ESR 65 mm/h, CRP 22 mg/L, C3 60 mg/dL (below normal), C4 8 mg/dL (below normal), and anti-dsDNA antibody titer 340 IU/mL, which has risen from a baseline of 100 IU/mL measured 6 months prior.",
+    "rationale_for_variant": "The stem has been entirely reworded using different sentence structures and synonymous phrasing (e.g., 'a 4-year history of' instead of 'diagnosed 4 years ago,' 'comes to the outpatient clinic reporting' instead of 'presents to clinic with,' 'within normal limits' instead of 'stable,' 'unremarkable' instead of 'bland') while preserving every clinical fact, numerical value, and diagnostic detail exactly. No finding has been added, removed, or altered in a way that would shift the differential diagnosis or management decision. The correct answer remains A because the clinical scenario—a moderate mucocutaneous and musculoskeletal SLE flare without organ-threatening features, on background hydroxychloroquine—still mandates continuation of hydroxychloroquine plus addition of low-dose oral prednisone with a planned taper, per 2023 EULAR recommendations.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "paraphrase",
+    "correct_override": null
+  },
+  "vignette": null
+}

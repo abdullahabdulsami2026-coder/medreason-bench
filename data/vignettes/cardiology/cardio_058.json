@@ -1,0 +1,29 @@
+{
+  "id": "cardio_058",
+  "specialty": "cardiology",
+  "subspecialty": "afib_anticoagulation",
+  "stem": "A 68-year-old woman with a history of hypertension and type 2 diabetes mellitus presents to her cardiologist's office for a routine follow-up. She was diagnosed with atrial fibrillation approximately six months ago and has been managed with rate-control therapy. She reports no palpitations, dyspnea, or chest discomfort at rest or with moderate exertion. Vital signs: BP 138/82 mmHg, HR 74 bpm (irregularly irregular), RR 16, SpO2 98% on room air; weight 58 kg. Renal function tests, liver function tests, and a complete blood count were drawn at today's visit but results are pending. She has no documented history of prior stroke, transient ischemic attack, or systemic embolism. The cardiologist notes she has not yet been started on antithrombotic therapy. Her medication list includes amlodipine and metformin. No prior echocardiogram report is available in the chart, and the patient cannot recall whether one was performed.",
+  "question": "Which antithrombotic regimen is most appropriate to initiate for stroke prevention in this patient at this time?",
+  "options": {
+    "A": "Apixaban 5 mg twice daily",
+    "B": "Rivaroxaban 20 mg once daily with the evening meal",
+    "C": "Warfarin titrated to a target INR of 2.0–3.0",
+    "D": "Aspirin 81 mg once daily"
+  },
+  "correct": null,
+  "rationale": "The stem does not provide the information necessary to select any specific antithrombotic regimen. The key missing data are: (1) the patient's CHA₂DS₂-VASc score cannot be fully calculated because her age (68) places her at 1 point for age 65–74, female sex adds 1 point, hypertension adds 1 point, and diabetes adds 1 point — yielding a minimum score of 4 — which does appear to cross the threshold for anticoagulation in women; however, (2) renal function is unknown and results are pending, which is critical because apixaban and rivaroxaban require dose adjustment or may be contraindicated in advanced chronic kidney disease or end-stage renal disease, and (3) no echocardiogram data are available, so the presence of a mechanical heart valve or significant rheumatic mitral stenosis — conditions mandating warfarin over direct oral anticoagulants — cannot be excluded. Without confirmed renal function and structural cardiac evaluation, no single agent can be designated as most appropriate. Option A (apixaban 5 mg twice daily) cannot be selected because the standard dose may require adjustment to 2.5 mg twice daily if two of three criteria are met (age ≥80, weight ≤60 kg, creatinine ≥1.5 mg/dL); her weight of 58 kg meets the ≤60 kg criterion, so the pending creatinine alone determines whether two dose-reduction criteria are met — the correct dose (5 mg vs 2.5 mg twice daily) cannot be affirmed. Option B (rivaroxaban 20 mg once daily) cannot be selected because rivaroxaban requires dose reduction to 15 mg daily when creatinine clearance is 15–50 mL/min and is not recommended below 15 mL/min; renal function is unknown. Option C (warfarin) cannot be selected as the preferred agent because current guidelines recommend direct oral anticoagulants over warfarin for non-valvular atrial fibrillation in the absence of mechanical valves or moderate-to-severe rheumatic mitral stenosis; the absence of echocardiographic data means valvular status is unknown, but this ambiguity alone does not make warfarin the most appropriate choice — it merely prevents ruling it out. Option D (aspirin 81 mg) is not recommended for stroke prevention in atrial fibrillation by current guidelines and is not supported by the clinical picture, which favors anticoagulation given the patient's risk factor burden. Because pending renal function results and the absence of echocardiographic data leave critical dosing and eligibility questions unanswered, no specific regimen can be designated as most appropriate at this time.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 68,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [],
+  "sources": [
+    "January CT, Wann LS, Calkins H, et al. 2019 AHA/ACC/HRS Focused Update of the 2014 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation. J Am Coll Cardiol. 2019;74(1):104-132.",
+    "Hindricks G, Potpara T, Dagres N, et al. 2020 ESC Guidelines for the Diagnosis and Management of Atrial Fibrillation. Eur Heart J. 2021;42(5):373-498.",
+    "Lip GYH, Collet JP, Haude M, et al. Antithrombotic therapy in atrial fibrillation. In: Zipes DP, Libby P, Bonow RO, Mann DL, Tomaselli GF, eds. Braunwald's Heart Disease, 12th ed. Philadelphia: Elsevier; 2021."
+  ],
+  "license": "CC-BY-4.0"
+}

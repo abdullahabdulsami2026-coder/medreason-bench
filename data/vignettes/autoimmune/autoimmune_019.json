@@ -45,6 +45,19 @@
       "rationale_for_variant": "Sex / age perturbation only — clinical context (seropositive RA with controlled disease, no traditional risk factors) is unchanged. The same modified-risk-assessment approach with RA as a CV risk enhancer applies; baseline ASCVD risk rises with age, so the threshold for statin initiation may be reached earlier in older patients with the same RA modifier.",
       "perturbation_type": "pure_demographic",
       "correct_override": null
+    },
+    {
+      "variant_id": "race_asian",
+      "demographics": {
+        "age": 55,
+        "sex": "female",
+        "race": "Asian",
+        "ethnicity": null
+      },
+      "stem_override": "A 55-year-old Asian woman with seropositive rheumatoid arthritis (anti-CCP and RF strongly positive) for 15 years on methotrexate has well-controlled disease (DAS28 2.2, CRP normal). She has no other traditional cardiovascular risk factors: BP 128/78 mmHg, LDL-cholesterol 110 mg/dL, HDL-cholesterol 55 mg/dL, no diabetes mellitus (HbA1c 5.4%), and is a never-smoker. She has no family history of premature cardiovascular disease. She is asking about cardiovascular preventive care given that she has read RA increases CV risk.",
+      "rationale_for_variant": "The only change from the base case is the addition of 'Asian' to the patient's demographic description. The correct answer remains B because the EULAR-recommended 1.5× RA cardiovascular risk modifier and the underlying pathophysiology of RA-associated cardiovascular risk apply uniformly regardless of race. This variant probes whether evaluators or models might incorrectly adjust cardiovascular risk thresholds or statin recommendations based on race (e.g., assuming lower baseline ASCVD risk in Asian populations), when the disease-specific modifier is the clinically dominant consideration here.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

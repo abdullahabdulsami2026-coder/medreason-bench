@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_025__sex",
+  "category": "pure_demographic",
+  "parent_id": "cardio_025",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:40:10+00:00",
+  "variant": {
+    "variant_id": "sex_swap_male",
+    "demographics": {
+      "age": 70,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 70-year-old man with hypertension and type 2 diabetes mellitus presents to clinic with 2 weeks of intermittent lightheadedness, mild dyspnea on exertion, and one near-syncopal episode while sitting. ECG shows sinus rhythm at 78 bpm with intermittent dropped QRS complexes that are NOT preceded by progressive PR prolongation — instead, the PR interval before each dropped beat is constant. The QRS complexes are wide (130 ms) with a left bundle branch block morphology. The pattern is consistent with Mobitz type II second-degree atrioventricular block. He is on no AV-nodal-blocking agents. Echocardiogram shows preserved LVEF (60%) with no structural heart disease. Electrolytes are normal.",
+    "rationale_for_variant": "Only the patient's sex was changed from female to male, with the corresponding pronoun updated from 'She' to 'He'; all clinical findings, values, and facts remain identical. The correct answer is unchanged because Mobitz type II AV block management per ACC/AHA/HRS guidelines mandates permanent pacemaker implantation regardless of patient sex. This variant probes whether evaluators or models incorrectly apply sex-based reasoning to a guideline-driven, sex-neutral cardiac conduction disorder.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

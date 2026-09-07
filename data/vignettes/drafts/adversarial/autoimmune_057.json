@@ -1,0 +1,40 @@
+{
+  "draft_id": "autoimmune_057",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "rejected",
+  "review_note": "MTX anchor-drug answer establishable despite pending labs; machine review, user-approved",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:44:29+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "autoimmune_057",
+    "specialty": "autoimmune",
+    "subspecialty": "ra_initial_treatment",
+    "stem": "A 54-year-old woman is referred to rheumatology for newly diagnosed rheumatoid arthritis. She has a 4-month history of bilateral symmetric polyarthritis involving the metacarpophalangeal joints, proximal interphalangeal joints, and wrists, with exam-confirmed synovitis, morning stiffness lasting 2 hours, and significant functional limitation. Labs confirm: RF positive at 1:320, anti-CCP antibody strongly positive (>250 U/mL), ESR 68 mm/h, CRP 32 mg/L. She meets 2010 ACR/EULAR classification criteria for RA with a score of 9/10. Hand radiographs show periarticular osteopenia but NO erosions. She has no prior DMARD exposure. Her comorbidity profile is as follows: she has a history of 'some liver abnormality' noted on routine labs 2 years ago, but no hepatology follow-up was completed and no further workup was done; she takes no regular medications and reports no alcohol use. Current hepatic function tests, hepatitis B surface antigen, hepatitis B core antibody, hepatitis C antibody, and a liver ultrasound have NOT yet been obtained. She has no history of serious infections, no tuberculin skin test or IGRA result on file, and no chest imaging in the past 5 years. Her renal function, CBC, and blood pressure are not reported in the referral documentation.",
+    "question": "Which initial DMARD treatment strategy is most appropriate for this patient with newly diagnosed, seropositive, non-erosive RA?",
+    "options": {
+      "A": "Initiate methotrexate monotherapy at 15 mg/week orally with folic acid supplementation",
+      "B": "Initiate hydroxychloroquine monotherapy at 5 mg/kg/day",
+      "C": "Initiate combination therapy with methotrexate plus a TNF inhibitor (e.g., etanercept)",
+      "D": "Initiate leflunomide monotherapy at 20 mg/day"
+    },
+    "correct": null,
+    "rationale": "The stem establishes a clear RA diagnosis with high disease activity and high-risk serology (strongly positive RF and anti-CCP), which would ordinarily support prompt DMARD initiation per ACR and EULAR guidelines. However, the critical safety information required to select ANY of the four treatment options is explicitly absent, making it impossible to defend any single choice. Specifically: (1) Hepatic status is unknown — the patient has an uncharacterized prior liver abnormality with no follow-up, and current LFTs, hepatitis B serology, and hepatitis C antibody are NOT yet available. (2) Baseline CBC and renal function are not reported, precluding safe dosing or contraindication assessment for any DMARD. (3) Tuberculosis screening (TST or IGRA) and chest imaging are absent, which is mandatory before initiating biologic therapy and strongly recommended before conventional DMARDs in many guidelines. These gaps render each option indefensible: Option A (methotrexate monotherapy) — methotrexate is hepatotoxic and contraindicated or requires dose adjustment in significant hepatic disease; it is also renally cleared and requires baseline CBC and creatinine. The unknown liver abnormality, absent LFTs, absent hepatitis serology, absent renal function, and absent CBC mean that safety of methotrexate cannot be established. Furthermore, hepatitis B reactivation is a known risk with methotrexate, and screening is required before initiation. Option B (hydroxychloroquine monotherapy) — hydroxychloroquine has the most favorable safety profile among conventional DMARDs and is sometimes used in mild RA, but ACR and EULAR guidelines do not recommend it as monotherapy for moderate-to-high disease activity seropositive RA (the profile seen here). Additionally, baseline renal function influences dosing and the risk of retinal toxicity (dose is weight- and renal function-based), and this information is not provided. More fundamentally, hydroxychloroquine monotherapy would be inadequate for a patient with strongly seropositive, high-activity RA. Option C (methotrexate plus TNF inhibitor) — combination biologic therapy requires completed TB screening (TST/IGRA and chest imaging) before initiation, per FDA labeling and ACR/EULAR guidelines; these are explicitly absent. Hepatitis B reactivation risk with TNF inhibitors is substantial and mandates serologic screening before initiation; hepatitis B and C serology are not yet available. Baseline CBC, LFTs, and renal function are also required. None of these prerequisites are met. Option D (leflunomide monotherapy) — leflunomide is hepatotoxic and absolutely requires baseline LFTs and hepatitis serology before initiation; it is contraindicated in significant hepatic impairment. The uncharacterized liver abnormality and absent hepatic workup make it impossible to confirm safety. Baseline CBC and renal function are also required and not available. In summary, the missing discriminating information includes: current LFTs, hepatitis B surface antigen, hepatitis B core antibody, hepatitis C antibody, liver ultrasound or further hepatic characterization, baseline CBC, serum creatinine, TB screening (TST or IGRA), and recent chest radiograph. Until these safety prerequisites are obtained, no specific initial DMARD regimen can be recommended.",
+    "difficulty": "medium",
+    "demographics": {
+      "age": 54,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "Fraenkel L et al. 2021 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis. Arthritis Rheumatol 2021;73:1108-1123.",
+      "Smolen JS et al. EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs: 2022 update. Ann Rheum Dis 2023;82:3-18.",
+      "Saag KG et al. American College of Rheumatology 2008 recommendations for the use of nonbiologic and biologic disease-modifying antirheumatic drugs in rheumatoid arthritis. Arthritis Rheum 2008;59:762-784."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

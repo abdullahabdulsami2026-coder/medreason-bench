@@ -1,0 +1,40 @@
+{
+  "draft_id": "cardio_057",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:47:43+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "cardio_057",
+    "specialty": "cardiology",
+    "subspecialty": "atrial_fibrillation_rate_control",
+    "stem": "A 68-year-old woman is brought to the emergency department after her home health aide noticed she was confused and lethargic. She has a known history of persistent atrial fibrillation and hypertension. Her current medications are listed in the chart but the nursing staff has not yet retrieved the medication reconciliation form. On arrival, her BP is 104/68 mmHg, HR is documented on the triage sheet as 'irregular,' and her temperature is 37.1°C. A 12-lead ECG confirms atrial fibrillation. The ventricular rate is not legible on the copy of the ECG available at the bedside — the rate box on the ECG printout is smudged and the rhythm strip is partially obscured. Laboratory results show serum potassium 3.8 mEq/L, creatinine 1.4 mg/dL (baseline unknown), and TSH 2.1 mIU/L. A bedside echocardiogram is attempted but is of poor acoustic quality and the ejection fraction cannot be estimated reliably. The patient cannot provide history due to her altered mental status, and no family members are present. The clinical team is now deciding on a rate-control strategy.",
+    "question": "Which rate-control agent is most appropriate to initiate at this time?",
+    "options": {
+      "A": "Intravenous metoprolol tartrate to achieve a target resting ventricular rate below 110 bpm",
+      "B": "Intravenous diltiazem to achieve a target resting ventricular rate below 110 bpm",
+      "C": "Oral digoxin loading to achieve a target resting ventricular rate below 80 bpm",
+      "D": "Intravenous amiodarone for rate control given likely reduced left ventricular function"
+    },
+    "correct": null,
+    "rationale": "The stem contains two critical missing data points that together make it impossible to select any rate-control agent with confidence. First, the actual ventricular rate is unknown — the ECG rate readout is illegible and no manual rate calculation is reported. Without knowing whether the rate is, for example, 70 bpm (where rate-control agents may be unnecessary or even harmful given the borderline hypotension) or 160 bpm (where urgent rate control is clearly indicated), the urgency and choice of agent cannot be determined. Second, left ventricular systolic function is unknown — the bedside echocardiogram was non-diagnostic. This is the single most important variable in selecting a rate-control drug in atrial fibrillation: beta-blockers and non-dihydropyridine calcium channel blockers are contraindicated or relatively contraindicated in decompensated heart failure with reduced EF, while digoxin and amiodarone are preferred in that scenario; conversely, amiodarone carries significant toxicity and is not a first-line rate-control agent in patients with preserved or unknown EF. The patient's borderline hypotension (104/68 mmHg) further complicates all options. Additionally, current medications are unknown, meaning the patient could already be on a rate-control agent, or could be on medications that interact with any of the proposed choices. Option A (IV metoprolol) is contraindicated if EF is reduced or if the patient is in decompensated heart failure, and may worsen hypotension — neither EF nor hemodynamic reserve is adequately characterized. Option B (IV diltiazem) is similarly contraindicated in reduced EF heart failure and can precipitate hemodynamic collapse in the setting of borderline BP — again, EF is unknown and the degree of hemodynamic compromise is unclear without knowing the ventricular rate and volume status. Option C (oral digoxin) is a reasonable choice in reduced EF but is slow-acting, has a narrow therapeutic window, and renal function at baseline is unknown (creatinine 1.4 mg/dL with no baseline), making dosing unsafe; moreover, if the ventricular rate is not actually elevated, loading digoxin is unnecessary. Option D (IV amiodarone) is not a guideline-recommended first-line rate-control agent and carries risk of acute hemodynamic effects and long-term organ toxicity; its use is only supported when other agents are contraindicated due to reduced EF, which has not been established here. Because the ventricular rate, LV function, baseline renal function, and current medications are all unknown, no single agent can be selected as 'most appropriate' from the available information.",
+    "difficulty": "medium",
+    "demographics": {
+      "age": 68,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "January CT et al. 2019 AHA/ACC/HRS Focused Update of the 2014 AHA/ACC/HRS Guideline for the Management of Patients With Atrial Fibrillation. JACC 2019;74:104-132.",
+      "Hindricks G et al. 2020 ESC Guidelines for the Diagnosis and Management of Atrial Fibrillation. Eur Heart J 2021;42:373-498.",
+      "Zimetbaum P. Antiarrhythmic Drug Therapy for Atrial Fibrillation. Circulation 2012;125:381-389."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

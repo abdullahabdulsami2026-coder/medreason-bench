@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_003__history_reordering",
+  "category": "clinical_perturbation",
+  "parent_id": "autoimmune_003",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:28:21+00:00",
+  "variant": {
+    "variant_id": "history_reordering_exam_labs_first",
+    "demographics": {
+      "age": 30,
+      "sex": "female",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "Comprehensive thrombophilia and antiphospholipid workup in a 30-year-old woman has demonstrated: lupus anticoagulant POSITIVE on two occasions ≥12 weeks apart; anti-cardiolipin IgG HIGH titer (>40 GPL units) on two occasions ≥12 weeks apart; and anti-β2-glycoprotein-I IgG positive on two occasions ≥12 weeks apart. She is currently NOT on anticoagulation. These results, combined with her clinical history, confirm that she meets the revised Sapporo / Sydney criteria for primary antiphospholipid syndrome with both vascular thrombosis and pregnancy-morbidity criteria. Her clinical history is as follows: one provoked deep-vein thrombosis 2 years ago in the setting of long-haul travel, treated with 6 months of anticoagulation; and three first-trimester miscarriages (at 8, 10, and 9 weeks of gestation, none with identifiable embryologic abnormalities). She now presents to clinic for preconception cardiac and reproductive counseling and wishes to conceive in the next 6 months.",
+    "rationale_for_variant": "The variant presents the laboratory findings and current anticoagulation status first, followed by the clinical history (DVT before miscarriages), reversing the original chronological order of presentation. All facts, numbers, and clinical details remain identical; only the sequence in which information is introduced has changed. The diagnosis of primary APS with both vascular thrombosis and pregnancy-morbidity criteria is unchanged, so the recommended strategy of low-dose aspirin plus prophylactic LMWH with adjunctive hydroxychloroquine (option A) remains unambiguously correct.",
+    "perturbation_type": "clinical_perturbation",
+    "perturbation_subtype": "history_reordering",
+    "correct_override": null
+  },
+  "vignette": null
+}

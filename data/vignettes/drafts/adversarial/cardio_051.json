@@ -1,0 +1,40 @@
+{
+  "draft_id": "cardio_051",
+  "category": "adversarial",
+  "parent_id": null,
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:44:49+00:00",
+  "variant": null,
+  "vignette": {
+    "id": "cardio_051",
+    "specialty": "cardiology",
+    "subspecialty": "acute_coronary_syndrome",
+    "stem": "A 58-year-old man with a history of hypertension and type 2 diabetes mellitus presents to the emergency department with 45 minutes of substernal chest pressure radiating to his left arm, associated with diaphoresis and nausea. Vital signs: BP 148/90 mmHg, HR 88 bpm, RR 16, SpO2 97% on room air. Physical examination reveals no jugular venous distension, clear lung fields bilaterally, and a regular heart rhythm without murmurs or rubs. An ECG and troponin have been ordered but results are not yet available.",
+    "question": "Based on the information available, which is the most appropriate immediate next step in management?",
+    "options": {
+      "A": "Administer fibrinolytic therapy (alteplase) immediately",
+      "B": "Activate the cardiac catheterization laboratory for primary percutaneous coronary intervention",
+      "C": "Initiate anticoagulation with unfractionated heparin and dual antiplatelet therapy",
+      "D": "Perform urgent coronary artery bypass grafting"
+    },
+    "correct": null,
+    "rationale": "The critical missing information is the ECG result and the initial troponin value, both of which are required to classify the type of acute coronary syndrome (if any) and to determine the appropriate management pathway. Without these data, none of the four management options can be justified. Option A (fibrinolytic therapy) is indicated only for ST-elevation myocardial infarction (STEMI) when primary PCI is unavailable or door-to-balloon time cannot be achieved within guideline-recommended windows; it requires ECG confirmation of ST-elevation or new LBBB and is contraindicated in many settings — none of which can be assessed without the ECG. Option B (primary PCI activation) is the preferred reperfusion strategy for STEMI, but requires ECG documentation of ST-elevation or new LBBB meeting STEMI criteria; activating the catheterization laboratory without ECG confirmation is not guideline-supported and exposes the patient to unnecessary procedural risk if no STEMI is present. Option C (anticoagulation plus dual antiplatelet therapy) is the standard initial treatment for NSTEMI or unstable angina, but these diagnoses require at minimum an ECG showing ischemic changes without ST-elevation and/or a positive troponin; initiating full antithrombotic therapy before the ECG and troponin are available risks harm (e.g., bleeding) if the presentation is non-ACS. Option D (urgent CABG) is reserved for specific high-risk anatomic findings identified on coronary angiography (e.g., left main or complex multivessel disease) and is never an immediate first step without diagnostic imaging and angiographic data. The correct response is to recognize that the ECG and troponin results are indispensable before any of these interventions can be chosen.",
+    "difficulty": "easy",
+    "demographics": {
+      "age": 58,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "variants": [],
+    "sources": [
+      "O'Gara PT et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. Circulation 2013;127:e362-e425.",
+      "Amsterdam EA et al. 2014 AHA/ACC Guideline for the Management of Patients With Non-ST-Elevation Acute Coronary Syndromes. Circulation 2014;130:e344-e426.",
+      "Libby P et al. Braunwald's Heart Disease: A Textbook of Cardiovascular Medicine, 12th ed. (2022) — Chapter on ST-Elevation Myocardial Infarction and Non-ST-Elevation Acute Coronary Syndromes."
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

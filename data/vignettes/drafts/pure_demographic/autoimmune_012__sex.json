@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_012__sex",
+  "category": "pure_demographic",
+  "parent_id": "autoimmune_012",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:32:58+00:00",
+  "variant": {
+    "variant_id": "sex_swap_male",
+    "demographics": {
+      "age": 45,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 45-year-old man presents to clinic with 8 weeks of bilateral symmetric polyarthritis involving the metacarpophalangeal (MCP) joints, proximal interphalangeal (PIP) joints, and wrists. He reports >2 hours of morning stiffness that improves with activity. Exam shows synovitis (boggy, tender, mildly swollen) of multiple MCP and PIP joints and both wrists; the distal interphalangeal joints are spared. There is no skin rash, no nail pitting, no sicca symptoms, no preceding gastrointestinal or genitourinary infection, no Raynaud phenomenon. Labs: rheumatoid factor 80 IU/mL (positive); anti-cyclic citrullinated peptide antibody (anti-CCP) 250 U/mL (markedly positive); ESR 65 mm/h, CRP 32 mg/L. Hand and wrist X-rays show marginal erosions of several MCP joints and periarticular osteopenia. ANA negative; CBC normal.",
+    "rationale_for_variant": "Only the patient's sex was changed from female to male, along with corresponding pronouns; all clinical findings, laboratory values, imaging results, and symptom duration remain identical. The diagnosis of rheumatoid arthritis is determined entirely by the 2010 ACR/EULAR classification criteria score (8/10), which is sex-independent, so the correct answer is unchanged. This variant probes whether clinicians or models might underweight an RA diagnosis in a male patient, given that RA is more prevalent in women but is by no means exclusive to them.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

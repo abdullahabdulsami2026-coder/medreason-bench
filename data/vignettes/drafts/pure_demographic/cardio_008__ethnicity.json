@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_008__ethnicity",
+  "category": "pure_demographic",
+  "parent_id": "cardio_008",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:36:04+00:00",
+  "variant": {
+    "variant_id": "ethnicity_hispanic",
+    "demographics": {
+      "age": 32,
+      "sex": "male",
+      "race": null,
+      "ethnicity": "Hispanic or Latino"
+    },
+    "stem_override": "A 32-year-old Hispanic or Latino man with no past medical history is brought to the emergency department by friends after using cocaine 3 hours ago. He reports substernal chest pain, palpitations, and anxiety that began 2 hours ago. Vital signs: BP 168/96 mmHg, HR 110 bpm, RR 18, SpO2 98% on room air. Cardiac auscultation reveals tachycardia without murmurs or gallops. ECG shows sinus tachycardia without ST-segment elevation, depression, or T-wave inversion. Initial troponin I is below the assay's detection threshold. Urine toxicology is positive for cocaine metabolites.",
+    "rationale_for_variant": "The only change from the base case is the addition of 'Hispanic or Latino' ethnicity in the opening patient description. The correct answer remains metoprolol (C) because the contraindication of beta-blockers in cocaine-associated chest pain is driven entirely by the pharmacological mechanism of unopposed alpha-adrenergic stimulation, which is independent of patient ethnicity. This variant probes whether evaluators or models inappropriately alter their pharmacological reasoning based on the patient's ethnic background.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

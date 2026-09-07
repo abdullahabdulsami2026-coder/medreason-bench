@@ -45,6 +45,19 @@
       "rationale_for_variant": "Sex perturbation only — clinical context (SLE-associated Group 1 PAH confirmed by RHC) is unchanged. SLE-associated PAH is approximately 9× more common in women than men (mirroring the SLE sex ratio), but the management approach (PAH-specific vasodilator + immunosuppression + supportive care + PH-center referral) is sex-independent.",
       "perturbation_type": "pure_demographic",
       "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_male",
+      "demographics": {
+        "age": 40,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 40-year-old man with systemic lupus erythematosus diagnosed 8 years ago presents with 6 months of progressively worsening exertional dyspnea, now NYHA III, and one episode of exertional syncope last week. Vital signs: BP 108/68 mmHg, HR 96 bpm, SpO2 92% on room air. Cardiac auscultation reveals a loud P2, a left parasternal heave, and prominent jugular v-waves. Lung exam is clear; CT chest is normal (no parenchymal lung disease, no thromboembolic disease). V/Q scan is normal (no segmental perfusion defects). Echocardiogram shows a dilated, hypokinetic right ventricle with septal flattening and an estimated pulmonary-artery systolic pressure of 60 mmHg; left ventricular function is normal and there is no significant valvular disease. Right-heart catheterization confirms PRECAPILLARY pulmonary hypertension: mean pulmonary-artery pressure 42 mmHg, pulmonary capillary wedge pressure 8 mmHg, and pulmonary vascular resistance 6 Wood units. There is no evidence of left heart disease, parenchymal lung disease, or chronic thromboembolic disease. The diagnosis is SLE-associated pulmonary arterial hypertension (Group 1 PAH).",
+      "rationale_for_variant": "Only the patient's sex was changed from female to male, with all clinical facts, values, and sentence structure preserved identically. SLE-associated PAH is diagnosed and managed the same way regardless of sex; the correct answer (A) remains unchanged because it is driven entirely by hemodynamic findings and disease classification. This variant probes whether evaluators or models might unconsciously anchor on the female sex as a prerequisite for SLE or PAH diagnosis, reflecting a potential demographic bias against recognizing these conditions in male patients.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

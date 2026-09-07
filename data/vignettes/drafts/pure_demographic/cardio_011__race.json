@@ -1,0 +1,25 @@
+{
+  "draft_id": "cardio_011__race",
+  "category": "pure_demographic",
+  "parent_id": "cardio_011",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:36:44+00:00",
+  "variant": {
+    "variant_id": "race_black",
+    "demographics": {
+      "age": 62,
+      "sex": "male",
+      "race": "Black or African American",
+      "ethnicity": null
+    },
+    "stem_override": "A 62-year-old Black or African American man with non-ischemic dilated cardiomyopathy is seen in clinic for a new diagnosis of heart failure. Echocardiogram shows a left ventricular ejection fraction of 28%, mildly dilated left ventricle, and no significant valvular disease. He is NYHA class II–III on exertion. Vital signs: BP 118/72 mmHg, HR 78 bpm, weight 82 kg. Labs: serum potassium 4.1 mmol/L, eGFR 68 mL/min/1.73 m^2, NT-proBNP 1,400 pg/mL. He has no diabetes and is not on any cardiac medications.",
+    "rationale_for_variant": "Only the patient's race was changed to Black or African American; all clinical data, vital signs, lab values, and the clinical question remain identical. The correct answer (B) is unchanged because the 2022 AHA/ACC/HFSA four-pillar GDMT recommendations apply uniformly regardless of race, and the ARNI-preferred strategy supersedes the historically race-specific ACEi/hydralazine-nitrate consideration (which applies only when ARNI/ACEi/ARB are not tolerated). This variant probes whether test-takers incorrectly anchor on race to select a different regimen (e.g., hydralazine-isosorbide dinitrate) rather than applying universal guideline-directed therapy.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

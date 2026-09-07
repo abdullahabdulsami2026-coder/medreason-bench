@@ -33,7 +33,7 @@ from pathlib import Path
 from data.loaders.medmcqa import load_medmcqa
 from data.loaders.medqa import load_medqa
 from data.loaders.pubmedqa import load_pubmedqa
-from data.vignettes.loader import load_vignettes
+from data.vignettes.loader import dataset_version, load_vignettes
 from data.vignettes.schema import vignette_to_mcq_item
 from eval.metrics.accuracy import top1_accuracy
 from eval.prompts.mcq import prompt_hash
@@ -352,6 +352,7 @@ def run_eval(
         model=runner.model,
         model_version=runner.model,  # SDK exposes no separate version string
         dataset=dataset_label,
+        dataset_version=dataset_version(),
         n_items=len(items),
         temperature=runner.temperature,
         top_p=runner.top_p,

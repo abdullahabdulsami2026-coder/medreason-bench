@@ -1,0 +1,18 @@
+{
+  "run_id": "c81f4a81-30af-4554-bb0f-becbc756d8b2",
+  "model": "qwen2.5:7b",
+  "model_version": "qwen2.5:7b",
+  "dataset": "vignettes+variants",
+  "dataset_version": "1.1.1",
+  "prompt_template": "mcq",
+  "confidence_method": "verbalized_0_100",
+  "n_items": 399,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "seed": 0,
+  "prompt_hash": "26c85aa0de7fa420b02ec067051c2cd51c6640906371829c4544eda1f2d0cbb0",
+  "git_sha": "ca9491116219353462b666d342a0cca1de616f95",
+  "started_at": "2026-09-07T03:40:19.045773+00:00",
+  "finished_at": "2026-09-07T03:40:19.067388+00:00",
+  "total_elapsed_s": 0.021647125016897917
+}

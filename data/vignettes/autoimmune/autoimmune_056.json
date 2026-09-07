@@ -1,0 +1,29 @@
+{
+  "id": "autoimmune_056",
+  "specialty": "autoimmune",
+  "subspecialty": "sle_pulmonary_hypertension",
+  "stem": "A 34-year-old woman with a known diagnosis of systemic lupus erythematosus (SLE) presents to the rheumatology clinic reporting progressive exertional dyspnea over the past four months. She notes she now becomes short of breath walking up one flight of stairs, whereas six months ago she had no exercise limitation. She denies orthopnea, paroxysmal nocturnal dyspnea, pleuritic chest pain, hemoptysis, or lower-extremity edema. Review of systems is otherwise UNREMARKABLE: no new rash, no oral ulcers, no joint swelling, no fevers, no weight loss. Current medications include hydroxychloroquine 400 mg daily and low-dose prednisone 5 mg daily; she is NOT on any anticoagulation and has no prior history of venous thromboembolism. Vital signs today: BP 118/74 mmHg, HR 88 bpm, RR 16 breaths/min, SpO2 94% on room air at rest. Physical examination reveals a soft systolic murmur at the left sternal border without radiation, no jugular venous distension, clear lung fields bilaterally, and no peripheral edema. Laboratory results available today show: hemoglobin 11.2 g/dL (mild normocytic anemia), creatinine 0.9 mg/dL, urinalysis with no proteinuria or casts, ESR 42 mm/hr, CRP 0.8 mg/dL (mildly elevated). Antiphospholipid antibody testing (lupus anticoagulant, anticardiolipin IgG/IgM, anti-beta-2 glycoprotein I IgG/IgM) has been SENT but results are NOT YET available. A chest X-ray performed today shows mild cardiomegaly without pulmonary infiltrates or pleural effusion. An ECG shows sinus rhythm with no right heart strain pattern. RIGHT HEART CATHETERIZATION HAS NOT BEEN PERFORMED. Pulmonary function tests have been ordered but not yet resulted. Echocardiography has been ordered but not yet performed.",
+  "question": "Based on the information currently available, which is the most likely underlying mechanism driving this patient's pulmonary hypertension?",
+  "options": {
+    "A": "Pulmonary arterial hypertension (PAH) due to SLE-associated pulmonary vasculopathy (Group 1)",
+    "B": "Thromboembolic pulmonary hypertension due to antiphospholipid syndrome (Group 4)",
+    "C": "Pulmonary hypertension due to left heart disease from lupus myocarditis or Libman-Sacks endocarditis (Group 2)",
+    "D": "Pulmonary hypertension due to SLE-associated interstitial lung disease (Group 3)"
+  },
+  "correct": null,
+  "rationale": "The critical missing information is the confirmation that pulmonary hypertension is actually present and, if so, its hemodynamic characterization by right heart catheterization (RHC). Without RHC, no WHO Group classification can be assigned. Additionally, echocardiography (needed to estimate pulmonary artery pressure, assess left ventricular and valvular function, and detect pericardial disease), pulmonary function tests with DLCO (needed to evaluate for interstitial lung disease), and antiphospholipid antibody results (needed to assess thromboembolic risk) are all pending. The stem therefore omits every key discriminating finding required to select among the four mechanistic categories.\n\nOption A — SLE-associated PAH (Group 1): PAH is a well-recognized complication of SLE and can produce the described exertional dyspnea and borderline hypoxia, but Group 1 classification requires RHC demonstrating mean pulmonary artery pressure ≥20 mmHg with pulmonary capillary wedge pressure ≤15 mmHg and elevated pulmonary vascular resistance, none of which has been measured. Echocardiographic estimation of RVSP is also unavailable. This option cannot be confirmed.\n\nOption B — Chronic thromboembolic pulmonary hypertension (CTEPH, Group 4) from antiphospholipid syndrome: Antiphospholipid antibody results are explicitly pending; prior VTE history is absent; no ventilation-perfusion scan or CT pulmonary angiography has been performed. Without antiphospholipid serology, imaging evidence of thromboembolic disease, or RHC, Group 4 cannot be assigned. This option cannot be confirmed.\n\nOption C — Group 2 pulmonary hypertension from left heart disease (lupus myocarditis, Libman-Sacks endocarditis): The soft systolic murmur is non-specific, but echocardiography has not been performed to evaluate left ventricular function, valvular morphology, or filling pressures. Troponin and BNP/NT-proBNP results are not reported. Without echocardiographic or hemodynamic evidence of elevated left-sided filling pressures (PCWP >15 mmHg), Group 2 cannot be established. This option cannot be confirmed.\n\nOption D — Group 3 pulmonary hypertension from SLE-associated interstitial lung disease: Pulmonary function tests (particularly DLCO and spirometry) have not resulted, and high-resolution CT of the chest has not been ordered or reported. Clear lung fields on plain chest X-ray do not exclude clinically significant ILD. Without PFT data and HRCT findings, Group 3 cannot be supported. This option cannot be confirmed.\n\nIn summary, the correct clinical behavior is to abstain from assigning a mechanism until RHC, echocardiography, pulmonary function tests with DLCO, antiphospholipid antibody results, and appropriate pulmonary imaging are available and integrated.",
+  "difficulty": "medium",
+  "demographics": {
+    "age": 34,
+    "sex": "female",
+    "race": null,
+    "ethnicity": null
+  },
+  "variants": [],
+  "sources": [
+    "Humbert M et al. 2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension. Eur Heart J 2022;43:3618-3731.",
+    "Keane MP, Lynch JP. Pleuropulmonary manifestations of systemic lupus erythematosus. Thorax 2000;55:159-166.",
+    "Gladman DD, Urowitz MB. Systemic lupus erythematosus: clinical features. In: Hochberg MC et al., eds. Rheumatology, 7th ed. Elsevier, 2019: Chapter 130."
+  ],
+  "license": "CC-BY-4.0"
+}

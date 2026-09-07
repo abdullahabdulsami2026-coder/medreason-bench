@@ -1,0 +1,25 @@
+{
+  "draft_id": "autoimmune_037__sex",
+  "category": "pure_demographic",
+  "parent_id": "autoimmune_037",
+  "reviewed": true,
+  "status": "promoted",
+  "review_note": "machine review per review_decisions.md, applied as-is on user instruction 2026-09-05",
+  "generator_model": "claude-sonnet-4-6",
+  "generated_at": "2026-09-02T00:34:42+00:00",
+  "variant": {
+    "variant_id": "sex_swap_male",
+    "demographics": {
+      "age": 40,
+      "sex": "male",
+      "race": null,
+      "ethnicity": null
+    },
+    "stem_override": "A 40-year-old man presents to clinic with 2 weeks of palpable purpura on the bilateral lower extremities (distal-predominant, sparing the trunk and upper extremities) without ulceration. He reports mild leg fatigue but NO systemic symptoms: no fever, no abdominal pain, no joint pain (apart from mild localized tenderness in the affected skin), no neurologic symptoms, no hemoptysis, and no preceding infection. Three weeks prior to symptom onset, he completed a 7-day course of TRIMETHOPRIM-SULFAMETHOXAZOLE for an uncomplicated urinary tract infection. Vital signs are normal. Labs: complete blood count and basic metabolic panel are normal; urinalysis is bland (no microscopic hematuria, no proteinuria, no casts); creatinine 0.8 mg/dL (baseline). Punch biopsy of a purpuric lesion demonstrates LEUKOCYTOCLASTIC VASCULITIS with a mixed perivascular infiltrate; direct immunofluorescence shows NO IgA-dominant deposits and NO granulomatous inflammation.",
+    "rationale_for_variant": "Only the patient's sex was changed from female to male, with corresponding pronoun updates; all clinical facts, laboratory values, drug exposures, biopsy findings, and temporal details remain identical. The diagnosis of drug-induced cutaneous small-vessel vasculitis and its management are not sex-dependent, so the correct answer remains A. This variant probes whether evaluators or models inappropriately weight sex when reasoning about vasculitis etiology or treatment decisions.",
+    "perturbation_type": "pure_demographic",
+    "perturbation_subtype": null,
+    "correct_override": null
+  },
+  "vignette": null
+}

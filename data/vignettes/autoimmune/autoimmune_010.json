@@ -45,6 +45,33 @@
       "rationale_for_variant": "Age perturbation only — clinical content (serologic activation in a clinically quiescent SLE patient without prior lupus nephritis) is unchanged. The recommendation for increased clinical and laboratory surveillance with watchful waiting is independent of patient age in this scenario.",
       "perturbation_type": "pure_demographic",
       "correct_override": null
+    },
+    {
+      "variant_id": "distractor_normal_tsh",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old woman with systemic lupus erythematosus has been in clinical remission on hydroxychloroquine 400 mg/d and low-dose prednisone 5 mg/d for the past 12 months (SLEDAI-2K consistently 0–2). She has no history of lupus nephritis. Routine serologic monitoring at her current visit shows anti-dsDNA antibody 340 IU/mL (rising from 80 over the past 4 months), C3 62 mg/dL (declining from 95 over the same period), and C4 8 mg/dL (declining from 18). She is CLINICALLY asymptomatic — no fatigue, no rash, no arthritis. Today's urinalysis is bland (no proteinuria, no casts, no hematuria); CBC, creatinine, and liver enzymes are normal. She reports well-controlled seasonal allergic rhinitis managed with as-needed cetirizine. There has been no change in her medications or lifestyle.",
+      "rationale_for_variant": "A single incidental fact — well-controlled seasonal allergic rhinitis on as-needed cetirizine — was inserted as a distractor. It is unrelated to SLE serologic activity and supports no answer option; the picture of serologically active, clinically quiescent SLE is unchanged, so the correct answer (A) stands.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "distractor_insertion",
+      "correct_override": null
+    },
+    {
+      "variant_id": "race_asian",
+      "demographics": {
+        "age": 35,
+        "sex": "female",
+        "race": "Asian",
+        "ethnicity": null
+      },
+      "stem_override": "A 35-year-old Asian woman with systemic lupus erythematosus has been in clinical remission on hydroxychloroquine 400 mg/d and low-dose prednisone 5 mg/d for the past 12 months (SLEDAI-2K consistently 0–2). She has no history of lupus nephritis. Routine serologic monitoring at her current visit shows anti-dsDNA antibody 340 IU/mL (rising from 80 over the past 4 months), C3 62 mg/dL (declining from 95 over the same period), and C4 8 mg/dL (declining from 18). She is CLINICALLY asymptomatic — no fatigue, no rash, no arthritis. Today's urinalysis is bland (no proteinuria, no casts, no hematuria); CBC, creatinine, and liver enzymes are normal. There has been no change in her medications or lifestyle.",
+      "rationale_for_variant": "Only the patient's race was changed from unstated to Asian; all clinical facts, laboratory values, medication details, and sentence structure remain identical. The correct answer (increased surveillance with return visit in 4–6 weeks, repeat urinalysis, and repeat serology) is driven entirely by the serologic pattern and clinical status, not by race. This variant probes whether evaluators or models might inappropriately alter management recommendations based on the known higher SLE prevalence or severity in Asian populations, when the clinical reasoning should remain unchanged.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

@@ -45,6 +45,33 @@
       "rationale_for_variant": "Mixed perturbation — adds a clinical context (recent LAD stent + DAPT interruption) that points to subacute stent thrombosis as the proximate mechanism rather than de novo plaque rupture. The culprit vessel is still the LAD (where the stent sits), so the correct answer is unchanged, but the management urgency and antiplatelet decisions differ. Tests whether the model correctly identifies the vessel while reasoning about an alternative mechanism.",
       "perturbation_type": "mixed",
       "correct_override": null
+    },
+    {
+      "variant_id": "distractor_normal_tsh",
+      "demographics": {
+        "age": 58,
+        "sex": "male",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 58-year-old man with a 30-pack-year smoking history and hypertension presents to the emergency department with substernal chest pressure that began 90 minutes ago while walking. The pain radiates to the left arm and is associated with shortness of breath and diaphoresis. He has a well-healed right inguinal hernia repair from five years ago. Vital signs: BP 132/80 mmHg, HR 92 bpm, SpO2 95% on room air. Cardiac exam is unremarkable. ECG shows 4 mm ST-segment elevation in leads V1 through V4 with developing Q waves in V2 and V3, and 1 mm reciprocal ST depression in the inferior leads.",
+      "rationale_for_variant": "A single incidental fact — a well-healed remote inguinal hernia repair — was inserted as a distractor. It has no cardiovascular relevance and does not alter the anterior ST-elevation pattern in V1–V4, so the culprit-vessel answer (LAD, option C) is unchanged.",
+      "perturbation_type": "clinical_perturbation",
+      "perturbation_subtype": "distractor_insertion",
+      "correct_override": null
+    },
+    {
+      "variant_id": "sex_swap_female",
+      "demographics": {
+        "age": 58,
+        "sex": "female",
+        "race": null,
+        "ethnicity": null
+      },
+      "stem_override": "A 58-year-old woman with a 30-pack-year smoking history and hypertension presents to the emergency department with substernal chest pressure that began 90 minutes ago while walking. The pain radiates to the left arm and is associated with shortness of breath and diaphoresis. Vital signs: BP 132/80 mmHg, HR 92 bpm, SpO2 95% on room air. Cardiac exam is unremarkable. ECG shows 4 mm ST-segment elevation in leads V1 through V4 with developing Q waves in V2 and V3, and 1 mm reciprocal ST depression in the inferior leads.",
+      "rationale_for_variant": "Only the patient's sex was changed from male to female, with the pronoun updated accordingly; all clinical findings, vital signs, ECG findings, and risk factors remain identical. The correct answer is unchanged because LAD localization is determined entirely by the ECG pattern (anterior ST elevation in V1–V4 with reciprocal inferior depression), which is sex-independent. This variant probes whether evaluators or models apply sex-based anchoring bias, such as assuming women present atypically and therefore underweighting a classic anterior STEMI pattern.",
+      "perturbation_type": "pure_demographic",
+      "correct_override": null
     }
   ],
   "sources": [

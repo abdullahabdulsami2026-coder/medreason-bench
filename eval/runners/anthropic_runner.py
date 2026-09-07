@@ -60,6 +60,11 @@ class AnthropicRunner(Runner):
                 double). When None, a real client is constructed using
                 the api key + environment.
         """
+        if temperature != 0.0 and top_p != 1.0:
+            raise ValueError(
+                "Anthropic Claude 4.6+ models accept temperature or top_p, not both; "
+                "leave one at its default (temperature=0.0 / top_p=1.0)"
+            )
         super().__init__(model, temperature=temperature, top_p=top_p)
         self.max_tokens = max_tokens
         self.max_retries = max_retries
@@ -72,53 +77,66 @@ class AnthropicRunner(Runner):
             key = api_key or os.environ.get("ANTHROPIC_API_KEY")
             self._client = Anthropic(api_key=key) if key else Anthropic()
 
-    def run(self, item: MCQItem) -> EvalResponse:
-        """Send ``item`` through the Anthropic Messages API.
+    def complete(self, prompt: str) -> str:
+        """Send a raw prompt through the Messages API and return the text.
 
-        See :meth:`eval.runners.base.Runner.run` for the contract.
+        Retries transient failures with the runner's backoff schedule and
+        raises the last error after ``max_retries`` attempts. ``run``
+        wraps this for MCQ evaluation; corpus-generation tooling
+        (``scripts/generate_drafts.py``) calls it directly.
         """
-        prompt = format_mcq(item)
-        started = time.perf_counter()
-        last_err: str | None = None
+        # Claude 4.6+ models reject requests that set both temperature and
+        # top_p, so top_p is sent only when it deviates from the 1.0 default.
+        sampling: dict[str, float] = {"temperature": self.temperature}
+        if self.top_p != 1.0:
+            sampling = {"top_p": self.top_p}
+        last_err: Exception | None = None
         delay = self.initial_backoff_s
-
         for attempt in range(1, self.max_retries + 1):
             try:
                 msg = self._client.messages.create(
                     model=self.model,
                     max_tokens=self.max_tokens,
-                    temperature=self.temperature,
-                    top_p=self.top_p,
                     messages=[{"role": "user", "content": prompt}],
+                    **sampling,
                 )
-                raw = self._extract_text(msg)
-                answer, confidence, rationale = parse_confidence_response(raw)
-                elapsed_ms = int((time.perf_counter() - started) * 1000)
-                return EvalResponse(
-                    item_id=item.id,
-                    model=self.model,
-                    raw_response=raw,
-                    parsed_answer=answer,
-                    confidence=confidence,
-                    rationale=rationale,
-                    elapsed_ms=elapsed_ms,
-                )
-            except Exception as e:  # noqa: BLE001 — runners must never raise
-                last_err = f"{type(e).__name__}: {e}"
+                return self._extract_text(msg)
+            except Exception as e:  # noqa: BLE001 — retried, re-raised on final failure
+                last_err = e
                 if attempt < self.max_retries:
                     time.sleep(delay)
                     delay *= 2
+        assert last_err is not None
+        raise last_err
 
-        elapsed_ms = int((time.perf_counter() - started) * 1000)
+    def run(self, item: MCQItem) -> EvalResponse:
+        """Send ``item`` through the Anthropic Messages API.
+
+        See :meth:`eval.runners.base.Runner.run` for the contract.
+        """
+        started = time.perf_counter()
+        try:
+            raw = self.complete(format_mcq(item))
+        except Exception as e:  # noqa: BLE001 — runners must never raise
+            return EvalResponse(
+                item_id=item.id,
+                model=self.model,
+                raw_response="",
+                parsed_answer=None,
+                confidence=None,
+                rationale=None,
+                elapsed_ms=int((time.perf_counter() - started) * 1000),
+                error=f"{type(e).__name__}: {e}",
+            )
+        answer, confidence, rationale = parse_confidence_response(raw)
         return EvalResponse(
             item_id=item.id,
             model=self.model,
-            raw_response="",
-            parsed_answer=None,
-            confidence=None,
-            rationale=None,
-            elapsed_ms=elapsed_ms,
-            error=last_err or "unknown error",
+            raw_response=raw,
+            parsed_answer=answer,
+            confidence=confidence,
+            rationale=rationale,
+            elapsed_ms=int((time.perf_counter() - started) * 1000),
         )
 
     @staticmethod

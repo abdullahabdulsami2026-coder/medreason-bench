@@ -19,9 +19,19 @@ from typing import Literal
 from eval.schemas import Vignette
 
 VIGNETTES_DIR: Path = Path(__file__).parent
+VERSION_FILE: Path = VIGNETTES_DIR / "VERSION"
 
 Specialty = Literal["cardiology", "autoimmune"]
 _ALL_SPECIALTIES: tuple[str, ...] = ("cardiology", "autoimmune")
+
+
+def dataset_version() -> str:
+    """Corpus version from ``data/vignettes/VERSION``, recorded in run manifests.
+
+    Bumped by ``scripts/review_drafts.py promote`` whenever approved
+    drafts are merged into the corpus.
+    """
+    return VERSION_FILE.read_text().strip() if VERSION_FILE.exists() else "unknown"
 
 
 def load_vignettes(
